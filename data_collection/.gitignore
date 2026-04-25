@@ -1,0 +1,7 @@
+# OAuth tokens — never commit
+acled_data/oauth_token.json
+acled_data/raw_acled_response.json
+
+# Local caches
+ripe_stat_cache/
+mrt_data/

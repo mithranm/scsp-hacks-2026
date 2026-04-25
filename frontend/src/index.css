@@ -1,0 +1,65 @@
+:root {
+  --bg: #0d1117;
+  --bg-panel: #161b22;
+  --bg-elevated: #1c2230;
+  --border: #2e3442;
+  --text: #c9d1d9;
+  --text-dim: #8b949e;
+  --text-h: #f0f6fc;
+  --accent: #ffd400;
+  --accent-bg: rgba(255, 212, 0, 0.12);
+  --danger: #d63838;
+  --warn: #ff9b1c;
+  --ok: #36c773;
+  --link: #4aa3ff;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, 'JetBrains Mono', Consolas, monospace;
+
+  font: 14px/1.5 var(--sans);
+  color: var(--text);
+  background: var(--bg);
+  color-scheme: dark;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: var(--bg);
+}
+
+h1, h2, h3 {
+  margin: 0;
+  font-weight: 600;
+  color: var(--text-h);
+}
+
+h2 { font-size: 14px; letter-spacing: 0.04em; text-transform: uppercase; color: var(--text-dim); }
+h3 { font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-dim); margin-bottom: 6px; }
+
+button {
+  font: inherit;
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover { background: var(--bg-elevated); }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
