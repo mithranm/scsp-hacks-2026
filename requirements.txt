@@ -1,1 +1,14 @@
-geoip2=5.2.0
+geoip2==5.2.0
+numpy
+pandas
+scipy
+scikit-learn
+scapy
+tqdm
+torch
+matplotlib
+seaborn
+PyWavelets
+xgboost
+lightgbm
+tabpfn

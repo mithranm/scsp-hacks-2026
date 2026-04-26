@@ -1,0 +1,314 @@
+Dataset: 179 samples, 233 features
+Class distribution: Non-GenAI=93, GenAI=86
+
+==================================================
+Random Forest
+==================================================
+
+Fold 1 Results:
+              precision    recall  f1-score   support
+
+   Non-GenAI       0.89      0.89      0.89        18
+       GenAI       0.89      0.89      0.89        18
+
+    accuracy                           0.89        36
+   macro avg       0.89      0.89      0.89        36
+weighted avg       0.89      0.89      0.89        36
+
+Top 10 features:
+  burst_mean_size                0.0389
+  iat_p95                        0.0353
+  unique_dst_ips                 0.0261
+  unique_connections             0.0229
+  bwd_size_wl1_energy            0.0222
+  bwd_iat_p95                    0.0209
+  num_flows                      0.0206
+  total_packets                  0.0163
+  bwd_iat_mean                   0.0150
+  iat_mean                       0.0143
+
+Fold 2 Results:
+              precision    recall  f1-score   support
+
+   Non-GenAI       0.86      1.00      0.93        19
+       GenAI       1.00      0.82      0.90        17
+
+    accuracy                           0.92        36
+   macro avg       0.93      0.91      0.92        36
+weighted avg       0.93      0.92      0.92        36
+
+
+Fold 3 Results:
+              precision    recall  f1-score   support
+
+   Non-GenAI       0.89      0.84      0.86        19
+       GenAI       0.83      0.88      0.86        17
+
+    accuracy                           0.86        36
+   macro avg       0.86      0.86      0.86        36
+weighted avg       0.86      0.86      0.86        36
+
+
+Fold 4 Results:
+              precision    recall  f1-score   support
+
+   Non-GenAI       0.78      0.95      0.86        19
+       GenAI       0.92      0.71      0.80        17
+
+    accuracy                           0.83        36
+   macro avg       0.85      0.83      0.83        36
+weighted avg       0.85      0.83      0.83        36
+
+
+Fold 5 Results:
+              precision    recall  f1-score   support
+
+   Non-GenAI       0.83      0.83      0.83        18
+       GenAI       0.82      0.82      0.82        17
+
+    accuracy                           0.83        35
+   macro avg       0.83      0.83      0.83        35
+weighted avg       0.83      0.83      0.83        35
+
+
+==================================================
+Random Forest — CROSS-VALIDATION SUMMARY
+==================================================
+Weighted precision : 0.871 ± 0.034
+Weighted recall    : 0.866 ± 0.033
+Weighted f1-score  : 0.865 ± 0.034
+Accuracy          : 0.866 ± 0.033
+
+==================================================
+Gradient Boosting
+==================================================
+
+Fold 1 Results:
+              precision    recall  f1-score   support
+
+   Non-GenAI       0.89      0.89      0.89        18
+       GenAI       0.89      0.89      0.89        18
+
+    accuracy                           0.89        36
+   macro avg       0.89      0.89      0.89        36
+weighted avg       0.89      0.89      0.89        36
+
+Top 10 features:
+  iat_p95                        0.2298
+  unique_dst_ips                 0.1770
+  pkt_size_max                   0.0665
+  bwd_size_wl0_std               0.0638
+  burst_mean_size                0.0334
+  fwd_size_wl4_mean              0.0284
+  fwd_iat_p75                    0.0186
+  fwd_pkt_size_median            0.0151
+  bwd_size_wl2_energy            0.0145
+  comb_size_wl0_std              0.0136
+
+Fold 2 Results:
+              precision    recall  f1-score   support
+
+   Non-GenAI       0.95      1.00      0.97        19
+       GenAI       1.00      0.94      0.97        17
+
+    accuracy                           0.97        36
+   macro avg       0.97      0.97      0.97        36
+weighted avg       0.97      0.97      0.97        36
+
+
+Fold 3 Results:
+              precision    recall  f1-score   support
+
+   Non-GenAI       1.00      0.84      0.91        19
+       GenAI       0.85      1.00      0.92        17
+
+    accuracy                           0.92        36
+   macro avg       0.93      0.92      0.92        36
+weighted avg       0.93      0.92      0.92        36
+
+
+Fold 4 Results:
+              precision    recall  f1-score   support
+
+   Non-GenAI       0.86      0.95      0.90        19
+       GenAI       0.93      0.82      0.88        17
+
+    accuracy                           0.89        36
+   macro avg       0.90      0.89      0.89        36
+weighted avg       0.89      0.89      0.89        36
+
+
+Fold 5 Results:
+              precision    recall  f1-score   support
+
+   Non-GenAI       0.78      0.78      0.78        18
+       GenAI       0.76      0.76      0.76        17
+
+    accuracy                           0.77        35
+   macro avg       0.77      0.77      0.77        35
+weighted avg       0.77      0.77      0.77        35
+
+
+==================================================
+Gradient Boosting — CROSS-VALIDATION SUMMARY
+==================================================
+Weighted precision : 0.891 ± 0.067
+Weighted recall    : 0.888 ± 0.066
+Weighted f1-score  : 0.887 ± 0.066
+Accuracy          : 0.888 ± 0.066
+
+==================================================
+XGBoost
+==================================================
+
+Fold 1 Results:
+              precision    recall  f1-score   support
+
+   Non-GenAI       0.88      0.83      0.86        18
+       GenAI       0.84      0.89      0.86        18
+
+    accuracy                           0.86        36
+   macro avg       0.86      0.86      0.86        36
+weighted avg       0.86      0.86      0.86        36
+
+Top 10 features:
+  iat_p95                        0.1525
+  iat_skew                       0.0366
+  bwd_size_wl1_entropy           0.0326
+  fwd_pkt_size_mean              0.0320
+  unique_dst_ips                 0.0313
+  fwd_size_wl4_mean              0.0277
+  fwd_pkt_size_max               0.0253
+  pkt_size_skew                  0.0237
+  fwd_pkt_size_median            0.0219
+  bwd_pkt_size_p75               0.0210
+
+Fold 2 Results:
+              precision    recall  f1-score   support
+
+   Non-GenAI       0.86      1.00      0.93        19
+       GenAI       1.00      0.82      0.90        17
+
+    accuracy                           0.92        36
+   macro avg       0.93      0.91      0.92        36
+weighted avg       0.93      0.92      0.92        36
+
+
+Fold 3 Results:
+              precision    recall  f1-score   support
+
+   Non-GenAI       0.94      0.79      0.86        19
+       GenAI       0.80      0.94      0.86        17
+
+    accuracy                           0.86        36
+   macro avg       0.87      0.87      0.86        36
+weighted avg       0.87      0.86      0.86        36
+
+
+Fold 4 Results:
+              precision    recall  f1-score   support
+
+   Non-GenAI       0.79      1.00      0.88        19
+       GenAI       1.00      0.71      0.83        17
+
+    accuracy                           0.86        36
+   macro avg       0.90      0.85      0.86        36
+weighted avg       0.89      0.86      0.86        36
+
+
+Fold 5 Results:
+              precision    recall  f1-score   support
+
+   Non-GenAI       0.83      0.83      0.83        18
+       GenAI       0.82      0.82      0.82        17
+
+    accuracy                           0.83        35
+   macro avg       0.83      0.83      0.83        35
+weighted avg       0.83      0.83      0.83        35
+
+
+==================================================
+XGBoost — CROSS-VALIDATION SUMMARY
+==================================================
+Weighted precision : 0.876 ± 0.033
+Weighted recall    : 0.866 ± 0.028
+Weighted f1-score  : 0.865 ± 0.028
+Accuracy          : 0.866 ± 0.028
+
+==================================================
+LightGBM
+==================================================
+
+Fold 1 Results:
+              precision    recall  f1-score   support
+
+   Non-GenAI       0.82      0.78      0.80        18
+       GenAI       0.79      0.83      0.81        18
+
+    accuracy                           0.81        36
+   macro avg       0.81      0.81      0.81        36
+weighted avg       0.81      0.81      0.81        36
+
+Top 10 features:
+  unique_dst_ips                 50.0000
+  bitrate_cv                     42.0000
+  num_flows                      32.0000
+  bwd_iat_p25                    27.0000
+  response_stream_duration       26.0000
+  pkt_size_min                   24.0000
+  pkt_size_max                   22.0000
+  bwd_size_wl0_std               21.0000
+  tcp_ratio                      20.0000
+  fwd_iat_p95                    18.0000
+
+Fold 2 Results:
+              precision    recall  f1-score   support
+
+   Non-GenAI       0.86      1.00      0.93        19
+       GenAI       1.00      0.82      0.90        17
+
+    accuracy                           0.92        36
+   macro avg       0.93      0.91      0.92        36
+weighted avg       0.93      0.92      0.92        36
+
+
+Fold 3 Results:
+              precision    recall  f1-score   support
+
+   Non-GenAI       1.00      0.89      0.94        19
+       GenAI       0.89      1.00      0.94        17
+
+    accuracy                           0.94        36
+   macro avg       0.95      0.95      0.94        36
+weighted avg       0.95      0.94      0.94        36
+
+
+Fold 4 Results:
+              precision    recall  f1-score   support
+
+   Non-GenAI       0.90      0.95      0.92        19
+       GenAI       0.94      0.88      0.91        17
+
+    accuracy                           0.92        36
+   macro avg       0.92      0.91      0.92        36
+weighted avg       0.92      0.92      0.92        36
+
+
+Fold 5 Results:
+              precision    recall  f1-score   support
+
+   Non-GenAI       0.88      0.78      0.82        18
+       GenAI       0.79      0.88      0.83        17
+
+    accuracy                           0.83        35
+   macro avg       0.83      0.83      0.83        35
+weighted avg       0.83      0.83      0.83        35
+
+
+==================================================
+LightGBM — CROSS-VALIDATION SUMMARY
+==================================================
+Weighted precision : 0.887 ± 0.057
+Weighted recall    : 0.882 ± 0.055
+Weighted f1-score  : 0.882 ± 0.055
+Accuracy          : 0.882 ± 0.055

@@ -1,0 +1,443 @@
+Found 179 valid sequence files.
+Handcrafted features: 233
+Class weights — Non-GenAI: 0.962  GenAI: 1.041
+
+==================================================
+FOLD 1/5  — Test size: 36
+==================================================
+Train: 107  Val: 36  Test: 36
+
+--- CNN-LSTM ---
+  Epoch [1/50]  Train Loss: 0.6844  Acc: 51.4%  |  Val Loss: 0.6702  Acc: 69.4%  LR: 0.00100
+  Epoch [2/50]  Train Loss: 0.6314  Acc: 76.6%  |  Val Loss: 0.6444  Acc: 69.4%  LR: 0.00100
+  Epoch [3/50]  Train Loss: 0.6007  Acc: 78.5%  |  Val Loss: 0.6143  Acc: 66.7%  LR: 0.00100
+  Epoch [4/50]  Train Loss: 0.5421  Acc: 81.3%  |  Val Loss: 0.5884  Acc: 63.9%  LR: 0.00100
+  Epoch [5/50]  Train Loss: 0.5473  Acc: 81.3%  |  Val Loss: 0.5719  Acc: 66.7%  LR: 0.00100
+  Epoch [6/50]  Train Loss: 0.5377  Acc: 81.3%  |  Val Loss: 0.5602  Acc: 66.7%  LR: 0.00100
+  Epoch [7/50]  Train Loss: 0.5069  Acc: 84.1%  |  Val Loss: 0.5494  Acc: 72.2%  LR: 0.00100
+  Epoch [8/50]  Train Loss: 0.4643  Acc: 85.0%  |  Val Loss: 0.5319  Acc: 77.8%  LR: 0.00100
+  Epoch [9/50]  Train Loss: 0.4159  Acc: 84.1%  |  Val Loss: 0.5165  Acc: 77.8%  LR: 0.00100
+  Epoch [10/50]  Train Loss: 0.4326  Acc: 86.0%  |  Val Loss: 0.5000  Acc: 83.3%  LR: 0.00100
+  Epoch [11/50]  Train Loss: 0.4135  Acc: 86.0%  |  Val Loss: 0.4849  Acc: 83.3%  LR: 0.00100
+  Epoch [12/50]  Train Loss: 0.3690  Acc: 87.9%  |  Val Loss: 0.4700  Acc: 83.3%  LR: 0.00100
+  Epoch [13/50]  Train Loss: 0.3891  Acc: 89.7%  |  Val Loss: 0.4536  Acc: 83.3%  LR: 0.00100
+  Epoch [14/50]  Train Loss: 0.3438  Acc: 91.6%  |  Val Loss: 0.4363  Acc: 86.1%  LR: 0.00100
+  Epoch [15/50]  Train Loss: 0.3162  Acc: 92.5%  |  Val Loss: 0.4189  Acc: 88.9%  LR: 0.00100
+  Epoch [16/50]  Train Loss: 0.3333  Acc: 93.5%  |  Val Loss: 0.4071  Acc: 83.3%  LR: 0.00100
+  Epoch [17/50]  Train Loss: 0.3097  Acc: 96.3%  |  Val Loss: 0.3978  Acc: 83.3%  LR: 0.00100
+  Epoch [18/50]  Train Loss: 0.2981  Acc: 96.3%  |  Val Loss: 0.3898  Acc: 86.1%  LR: 0.00100
+  Epoch [19/50]  Train Loss: 0.2873  Acc: 94.4%  |  Val Loss: 0.3811  Acc: 86.1%  LR: 0.00100
+  Epoch [20/50]  Train Loss: 0.2945  Acc: 95.3%  |  Val Loss: 0.3726  Acc: 86.1%  LR: 0.00100
+  Epoch [21/50]  Train Loss: 0.2804  Acc: 95.3%  |  Val Loss: 0.3683  Acc: 86.1%  LR: 0.00100
+  Epoch [22/50]  Train Loss: 0.2547  Acc: 96.3%  |  Val Loss: 0.3652  Acc: 86.1%  LR: 0.00100
+  Epoch [23/50]  Train Loss: 0.2845  Acc: 97.2%  |  Val Loss: 0.3625  Acc: 86.1%  LR: 0.00100
+  Epoch [24/50]  Train Loss: 0.2602  Acc: 98.1%  |  Val Loss: 0.3612  Acc: 86.1%  LR: 0.00100
+  Epoch [25/50]  Train Loss: 0.2456  Acc: 99.1%  |  Val Loss: 0.3565  Acc: 86.1%  LR: 0.00100
+  Epoch [26/50]  Train Loss: 0.2664  Acc: 99.1%  |  Val Loss: 0.3510  Acc: 86.1%  LR: 0.00100
+  Epoch [27/50]  Train Loss: 0.2850  Acc: 97.2%  |  Val Loss: 0.3543  Acc: 88.9%  LR: 0.00100
+  Epoch [28/50]  Train Loss: 0.2317  Acc: 100.0%  |  Val Loss: 0.3545  Acc: 88.9%  LR: 0.00100
+  Epoch [29/50]  Train Loss: 0.2563  Acc: 98.1%  |  Val Loss: 0.3583  Acc: 88.9%  LR: 0.00100
+  Epoch [30/50]  Train Loss: 0.2406  Acc: 100.0%  |  Val Loss: 0.3568  Acc: 88.9%  LR: 0.00100
+  Epoch [31/50]  Train Loss: 0.2255  Acc: 100.0%  |  Val Loss: 0.3557  Acc: 88.9%  LR: 0.00050
+  Epoch [32/50]  Train Loss: 0.2267  Acc: 100.0%  |  Val Loss: 0.3512  Acc: 88.9%  LR: 0.00050
+  Epoch [33/50]  Train Loss: 0.2345  Acc: 99.1%  |  Val Loss: 0.3474  Acc: 91.7%  LR: 0.00050
+  Epoch [34/50]  Train Loss: 0.2352  Acc: 100.0%  |  Val Loss: 0.3455  Acc: 88.9%  LR: 0.00050
+  Epoch [35/50]  Train Loss: 0.2348  Acc: 100.0%  |  Val Loss: 0.3486  Acc: 86.1%  LR: 0.00050
+  Epoch [36/50]  Train Loss: 0.2281  Acc: 100.0%  |  Val Loss: 0.3599  Acc: 88.9%  LR: 0.00050
+  Epoch [37/50]  Train Loss: 0.2496  Acc: 100.0%  |  Val Loss: 0.3590  Acc: 88.9%  LR: 0.00050
+  Epoch [38/50]  Train Loss: 0.2421  Acc: 100.0%  |  Val Loss: 0.3488  Acc: 88.9%  LR: 0.00050
+  Epoch [39/50]  Train Loss: 0.2380  Acc: 99.1%  |  Val Loss: 0.3471  Acc: 88.9%  LR: 0.00025
+  Epoch [40/50]  Train Loss: 0.2392  Acc: 100.0%  |  Val Loss: 0.3465  Acc: 91.7%  LR: 0.00025
+  Epoch [41/50]  Train Loss: 0.2309  Acc: 99.1%  |  Val Loss: 0.3453  Acc: 88.9%  LR: 0.00025
+  Epoch [42/50]  Train Loss: 0.2285  Acc: 100.0%  |  Val Loss: 0.3446  Acc: 88.9%  LR: 0.00025
+  Epoch [43/50]  Train Loss: 0.2442  Acc: 98.1%  |  Val Loss: 0.3433  Acc: 88.9%  LR: 0.00025
+  Epoch [44/50]  Train Loss: 0.2293  Acc: 100.0%  |  Val Loss: 0.3423  Acc: 88.9%  LR: 0.00025
+  Epoch [45/50]  Train Loss: 0.2513  Acc: 99.1%  |  Val Loss: 0.3422  Acc: 88.9%  LR: 0.00025
+  Epoch [46/50]  Train Loss: 0.2347  Acc: 100.0%  |  Val Loss: 0.3424  Acc: 88.9%  LR: 0.00025
+  Epoch [47/50]  Train Loss: 0.2321  Acc: 100.0%  |  Val Loss: 0.3433  Acc: 88.9%  LR: 0.00025
+  Epoch [48/50]  Train Loss: 0.2275  Acc: 100.0%  |  Val Loss: 0.3439  Acc: 88.9%  LR: 0.00025
+  Epoch [49/50]  Train Loss: 0.2502  Acc: 99.1%  |  Val Loss: 0.3447  Acc: 88.9%  LR: 0.00025
+  Epoch [50/50]  Train Loss: 0.2290  Acc: 100.0%  |  Val Loss: 0.3445  Acc: 88.9%  LR: 0.00013
+
+--- Gradient Boosting ---
+
+--- Learned Stacking (LogisticRegressionCV) ---
+  Meta-learner coefficients: [-0.22597647  0.22616702 -0.23889032  0.23908087]
+
+Fold 1 — CNN-LSTM:
+              precision    recall  f1-score   support
+
+   Non-GenAI       0.94      0.94      0.94        18
+       GenAI       0.94      0.94      0.94        18
+
+    accuracy                           0.94        36
+   macro avg       0.94      0.94      0.94        36
+weighted avg       0.94      0.94      0.94        36
+
+Fold 1 — Gradient Boosting:
+              precision    recall  f1-score   support
+
+   Non-GenAI       0.89      0.89      0.89        18
+       GenAI       0.89      0.89      0.89        18
+
+    accuracy                           0.89        36
+   macro avg       0.89      0.89      0.89        36
+weighted avg       0.89      0.89      0.89        36
+
+Fold 1 — Ensemble (Learned Stacking):
+              precision    recall  f1-score   support
+
+   Non-GenAI       0.89      0.94      0.92        18
+       GenAI       0.94      0.89      0.91        18
+
+    accuracy                           0.92        36
+   macro avg       0.92      0.92      0.92        36
+weighted avg       0.92      0.92      0.92        36
+
+
+==================================================
+FOLD 2/5  — Test size: 36
+==================================================
+Train: 107  Val: 36  Test: 36
+
+--- CNN-LSTM ---
+  Epoch [1/50]  Train Loss: 0.6843  Acc: 57.0%  |  Val Loss: 0.6686  Acc: 69.4%  LR: 0.00100
+  Epoch [2/50]  Train Loss: 0.6372  Acc: 78.5%  |  Val Loss: 0.6437  Acc: 69.4%  LR: 0.00100
+  Epoch [3/50]  Train Loss: 0.5940  Acc: 78.5%  |  Val Loss: 0.6186  Acc: 75.0%  LR: 0.00100
+  Epoch [4/50]  Train Loss: 0.5225  Acc: 86.9%  |  Val Loss: 0.5948  Acc: 75.0%  LR: 0.00100
+  Epoch [5/50]  Train Loss: 0.4522  Acc: 83.2%  |  Val Loss: 0.5876  Acc: 72.2%  LR: 0.00100
+  Epoch [6/50]  Train Loss: 0.4537  Acc: 83.2%  |  Val Loss: 0.6111  Acc: 75.0%  LR: 0.00100
+  Epoch [7/50]  Train Loss: 0.4530  Acc: 84.1%  |  Val Loss: 0.6470  Acc: 72.2%  LR: 0.00100
+  Epoch [8/50]  Train Loss: 0.4187  Acc: 86.0%  |  Val Loss: 0.6202  Acc: 75.0%  LR: 0.00100
+  Epoch [9/50]  Train Loss: 0.3870  Acc: 86.9%  |  Val Loss: 0.5788  Acc: 75.0%  LR: 0.00100
+  Epoch [10/50]  Train Loss: 0.4065  Acc: 87.9%  |  Val Loss: 0.5532  Acc: 72.2%  LR: 0.00100
+  Epoch [11/50]  Train Loss: 0.3526  Acc: 91.6%  |  Val Loss: 0.5441  Acc: 75.0%  LR: 0.00100
+  Epoch [12/50]  Train Loss: 0.3334  Acc: 86.9%  |  Val Loss: 0.5484  Acc: 80.6%  LR: 0.00100
+  Epoch [13/50]  Train Loss: 0.3545  Acc: 92.5%  |  Val Loss: 0.5450  Acc: 80.6%  LR: 0.00100
+  Epoch [14/50]  Train Loss: 0.3262  Acc: 92.5%  |  Val Loss: 0.5238  Acc: 83.3%  LR: 0.00100
+  Epoch [15/50]  Train Loss: 0.3315  Acc: 92.5%  |  Val Loss: 0.5213  Acc: 83.3%  LR: 0.00100
+  Epoch [16/50]  Train Loss: 0.3134  Acc: 92.5%  |  Val Loss: 0.5232  Acc: 80.6%  LR: 0.00100
+  Epoch [17/50]  Train Loss: 0.3151  Acc: 94.4%  |  Val Loss: 0.5251  Acc: 80.6%  LR: 0.00100
+  Epoch [18/50]  Train Loss: 0.2687  Acc: 95.3%  |  Val Loss: 0.5152  Acc: 83.3%  LR: 0.00100
+  Epoch [19/50]  Train Loss: 0.3189  Acc: 93.5%  |  Val Loss: 0.5091  Acc: 83.3%  LR: 0.00100
+  Epoch [20/50]  Train Loss: 0.2629  Acc: 98.1%  |  Val Loss: 0.5267  Acc: 83.3%  LR: 0.00100
+  Epoch [21/50]  Train Loss: 0.2565  Acc: 99.1%  |  Val Loss: 0.5542  Acc: 83.3%  LR: 0.00100
+  Epoch [22/50]  Train Loss: 0.2658  Acc: 96.3%  |  Val Loss: 0.5820  Acc: 80.6%  LR: 0.00100
+  Epoch [23/50]  Train Loss: 0.2499  Acc: 99.1%  |  Val Loss: 0.5784  Acc: 83.3%  LR: 0.00100
+  Epoch [24/50]  Train Loss: 0.2891  Acc: 98.1%  |  Val Loss: 0.5784  Acc: 83.3%  LR: 0.00050
+  Epoch [25/50]  Train Loss: 0.2446  Acc: 100.0%  |  Val Loss: 0.5904  Acc: 83.3%  LR: 0.00050
+  Epoch [26/50]  Train Loss: 0.2390  Acc: 99.1%  |  Val Loss: 0.5898  Acc: 83.3%  LR: 0.00050
+  Epoch [27/50]  Train Loss: 0.2396  Acc: 100.0%  |  Val Loss: 0.5788  Acc: 83.3%  LR: 0.00050
+  Epoch [28/50]  Train Loss: 0.2305  Acc: 100.0%  |  Val Loss: 0.5717  Acc: 83.3%  LR: 0.00025
+  Epoch [29/50]  Train Loss: 0.2310  Acc: 100.0%  |  Val Loss: 0.5747  Acc: 83.3%  LR: 0.00025
+  Epoch [30/50]  Train Loss: 0.2371  Acc: 100.0%  |  Val Loss: 0.5698  Acc: 83.3%  LR: 0.00025
+  Epoch [31/50]  Train Loss: 0.2252  Acc: 100.0%  |  Val Loss: 0.5704  Acc: 83.3%  LR: 0.00025
+  Epoch [32/50]  Train Loss: 0.2224  Acc: 100.0%  |  Val Loss: 0.5709  Acc: 83.3%  LR: 0.00013
+  Epoch [33/50]  Train Loss: 0.2458  Acc: 99.1%  |  Val Loss: 0.5703  Acc: 83.3%  LR: 0.00013
+  Epoch [34/50]  Train Loss: 0.2280  Acc: 100.0%  |  Val Loss: 0.5740  Acc: 83.3%  LR: 0.00013
+  Early stopping at epoch 34
+
+--- Gradient Boosting ---
+
+--- Learned Stacking (LogisticRegressionCV) ---
+  Meta-learner coefficients: [-0.56961938  0.56989851 -0.64563506  0.64591422]
+
+Fold 2 — CNN-LSTM:
+              precision    recall  f1-score   support
+
+   Non-GenAI       0.86      0.95      0.90        19
+       GenAI       0.93      0.82      0.88        17
+
+    accuracy                           0.89        36
+   macro avg       0.90      0.89      0.89        36
+weighted avg       0.89      0.89      0.89        36
+
+Fold 2 — Gradient Boosting:
+              precision    recall  f1-score   support
+
+   Non-GenAI       0.82      0.95      0.88        19
+       GenAI       0.93      0.76      0.84        17
+
+    accuracy                           0.86        36
+   macro avg       0.87      0.86      0.86        36
+weighted avg       0.87      0.86      0.86        36
+
+Fold 2 — Ensemble (Learned Stacking):
+              precision    recall  f1-score   support
+
+   Non-GenAI       0.83      1.00      0.90        19
+       GenAI       1.00      0.76      0.87        17
+
+    accuracy                           0.89        36
+   macro avg       0.91      0.88      0.89        36
+weighted avg       0.91      0.89      0.89        36
+
+
+==================================================
+FOLD 3/5  — Test size: 36
+==================================================
+Train: 107  Val: 36  Test: 36
+
+--- CNN-LSTM ---
+  Epoch [1/50]  Train Loss: 0.6805  Acc: 49.5%  |  Val Loss: 0.6657  Acc: 58.3%  LR: 0.00100
+  Epoch [2/50]  Train Loss: 0.6124  Acc: 70.1%  |  Val Loss: 0.6358  Acc: 80.6%  LR: 0.00100
+  Epoch [3/50]  Train Loss: 0.5526  Acc: 82.2%  |  Val Loss: 0.5992  Acc: 83.3%  LR: 0.00100
+  Epoch [4/50]  Train Loss: 0.4722  Acc: 82.2%  |  Val Loss: 0.5665  Acc: 80.6%  LR: 0.00100
+  Epoch [5/50]  Train Loss: 0.4554  Acc: 81.3%  |  Val Loss: 0.5554  Acc: 83.3%  LR: 0.00100
+  Epoch [6/50]  Train Loss: 0.4781  Acc: 83.2%  |  Val Loss: 0.5537  Acc: 86.1%  LR: 0.00100
+  Epoch [7/50]  Train Loss: 0.4986  Acc: 86.9%  |  Val Loss: 0.5442  Acc: 86.1%  LR: 0.00100
+  Epoch [8/50]  Train Loss: 0.4249  Acc: 86.0%  |  Val Loss: 0.5256  Acc: 86.1%  LR: 0.00100
+  Epoch [9/50]  Train Loss: 0.4103  Acc: 87.9%  |  Val Loss: 0.4851  Acc: 86.1%  LR: 0.00100
+  Epoch [10/50]  Train Loss: 0.4172  Acc: 86.9%  |  Val Loss: 0.4587  Acc: 86.1%  LR: 0.00100
+  Epoch [11/50]  Train Loss: 0.3350  Acc: 90.7%  |  Val Loss: 0.4388  Acc: 86.1%  LR: 0.00100
+  Epoch [12/50]  Train Loss: 0.3398  Acc: 94.4%  |  Val Loss: 0.4470  Acc: 86.1%  LR: 0.00100
+  Epoch [13/50]  Train Loss: 0.3255  Acc: 95.3%  |  Val Loss: 0.4541  Acc: 80.6%  LR: 0.00100
+  Epoch [14/50]  Train Loss: 0.3221  Acc: 95.3%  |  Val Loss: 0.4161  Acc: 88.9%  LR: 0.00100
+  Epoch [15/50]  Train Loss: 0.2861  Acc: 96.3%  |  Val Loss: 0.3881  Acc: 88.9%  LR: 0.00100
+  Epoch [16/50]  Train Loss: 0.2635  Acc: 98.1%  |  Val Loss: 0.3777  Acc: 86.1%  LR: 0.00100
+  Epoch [17/50]  Train Loss: 0.2879  Acc: 97.2%  |  Val Loss: 0.4014  Acc: 88.9%  LR: 0.00100
+  Epoch [18/50]  Train Loss: 0.2817  Acc: 96.3%  |  Val Loss: 0.4169  Acc: 88.9%  LR: 0.00100
+  Epoch [19/50]  Train Loss: 0.2694  Acc: 99.1%  |  Val Loss: 0.4164  Acc: 88.9%  LR: 0.00100
+  Epoch [20/50]  Train Loss: 0.2570  Acc: 99.1%  |  Val Loss: 0.4206  Acc: 88.9%  LR: 0.00100
+  Epoch [21/50]  Train Loss: 0.2765  Acc: 98.1%  |  Val Loss: 0.4230  Acc: 88.9%  LR: 0.00050
+  Epoch [22/50]  Train Loss: 0.2733  Acc: 100.0%  |  Val Loss: 0.4243  Acc: 88.9%  LR: 0.00050
+  Epoch [23/50]  Train Loss: 0.2554  Acc: 96.3%  |  Val Loss: 0.4163  Acc: 88.9%  LR: 0.00050
+  Epoch [24/50]  Train Loss: 0.2435  Acc: 100.0%  |  Val Loss: 0.4102  Acc: 88.9%  LR: 0.00050
+  Epoch [25/50]  Train Loss: 0.2529  Acc: 98.1%  |  Val Loss: 0.4091  Acc: 88.9%  LR: 0.00025
+  Epoch [26/50]  Train Loss: 0.2602  Acc: 98.1%  |  Val Loss: 0.4103  Acc: 88.9%  LR: 0.00025
+  Epoch [27/50]  Train Loss: 0.2498  Acc: 98.1%  |  Val Loss: 0.4140  Acc: 88.9%  LR: 0.00025
+  Epoch [28/50]  Train Loss: 0.2483  Acc: 96.3%  |  Val Loss: 0.4101  Acc: 88.9%  LR: 0.00025
+  Epoch [29/50]  Train Loss: 0.2438  Acc: 99.1%  |  Val Loss: 0.4067  Acc: 88.9%  LR: 0.00013
+  Epoch [30/50]  Train Loss: 0.2354  Acc: 99.1%  |  Val Loss: 0.4056  Acc: 88.9%  LR: 0.00013
+  Epoch [31/50]  Train Loss: 0.2401  Acc: 99.1%  |  Val Loss: 0.4027  Acc: 88.9%  LR: 0.00013
+  Early stopping at epoch 31
+
+--- Gradient Boosting ---
+
+--- Learned Stacking (LogisticRegressionCV) ---
+  Meta-learner coefficients: [-0.19960381  0.19972422 -0.26040545  0.26052586]
+
+Fold 3 — CNN-LSTM:
+              precision    recall  f1-score   support
+
+   Non-GenAI       1.00      0.79      0.88        19
+       GenAI       0.81      1.00      0.89        17
+
+    accuracy                           0.89        36
+   macro avg       0.90      0.89      0.89        36
+weighted avg       0.91      0.89      0.89        36
+
+Fold 3 — Gradient Boosting:
+              precision    recall  f1-score   support
+
+   Non-GenAI       0.94      0.84      0.89        19
+       GenAI       0.84      0.94      0.89        17
+
+    accuracy                           0.89        36
+   macro avg       0.89      0.89      0.89        36
+weighted avg       0.89      0.89      0.89        36
+
+Fold 3 — Ensemble (Learned Stacking):
+              precision    recall  f1-score   support
+
+   Non-GenAI       0.94      0.89      0.92        19
+       GenAI       0.89      0.94      0.91        17
+
+    accuracy                           0.92        36
+   macro avg       0.92      0.92      0.92        36
+weighted avg       0.92      0.92      0.92        36
+
+
+==================================================
+FOLD 4/5  — Test size: 36
+==================================================
+Train: 107  Val: 36  Test: 36
+
+--- CNN-LSTM ---
+  Epoch [1/50]  Train Loss: 0.6773  Acc: 56.1%  |  Val Loss: 0.6513  Acc: 66.7%  LR: 0.00100
+  Epoch [2/50]  Train Loss: 0.6290  Acc: 79.4%  |  Val Loss: 0.6202  Acc: 77.8%  LR: 0.00100
+  Epoch [3/50]  Train Loss: 0.5531  Acc: 85.0%  |  Val Loss: 0.5973  Acc: 83.3%  LR: 0.00100
+  Epoch [4/50]  Train Loss: 0.4931  Acc: 83.2%  |  Val Loss: 0.5861  Acc: 83.3%  LR: 0.00100
+  Epoch [5/50]  Train Loss: 0.4720  Acc: 82.2%  |  Val Loss: 0.5889  Acc: 83.3%  LR: 0.00100
+  Epoch [6/50]  Train Loss: 0.4238  Acc: 85.0%  |  Val Loss: 0.5732  Acc: 80.6%  LR: 0.00100
+  Epoch [7/50]  Train Loss: 0.4749  Acc: 82.2%  |  Val Loss: 0.5634  Acc: 83.3%  LR: 0.00100
+  Epoch [8/50]  Train Loss: 0.4095  Acc: 85.0%  |  Val Loss: 0.5671  Acc: 80.6%  LR: 0.00100
+  Epoch [9/50]  Train Loss: 0.3946  Acc: 88.8%  |  Val Loss: 0.5576  Acc: 83.3%  LR: 0.00100
+  Epoch [10/50]  Train Loss: 0.3686  Acc: 91.6%  |  Val Loss: 0.4864  Acc: 86.1%  LR: 0.00100
+  Epoch [11/50]  Train Loss: 0.3603  Acc: 90.7%  |  Val Loss: 0.4365  Acc: 83.3%  LR: 0.00100
+  Epoch [12/50]  Train Loss: 0.3537  Acc: 91.6%  |  Val Loss: 0.4228  Acc: 83.3%  LR: 0.00100
+  Epoch [13/50]  Train Loss: 0.3250  Acc: 92.5%  |  Val Loss: 0.4244  Acc: 83.3%  LR: 0.00100
+  Epoch [14/50]  Train Loss: 0.3468  Acc: 94.4%  |  Val Loss: 0.4320  Acc: 86.1%  LR: 0.00100
+  Epoch [15/50]  Train Loss: 0.3191  Acc: 95.3%  |  Val Loss: 0.4200  Acc: 86.1%  LR: 0.00100
+  Epoch [16/50]  Train Loss: 0.2983  Acc: 94.4%  |  Val Loss: 0.4095  Acc: 83.3%  LR: 0.00100
+  Epoch [17/50]  Train Loss: 0.3175  Acc: 94.4%  |  Val Loss: 0.4029  Acc: 83.3%  LR: 0.00100
+  Epoch [18/50]  Train Loss: 0.2620  Acc: 100.0%  |  Val Loss: 0.3938  Acc: 86.1%  LR: 0.00100
+  Epoch [19/50]  Train Loss: 0.2624  Acc: 97.2%  |  Val Loss: 0.3873  Acc: 83.3%  LR: 0.00100
+  Epoch [20/50]  Train Loss: 0.2946  Acc: 96.3%  |  Val Loss: 0.3852  Acc: 83.3%  LR: 0.00100
+  Epoch [21/50]  Train Loss: 0.2539  Acc: 97.2%  |  Val Loss: 0.3982  Acc: 83.3%  LR: 0.00100
+  Epoch [22/50]  Train Loss: 0.2475  Acc: 100.0%  |  Val Loss: 0.4160  Acc: 86.1%  LR: 0.00100
+  Epoch [23/50]  Train Loss: 0.2590  Acc: 97.2%  |  Val Loss: 0.4130  Acc: 86.1%  LR: 0.00100
+  Epoch [24/50]  Train Loss: 0.2408  Acc: 99.1%  |  Val Loss: 0.3950  Acc: 86.1%  LR: 0.00100
+  Epoch [25/50]  Train Loss: 0.2389  Acc: 99.1%  |  Val Loss: 0.3850  Acc: 86.1%  LR: 0.00050
+  Epoch [26/50]  Train Loss: 0.2441  Acc: 99.1%  |  Val Loss: 0.3806  Acc: 86.1%  LR: 0.00050
+  Epoch [27/50]  Train Loss: 0.2412  Acc: 99.1%  |  Val Loss: 0.3817  Acc: 88.9%  LR: 0.00050
+  Epoch [28/50]  Train Loss: 0.2291  Acc: 99.1%  |  Val Loss: 0.3823  Acc: 88.9%  LR: 0.00050
+  Epoch [29/50]  Train Loss: 0.2402  Acc: 98.1%  |  Val Loss: 0.3878  Acc: 88.9%  LR: 0.00050
+  Epoch [30/50]  Train Loss: 0.2380  Acc: 100.0%  |  Val Loss: 0.3923  Acc: 86.1%  LR: 0.00050
+  Epoch [31/50]  Train Loss: 0.2275  Acc: 100.0%  |  Val Loss: 0.3938  Acc: 88.9%  LR: 0.00025
+  Epoch [32/50]  Train Loss: 0.2451  Acc: 99.1%  |  Val Loss: 0.3947  Acc: 88.9%  LR: 0.00025
+  Epoch [33/50]  Train Loss: 0.2356  Acc: 99.1%  |  Val Loss: 0.3937  Acc: 88.9%  LR: 0.00025
+  Epoch [34/50]  Train Loss: 0.2333  Acc: 100.0%  |  Val Loss: 0.3895  Acc: 86.1%  LR: 0.00025
+  Epoch [35/50]  Train Loss: 0.2399  Acc: 100.0%  |  Val Loss: 0.3875  Acc: 86.1%  LR: 0.00013
+  Epoch [36/50]  Train Loss: 0.2495  Acc: 98.1%  |  Val Loss: 0.3870  Acc: 88.9%  LR: 0.00013
+  Epoch [37/50]  Train Loss: 0.2281  Acc: 100.0%  |  Val Loss: 0.3869  Acc: 88.9%  LR: 0.00013
+  Epoch [38/50]  Train Loss: 0.2326  Acc: 100.0%  |  Val Loss: 0.3863  Acc: 88.9%  LR: 0.00013
+  Epoch [39/50]  Train Loss: 0.2307  Acc: 100.0%  |  Val Loss: 0.3856  Acc: 88.9%  LR: 0.00006
+  Epoch [40/50]  Train Loss: 0.2316  Acc: 100.0%  |  Val Loss: 0.3852  Acc: 88.9%  LR: 0.00006
+  Epoch [41/50]  Train Loss: 0.2283  Acc: 99.1%  |  Val Loss: 0.3850  Acc: 88.9%  LR: 0.00006
+  Early stopping at epoch 41
+
+--- Gradient Boosting ---
+
+--- Learned Stacking (LogisticRegressionCV) ---
+  Meta-learner coefficients: [-0.22055151  0.22082499 -0.23913718  0.23941066]
+
+Fold 4 — CNN-LSTM:
+              precision    recall  f1-score   support
+
+   Non-GenAI       0.86      0.95      0.90        19
+       GenAI       0.93      0.82      0.88        17
+
+    accuracy                           0.89        36
+   macro avg       0.90      0.89      0.89        36
+weighted avg       0.89      0.89      0.89        36
+
+Fold 4 — Gradient Boosting:
+              precision    recall  f1-score   support
+
+   Non-GenAI       0.85      0.89      0.87        19
+       GenAI       0.88      0.82      0.85        17
+
+    accuracy                           0.86        36
+   macro avg       0.86      0.86      0.86        36
+weighted avg       0.86      0.86      0.86        36
+
+Fold 4 — Ensemble (Learned Stacking):
+              precision    recall  f1-score   support
+
+   Non-GenAI       0.86      0.95      0.90        19
+       GenAI       0.93      0.82      0.88        17
+
+    accuracy                           0.89        36
+   macro avg       0.90      0.89      0.89        36
+weighted avg       0.89      0.89      0.89        36
+
+
+==================================================
+FOLD 5/5  — Test size: 35
+==================================================
+Train: 108  Val: 36  Test: 35
+
+--- CNN-LSTM ---
+  Epoch [1/50]  Train Loss: 0.6796  Acc: 57.4%  |  Val Loss: 0.6713  Acc: 66.7%  LR: 0.00100
+  Epoch [2/50]  Train Loss: 0.6433  Acc: 77.8%  |  Val Loss: 0.6611  Acc: 66.7%  LR: 0.00100
+  Epoch [3/50]  Train Loss: 0.5699  Acc: 81.5%  |  Val Loss: 0.6520  Acc: 66.7%  LR: 0.00100
+  Epoch [4/50]  Train Loss: 0.5402  Acc: 82.4%  |  Val Loss: 0.6474  Acc: 69.4%  LR: 0.00100
+  Epoch [5/50]  Train Loss: 0.4551  Acc: 83.3%  |  Val Loss: 0.6497  Acc: 72.2%  LR: 0.00100
+  Epoch [6/50]  Train Loss: 0.4678  Acc: 84.3%  |  Val Loss: 0.6672  Acc: 69.4%  LR: 0.00100
+  Epoch [7/50]  Train Loss: 0.4709  Acc: 84.3%  |  Val Loss: 0.6790  Acc: 75.0%  LR: 0.00100
+  Epoch [8/50]  Train Loss: 0.4475  Acc: 85.2%  |  Val Loss: 0.6664  Acc: 75.0%  LR: 0.00100
+  Epoch [9/50]  Train Loss: 0.4082  Acc: 85.2%  |  Val Loss: 0.6562  Acc: 75.0%  LR: 0.00050
+  Epoch [10/50]  Train Loss: 0.4091  Acc: 85.2%  |  Val Loss: 0.6463  Acc: 75.0%  LR: 0.00050
+  Epoch [11/50]  Train Loss: 0.4046  Acc: 88.9%  |  Val Loss: 0.6334  Acc: 75.0%  LR: 0.00050
+  Epoch [12/50]  Train Loss: 0.3822  Acc: 86.1%  |  Val Loss: 0.6188  Acc: 77.8%  LR: 0.00050
+  Epoch [13/50]  Train Loss: 0.3705  Acc: 88.0%  |  Val Loss: 0.6029  Acc: 80.6%  LR: 0.00050
+  Epoch [14/50]  Train Loss: 0.4173  Acc: 88.9%  |  Val Loss: 0.5895  Acc: 80.6%  LR: 0.00050
+  Epoch [15/50]  Train Loss: 0.3553  Acc: 88.0%  |  Val Loss: 0.5790  Acc: 80.6%  LR: 0.00050
+  Epoch [16/50]  Train Loss: 0.3337  Acc: 92.6%  |  Val Loss: 0.5689  Acc: 80.6%  LR: 0.00050
+  Epoch [17/50]  Train Loss: 0.3392  Acc: 90.7%  |  Val Loss: 0.5576  Acc: 83.3%  LR: 0.00050
+  Epoch [18/50]  Train Loss: 0.3248  Acc: 94.4%  |  Val Loss: 0.5480  Acc: 83.3%  LR: 0.00050
+  Epoch [19/50]  Train Loss: 0.2974  Acc: 96.3%  |  Val Loss: 0.5374  Acc: 83.3%  LR: 0.00050
+  Epoch [20/50]  Train Loss: 0.2985  Acc: 94.4%  |  Val Loss: 0.5293  Acc: 83.3%  LR: 0.00050
+  Epoch [21/50]  Train Loss: 0.2919  Acc: 96.3%  |  Val Loss: 0.5251  Acc: 83.3%  LR: 0.00050
+  Epoch [22/50]  Train Loss: 0.2867  Acc: 97.2%  |  Val Loss: 0.5240  Acc: 83.3%  LR: 0.00050
+  Epoch [23/50]  Train Loss: 0.3016  Acc: 95.4%  |  Val Loss: 0.5172  Acc: 83.3%  LR: 0.00050
+  Epoch [24/50]  Train Loss: 0.2824  Acc: 98.1%  |  Val Loss: 0.5072  Acc: 83.3%  LR: 0.00050
+  Epoch [25/50]  Train Loss: 0.2940  Acc: 94.4%  |  Val Loss: 0.4906  Acc: 83.3%  LR: 0.00050
+  Epoch [26/50]  Train Loss: 0.2647  Acc: 97.2%  |  Val Loss: 0.4789  Acc: 83.3%  LR: 0.00050
+  Epoch [27/50]  Train Loss: 0.2578  Acc: 97.2%  |  Val Loss: 0.4705  Acc: 83.3%  LR: 0.00050
+  Epoch [28/50]  Train Loss: 0.2640  Acc: 99.1%  |  Val Loss: 0.4679  Acc: 83.3%  LR: 0.00050
+  Epoch [29/50]  Train Loss: 0.2360  Acc: 100.0%  |  Val Loss: 0.4690  Acc: 83.3%  LR: 0.00050
+  Epoch [30/50]  Train Loss: 0.2415  Acc: 99.1%  |  Val Loss: 0.4708  Acc: 83.3%  LR: 0.00050
+  Epoch [31/50]  Train Loss: 0.2475  Acc: 99.1%  |  Val Loss: 0.4791  Acc: 86.1%  LR: 0.00050
+  Epoch [32/50]  Train Loss: 0.2643  Acc: 98.1%  |  Val Loss: 0.4796  Acc: 86.1%  LR: 0.00050
+  Epoch [33/50]  Train Loss: 0.2400  Acc: 100.0%  |  Val Loss: 0.4767  Acc: 86.1%  LR: 0.00025
+  Epoch [34/50]  Train Loss: 0.2508  Acc: 99.1%  |  Val Loss: 0.4728  Acc: 86.1%  LR: 0.00025
+  Epoch [35/50]  Train Loss: 0.2325  Acc: 100.0%  |  Val Loss: 0.4650  Acc: 86.1%  LR: 0.00025
+  Epoch [36/50]  Train Loss: 0.2530  Acc: 99.1%  |  Val Loss: 0.4603  Acc: 83.3%  LR: 0.00025
+  Epoch [37/50]  Train Loss: 0.2382  Acc: 100.0%  |  Val Loss: 0.4583  Acc: 86.1%  LR: 0.00025
+  Epoch [38/50]  Train Loss: 0.2371  Acc: 99.1%  |  Val Loss: 0.4584  Acc: 86.1%  LR: 0.00025
+  Epoch [39/50]  Train Loss: 0.2332  Acc: 100.0%  |  Val Loss: 0.4576  Acc: 86.1%  LR: 0.00025
+  Epoch [40/50]  Train Loss: 0.2405  Acc: 98.1%  |  Val Loss: 0.4550  Acc: 86.1%  LR: 0.00025
+  Epoch [41/50]  Train Loss: 0.2369  Acc: 99.1%  |  Val Loss: 0.4513  Acc: 86.1%  LR: 0.00025
+  Epoch [42/50]  Train Loss: 0.2384  Acc: 98.1%  |  Val Loss: 0.4498  Acc: 86.1%  LR: 0.00025
+  Epoch [43/50]  Train Loss: 0.2375  Acc: 100.0%  |  Val Loss: 0.4517  Acc: 86.1%  LR: 0.00025
+  Epoch [44/50]  Train Loss: 0.2460  Acc: 97.2%  |  Val Loss: 0.4548  Acc: 86.1%  LR: 0.00025
+  Epoch [45/50]  Train Loss: 0.2351  Acc: 100.0%  |  Val Loss: 0.4554  Acc: 86.1%  LR: 0.00025
+  Epoch [46/50]  Train Loss: 0.2357  Acc: 100.0%  |  Val Loss: 0.4600  Acc: 86.1%  LR: 0.00025
+  Epoch [47/50]  Train Loss: 0.2299  Acc: 100.0%  |  Val Loss: 0.4621  Acc: 86.1%  LR: 0.00013
+  Epoch [48/50]  Train Loss: 0.2359  Acc: 99.1%  |  Val Loss: 0.4641  Acc: 86.1%  LR: 0.00013
+  Epoch [49/50]  Train Loss: 0.2242  Acc: 100.0%  |  Val Loss: 0.4660  Acc: 86.1%  LR: 0.00013
+  Epoch [50/50]  Train Loss: 0.2301  Acc: 98.1%  |  Val Loss: 0.4665  Acc: 86.1%  LR: 0.00013
+
+--- Gradient Boosting ---
+
+--- Learned Stacking (LogisticRegressionCV) ---
+  Meta-learner coefficients: [-0.20989307  0.20989334 -0.18501157  0.18501184]
+
+Fold 5 — CNN-LSTM:
+              precision    recall  f1-score   support
+
+   Non-GenAI       0.88      0.83      0.86        18
+       GenAI       0.83      0.88      0.86        17
+
+    accuracy                           0.86        35
+   macro avg       0.86      0.86      0.86        35
+weighted avg       0.86      0.86      0.86        35
+
+Fold 5 — Gradient Boosting:
+              precision    recall  f1-score   support
+
+   Non-GenAI       0.81      0.94      0.87        18
+       GenAI       0.93      0.76      0.84        17
+
+    accuracy                           0.86        35
+   macro avg       0.87      0.85      0.86        35
+weighted avg       0.87      0.86      0.86        35
+
+Fold 5 — Ensemble (Learned Stacking):
+              precision    recall  f1-score   support
+
+   Non-GenAI       0.81      0.94      0.87        18
+       GenAI       0.93      0.76      0.84        17
+
+    accuracy                           0.86        35
+   macro avg       0.87      0.85      0.86        35
+weighted avg       0.87      0.86      0.86        35
+
+
+==================================================
+CROSS-VALIDATION SUMMARY
+==================================================
+
+CNN-LSTM:
+  Accuracy : 0.894 ± 0.028
+  F1       : 0.893 ± 0.028
+
+Gradient Boosting:
+  Accuracy : 0.871 ± 0.014
+  F1       : 0.871 ± 0.015
+
+Ensemble (Learned Stacking):
+  Accuracy : 0.894 ± 0.022
+  F1       : 0.893 ± 0.023

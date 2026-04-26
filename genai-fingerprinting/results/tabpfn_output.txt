@@ -1,0 +1,70 @@
+Dataset: 179 samples, 233 features
+Class distribution: Non-GenAI=93, GenAI=86
+
+==================================================
+TabPFN
+==================================================
+  Feature selection: 233 → 60 features
+
+Fold 1 Results:
+              precision    recall  f1-score   support
+
+   Non-GenAI       0.88      0.83      0.86        18
+       GenAI       0.84      0.89      0.86        18
+
+    accuracy                           0.86        36
+   macro avg       0.86      0.86      0.86        36
+weighted avg       0.86      0.86      0.86        36
+
+
+Fold 2 Results:
+              precision    recall  f1-score   support
+
+   Non-GenAI       0.86      1.00      0.93        19
+       GenAI       1.00      0.82      0.90        17
+
+    accuracy                           0.92        36
+   macro avg       0.93      0.91      0.92        36
+weighted avg       0.93      0.92      0.92        36
+
+
+Fold 3 Results:
+              precision    recall  f1-score   support
+
+   Non-GenAI       1.00      0.95      0.97        19
+       GenAI       0.94      1.00      0.97        17
+
+    accuracy                           0.97        36
+   macro avg       0.97      0.97      0.97        36
+weighted avg       0.97      0.97      0.97        36
+
+
+Fold 4 Results:
+              precision    recall  f1-score   support
+
+   Non-GenAI       0.90      0.95      0.92        19
+       GenAI       0.94      0.88      0.91        17
+
+    accuracy                           0.92        36
+   macro avg       0.92      0.91      0.92        36
+weighted avg       0.92      0.92      0.92        36
+
+
+Fold 5 Results:
+              precision    recall  f1-score   support
+
+   Non-GenAI       0.83      0.83      0.83        18
+       GenAI       0.82      0.82      0.82        17
+
+    accuracy                           0.83        35
+   macro avg       0.83      0.83      0.83        35
+weighted avg       0.83      0.83      0.83        35
+
+
+==================================================
+TabPFN — CROSS-VALIDATION SUMMARY
+==================================================
+Weighted precision : 0.902 ± 0.051
+Weighted recall    : 0.899 ± 0.050
+Weighted f1-score  : 0.899 ± 0.050
+Accuracy          : 0.899 ± 0.050
