@@ -1,0 +1,139 @@
+{
+  "scenario_name": "Taiwan \u2194 China",
+  "scenario_question": "If a Taiwan Strait contingency triggered Chinese BGP-routing measures similar to Russia's against Ukraine, what cyber-terrain exposure would Taiwan face?",
+  "method": "Same methodology as the Ukraine analysis: identify state-operated PRC transit ASes (China Telecom AS4134, Unicom AS4837, Mobile AS9808, etc.), measure direct adjacency to Taiwanese target ASes, score exposure.",
+  "adversarial_ases": {
+    "4134": "China Telecom (state-controlled)",
+    "4837": "China Unicom (state-controlled)",
+    "9808": "China Mobile (state-controlled)",
+    "4538": "CERNET (Education and Research, state-controlled)",
+    "7497": "CSTNET \u2014 Computer Network Information Center, CAS",
+    "9929": "China Netcom (now Unicom subsidiary)",
+    "58453": "China Mobile International",
+    "23724": "ChinaNet IDC",
+    "4847": "China Networks Inter-Exchange"
+  },
+  "cities": [
+    {
+      "asn": 3462,
+      "city": "Taipei",
+      "name": "HiNet (Chunghwa Telecom)",
+      "lat": 25.033,
+      "lon": 121.5654,
+      "neighbours_total": 347,
+      "prc_neighbours": [
+        {
+          "asn": 4134,
+          "role": "China Telecom (state-controlled)",
+          "v4_peers": 123,
+          "type": "left"
+        },
+        {
+          "asn": 58453,
+          "role": "China Mobile International",
+          "v4_peers": 1387,
+          "type": "left"
+        },
+        {
+          "asn": 58453,
+          "role": "China Mobile International",
+          "v4_peers": 28509,
+          "type": "right"
+        }
+      ],
+      "prc_count": 3,
+      "exposure_score": 75,
+      "exposure_level": "critical",
+      "sample_prefix": "2001:b000:1000::/36",
+      "mean_peer_count": 357.8
+    },
+    {
+      "asn": 17421,
+      "city": "Kaohsiung",
+      "name": "Taiwan Mobile",
+      "lat": 22.6273,
+      "lon": 120.3014,
+      "neighbours_total": 1,
+      "prc_neighbours": [],
+      "prc_count": 0,
+      "exposure_score": 0,
+      "exposure_level": "nominal",
+      "sample_prefix": "221.120.51.0/24",
+      "mean_peer_count": 356.2
+    },
+    {
+      "asn": 4780,
+      "city": "Taichung",
+      "name": "Sparq / Digital United",
+      "lat": 24.1477,
+      "lon": 120.6736,
+      "neighbours_total": 86,
+      "prc_neighbours": [
+        {
+          "asn": 4134,
+          "role": "China Telecom (state-controlled)",
+          "v4_peers": 283,
+          "type": "left"
+        },
+        {
+          "asn": 58453,
+          "role": "China Mobile International",
+          "v4_peers": 1445,
+          "type": "left"
+        }
+      ],
+      "prc_count": 2,
+      "exposure_score": 50,
+      "exposure_level": "severe",
+      "sample_prefix": "2001:cd8:e000::/48",
+      "mean_peer_count": 360.7
+    },
+    {
+      "asn": 9924,
+      "city": "Hsinchu",
+      "name": "Taiwan Fixed Network",
+      "lat": 24.8138,
+      "lon": 120.9675,
+      "neighbours_total": 111,
+      "prc_neighbours": [
+        {
+          "asn": 4134,
+          "role": "China Telecom (state-controlled)",
+          "v4_peers": 568,
+          "type": "left"
+        },
+        {
+          "asn": 58453,
+          "role": "China Mobile International",
+          "v4_peers": 3742,
+          "type": "left"
+        }
+      ],
+      "prc_count": 2,
+      "exposure_score": 50,
+      "exposure_level": "severe",
+      "sample_prefix": "60.199.230.0/24",
+      "mean_peer_count": 356.1
+    },
+    {
+      "asn": 7539,
+      "city": "New Taipei",
+      "name": "ASNet \u2014 National Centre for HPC",
+      "lat": 25.012,
+      "lon": 121.4658,
+      "neighbours_total": 34,
+      "prc_neighbours": [],
+      "prc_count": 0,
+      "exposure_score": 0,
+      "exposure_level": "nominal",
+      "sample_prefix": "103.124.72.0/22",
+      "mean_peer_count": 353.2
+    }
+  ],
+  "totals": {
+    "total_prc_adjacencies": 7,
+    "exposed_targets": 3,
+    "max_exposure": 75,
+    "mean_exposure": 35
+  }
+}

@@ -1,56 +1,92 @@
 {
-  "Luhansk": {
-    "kinetic_event_count": 368,
-    "first_event": "2021-10-18",
-    "last_event": "2022-06-30",
-    "max_bgp_updates_in_day": 1,
-    "peer_count_min": 338.0,
-    "peer_count_max": 361.0,
-    "peer_count_drop": 23.0
+  "Odessa": {
+    "kinetic_event_count": 880,
+    "first_event": "2021-10-11",
+    "last_event": "2024-12-31",
+    "max_bgp_updates_in_day": 0,
+    "peer_count_min": null,
+    "peer_count_max": null,
+    "peer_count_drop": 0
   },
   "Kherson": {
-    "kinetic_event_count": 119,
-    "first_event": "2022-02-24",
-    "last_event": "2022-06-28",
+    "kinetic_event_count": 16252,
+    "first_event": "2021-10-18",
+    "last_event": "2024-12-31",
     "max_bgp_updates_in_day": 32,
-    "peer_count_min": 319.1,
-    "peer_count_max": 354.8,
-    "peer_count_drop": 35.7
+    "peer_count_min": 315.2,
+    "peer_count_max": 380.2,
+    "peer_count_drop": 65.0
   },
-  "Zaporizhia": {
-    "kinetic_event_count": 79,
-    "first_event": "2022-02-24",
-    "last_event": "2022-06-29",
+  "Dnipro": {
+    "kinetic_event_count": 4262,
+    "first_event": "2021-10-07",
+    "last_event": "2024-12-31",
     "max_bgp_updates_in_day": 0,
-    "peer_count_min": 182.0,
-    "peer_count_max": 354.8,
-    "peer_count_drop": 172.8
-  },
-  "Mariupol": {
-    "kinetic_event_count": 201,
-    "first_event": "2022-02-01",
-    "last_event": "2022-06-30",
-    "max_bgp_updates_in_day": 180,
-    "peer_count_min": 42.7,
-    "peer_count_max": 354.8,
-    "peer_count_drop": 312.1
+    "peer_count_min": null,
+    "peer_count_max": null,
+    "peer_count_drop": 0
   },
   "Donetsk": {
-    "kinetic_event_count": 1317,
+    "kinetic_event_count": 64607,
     "first_event": "2021-10-01",
-    "last_event": "2022-06-30",
+    "last_event": "2024-12-31",
     "max_bgp_updates_in_day": 0,
-    "peer_count_min": 333.6,
-    "peer_count_max": 354.8,
-    "peer_count_drop": 21.2
+    "peer_count_min": 207.4,
+    "peer_count_max": 380.2,
+    "peer_count_drop": 172.8
   },
   "Kharkiv": {
-    "kinetic_event_count": 377,
-    "first_event": "2022-02-16",
-    "last_event": "2022-06-30",
-    "max_bgp_updates_in_day": 158,
-    "peer_count_min": 323.9,
-    "peer_count_max": 354.8,
-    "peer_count_drop": 30.9
+    "kinetic_event_count": 21506,
+    "first_event": "2021-10-02",
+    "last_event": "2024-12-31",
+    "max_bgp_updates_in_day": 171,
+    "peer_count_min": 304.5,
+    "peer_count_max": 378.5,
+    "peer_count_drop": 74.0
+  },
+  "Mariupol": {
+    "kinetic_event_count": 987,
+    "first_event": "2021-10-01",
+    "last_event": "2024-12-23",
+    "max_bgp_updates_in_day": 183,
+    "peer_count_min": 42.7,
+    "peer_count_max": 376.7,
+    "peer_count_drop": 334.0
+  },
+  "Luhansk": {
+    "kinetic_event_count": 5283,
+    "first_event": "2021-10-01",
+    "last_event": "2024-12-31",
+    "max_bgp_updates_in_day": 6,
+    "peer_count_min": 190.9,
+    "peer_count_max": 380.2,
+    "peer_count_drop": 189.3
+  },
+  "Zaporizhia": {
+    "kinetic_event_count": 16783,
+    "first_event": "2021-10-01",
+    "last_event": "2024-12-31",
+    "max_bgp_updates_in_day": 6,
+    "peer_count_min": 182.0,
+    "peer_count_max": 379.8,
+    "peer_count_drop": 197.8
+  },
+  "Mykolaiv": {
+    "kinetic_event_count": 4516,
+    "first_event": "2021-10-12",
+    "last_event": "2024-12-31",
+    "max_bgp_updates_in_day": 0,
+    "peer_count_min": null,
+    "peer_count_max": null,
+    "peer_count_drop": 0
+  },
+  "Kyiv": {
+    "kinetic_event_count": 2312,
+    "first_event": "2021-10-02",
+    "last_event": "2024-12-31",
+    "max_bgp_updates_in_day": 0,
+    "peer_count_min": null,
+    "peer_count_max": null,
+    "peer_count_drop": 0
   }
 }

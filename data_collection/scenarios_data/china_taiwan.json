@@ -1,0 +1,4383 @@
+{
+  "id": "china_taiwan",
+  "name": "China \u2194 Taiwan",
+  "region": "East Asia",
+  "active_since": "1949-01-01",
+  "primary_actor": "People's Republic of China (PLA, MSS)",
+  "secondary_actor": "Republic of China (Taiwan)",
+  "summary": "Taiwan Strait contingency. Major Taiwanese ASes maintain direct adjacency to PRC state-operated transit (China Telecom, Unicom, Mobile) \u2014 providing immediate intercept and route-hijack capability if Beijing chose to weaponize it.",
+  "data_source": "contingency",
+  "date_start": "2024-01-01",
+  "date_end": "2024-12-31",
+  "adversarial_ases": {
+    "4134": {
+      "operator": "China Telecom",
+      "role": "State-controlled, MSS data access"
+    },
+    "4837": {
+      "operator": "China Unicom",
+      "role": "State-controlled"
+    },
+    "9808": {
+      "operator": "China Mobile",
+      "role": "State-controlled"
+    },
+    "4538": {
+      "operator": "CERNET",
+      "role": "State-controlled academic"
+    },
+    "7497": {
+      "operator": "CSTNET / CAS",
+      "role": "State-controlled research"
+    },
+    "9929": {
+      "operator": "China Netcom",
+      "role": "Unicom subsidiary"
+    },
+    "58453": {
+      "operator": "China Mobile Intl",
+      "role": "State-controlled"
+    },
+    "23724": {
+      "operator": "ChinaNet IDC",
+      "role": "State-controlled"
+    }
+  },
+  "cities": [
+    {
+      "city": "Taipei",
+      "asn": 3462,
+      "lat": 25.033,
+      "lon": 121.5654,
+      "threat": {
+        "score": 65,
+        "level": "severe",
+        "components": {
+          "blackout": 40,
+          "instability": 0.0,
+          "russian_route": 15,
+          "sorm_exposure": 10
+        },
+        "evidence": {
+          "peer_count_drop": 356.5,
+          "peer_min": 31.8,
+          "kinetic_events_local": 0,
+          "max_bgp_updates_in_day": 0,
+          "russian_paths_count": 3,
+          "sorm_ases_observed": [
+            "4134",
+            "58453",
+            "58453"
+          ],
+          "neighbours_total": 347,
+          "adversarial_neighbours": [
+            {
+              "asn": 4134,
+              "operator": "China Telecom",
+              "role": "State-controlled, MSS data access",
+              "v4_peers": 123
+            },
+            {
+              "asn": 58453,
+              "operator": "China Mobile Intl",
+              "role": "State-controlled",
+              "v4_peers": 1387
+            },
+            {
+              "asn": 58453,
+              "operator": "China Mobile Intl",
+              "role": "State-controlled",
+              "v4_peers": 28509
+            }
+          ]
+        }
+      },
+      "peer_timeline": [
+        {
+          "date": "2024-01-02",
+          "peers": 382.67
+        },
+        {
+          "date": "2024-01-02",
+          "peers": 382.67
+        },
+        {
+          "date": "2024-01-06",
+          "peers": 384.5
+        },
+        {
+          "date": "2024-01-06",
+          "peers": 384.5
+        },
+        {
+          "date": "2024-01-12",
+          "peers": 382.83
+        },
+        {
+          "date": "2024-01-12",
+          "peers": 382.83
+        },
+        {
+          "date": "2024-01-14",
+          "peers": 378.33
+        },
+        {
+          "date": "2024-01-14",
+          "peers": 378.33
+        },
+        {
+          "date": "2024-01-16",
+          "peers": 373.67
+        },
+        {
+          "date": "2024-01-16",
+          "peers": 373.67
+        },
+        {
+          "date": "2024-01-20",
+          "peers": 376.33
+        },
+        {
+          "date": "2024-01-20",
+          "peers": 376.33
+        },
+        {
+          "date": "2024-01-22",
+          "peers": 379.17
+        },
+        {
+          "date": "2024-01-22",
+          "peers": 379.17
+        },
+        {
+          "date": "2024-01-24",
+          "peers": 380.83
+        },
+        {
+          "date": "2024-01-24",
+          "peers": 380.83
+        },
+        {
+          "date": "2024-02-01",
+          "peers": 385.5
+        },
+        {
+          "date": "2024-02-01",
+          "peers": 385.5
+        },
+        {
+          "date": "2024-02-03",
+          "peers": 388.33
+        },
+        {
+          "date": "2024-02-03",
+          "peers": 388.33
+        },
+        {
+          "date": "2024-02-09",
+          "peers": 386.0
+        },
+        {
+          "date": "2024-02-09",
+          "peers": 386.0
+        },
+        {
+          "date": "2024-02-23",
+          "peers": 383.67
+        },
+        {
+          "date": "2024-02-23",
+          "peers": 383.67
+        },
+        {
+          "date": "2024-02-27",
+          "peers": 380.33
+        },
+        {
+          "date": "2024-02-27",
+          "peers": 380.33
+        },
+        {
+          "date": "2024-03-14",
+          "peers": 378.0
+        },
+        {
+          "date": "2024-03-14",
+          "peers": 378.0
+        },
+        {
+          "date": "2024-03-30",
+          "peers": 379.83
+        },
+        {
+          "date": "2024-03-30",
+          "peers": 379.83
+        },
+        {
+          "date": "2024-04-13",
+          "peers": 31.8
+        },
+        {
+          "date": "2024-04-17",
+          "peers": 376.83
+        },
+        {
+          "date": "2024-04-17",
+          "peers": 376.83
+        },
+        {
+          "date": "2024-04-25",
+          "peers": 374.33
+        },
+        {
+          "date": "2024-04-25",
+          "peers": 374.33
+        },
+        {
+          "date": "2024-04-27",
+          "peers": 376.83
+        },
+        {
+          "date": "2024-04-27",
+          "peers": 376.83
+        },
+        {
+          "date": "2024-05-01",
+          "peers": 374.83
+        },
+        {
+          "date": "2024-05-01",
+          "peers": 374.83
+        },
+        {
+          "date": "2024-05-03",
+          "peers": 376.83
+        },
+        {
+          "date": "2024-05-03",
+          "peers": 376.83
+        },
+        {
+          "date": "2024-05-13",
+          "peers": 374.83
+        },
+        {
+          "date": "2024-05-13",
+          "peers": 374.83
+        },
+        {
+          "date": "2024-05-15",
+          "peers": 372.5
+        },
+        {
+          "date": "2024-05-15",
+          "peers": 372.5
+        },
+        {
+          "date": "2024-05-17",
+          "peers": 374.67
+        },
+        {
+          "date": "2024-05-17",
+          "peers": 374.67
+        },
+        {
+          "date": "2024-05-23",
+          "peers": 371.5
+        },
+        {
+          "date": "2024-05-23",
+          "peers": 371.5
+        },
+        {
+          "date": "2024-05-25",
+          "peers": 368.0
+        },
+        {
+          "date": "2024-05-25",
+          "peers": 368.0
+        },
+        {
+          "date": "2024-06-04",
+          "peers": 370.5
+        },
+        {
+          "date": "2024-06-04",
+          "peers": 370.5
+        },
+        {
+          "date": "2024-06-14",
+          "peers": 368.33
+        },
+        {
+          "date": "2024-06-14",
+          "peers": 368.33
+        },
+        {
+          "date": "2024-06-18",
+          "peers": 364.83
+        },
+        {
+          "date": "2024-06-18",
+          "peers": 364.83
+        },
+        {
+          "date": "2024-06-20",
+          "peers": 353.5
+        },
+        {
+          "date": "2024-06-20",
+          "peers": 353.5
+        },
+        {
+          "date": "2024-06-22",
+          "peers": 363.0
+        },
+        {
+          "date": "2024-06-22",
+          "peers": 363.0
+        },
+        {
+          "date": "2024-06-26",
+          "peers": 360.83
+        },
+        {
+          "date": "2024-06-26",
+          "peers": 360.83
+        },
+        {
+          "date": "2024-07-10",
+          "peers": 359.17
+        },
+        {
+          "date": "2024-07-10",
+          "peers": 359.17
+        },
+        {
+          "date": "2024-07-14",
+          "peers": 362.5
+        },
+        {
+          "date": "2024-07-14",
+          "peers": 362.5
+        },
+        {
+          "date": "2024-07-28",
+          "peers": 360.83
+        },
+        {
+          "date": "2024-07-28",
+          "peers": 360.83
+        },
+        {
+          "date": "2024-08-01",
+          "peers": 359.0
+        },
+        {
+          "date": "2024-08-01",
+          "peers": 359.0
+        },
+        {
+          "date": "2024-08-07",
+          "peers": 361.33
+        },
+        {
+          "date": "2024-08-07",
+          "peers": 361.33
+        },
+        {
+          "date": "2024-08-09",
+          "peers": 364.83
+        },
+        {
+          "date": "2024-08-09",
+          "peers": 364.83
+        },
+        {
+          "date": "2024-08-11",
+          "peers": 366.67
+        },
+        {
+          "date": "2024-08-11",
+          "peers": 366.67
+        },
+        {
+          "date": "2024-08-23",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-08-23",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-09-02",
+          "peers": 366.17
+        },
+        {
+          "date": "2024-09-02",
+          "peers": 366.17
+        },
+        {
+          "date": "2024-09-12",
+          "peers": 363.33
+        },
+        {
+          "date": "2024-09-12",
+          "peers": 364.33
+        },
+        {
+          "date": "2024-09-22",
+          "peers": 361.67
+        },
+        {
+          "date": "2024-09-22",
+          "peers": 361.67
+        },
+        {
+          "date": "2024-09-24",
+          "peers": 326.5
+        },
+        {
+          "date": "2024-09-24",
+          "peers": 326.5
+        },
+        {
+          "date": "2024-09-28",
+          "peers": 324.33
+        },
+        {
+          "date": "2024-09-28",
+          "peers": 324.33
+        },
+        {
+          "date": "2024-10-06",
+          "peers": 328.17
+        },
+        {
+          "date": "2024-10-06",
+          "peers": 328.17
+        },
+        {
+          "date": "2024-10-08",
+          "peers": 331.5
+        },
+        {
+          "date": "2024-10-08",
+          "peers": 331.5
+        },
+        {
+          "date": "2024-10-22",
+          "peers": 329.33
+        },
+        {
+          "date": "2024-10-22",
+          "peers": 329.33
+        },
+        {
+          "date": "2024-10-24",
+          "peers": 331.0
+        },
+        {
+          "date": "2024-10-24",
+          "peers": 331.0
+        },
+        {
+          "date": "2024-10-30",
+          "peers": 334.0
+        },
+        {
+          "date": "2024-10-30",
+          "peers": 334.0
+        },
+        {
+          "date": "2024-11-01",
+          "peers": 336.83
+        },
+        {
+          "date": "2024-11-01",
+          "peers": 336.83
+        },
+        {
+          "date": "2024-11-07",
+          "peers": 345.33
+        },
+        {
+          "date": "2024-11-07",
+          "peers": 345.33
+        },
+        {
+          "date": "2024-11-13",
+          "peers": 347.0
+        },
+        {
+          "date": "2024-11-13",
+          "peers": 347.0
+        },
+        {
+          "date": "2024-11-19",
+          "peers": 348.67
+        },
+        {
+          "date": "2024-11-19",
+          "peers": 348.67
+        },
+        {
+          "date": "2024-11-23",
+          "peers": 350.83
+        },
+        {
+          "date": "2024-11-23",
+          "peers": 350.83
+        },
+        {
+          "date": "2024-11-25",
+          "peers": 348.67
+        },
+        {
+          "date": "2024-11-25",
+          "peers": 348.67
+        },
+        {
+          "date": "2024-11-27",
+          "peers": 351.33
+        },
+        {
+          "date": "2024-11-27",
+          "peers": 351.33
+        },
+        {
+          "date": "2024-12-01",
+          "peers": 353.5
+        },
+        {
+          "date": "2024-12-01",
+          "peers": 353.5
+        },
+        {
+          "date": "2024-12-09",
+          "peers": 350.17
+        },
+        {
+          "date": "2024-12-09",
+          "peers": 350.17
+        },
+        {
+          "date": "2024-12-11",
+          "peers": 352.5
+        },
+        {
+          "date": "2024-12-11",
+          "peers": 352.5
+        },
+        {
+          "date": "2024-12-13",
+          "peers": 356.83
+        },
+        {
+          "date": "2024-12-13",
+          "peers": 356.83
+        },
+        {
+          "date": "2024-12-15",
+          "peers": 358.67
+        },
+        {
+          "date": "2024-12-17",
+          "peers": 360.0
+        },
+        {
+          "date": "2024-12-19",
+          "peers": 361.33
+        },
+        {
+          "date": "2024-12-21",
+          "peers": 363.0
+        },
+        {
+          "date": "2024-12-21",
+          "peers": 363.0
+        },
+        {
+          "date": "2024-12-31",
+          "peers": 361.17
+        },
+        {
+          "date": "2024-12-31",
+          "peers": 361.17
+        }
+      ],
+      "events": [],
+      "kinetic_event_count": 0,
+      "sample_prefix": "2001:b030:8000::/36",
+      "peer_min": 31.8,
+      "peer_max": 388.33,
+      "top_neighbours": [
+        {
+          "asn": 9680,
+          "holder": "HINETUSA HiNet Service Center in U.S.A",
+          "country": "TW",
+          "v4_peers": 98617,
+          "type": "left",
+          "is_adversary": false
+        },
+        {
+          "asn": 17421,
+          "holder": "EMOME-NET Mobile Business Group",
+          "country": "TW",
+          "v4_peers": 65689,
+          "type": "right",
+          "is_adversary": false
+        },
+        {
+          "asn": 134823,
+          "holder": "SDCL-AS-AP Sky Digital Co.",
+          "country": "TW",
+          "v4_peers": 31973,
+          "type": "left",
+          "is_adversary": false
+        },
+        {
+          "asn": 58453,
+          "holder": "CMI-INT-HK China Mobile International Limited",
+          "country": "HK",
+          "v4_peers": 28509,
+          "type": "right",
+          "is_adversary": true
+        },
+        {
+          "asn": 21859,
+          "holder": "ZEN-ECN - Zenlayer Inc",
+          "country": "US",
+          "v4_peers": 14696,
+          "type": "right",
+          "is_adversary": false
+        },
+        {
+          "asn": 131628,
+          "holder": "TAIFUCLOUD-AS-TW Tai-Fu Cloud Co.",
+          "country": "TW",
+          "v4_peers": 13129,
+          "type": "right",
+          "is_adversary": false
+        },
+        {
+          "asn": 20940,
+          "holder": "AKAMAI-ASN1 - Akamai International B.V.",
+          "country": "NL",
+          "v4_peers": 9680,
+          "type": "right",
+          "is_adversary": false
+        },
+        {
+          "asn": 24482,
+          "holder": "SGGS-AS-AP SG.GS",
+          "country": "SG",
+          "v4_peers": 8286,
+          "type": "uncertain",
+          "is_adversary": false
+        },
+        {
+          "asn": 17408,
+          "holder": "ABOVE-AS-AP AboveNet Communications Taiwan",
+          "country": "TW",
+          "v4_peers": 7242,
+          "type": "right",
+          "is_adversary": false
+        },
+        {
+          "asn": 131584,
+          "holder": "TAIFO-AS-TW Taiwan Intelligent Fiber Optic Network Co.",
+          "country": "TW",
+          "v4_peers": 6910,
+          "type": "right",
+          "is_adversary": false
+        },
+        {
+          "asn": 4782,
+          "holder": "GSNET Data Communication Business Group",
+          "country": "TW",
+          "v4_peers": 5927,
+          "type": "right",
+          "is_adversary": false
+        },
+        {
+          "asn": 10310,
+          "holder": "YAHOO-1 - Yahoo Holdings Inc.",
+          "country": "US",
+          "v4_peers": 5590,
+          "type": "right",
+          "is_adversary": false
+        }
+      ],
+      "periods": {
+        "scenario_start": {
+          "description": "Conflict baseline (2024-01)",
+          "date": "2024-01-01",
+          "update_count": 0,
+          "classifications": {
+            "adversary-routed": 3,
+            "neutral": 1
+          },
+          "sample_paths": [
+            "4134 \u2192 3462",
+            "58453 \u2192 3462",
+            "9680 \u2192 3462",
+            "17421 \u2192 3462",
+            "134823 \u2192 3462",
+            "21859 \u2192 3462",
+            "131628 \u2192 3462",
+            "20940 \u2192 3462",
+            "24482 \u2192 3462",
+            "17408 \u2192 3462",
+            "131584 \u2192 3462",
+            "4782 \u2192 3462"
+          ]
+        },
+        "peer_cliff": {
+          "description": "Peer visibility cliff (-352 peers in 7d)",
+          "date": "2024-04-13",
+          "update_count": 0,
+          "classifications": {
+            "adversary-routed": 3,
+            "neutral": 1
+          },
+          "sample_paths": [
+            "4134 \u2192 3462",
+            "58453 \u2192 3462",
+            "9680 \u2192 3462",
+            "17421 \u2192 3462",
+            "134823 \u2192 3462",
+            "21859 \u2192 3462",
+            "131628 \u2192 3462",
+            "20940 \u2192 3462",
+            "24482 \u2192 3462",
+            "17408 \u2192 3462",
+            "131584 \u2192 3462",
+            "4782 \u2192 3462"
+          ]
+        },
+        "recent": {
+          "description": "Recent observation (2024-12)",
+          "date": "2024-12-31",
+          "update_count": 0,
+          "classifications": {
+            "adversary-routed": 3,
+            "neutral": 1
+          },
+          "sample_paths": [
+            "4134 \u2192 3462",
+            "58453 \u2192 3462",
+            "9680 \u2192 3462",
+            "17421 \u2192 3462",
+            "134823 \u2192 3462",
+            "21859 \u2192 3462",
+            "131628 \u2192 3462",
+            "20940 \u2192 3462",
+            "24482 \u2192 3462",
+            "17408 \u2192 3462",
+            "131584 \u2192 3462",
+            "4782 \u2192 3462"
+          ]
+        }
+      },
+      "summary": {
+        "kinetic_event_count": 0,
+        "first_event": null,
+        "last_event": null,
+        "max_bgp_updates_in_day": 0,
+        "peer_count_min": 31.8,
+        "peer_count_max": 388.33,
+        "peer_count_drop": 356.5
+      },
+      "mitigations": {
+        "recommended": [
+          "starlink_alt_transport",
+          "transit_diversity",
+          "ixp_neutral_peering",
+          "ris_monitoring",
+          "as_path_filtering",
+          "mtls_dot_doh",
+          "rpki_path_validation",
+          "rpki_roa",
+          "rov_upstream",
+          "manrs_membership"
+        ],
+        "rationales": {
+          "blackout": "peer count drop of 356.5 indicates effective communications blackout",
+          "adversarial_transit": "3 Russian-routed path(s) observed in BGP samples",
+          "sorm_exposure": "SORM-capable ASes (AS4134, AS58453, AS58453) on observed path \u2192 unencrypted traffic legally subject to interception",
+          "baseline": "minimum BGP-security hygiene applicable to every operator"
+        }
+      }
+    },
+    {
+      "city": "Kaohsiung",
+      "asn": 17421,
+      "lat": 22.6273,
+      "lon": 120.3014,
+      "threat": {
+        "score": 14,
+        "level": "nominal",
+        "components": {
+          "blackout": 14.4,
+          "instability": 0.0,
+          "russian_route": 0,
+          "sorm_exposure": 0
+        },
+        "evidence": {
+          "peer_count_drop": 154.7,
+          "peer_min": 222.0,
+          "kinetic_events_local": 0,
+          "max_bgp_updates_in_day": 0,
+          "russian_paths_count": 0,
+          "sorm_ases_observed": [],
+          "neighbours_total": 1,
+          "adversarial_neighbours": []
+        }
+      },
+      "peer_timeline": [
+        {
+          "date": "2024-01-02",
+          "peers": 376.67
+        },
+        {
+          "date": "2024-01-16",
+          "peers": 371.0
+        },
+        {
+          "date": "2024-01-18",
+          "peers": 373.17
+        },
+        {
+          "date": "2024-01-30",
+          "peers": 375.33
+        },
+        {
+          "date": "2024-02-11",
+          "peers": 373.67
+        },
+        {
+          "date": "2024-02-13",
+          "peers": 375.33
+        },
+        {
+          "date": "2024-02-17",
+          "peers": 372.67
+        },
+        {
+          "date": "2024-02-23",
+          "peers": 370.67
+        },
+        {
+          "date": "2024-03-16",
+          "peers": 369.0
+        },
+        {
+          "date": "2024-03-22",
+          "peers": 371.5
+        },
+        {
+          "date": "2024-04-01",
+          "peers": 373.17
+        },
+        {
+          "date": "2024-04-17",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-05-15",
+          "peers": 366.67
+        },
+        {
+          "date": "2024-05-25",
+          "peers": 365.0
+        },
+        {
+          "date": "2024-05-29",
+          "peers": 367.5
+        },
+        {
+          "date": "2024-06-04",
+          "peers": 370.5
+        },
+        {
+          "date": "2024-06-08",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-06-14",
+          "peers": 365.0
+        },
+        {
+          "date": "2024-06-18",
+          "peers": 222.0
+        },
+        {
+          "date": "2024-06-18",
+          "peers": 361.83
+        },
+        {
+          "date": "2024-06-20",
+          "peers": 352.33
+        },
+        {
+          "date": "2024-06-22",
+          "peers": 362.67
+        },
+        {
+          "date": "2024-06-24",
+          "peers": 360.83
+        },
+        {
+          "date": "2024-07-18",
+          "peers": 359.0
+        },
+        {
+          "date": "2024-08-09",
+          "peers": 361.0
+        },
+        {
+          "date": "2024-08-11",
+          "peers": 363.0
+        },
+        {
+          "date": "2024-08-15",
+          "peers": 361.0
+        },
+        {
+          "date": "2024-09-18",
+          "peers": 359.0
+        },
+        {
+          "date": "2024-09-24",
+          "peers": 329.0
+        },
+        {
+          "date": "2024-09-28",
+          "peers": 326.17
+        },
+        {
+          "date": "2024-10-06",
+          "peers": 328.67
+        },
+        {
+          "date": "2024-10-08",
+          "peers": 331.67
+        },
+        {
+          "date": "2024-10-22",
+          "peers": 330.0
+        },
+        {
+          "date": "2024-10-24",
+          "peers": 334.83
+        },
+        {
+          "date": "2024-10-26",
+          "peers": 336.83
+        },
+        {
+          "date": "2024-11-09",
+          "peers": 339.0
+        },
+        {
+          "date": "2024-11-11",
+          "peers": 340.67
+        },
+        {
+          "date": "2024-11-19",
+          "peers": 345.17
+        },
+        {
+          "date": "2024-11-23",
+          "peers": 342.17
+        },
+        {
+          "date": "2024-11-25",
+          "peers": 339.83
+        },
+        {
+          "date": "2024-11-27",
+          "peers": 342.5
+        },
+        {
+          "date": "2024-11-29",
+          "peers": 344.67
+        },
+        {
+          "date": "2024-12-11",
+          "peers": 346.33
+        },
+        {
+          "date": "2024-12-13",
+          "peers": 348.5
+        },
+        {
+          "date": "2024-12-21",
+          "peers": 351.5
+        }
+      ],
+      "events": [],
+      "kinetic_event_count": 0,
+      "sample_prefix": "116.59.0.0/24",
+      "peer_min": 222.0,
+      "peer_max": 376.67,
+      "top_neighbours": [
+        {
+          "asn": 3462,
+          "holder": "HINET Data Communication Business Group",
+          "country": "TW",
+          "v4_peers": 65689,
+          "type": "left",
+          "is_adversary": false
+        },
+        {
+          "asn": 9680,
+          "holder": "HINETUSA HiNet Service Center in U.S.A",
+          "country": "TW",
+          "v4_peers": 98617,
+          "type": "upstream-of-upstream",
+          "is_adversary": false,
+          "via": 3462
+        },
+        {
+          "asn": 134823,
+          "holder": "SDCL-AS-AP Sky Digital Co.",
+          "country": "TW",
+          "v4_peers": 31973,
+          "type": "upstream-of-upstream",
+          "is_adversary": false,
+          "via": 3462
+        },
+        {
+          "asn": 58453,
+          "holder": "CMI-INT-HK China Mobile International Limited",
+          "country": "HK",
+          "v4_peers": 28509,
+          "type": "upstream-of-upstream",
+          "is_adversary": true,
+          "via": 3462
+        },
+        {
+          "asn": 21859,
+          "holder": "ZEN-ECN - Zenlayer Inc",
+          "country": "US",
+          "v4_peers": 14696,
+          "type": "upstream-of-upstream",
+          "is_adversary": false,
+          "via": 3462
+        },
+        {
+          "asn": 131628,
+          "holder": "TAIFUCLOUD-AS-TW Tai-Fu Cloud Co.",
+          "country": "TW",
+          "v4_peers": 13129,
+          "type": "upstream-of-upstream",
+          "is_adversary": false,
+          "via": 3462
+        },
+        {
+          "asn": 20940,
+          "holder": "AKAMAI-ASN1 - Akamai International B.V.",
+          "country": "NL",
+          "v4_peers": 9680,
+          "type": "upstream-of-upstream",
+          "is_adversary": false,
+          "via": 3462
+        },
+        {
+          "asn": 24482,
+          "holder": "SGGS-AS-AP SG.GS",
+          "country": "SG",
+          "v4_peers": 8286,
+          "type": "upstream-of-upstream",
+          "is_adversary": false,
+          "via": 3462
+        },
+        {
+          "asn": 17408,
+          "holder": "ABOVE-AS-AP AboveNet Communications Taiwan",
+          "country": "TW",
+          "v4_peers": 7242,
+          "type": "upstream-of-upstream",
+          "is_adversary": false,
+          "via": 3462
+        },
+        {
+          "asn": 131584,
+          "holder": "TAIFO-AS-TW Taiwan Intelligent Fiber Optic Network Co.",
+          "country": "TW",
+          "v4_peers": 6910,
+          "type": "upstream-of-upstream",
+          "is_adversary": false,
+          "via": 3462
+        }
+      ],
+      "periods": {
+        "scenario_start": {
+          "description": "Conflict baseline (2024-01)",
+          "date": "2024-01-01",
+          "update_count": 0,
+          "classifications": {
+            "adversary-routed": 0,
+            "neutral": 1
+          },
+          "sample_paths": [
+            "3462 \u2192 17421",
+            "9680 \u2192 3462 \u2192 17421",
+            "134823 \u2192 3462 \u2192 17421",
+            "21859 \u2192 3462 \u2192 17421",
+            "131628 \u2192 3462 \u2192 17421",
+            "20940 \u2192 3462 \u2192 17421",
+            "24482 \u2192 3462 \u2192 17421",
+            "17408 \u2192 3462 \u2192 17421",
+            "131584 \u2192 3462 \u2192 17421"
+          ]
+        },
+        "peer_cliff": {
+          "description": "Peer visibility cliff (-146 peers in 7d)",
+          "date": "2024-06-18",
+          "update_count": 0,
+          "classifications": {
+            "adversary-routed": 0,
+            "neutral": 1
+          },
+          "sample_paths": [
+            "3462 \u2192 17421",
+            "9680 \u2192 3462 \u2192 17421",
+            "134823 \u2192 3462 \u2192 17421",
+            "21859 \u2192 3462 \u2192 17421",
+            "131628 \u2192 3462 \u2192 17421",
+            "20940 \u2192 3462 \u2192 17421",
+            "24482 \u2192 3462 \u2192 17421",
+            "17408 \u2192 3462 \u2192 17421",
+            "131584 \u2192 3462 \u2192 17421"
+          ]
+        },
+        "recent": {
+          "description": "Recent observation (2024-12)",
+          "date": "2024-12-31",
+          "update_count": 0,
+          "classifications": {
+            "adversary-routed": 0,
+            "neutral": 1
+          },
+          "sample_paths": [
+            "3462 \u2192 17421",
+            "9680 \u2192 3462 \u2192 17421",
+            "134823 \u2192 3462 \u2192 17421",
+            "21859 \u2192 3462 \u2192 17421",
+            "131628 \u2192 3462 \u2192 17421",
+            "20940 \u2192 3462 \u2192 17421",
+            "24482 \u2192 3462 \u2192 17421",
+            "17408 \u2192 3462 \u2192 17421",
+            "131584 \u2192 3462 \u2192 17421"
+          ]
+        }
+      },
+      "summary": {
+        "kinetic_event_count": 0,
+        "first_event": null,
+        "last_event": null,
+        "max_bgp_updates_in_day": 0,
+        "peer_count_min": 222.0,
+        "peer_count_max": 376.67,
+        "peer_count_drop": 154.7
+      },
+      "mitigations": {
+        "recommended": [
+          "rpki_roa",
+          "rov_upstream",
+          "manrs_membership",
+          "ris_monitoring"
+        ],
+        "rationales": {
+          "baseline": "minimum BGP-security hygiene applicable to every operator"
+        }
+      }
+    },
+    {
+      "city": "Taichung",
+      "asn": 4780,
+      "lat": 24.1477,
+      "lon": 120.6736,
+      "threat": {
+        "score": 32,
+        "level": "elevated",
+        "components": {
+          "blackout": 14.4,
+          "instability": 0.0,
+          "russian_route": 10,
+          "sorm_exposure": 8
+        },
+        "evidence": {
+          "peer_count_drop": 154.7,
+          "peer_min": 222.0,
+          "kinetic_events_local": 0,
+          "max_bgp_updates_in_day": 0,
+          "russian_paths_count": 2,
+          "sorm_ases_observed": [
+            "4134",
+            "58453"
+          ],
+          "neighbours_total": 86,
+          "adversarial_neighbours": [
+            {
+              "asn": 4134,
+              "operator": "China Telecom",
+              "role": "State-controlled, MSS data access",
+              "v4_peers": 283
+            },
+            {
+              "asn": 58453,
+              "operator": "China Mobile Intl",
+              "role": "State-controlled",
+              "v4_peers": 1445
+            }
+          ]
+        }
+      },
+      "peer_timeline": [
+        {
+          "date": "2024-01-02",
+          "peers": 376.67
+        },
+        {
+          "date": "2024-01-02",
+          "peers": 376.67
+        },
+        {
+          "date": "2024-01-02",
+          "peers": 376.67
+        },
+        {
+          "date": "2024-01-02",
+          "peers": 376.67
+        },
+        {
+          "date": "2024-01-02",
+          "peers": 376.67
+        },
+        {
+          "date": "2024-01-02",
+          "peers": 376.67
+        },
+        {
+          "date": "2024-01-02",
+          "peers": 376.67
+        },
+        {
+          "date": "2024-01-02",
+          "peers": 376.67
+        },
+        {
+          "date": "2024-01-16",
+          "peers": 371.0
+        },
+        {
+          "date": "2024-01-16",
+          "peers": 371.0
+        },
+        {
+          "date": "2024-01-16",
+          "peers": 371.0
+        },
+        {
+          "date": "2024-01-16",
+          "peers": 371.0
+        },
+        {
+          "date": "2024-01-16",
+          "peers": 371.0
+        },
+        {
+          "date": "2024-01-16",
+          "peers": 371.0
+        },
+        {
+          "date": "2024-01-16",
+          "peers": 371.0
+        },
+        {
+          "date": "2024-01-16",
+          "peers": 371.0
+        },
+        {
+          "date": "2024-01-18",
+          "peers": 373.17
+        },
+        {
+          "date": "2024-01-18",
+          "peers": 373.17
+        },
+        {
+          "date": "2024-01-18",
+          "peers": 373.17
+        },
+        {
+          "date": "2024-01-18",
+          "peers": 373.17
+        },
+        {
+          "date": "2024-01-18",
+          "peers": 373.17
+        },
+        {
+          "date": "2024-01-18",
+          "peers": 373.17
+        },
+        {
+          "date": "2024-01-18",
+          "peers": 373.17
+        },
+        {
+          "date": "2024-01-18",
+          "peers": 373.17
+        },
+        {
+          "date": "2024-01-30",
+          "peers": 375.33
+        },
+        {
+          "date": "2024-01-30",
+          "peers": 375.33
+        },
+        {
+          "date": "2024-01-30",
+          "peers": 375.33
+        },
+        {
+          "date": "2024-01-30",
+          "peers": 375.33
+        },
+        {
+          "date": "2024-01-30",
+          "peers": 375.33
+        },
+        {
+          "date": "2024-01-30",
+          "peers": 375.33
+        },
+        {
+          "date": "2024-01-30",
+          "peers": 375.33
+        },
+        {
+          "date": "2024-01-30",
+          "peers": 375.33
+        },
+        {
+          "date": "2024-02-11",
+          "peers": 373.67
+        },
+        {
+          "date": "2024-02-11",
+          "peers": 373.67
+        },
+        {
+          "date": "2024-02-11",
+          "peers": 373.67
+        },
+        {
+          "date": "2024-02-11",
+          "peers": 373.67
+        },
+        {
+          "date": "2024-02-11",
+          "peers": 373.67
+        },
+        {
+          "date": "2024-02-11",
+          "peers": 373.67
+        },
+        {
+          "date": "2024-02-11",
+          "peers": 373.67
+        },
+        {
+          "date": "2024-02-11",
+          "peers": 373.67
+        },
+        {
+          "date": "2024-02-13",
+          "peers": 375.33
+        },
+        {
+          "date": "2024-02-13",
+          "peers": 375.33
+        },
+        {
+          "date": "2024-02-13",
+          "peers": 375.33
+        },
+        {
+          "date": "2024-02-13",
+          "peers": 375.33
+        },
+        {
+          "date": "2024-02-13",
+          "peers": 375.33
+        },
+        {
+          "date": "2024-02-13",
+          "peers": 375.33
+        },
+        {
+          "date": "2024-02-13",
+          "peers": 375.33
+        },
+        {
+          "date": "2024-02-13",
+          "peers": 375.33
+        },
+        {
+          "date": "2024-02-17",
+          "peers": 372.67
+        },
+        {
+          "date": "2024-02-17",
+          "peers": 372.67
+        },
+        {
+          "date": "2024-02-17",
+          "peers": 372.67
+        },
+        {
+          "date": "2024-02-17",
+          "peers": 372.67
+        },
+        {
+          "date": "2024-02-17",
+          "peers": 372.67
+        },
+        {
+          "date": "2024-02-17",
+          "peers": 372.67
+        },
+        {
+          "date": "2024-02-17",
+          "peers": 372.67
+        },
+        {
+          "date": "2024-02-17",
+          "peers": 372.67
+        },
+        {
+          "date": "2024-02-23",
+          "peers": 370.67
+        },
+        {
+          "date": "2024-02-23",
+          "peers": 370.67
+        },
+        {
+          "date": "2024-02-23",
+          "peers": 370.67
+        },
+        {
+          "date": "2024-02-23",
+          "peers": 370.67
+        },
+        {
+          "date": "2024-02-23",
+          "peers": 370.67
+        },
+        {
+          "date": "2024-02-23",
+          "peers": 370.67
+        },
+        {
+          "date": "2024-02-23",
+          "peers": 370.67
+        },
+        {
+          "date": "2024-02-23",
+          "peers": 370.67
+        },
+        {
+          "date": "2024-03-16",
+          "peers": 369.0
+        },
+        {
+          "date": "2024-03-16",
+          "peers": 369.0
+        },
+        {
+          "date": "2024-03-16",
+          "peers": 369.0
+        },
+        {
+          "date": "2024-03-16",
+          "peers": 369.0
+        },
+        {
+          "date": "2024-03-16",
+          "peers": 369.0
+        },
+        {
+          "date": "2024-03-16",
+          "peers": 369.0
+        },
+        {
+          "date": "2024-03-16",
+          "peers": 369.0
+        },
+        {
+          "date": "2024-03-16",
+          "peers": 369.0
+        },
+        {
+          "date": "2024-03-22",
+          "peers": 371.5
+        },
+        {
+          "date": "2024-03-22",
+          "peers": 371.5
+        },
+        {
+          "date": "2024-03-22",
+          "peers": 371.5
+        },
+        {
+          "date": "2024-03-22",
+          "peers": 371.5
+        },
+        {
+          "date": "2024-03-22",
+          "peers": 371.5
+        },
+        {
+          "date": "2024-03-22",
+          "peers": 371.5
+        },
+        {
+          "date": "2024-03-22",
+          "peers": 371.5
+        },
+        {
+          "date": "2024-03-22",
+          "peers": 371.5
+        },
+        {
+          "date": "2024-04-01",
+          "peers": 373.17
+        },
+        {
+          "date": "2024-04-01",
+          "peers": 373.17
+        },
+        {
+          "date": "2024-04-01",
+          "peers": 373.17
+        },
+        {
+          "date": "2024-04-01",
+          "peers": 373.17
+        },
+        {
+          "date": "2024-04-01",
+          "peers": 373.17
+        },
+        {
+          "date": "2024-04-01",
+          "peers": 373.17
+        },
+        {
+          "date": "2024-04-01",
+          "peers": 373.17
+        },
+        {
+          "date": "2024-04-01",
+          "peers": 373.17
+        },
+        {
+          "date": "2024-04-09",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-04-09",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-04-09",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-04-09",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-04-11",
+          "peers": 372.5
+        },
+        {
+          "date": "2024-04-11",
+          "peers": 372.5
+        },
+        {
+          "date": "2024-04-11",
+          "peers": 372.5
+        },
+        {
+          "date": "2024-04-11",
+          "peers": 372.5
+        },
+        {
+          "date": "2024-04-17",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-04-17",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-04-17",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-04-17",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-04-17",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-04-17",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-04-17",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-04-17",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-05-15",
+          "peers": 366.67
+        },
+        {
+          "date": "2024-05-15",
+          "peers": 366.67
+        },
+        {
+          "date": "2024-05-15",
+          "peers": 366.67
+        },
+        {
+          "date": "2024-05-15",
+          "peers": 366.67
+        },
+        {
+          "date": "2024-05-15",
+          "peers": 366.67
+        },
+        {
+          "date": "2024-05-15",
+          "peers": 366.5
+        },
+        {
+          "date": "2024-05-15",
+          "peers": 366.5
+        },
+        {
+          "date": "2024-05-15",
+          "peers": 366.5
+        },
+        {
+          "date": "2024-05-25",
+          "peers": 365.0
+        },
+        {
+          "date": "2024-05-25",
+          "peers": 365.0
+        },
+        {
+          "date": "2024-05-25",
+          "peers": 365.0
+        },
+        {
+          "date": "2024-05-25",
+          "peers": 365.0
+        },
+        {
+          "date": "2024-05-25",
+          "peers": 365.0
+        },
+        {
+          "date": "2024-05-29",
+          "peers": 367.5
+        },
+        {
+          "date": "2024-05-29",
+          "peers": 367.5
+        },
+        {
+          "date": "2024-05-29",
+          "peers": 367.5
+        },
+        {
+          "date": "2024-05-29",
+          "peers": 367.5
+        },
+        {
+          "date": "2024-05-29",
+          "peers": 367.5
+        },
+        {
+          "date": "2024-05-31",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-05-31",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-05-31",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-06-04",
+          "peers": 370.5
+        },
+        {
+          "date": "2024-06-04",
+          "peers": 370.5
+        },
+        {
+          "date": "2024-06-04",
+          "peers": 370.5
+        },
+        {
+          "date": "2024-06-04",
+          "peers": 370.5
+        },
+        {
+          "date": "2024-06-04",
+          "peers": 370.5
+        },
+        {
+          "date": "2024-06-04",
+          "peers": 370.5
+        },
+        {
+          "date": "2024-06-04",
+          "peers": 370.5
+        },
+        {
+          "date": "2024-06-04",
+          "peers": 370.5
+        },
+        {
+          "date": "2024-06-08",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-06-08",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-06-08",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-06-08",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-06-08",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-06-08",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-06-08",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-06-08",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-06-12",
+          "peers": 366.5
+        },
+        {
+          "date": "2024-06-12",
+          "peers": 366.5
+        },
+        {
+          "date": "2024-06-12",
+          "peers": 366.5
+        },
+        {
+          "date": "2024-06-14",
+          "peers": 365.0
+        },
+        {
+          "date": "2024-06-14",
+          "peers": 365.0
+        },
+        {
+          "date": "2024-06-14",
+          "peers": 365.0
+        },
+        {
+          "date": "2024-06-14",
+          "peers": 364.0
+        },
+        {
+          "date": "2024-06-14",
+          "peers": 364.0
+        },
+        {
+          "date": "2024-06-14",
+          "peers": 363.0
+        },
+        {
+          "date": "2024-06-14",
+          "peers": 363.0
+        },
+        {
+          "date": "2024-06-14",
+          "peers": 363.0
+        },
+        {
+          "date": "2024-06-18",
+          "peers": 361.83
+        },
+        {
+          "date": "2024-06-18",
+          "peers": 361.83
+        },
+        {
+          "date": "2024-06-18",
+          "peers": 361.83
+        },
+        {
+          "date": "2024-06-18",
+          "peers": 222.0
+        },
+        {
+          "date": "2024-06-18",
+          "peers": 361.83
+        },
+        {
+          "date": "2024-06-18",
+          "peers": 361.83
+        },
+        {
+          "date": "2024-06-18",
+          "peers": 360.83
+        },
+        {
+          "date": "2024-06-18",
+          "peers": 360.83
+        },
+        {
+          "date": "2024-06-18",
+          "peers": 360.83
+        },
+        {
+          "date": "2024-06-20",
+          "peers": 352.33
+        },
+        {
+          "date": "2024-06-20",
+          "peers": 352.33
+        },
+        {
+          "date": "2024-06-20",
+          "peers": 352.33
+        },
+        {
+          "date": "2024-06-20",
+          "peers": 352.33
+        },
+        {
+          "date": "2024-06-20",
+          "peers": 352.33
+        },
+        {
+          "date": "2024-06-20",
+          "peers": 351.33
+        },
+        {
+          "date": "2024-06-20",
+          "peers": 351.33
+        },
+        {
+          "date": "2024-06-20",
+          "peers": 351.33
+        },
+        {
+          "date": "2024-06-22",
+          "peers": 362.5
+        },
+        {
+          "date": "2024-06-22",
+          "peers": 362.5
+        },
+        {
+          "date": "2024-06-22",
+          "peers": 362.67
+        },
+        {
+          "date": "2024-06-22",
+          "peers": 362.67
+        },
+        {
+          "date": "2024-06-22",
+          "peers": 362.5
+        },
+        {
+          "date": "2024-06-22",
+          "peers": 361.5
+        },
+        {
+          "date": "2024-06-22",
+          "peers": 361.5
+        },
+        {
+          "date": "2024-06-22",
+          "peers": 361.5
+        },
+        {
+          "date": "2024-06-24",
+          "peers": 360.83
+        },
+        {
+          "date": "2024-06-24",
+          "peers": 360.83
+        },
+        {
+          "date": "2024-06-24",
+          "peers": 360.83
+        },
+        {
+          "date": "2024-06-24",
+          "peers": 360.83
+        },
+        {
+          "date": "2024-06-24",
+          "peers": 360.83
+        },
+        {
+          "date": "2024-06-24",
+          "peers": 359.83
+        },
+        {
+          "date": "2024-06-24",
+          "peers": 359.83
+        },
+        {
+          "date": "2024-06-24",
+          "peers": 359.83
+        },
+        {
+          "date": "2024-07-08",
+          "peers": 359.17
+        },
+        {
+          "date": "2024-07-08",
+          "peers": 359.17
+        },
+        {
+          "date": "2024-07-18",
+          "peers": 359.0
+        },
+        {
+          "date": "2024-07-18",
+          "peers": 359.0
+        },
+        {
+          "date": "2024-07-18",
+          "peers": 359.0
+        },
+        {
+          "date": "2024-08-09",
+          "peers": 361.0
+        },
+        {
+          "date": "2024-08-09",
+          "peers": 361.0
+        },
+        {
+          "date": "2024-08-09",
+          "peers": 361.0
+        },
+        {
+          "date": "2024-08-09",
+          "peers": 361.0
+        },
+        {
+          "date": "2024-08-09",
+          "peers": 361.0
+        },
+        {
+          "date": "2024-08-11",
+          "peers": 363.0
+        },
+        {
+          "date": "2024-08-11",
+          "peers": 363.0
+        },
+        {
+          "date": "2024-08-11",
+          "peers": 363.0
+        },
+        {
+          "date": "2024-08-11",
+          "peers": 363.0
+        },
+        {
+          "date": "2024-08-11",
+          "peers": 363.0
+        },
+        {
+          "date": "2024-08-11",
+          "peers": 363.0
+        },
+        {
+          "date": "2024-08-11",
+          "peers": 363.0
+        },
+        {
+          "date": "2024-08-11",
+          "peers": 363.0
+        },
+        {
+          "date": "2024-08-15",
+          "peers": 361.0
+        },
+        {
+          "date": "2024-08-15",
+          "peers": 361.0
+        },
+        {
+          "date": "2024-08-15",
+          "peers": 361.0
+        },
+        {
+          "date": "2024-08-15",
+          "peers": 361.0
+        },
+        {
+          "date": "2024-08-15",
+          "peers": 361.0
+        },
+        {
+          "date": "2024-08-15",
+          "peers": 361.0
+        },
+        {
+          "date": "2024-08-15",
+          "peers": 361.0
+        },
+        {
+          "date": "2024-08-15",
+          "peers": 361.0
+        },
+        {
+          "date": "2024-09-18",
+          "peers": 359.0
+        },
+        {
+          "date": "2024-09-18",
+          "peers": 359.0
+        },
+        {
+          "date": "2024-09-18",
+          "peers": 359.0
+        },
+        {
+          "date": "2024-09-18",
+          "peers": 359.0
+        },
+        {
+          "date": "2024-09-18",
+          "peers": 359.0
+        },
+        {
+          "date": "2024-09-18",
+          "peers": 359.0
+        },
+        {
+          "date": "2024-09-18",
+          "peers": 359.0
+        },
+        {
+          "date": "2024-09-18",
+          "peers": 359.0
+        },
+        {
+          "date": "2024-09-18",
+          "peers": 359.0
+        },
+        {
+          "date": "2024-09-24",
+          "peers": 329.0
+        },
+        {
+          "date": "2024-09-24",
+          "peers": 329.0
+        },
+        {
+          "date": "2024-09-24",
+          "peers": 329.0
+        },
+        {
+          "date": "2024-09-24",
+          "peers": 329.0
+        },
+        {
+          "date": "2024-09-24",
+          "peers": 329.0
+        },
+        {
+          "date": "2024-09-24",
+          "peers": 329.0
+        },
+        {
+          "date": "2024-09-24",
+          "peers": 329.0
+        },
+        {
+          "date": "2024-09-24",
+          "peers": 329.0
+        },
+        {
+          "date": "2024-09-28",
+          "peers": 326.17
+        },
+        {
+          "date": "2024-09-28",
+          "peers": 326.17
+        },
+        {
+          "date": "2024-09-28",
+          "peers": 326.17
+        },
+        {
+          "date": "2024-09-28",
+          "peers": 326.17
+        },
+        {
+          "date": "2024-09-28",
+          "peers": 326.17
+        },
+        {
+          "date": "2024-09-28",
+          "peers": 326.17
+        },
+        {
+          "date": "2024-09-28",
+          "peers": 326.17
+        },
+        {
+          "date": "2024-09-28",
+          "peers": 326.17
+        },
+        {
+          "date": "2024-10-06",
+          "peers": 328.67
+        },
+        {
+          "date": "2024-10-06",
+          "peers": 328.67
+        },
+        {
+          "date": "2024-10-06",
+          "peers": 328.67
+        },
+        {
+          "date": "2024-10-06",
+          "peers": 328.67
+        },
+        {
+          "date": "2024-10-06",
+          "peers": 328.67
+        },
+        {
+          "date": "2024-10-06",
+          "peers": 328.67
+        },
+        {
+          "date": "2024-10-06",
+          "peers": 328.67
+        },
+        {
+          "date": "2024-10-06",
+          "peers": 328.67
+        },
+        {
+          "date": "2024-10-08",
+          "peers": 331.67
+        },
+        {
+          "date": "2024-10-08",
+          "peers": 331.67
+        },
+        {
+          "date": "2024-10-08",
+          "peers": 331.67
+        },
+        {
+          "date": "2024-10-08",
+          "peers": 331.67
+        },
+        {
+          "date": "2024-10-08",
+          "peers": 331.67
+        },
+        {
+          "date": "2024-10-08",
+          "peers": 331.67
+        },
+        {
+          "date": "2024-10-08",
+          "peers": 331.67
+        },
+        {
+          "date": "2024-10-08",
+          "peers": 331.67
+        },
+        {
+          "date": "2024-10-22",
+          "peers": 330.0
+        },
+        {
+          "date": "2024-10-22",
+          "peers": 330.0
+        },
+        {
+          "date": "2024-10-22",
+          "peers": 330.0
+        },
+        {
+          "date": "2024-10-22",
+          "peers": 330.0
+        },
+        {
+          "date": "2024-10-22",
+          "peers": 330.0
+        },
+        {
+          "date": "2024-10-22",
+          "peers": 330.0
+        },
+        {
+          "date": "2024-10-22",
+          "peers": 330.0
+        },
+        {
+          "date": "2024-10-22",
+          "peers": 330.0
+        },
+        {
+          "date": "2024-10-24",
+          "peers": 334.83
+        },
+        {
+          "date": "2024-10-24",
+          "peers": 334.83
+        },
+        {
+          "date": "2024-10-24",
+          "peers": 334.83
+        },
+        {
+          "date": "2024-10-24",
+          "peers": 334.83
+        },
+        {
+          "date": "2024-10-24",
+          "peers": 334.83
+        },
+        {
+          "date": "2024-10-24",
+          "peers": 334.83
+        },
+        {
+          "date": "2024-10-24",
+          "peers": 334.83
+        },
+        {
+          "date": "2024-10-24",
+          "peers": 334.83
+        },
+        {
+          "date": "2024-10-26",
+          "peers": 336.83
+        },
+        {
+          "date": "2024-10-26",
+          "peers": 336.83
+        },
+        {
+          "date": "2024-10-26",
+          "peers": 336.83
+        },
+        {
+          "date": "2024-10-26",
+          "peers": 336.83
+        },
+        {
+          "date": "2024-10-26",
+          "peers": 336.83
+        },
+        {
+          "date": "2024-10-26",
+          "peers": 336.83
+        },
+        {
+          "date": "2024-10-26",
+          "peers": 336.83
+        },
+        {
+          "date": "2024-10-26",
+          "peers": 336.83
+        },
+        {
+          "date": "2024-11-01",
+          "peers": 337.0
+        },
+        {
+          "date": "2024-11-09",
+          "peers": 339.0
+        },
+        {
+          "date": "2024-11-09",
+          "peers": 339.0
+        },
+        {
+          "date": "2024-11-09",
+          "peers": 339.0
+        },
+        {
+          "date": "2024-11-09",
+          "peers": 339.0
+        },
+        {
+          "date": "2024-11-09",
+          "peers": 339.0
+        },
+        {
+          "date": "2024-11-09",
+          "peers": 339.0
+        },
+        {
+          "date": "2024-11-09",
+          "peers": 339.0
+        },
+        {
+          "date": "2024-11-09",
+          "peers": 339.0
+        },
+        {
+          "date": "2024-11-11",
+          "peers": 340.67
+        },
+        {
+          "date": "2024-11-11",
+          "peers": 341.0
+        },
+        {
+          "date": "2024-11-11",
+          "peers": 340.67
+        },
+        {
+          "date": "2024-11-11",
+          "peers": 340.67
+        },
+        {
+          "date": "2024-11-11",
+          "peers": 340.67
+        },
+        {
+          "date": "2024-11-11",
+          "peers": 340.67
+        },
+        {
+          "date": "2024-11-11",
+          "peers": 340.6
+        },
+        {
+          "date": "2024-11-15",
+          "peers": 341.2
+        },
+        {
+          "date": "2024-11-17",
+          "peers": 340.67
+        },
+        {
+          "date": "2024-11-17",
+          "peers": 340.67
+        },
+        {
+          "date": "2024-11-19",
+          "peers": 344.17
+        },
+        {
+          "date": "2024-11-19",
+          "peers": 344.17
+        },
+        {
+          "date": "2024-11-19",
+          "peers": 344.17
+        },
+        {
+          "date": "2024-11-19",
+          "peers": 345.17
+        },
+        {
+          "date": "2024-11-19",
+          "peers": 345.17
+        },
+        {
+          "date": "2024-11-19",
+          "peers": 345.17
+        },
+        {
+          "date": "2024-11-19",
+          "peers": 345.17
+        },
+        {
+          "date": "2024-11-19",
+          "peers": 345.17
+        },
+        {
+          "date": "2024-11-23",
+          "peers": 341.17
+        },
+        {
+          "date": "2024-11-23",
+          "peers": 341.17
+        },
+        {
+          "date": "2024-11-23",
+          "peers": 341.17
+        },
+        {
+          "date": "2024-11-23",
+          "peers": 342.17
+        },
+        {
+          "date": "2024-11-23",
+          "peers": 342.17
+        },
+        {
+          "date": "2024-11-23",
+          "peers": 342.17
+        },
+        {
+          "date": "2024-11-23",
+          "peers": 342.17
+        },
+        {
+          "date": "2024-11-23",
+          "peers": 342.17
+        },
+        {
+          "date": "2024-11-25",
+          "peers": 338.83
+        },
+        {
+          "date": "2024-11-25",
+          "peers": 338.83
+        },
+        {
+          "date": "2024-11-25",
+          "peers": 338.83
+        },
+        {
+          "date": "2024-11-25",
+          "peers": 339.83
+        },
+        {
+          "date": "2024-11-25",
+          "peers": 339.83
+        },
+        {
+          "date": "2024-11-25",
+          "peers": 339.83
+        },
+        {
+          "date": "2024-11-25",
+          "peers": 339.83
+        },
+        {
+          "date": "2024-11-25",
+          "peers": 339.83
+        },
+        {
+          "date": "2024-11-27",
+          "peers": 341.67
+        },
+        {
+          "date": "2024-11-27",
+          "peers": 341.67
+        },
+        {
+          "date": "2024-11-27",
+          "peers": 341.5
+        },
+        {
+          "date": "2024-11-27",
+          "peers": 342.5
+        },
+        {
+          "date": "2024-11-27",
+          "peers": 342.5
+        },
+        {
+          "date": "2024-11-27",
+          "peers": 342.5
+        },
+        {
+          "date": "2024-11-27",
+          "peers": 342.5
+        },
+        {
+          "date": "2024-11-27",
+          "peers": 342.5
+        },
+        {
+          "date": "2024-11-29",
+          "peers": 343.67
+        },
+        {
+          "date": "2024-11-29",
+          "peers": 343.67
+        },
+        {
+          "date": "2024-11-29",
+          "peers": 343.67
+        },
+        {
+          "date": "2024-11-29",
+          "peers": 344.67
+        },
+        {
+          "date": "2024-11-29",
+          "peers": 344.67
+        },
+        {
+          "date": "2024-11-29",
+          "peers": 344.67
+        },
+        {
+          "date": "2024-11-29",
+          "peers": 344.67
+        },
+        {
+          "date": "2024-11-29",
+          "peers": 344.67
+        },
+        {
+          "date": "2024-12-07",
+          "peers": 345.0
+        },
+        {
+          "date": "2024-12-11",
+          "peers": 345.33
+        },
+        {
+          "date": "2024-12-11",
+          "peers": 345.33
+        },
+        {
+          "date": "2024-12-11",
+          "peers": 345.33
+        },
+        {
+          "date": "2024-12-11",
+          "peers": 346.33
+        },
+        {
+          "date": "2024-12-11",
+          "peers": 346.33
+        },
+        {
+          "date": "2024-12-11",
+          "peers": 346.33
+        },
+        {
+          "date": "2024-12-11",
+          "peers": 346.33
+        },
+        {
+          "date": "2024-12-11",
+          "peers": 346.33
+        },
+        {
+          "date": "2024-12-13",
+          "peers": 347.5
+        },
+        {
+          "date": "2024-12-13",
+          "peers": 347.5
+        },
+        {
+          "date": "2024-12-13",
+          "peers": 348.5
+        },
+        {
+          "date": "2024-12-15",
+          "peers": 347.0
+        },
+        {
+          "date": "2024-12-15",
+          "peers": 348.0
+        },
+        {
+          "date": "2024-12-15",
+          "peers": 348.0
+        },
+        {
+          "date": "2024-12-15",
+          "peers": 348.0
+        },
+        {
+          "date": "2024-12-15",
+          "peers": 348.0
+        },
+        {
+          "date": "2024-12-21",
+          "peers": 350.5
+        },
+        {
+          "date": "2024-12-21",
+          "peers": 350.5
+        },
+        {
+          "date": "2024-12-21",
+          "peers": 349.5
+        },
+        {
+          "date": "2024-12-21",
+          "peers": 350.5
+        },
+        {
+          "date": "2024-12-21",
+          "peers": 350.5
+        },
+        {
+          "date": "2024-12-21",
+          "peers": 350.5
+        },
+        {
+          "date": "2024-12-21",
+          "peers": 350.5
+        },
+        {
+          "date": "2024-12-21",
+          "peers": 351.5
+        },
+        {
+          "date": "2024-12-25",
+          "peers": 352.0
+        },
+        {
+          "date": "2024-12-25",
+          "peers": 352.0
+        },
+        {
+          "date": "2024-12-29",
+          "peers": 351.0
+        }
+      ],
+      "events": [],
+      "kinetic_event_count": 0,
+      "sample_prefix": "106.104.224.0/19",
+      "peer_min": 222.0,
+      "peer_max": 376.67,
+      "top_neighbours": [
+        {
+          "asn": 9002,
+          "holder": "RETN-AS - RETN Limited",
+          "country": "GB",
+          "v4_peers": 575249,
+          "type": "left",
+          "is_adversary": false
+        },
+        {
+          "asn": 17709,
+          "holder": "APT Asia Pacific Telecom",
+          "country": "TW",
+          "v4_peers": 457377,
+          "type": "right",
+          "is_adversary": false
+        },
+        {
+          "asn": 9919,
+          "holder": "NCIC-TW New Century InfoComm Tech Co.",
+          "country": "TW",
+          "v4_peers": 318124,
+          "type": "right",
+          "is_adversary": false
+        },
+        {
+          "asn": 6453,
+          "holder": "AS6453 - TATA COMMUNICATIONS AMERICA INC",
+          "country": "US",
+          "v4_peers": 279094,
+          "type": "left",
+          "is_adversary": false
+        },
+        {
+          "asn": 2914,
+          "holder": "NTT-DATA-2914 - NTT America",
+          "country": "US",
+          "v4_peers": 237666,
+          "type": "left",
+          "is_adversary": false
+        },
+        {
+          "asn": 3491,
+          "holder": "PCCWG-APAC-HK PCCW Global HK Ltd.",
+          "country": "HK",
+          "v4_peers": 237627,
+          "type": "left",
+          "is_adversary": false
+        },
+        {
+          "asn": 18049,
+          "holder": "TINP-TW Taiwan Infrastructure Network Technologie",
+          "country": "TW",
+          "v4_peers": 77389,
+          "type": "right",
+          "is_adversary": false
+        },
+        {
+          "asn": 131602,
+          "holder": "HYA Hsin Yeong An Cable TV Co.",
+          "country": "TW",
+          "v4_peers": 73692,
+          "type": "right",
+          "is_adversary": false
+        },
+        {
+          "asn": 6939,
+          "holder": "HURRICANE - Hurricane Electric LLC",
+          "country": "US",
+          "v4_peers": 64516,
+          "type": "left",
+          "is_adversary": false
+        },
+        {
+          "asn": 9674,
+          "holder": "FET-TW Far EastTone Telecommunication Co.",
+          "country": "TW",
+          "v4_peers": 28199,
+          "type": "right",
+          "is_adversary": false
+        },
+        {
+          "asn": 9922,
+          "holder": "NKB-AS-TW New Kaohsiung Broadband LTD.",
+          "country": "TW",
+          "v4_peers": 23089,
+          "type": "right",
+          "is_adversary": false
+        },
+        {
+          "asn": 131634,
+          "holder": "MOBATW-AS MOBA Private Limited Taiwan Branch",
+          "country": "TW",
+          "v4_peers": 12755,
+          "type": "right",
+          "is_adversary": false
+        }
+      ],
+      "periods": {
+        "scenario_start": {
+          "description": "Conflict baseline (2024-01)",
+          "date": "2024-01-01",
+          "update_count": 0,
+          "classifications": {
+            "adversary-routed": 2,
+            "neutral": 1
+          },
+          "sample_paths": [
+            "4134 \u2192 4780",
+            "58453 \u2192 4780",
+            "9002 \u2192 4780",
+            "17709 \u2192 4780",
+            "9919 \u2192 4780",
+            "6453 \u2192 4780",
+            "2914 \u2192 4780",
+            "3491 \u2192 4780",
+            "18049 \u2192 4780",
+            "131602 \u2192 4780",
+            "6939 \u2192 4780",
+            "9674 \u2192 4780"
+          ]
+        },
+        "peer_cliff": {
+          "description": "Peer visibility cliff (-142 peers in 7d)",
+          "date": "2024-06-18",
+          "update_count": 0,
+          "classifications": {
+            "adversary-routed": 2,
+            "neutral": 1
+          },
+          "sample_paths": [
+            "4134 \u2192 4780",
+            "58453 \u2192 4780",
+            "9002 \u2192 4780",
+            "17709 \u2192 4780",
+            "9919 \u2192 4780",
+            "6453 \u2192 4780",
+            "2914 \u2192 4780",
+            "3491 \u2192 4780",
+            "18049 \u2192 4780",
+            "131602 \u2192 4780",
+            "6939 \u2192 4780",
+            "9674 \u2192 4780"
+          ]
+        },
+        "recent": {
+          "description": "Recent observation (2024-12)",
+          "date": "2024-12-31",
+          "update_count": 0,
+          "classifications": {
+            "adversary-routed": 2,
+            "neutral": 1
+          },
+          "sample_paths": [
+            "4134 \u2192 4780",
+            "58453 \u2192 4780",
+            "9002 \u2192 4780",
+            "17709 \u2192 4780",
+            "9919 \u2192 4780",
+            "6453 \u2192 4780",
+            "2914 \u2192 4780",
+            "3491 \u2192 4780",
+            "18049 \u2192 4780",
+            "131602 \u2192 4780",
+            "6939 \u2192 4780",
+            "9674 \u2192 4780"
+          ]
+        }
+      },
+      "summary": {
+        "kinetic_event_count": 0,
+        "first_event": null,
+        "last_event": null,
+        "max_bgp_updates_in_day": 0,
+        "peer_count_min": 222.0,
+        "peer_count_max": 376.67,
+        "peer_count_drop": 154.7
+      },
+      "mitigations": {
+        "recommended": [
+          "as_path_filtering",
+          "transit_diversity",
+          "ixp_neutral_peering",
+          "mtls_dot_doh",
+          "rpki_path_validation",
+          "rpki_roa",
+          "rov_upstream",
+          "manrs_membership",
+          "ris_monitoring"
+        ],
+        "rationales": {
+          "adversarial_transit": "2 Russian-routed path(s) observed in BGP samples",
+          "sorm_exposure": "SORM-capable ASes (AS4134, AS58453) on observed path \u2192 unencrypted traffic legally subject to interception",
+          "baseline": "minimum BGP-security hygiene applicable to every operator"
+        }
+      }
+    },
+    {
+      "city": "Hsinchu",
+      "asn": 9924,
+      "lat": 24.8138,
+      "lon": 120.9675,
+      "threat": {
+        "score": 23,
+        "level": "nominal",
+        "components": {
+          "blackout": 4.7,
+          "instability": 0.0,
+          "russian_route": 10,
+          "sorm_exposure": 8
+        },
+        "evidence": {
+          "peer_count_drop": 50.5,
+          "peer_min": 326.17,
+          "kinetic_events_local": 0,
+          "max_bgp_updates_in_day": 0,
+          "russian_paths_count": 2,
+          "sorm_ases_observed": [
+            "4134",
+            "58453"
+          ],
+          "neighbours_total": 111,
+          "adversarial_neighbours": [
+            {
+              "asn": 4134,
+              "operator": "China Telecom",
+              "role": "State-controlled, MSS data access",
+              "v4_peers": 568
+            },
+            {
+              "asn": 58453,
+              "operator": "China Mobile Intl",
+              "role": "State-controlled",
+              "v4_peers": 3742
+            }
+          ]
+        }
+      },
+      "peer_timeline": [
+        {
+          "date": "2024-01-02",
+          "peers": 376.67
+        },
+        {
+          "date": "2024-01-02",
+          "peers": 376.67
+        },
+        {
+          "date": "2024-01-02",
+          "peers": 376.67
+        },
+        {
+          "date": "2024-01-02",
+          "peers": 376.67
+        },
+        {
+          "date": "2024-01-16",
+          "peers": 371.0
+        },
+        {
+          "date": "2024-01-16",
+          "peers": 371.0
+        },
+        {
+          "date": "2024-01-16",
+          "peers": 371.0
+        },
+        {
+          "date": "2024-01-16",
+          "peers": 371.0
+        },
+        {
+          "date": "2024-01-18",
+          "peers": 373.17
+        },
+        {
+          "date": "2024-01-18",
+          "peers": 373.17
+        },
+        {
+          "date": "2024-01-18",
+          "peers": 373.17
+        },
+        {
+          "date": "2024-01-18",
+          "peers": 373.17
+        },
+        {
+          "date": "2024-01-30",
+          "peers": 375.33
+        },
+        {
+          "date": "2024-01-30",
+          "peers": 375.33
+        },
+        {
+          "date": "2024-01-30",
+          "peers": 375.33
+        },
+        {
+          "date": "2024-01-30",
+          "peers": 375.33
+        },
+        {
+          "date": "2024-02-11",
+          "peers": 373.67
+        },
+        {
+          "date": "2024-02-11",
+          "peers": 373.67
+        },
+        {
+          "date": "2024-02-11",
+          "peers": 373.67
+        },
+        {
+          "date": "2024-02-11",
+          "peers": 373.67
+        },
+        {
+          "date": "2024-02-13",
+          "peers": 375.33
+        },
+        {
+          "date": "2024-02-13",
+          "peers": 375.33
+        },
+        {
+          "date": "2024-02-13",
+          "peers": 375.33
+        },
+        {
+          "date": "2024-02-13",
+          "peers": 375.33
+        },
+        {
+          "date": "2024-02-17",
+          "peers": 372.67
+        },
+        {
+          "date": "2024-02-17",
+          "peers": 372.67
+        },
+        {
+          "date": "2024-02-17",
+          "peers": 372.67
+        },
+        {
+          "date": "2024-02-17",
+          "peers": 372.67
+        },
+        {
+          "date": "2024-02-23",
+          "peers": 370.67
+        },
+        {
+          "date": "2024-02-23",
+          "peers": 370.67
+        },
+        {
+          "date": "2024-02-23",
+          "peers": 370.67
+        },
+        {
+          "date": "2024-02-23",
+          "peers": 370.67
+        },
+        {
+          "date": "2024-03-16",
+          "peers": 369.0
+        },
+        {
+          "date": "2024-03-16",
+          "peers": 369.0
+        },
+        {
+          "date": "2024-03-16",
+          "peers": 369.0
+        },
+        {
+          "date": "2024-03-16",
+          "peers": 369.0
+        },
+        {
+          "date": "2024-03-22",
+          "peers": 371.5
+        },
+        {
+          "date": "2024-03-22",
+          "peers": 371.5
+        },
+        {
+          "date": "2024-03-22",
+          "peers": 371.5
+        },
+        {
+          "date": "2024-03-22",
+          "peers": 371.5
+        },
+        {
+          "date": "2024-04-01",
+          "peers": 373.17
+        },
+        {
+          "date": "2024-04-01",
+          "peers": 373.17
+        },
+        {
+          "date": "2024-04-01",
+          "peers": 373.17
+        },
+        {
+          "date": "2024-04-01",
+          "peers": 373.17
+        },
+        {
+          "date": "2024-04-17",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-04-17",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-04-17",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-04-17",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-05-15",
+          "peers": 366.67
+        },
+        {
+          "date": "2024-05-15",
+          "peers": 366.67
+        },
+        {
+          "date": "2024-05-15",
+          "peers": 366.67
+        },
+        {
+          "date": "2024-05-15",
+          "peers": 366.67
+        },
+        {
+          "date": "2024-05-25",
+          "peers": 365.0
+        },
+        {
+          "date": "2024-05-25",
+          "peers": 365.0
+        },
+        {
+          "date": "2024-05-25",
+          "peers": 365.0
+        },
+        {
+          "date": "2024-05-25",
+          "peers": 365.0
+        },
+        {
+          "date": "2024-05-29",
+          "peers": 367.5
+        },
+        {
+          "date": "2024-05-29",
+          "peers": 367.5
+        },
+        {
+          "date": "2024-05-29",
+          "peers": 367.5
+        },
+        {
+          "date": "2024-05-29",
+          "peers": 367.5
+        },
+        {
+          "date": "2024-06-04",
+          "peers": 370.5
+        },
+        {
+          "date": "2024-06-04",
+          "peers": 370.5
+        },
+        {
+          "date": "2024-06-04",
+          "peers": 370.5
+        },
+        {
+          "date": "2024-06-04",
+          "peers": 370.5
+        },
+        {
+          "date": "2024-06-08",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-06-08",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-06-08",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-06-08",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-06-14",
+          "peers": 365.0
+        },
+        {
+          "date": "2024-06-14",
+          "peers": 365.0
+        },
+        {
+          "date": "2024-06-14",
+          "peers": 365.0
+        },
+        {
+          "date": "2024-06-14",
+          "peers": 365.0
+        },
+        {
+          "date": "2024-06-18",
+          "peers": 361.83
+        },
+        {
+          "date": "2024-06-18",
+          "peers": 361.83
+        },
+        {
+          "date": "2024-06-18",
+          "peers": 361.83
+        },
+        {
+          "date": "2024-06-18",
+          "peers": 361.83
+        },
+        {
+          "date": "2024-06-20",
+          "peers": 352.33
+        },
+        {
+          "date": "2024-06-20",
+          "peers": 352.33
+        },
+        {
+          "date": "2024-06-20",
+          "peers": 352.33
+        },
+        {
+          "date": "2024-06-20",
+          "peers": 352.33
+        },
+        {
+          "date": "2024-06-22",
+          "peers": 362.67
+        },
+        {
+          "date": "2024-06-22",
+          "peers": 362.67
+        },
+        {
+          "date": "2024-06-22",
+          "peers": 362.67
+        },
+        {
+          "date": "2024-06-22",
+          "peers": 362.67
+        },
+        {
+          "date": "2024-06-24",
+          "peers": 360.83
+        },
+        {
+          "date": "2024-06-24",
+          "peers": 360.83
+        },
+        {
+          "date": "2024-06-24",
+          "peers": 360.83
+        },
+        {
+          "date": "2024-06-24",
+          "peers": 360.83
+        },
+        {
+          "date": "2024-07-08",
+          "peers": 359.17
+        },
+        {
+          "date": "2024-07-08",
+          "peers": 359.17
+        },
+        {
+          "date": "2024-07-18",
+          "peers": 359.0
+        },
+        {
+          "date": "2024-07-18",
+          "peers": 359.0
+        },
+        {
+          "date": "2024-08-09",
+          "peers": 361.0
+        },
+        {
+          "date": "2024-08-09",
+          "peers": 361.0
+        },
+        {
+          "date": "2024-08-09",
+          "peers": 361.0
+        },
+        {
+          "date": "2024-08-09",
+          "peers": 361.0
+        },
+        {
+          "date": "2024-08-11",
+          "peers": 363.0
+        },
+        {
+          "date": "2024-08-11",
+          "peers": 363.0
+        },
+        {
+          "date": "2024-08-11",
+          "peers": 363.0
+        },
+        {
+          "date": "2024-08-11",
+          "peers": 363.0
+        },
+        {
+          "date": "2024-08-15",
+          "peers": 361.0
+        },
+        {
+          "date": "2024-08-15",
+          "peers": 361.0
+        },
+        {
+          "date": "2024-08-15",
+          "peers": 361.0
+        },
+        {
+          "date": "2024-08-15",
+          "peers": 361.0
+        },
+        {
+          "date": "2024-09-18",
+          "peers": 359.0
+        },
+        {
+          "date": "2024-09-18",
+          "peers": 359.0
+        },
+        {
+          "date": "2024-09-18",
+          "peers": 359.0
+        },
+        {
+          "date": "2024-09-18",
+          "peers": 359.0
+        },
+        {
+          "date": "2024-09-24",
+          "peers": 329.0
+        },
+        {
+          "date": "2024-09-24",
+          "peers": 329.0
+        },
+        {
+          "date": "2024-09-24",
+          "peers": 329.0
+        },
+        {
+          "date": "2024-09-24",
+          "peers": 329.0
+        },
+        {
+          "date": "2024-09-28",
+          "peers": 326.17
+        },
+        {
+          "date": "2024-09-28",
+          "peers": 326.17
+        },
+        {
+          "date": "2024-09-28",
+          "peers": 326.17
+        },
+        {
+          "date": "2024-09-28",
+          "peers": 326.17
+        },
+        {
+          "date": "2024-10-06",
+          "peers": 328.67
+        },
+        {
+          "date": "2024-10-06",
+          "peers": 328.67
+        },
+        {
+          "date": "2024-10-06",
+          "peers": 328.67
+        },
+        {
+          "date": "2024-10-06",
+          "peers": 328.67
+        },
+        {
+          "date": "2024-10-08",
+          "peers": 331.67
+        },
+        {
+          "date": "2024-10-08",
+          "peers": 331.67
+        },
+        {
+          "date": "2024-10-08",
+          "peers": 331.67
+        },
+        {
+          "date": "2024-10-08",
+          "peers": 331.67
+        },
+        {
+          "date": "2024-10-22",
+          "peers": 330.0
+        },
+        {
+          "date": "2024-10-22",
+          "peers": 330.0
+        },
+        {
+          "date": "2024-10-22",
+          "peers": 330.0
+        },
+        {
+          "date": "2024-10-22",
+          "peers": 330.0
+        },
+        {
+          "date": "2024-10-24",
+          "peers": 334.83
+        },
+        {
+          "date": "2024-10-24",
+          "peers": 334.83
+        },
+        {
+          "date": "2024-10-24",
+          "peers": 334.83
+        },
+        {
+          "date": "2024-10-24",
+          "peers": 334.83
+        },
+        {
+          "date": "2024-10-26",
+          "peers": 336.83
+        },
+        {
+          "date": "2024-10-26",
+          "peers": 336.83
+        },
+        {
+          "date": "2024-10-26",
+          "peers": 336.83
+        },
+        {
+          "date": "2024-10-26",
+          "peers": 336.83
+        },
+        {
+          "date": "2024-11-09",
+          "peers": 339.0
+        },
+        {
+          "date": "2024-11-09",
+          "peers": 339.0
+        },
+        {
+          "date": "2024-11-09",
+          "peers": 339.0
+        },
+        {
+          "date": "2024-11-09",
+          "peers": 339.0
+        },
+        {
+          "date": "2024-11-11",
+          "peers": 340.67
+        },
+        {
+          "date": "2024-11-11",
+          "peers": 340.67
+        },
+        {
+          "date": "2024-11-11",
+          "peers": 340.67
+        },
+        {
+          "date": "2024-11-17",
+          "peers": 340.67
+        },
+        {
+          "date": "2024-11-19",
+          "peers": 345.17
+        },
+        {
+          "date": "2024-11-19",
+          "peers": 345.17
+        },
+        {
+          "date": "2024-11-19",
+          "peers": 344.17
+        },
+        {
+          "date": "2024-11-19",
+          "peers": 345.17
+        },
+        {
+          "date": "2024-11-23",
+          "peers": 342.17
+        },
+        {
+          "date": "2024-11-23",
+          "peers": 342.17
+        },
+        {
+          "date": "2024-11-23",
+          "peers": 341.17
+        },
+        {
+          "date": "2024-11-23",
+          "peers": 342.17
+        },
+        {
+          "date": "2024-11-25",
+          "peers": 339.83
+        },
+        {
+          "date": "2024-11-25",
+          "peers": 339.83
+        },
+        {
+          "date": "2024-11-25",
+          "peers": 338.83
+        },
+        {
+          "date": "2024-11-25",
+          "peers": 339.83
+        },
+        {
+          "date": "2024-11-27",
+          "peers": 342.5
+        },
+        {
+          "date": "2024-11-27",
+          "peers": 342.5
+        },
+        {
+          "date": "2024-11-27",
+          "peers": 341.67
+        },
+        {
+          "date": "2024-11-27",
+          "peers": 342.5
+        },
+        {
+          "date": "2024-11-29",
+          "peers": 344.67
+        },
+        {
+          "date": "2024-11-29",
+          "peers": 344.67
+        },
+        {
+          "date": "2024-11-29",
+          "peers": 343.67
+        },
+        {
+          "date": "2024-11-29",
+          "peers": 344.67
+        },
+        {
+          "date": "2024-12-11",
+          "peers": 346.33
+        },
+        {
+          "date": "2024-12-11",
+          "peers": 346.33
+        },
+        {
+          "date": "2024-12-11",
+          "peers": 345.33
+        },
+        {
+          "date": "2024-12-11",
+          "peers": 346.33
+        },
+        {
+          "date": "2024-12-13",
+          "peers": 348.5
+        },
+        {
+          "date": "2024-12-13",
+          "peers": 348.5
+        },
+        {
+          "date": "2024-12-13",
+          "peers": 347.5
+        },
+        {
+          "date": "2024-12-13",
+          "peers": 348.5
+        },
+        {
+          "date": "2024-12-21",
+          "peers": 351.5
+        },
+        {
+          "date": "2024-12-21",
+          "peers": 351.5
+        },
+        {
+          "date": "2024-12-21",
+          "peers": 350.5
+        },
+        {
+          "date": "2024-12-21",
+          "peers": 351.5
+        }
+      ],
+      "events": [],
+      "kinetic_event_count": 0,
+      "sample_prefix": "60.199.241.0/24",
+      "peer_min": 326.17,
+      "peer_max": 376.67,
+      "top_neighbours": [
+        {
+          "asn": 3491,
+          "holder": "PCCWG-APAC-HK PCCW Global HK Ltd.",
+          "country": "HK",
+          "v4_peers": 396260,
+          "type": "left",
+          "is_adversary": false
+        },
+        {
+          "asn": 24158,
+          "holder": "TAIWANMOBILE-AS Taiwan Mobile Co.",
+          "country": "TW",
+          "v4_peers": 182897,
+          "type": "right",
+          "is_adversary": false
+        },
+        {
+          "asn": 38841,
+          "holder": "KBRO-AS-TW kbro CO. Ltd.",
+          "country": "TW",
+          "v4_peers": 128351,
+          "type": "right",
+          "is_adversary": false
+        },
+        {
+          "asn": 24164,
+          "holder": "UBBNET-AS-TW UNION BROADBAND NETWORK",
+          "country": "TW",
+          "v4_peers": 87199,
+          "type": "right",
+          "is_adversary": false
+        },
+        {
+          "asn": 2914,
+          "holder": "NTT-DATA-2914 - NTT America",
+          "country": "US",
+          "v4_peers": 74632,
+          "type": "left",
+          "is_adversary": false
+        },
+        {
+          "asn": 6939,
+          "holder": "HURRICANE - Hurricane Electric LLC",
+          "country": "US",
+          "v4_peers": 37372,
+          "type": "left",
+          "is_adversary": false
+        },
+        {
+          "asn": 9002,
+          "holder": "RETN-AS - RETN Limited",
+          "country": "GB",
+          "v4_peers": 31411,
+          "type": "left",
+          "is_adversary": false
+        },
+        {
+          "asn": 174,
+          "holder": "COGENT-174 - Cogent Communications",
+          "country": "US",
+          "v4_peers": 27732,
+          "type": "left",
+          "is_adversary": false
+        },
+        {
+          "asn": 3356,
+          "holder": "LEVEL3 - Level 3 Parent",
+          "country": "US",
+          "v4_peers": 24903,
+          "type": "left",
+          "is_adversary": false
+        },
+        {
+          "asn": 24163,
+          "holder": "UBBNET-AS-TW UNION BROADBAND NETWORK",
+          "country": "TW",
+          "v4_peers": 17343,
+          "type": "right",
+          "is_adversary": false
+        },
+        {
+          "asn": 24482,
+          "holder": "SGGS-AS-AP SG.GS",
+          "country": "SG",
+          "v4_peers": 17339,
+          "type": "left",
+          "is_adversary": false
+        },
+        {
+          "asn": 24165,
+          "holder": "UBBNET-AS-TW UNION BROADBAND NETWORK",
+          "country": "TW",
+          "v4_peers": 16568,
+          "type": "right",
+          "is_adversary": false
+        }
+      ],
+      "periods": {
+        "scenario_start": {
+          "description": "Conflict baseline (2024-01)",
+          "date": "2024-01-01",
+          "update_count": 0,
+          "classifications": {
+            "adversary-routed": 2,
+            "neutral": 1
+          },
+          "sample_paths": [
+            "4134 \u2192 9924",
+            "58453 \u2192 9924",
+            "3491 \u2192 9924",
+            "24158 \u2192 9924",
+            "38841 \u2192 9924",
+            "24164 \u2192 9924",
+            "2914 \u2192 9924",
+            "6939 \u2192 9924",
+            "9002 \u2192 9924",
+            "174 \u2192 9924",
+            "3356 \u2192 9924",
+            "24163 \u2192 9924"
+          ]
+        },
+        "peer_cliff": {
+          "description": "Peer visibility cliff (-33 peers in 7d)",
+          "date": "2024-09-28",
+          "update_count": 0,
+          "classifications": {
+            "adversary-routed": 2,
+            "neutral": 1
+          },
+          "sample_paths": [
+            "4134 \u2192 9924",
+            "58453 \u2192 9924",
+            "3491 \u2192 9924",
+            "24158 \u2192 9924",
+            "38841 \u2192 9924",
+            "24164 \u2192 9924",
+            "2914 \u2192 9924",
+            "6939 \u2192 9924",
+            "9002 \u2192 9924",
+            "174 \u2192 9924",
+            "3356 \u2192 9924",
+            "24163 \u2192 9924"
+          ]
+        },
+        "recent": {
+          "description": "Recent observation (2024-12)",
+          "date": "2024-12-31",
+          "update_count": 0,
+          "classifications": {
+            "adversary-routed": 2,
+            "neutral": 1
+          },
+          "sample_paths": [
+            "4134 \u2192 9924",
+            "58453 \u2192 9924",
+            "3491 \u2192 9924",
+            "24158 \u2192 9924",
+            "38841 \u2192 9924",
+            "24164 \u2192 9924",
+            "2914 \u2192 9924",
+            "6939 \u2192 9924",
+            "9002 \u2192 9924",
+            "174 \u2192 9924",
+            "3356 \u2192 9924",
+            "24163 \u2192 9924"
+          ]
+        }
+      },
+      "summary": {
+        "kinetic_event_count": 0,
+        "first_event": null,
+        "last_event": null,
+        "max_bgp_updates_in_day": 0,
+        "peer_count_min": 326.17,
+        "peer_count_max": 376.67,
+        "peer_count_drop": 50.5
+      },
+      "mitigations": {
+        "recommended": [
+          "as_path_filtering",
+          "transit_diversity",
+          "ixp_neutral_peering",
+          "mtls_dot_doh",
+          "rpki_path_validation",
+          "rpki_roa",
+          "rov_upstream",
+          "manrs_membership",
+          "ris_monitoring"
+        ],
+        "rationales": {
+          "adversarial_transit": "2 Russian-routed path(s) observed in BGP samples",
+          "sorm_exposure": "SORM-capable ASes (AS4134, AS58453) on observed path \u2192 unencrypted traffic legally subject to interception",
+          "baseline": "minimum BGP-security hygiene applicable to every operator"
+        }
+      }
+    },
+    {
+      "city": "New Taipei",
+      "asn": 7539,
+      "lat": 25.012,
+      "lon": 121.4658,
+      "threat": {
+        "score": 40,
+        "level": "elevated",
+        "components": {
+          "blackout": 40,
+          "instability": 0.0,
+          "russian_route": 0,
+          "sorm_exposure": 0
+        },
+        "evidence": {
+          "peer_count_drop": 366.7,
+          "peer_min": 10.0,
+          "kinetic_events_local": 0,
+          "max_bgp_updates_in_day": 0,
+          "russian_paths_count": 0,
+          "sorm_ases_observed": [],
+          "neighbours_total": 34,
+          "adversarial_neighbours": []
+        }
+      },
+      "peer_timeline": [
+        {
+          "date": "2024-01-02",
+          "peers": 376.67
+        },
+        {
+          "date": "2024-01-02",
+          "peers": 10.0
+        },
+        {
+          "date": "2024-01-16",
+          "peers": 371.0
+        },
+        {
+          "date": "2024-01-18",
+          "peers": 373.17
+        },
+        {
+          "date": "2024-01-30",
+          "peers": 375.33
+        },
+        {
+          "date": "2024-01-30",
+          "peers": 10.0
+        },
+        {
+          "date": "2024-02-05",
+          "peers": 10.0
+        },
+        {
+          "date": "2024-02-05",
+          "peers": 10.0
+        },
+        {
+          "date": "2024-02-11",
+          "peers": 373.67
+        },
+        {
+          "date": "2024-02-13",
+          "peers": 375.33
+        },
+        {
+          "date": "2024-02-17",
+          "peers": 372.67
+        },
+        {
+          "date": "2024-02-21",
+          "peers": 10.0
+        },
+        {
+          "date": "2024-02-23",
+          "peers": 370.67
+        },
+        {
+          "date": "2024-03-16",
+          "peers": 369.0
+        },
+        {
+          "date": "2024-03-22",
+          "peers": 371.5
+        },
+        {
+          "date": "2024-04-01",
+          "peers": 373.17
+        },
+        {
+          "date": "2024-04-17",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-05-15",
+          "peers": 366.67
+        },
+        {
+          "date": "2024-05-25",
+          "peers": 365.0
+        },
+        {
+          "date": "2024-05-29",
+          "peers": 367.5
+        },
+        {
+          "date": "2024-06-04",
+          "peers": 370.5
+        },
+        {
+          "date": "2024-06-08",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-06-08",
+          "peers": 10.0
+        },
+        {
+          "date": "2024-06-14",
+          "peers": 365.0
+        },
+        {
+          "date": "2024-06-18",
+          "peers": 361.83
+        },
+        {
+          "date": "2024-06-20",
+          "peers": 352.33
+        },
+        {
+          "date": "2024-06-22",
+          "peers": 362.67
+        },
+        {
+          "date": "2024-06-24",
+          "peers": 360.83
+        },
+        {
+          "date": "2024-06-28",
+          "peers": 10.0
+        },
+        {
+          "date": "2024-07-06",
+          "peers": 10.0
+        },
+        {
+          "date": "2024-07-18",
+          "peers": 359.0
+        },
+        {
+          "date": "2024-07-28",
+          "peers": 10.0
+        },
+        {
+          "date": "2024-08-09",
+          "peers": 361.0
+        },
+        {
+          "date": "2024-08-11",
+          "peers": 363.0
+        },
+        {
+          "date": "2024-08-15",
+          "peers": 361.0
+        },
+        {
+          "date": "2024-08-19",
+          "peers": 11.67
+        },
+        {
+          "date": "2024-09-12",
+          "peers": 12.0
+        },
+        {
+          "date": "2024-09-18",
+          "peers": 359.0
+        },
+        {
+          "date": "2024-09-24",
+          "peers": 329.0
+        },
+        {
+          "date": "2024-09-26",
+          "peers": 14.0
+        },
+        {
+          "date": "2024-09-28",
+          "peers": 326.17
+        },
+        {
+          "date": "2024-10-04",
+          "peers": 11.5
+        },
+        {
+          "date": "2024-10-06",
+          "peers": 328.67
+        },
+        {
+          "date": "2024-10-08",
+          "peers": 331.67
+        },
+        {
+          "date": "2024-10-22",
+          "peers": 330.0
+        },
+        {
+          "date": "2024-10-24",
+          "peers": 334.83
+        },
+        {
+          "date": "2024-10-24",
+          "peers": 10.0
+        },
+        {
+          "date": "2024-10-26",
+          "peers": 336.83
+        },
+        {
+          "date": "2024-11-09",
+          "peers": 339.0
+        },
+        {
+          "date": "2024-11-11",
+          "peers": 340.67
+        },
+        {
+          "date": "2024-11-19",
+          "peers": 345.17
+        },
+        {
+          "date": "2024-11-23",
+          "peers": 342.17
+        },
+        {
+          "date": "2024-11-25",
+          "peers": 339.83
+        },
+        {
+          "date": "2024-11-27",
+          "peers": 342.5
+        },
+        {
+          "date": "2024-11-27",
+          "peers": 63.5
+        },
+        {
+          "date": "2024-11-29",
+          "peers": 344.67
+        },
+        {
+          "date": "2024-11-29",
+          "peers": 10.0
+        },
+        {
+          "date": "2024-12-11",
+          "peers": 346.33
+        },
+        {
+          "date": "2024-12-13",
+          "peers": 348.5
+        },
+        {
+          "date": "2024-12-21",
+          "peers": 351.5
+        }
+      ],
+      "events": [],
+      "kinetic_event_count": 0,
+      "sample_prefix": "211.73.64.0/19",
+      "peer_min": 10.0,
+      "peer_max": 376.67,
+      "top_neighbours": [
+        {
+          "asn": 6461,
+          "holder": "ZAYO-6461 - Zayo Bandwidth",
+          "country": "US",
+          "v4_peers": 2633,
+          "type": "left",
+          "is_adversary": false
+        },
+        {
+          "asn": 9924,
+          "holder": "TFN-TW Taiwan Fixed Network",
+          "country": "TW",
+          "v4_peers": 2172,
+          "type": "left",
+          "is_adversary": false
+        },
+        {
+          "asn": 1659,
+          "holder": "ERX-TANET-ASN1 Taiwan Academic Network TANet Information Center",
+          "country": "TW",
+          "v4_peers": 1477,
+          "type": "right",
+          "is_adversary": false
+        },
+        {
+          "asn": 18183,
+          "holder": "NCREE National Center for Research on Earthquake Engineering",
+          "country": "TW",
+          "v4_peers": 948,
+          "type": "right",
+          "is_adversary": false
+        },
+        {
+          "asn": 9264,
+          "holder": "ASNET Academia Sinica",
+          "country": "TW",
+          "v4_peers": 840,
+          "type": "left",
+          "is_adversary": false
+        },
+        {
+          "asn": 38254,
+          "holder": "ITLAB-AS-AP Internet Technology Laboratory",
+          "country": "TW",
+          "v4_peers": 562,
+          "type": "uncertain",
+          "is_adversary": false
+        },
+        {
+          "asn": 7575,
+          "holder": "AARNET-AS-AP Australian Academic and Research Network AARNet",
+          "country": "AU",
+          "v4_peers": 516,
+          "type": "right",
+          "is_adversary": false
+        },
+        {
+          "asn": 18426,
+          "holder": "STPI-AS-TW National Applied Research Laboratories",
+          "country": "TW",
+          "v4_peers": 342,
+          "type": "right",
+          "is_adversary": false
+        },
+        {
+          "asn": 6939,
+          "holder": "HURRICANE - Hurricane Electric LLC",
+          "country": "US",
+          "v4_peers": 225,
+          "type": "left",
+          "is_adversary": false
+        },
+        {
+          "asn": 18181,
+          "holder": "NHRINET National Health Research Institutes",
+          "country": "TW",
+          "v4_peers": 126,
+          "type": "right",
+          "is_adversary": false
+        },
+        {
+          "asn": 17717,
+          "holder": "MOECC-IPV6 Ministry of Education Computer Center Taipei",
+          "country": "TW",
+          "v4_peers": 98,
+          "type": "right",
+          "is_adversary": false
+        },
+        {
+          "asn": 11537,
+          "holder": "INTERNET2-RESEARCH-EDU - Internet2",
+          "country": "US",
+          "v4_peers": 69,
+          "type": "left",
+          "is_adversary": false
+        }
+      ],
+      "periods": {
+        "scenario_start": {
+          "description": "Conflict baseline (2024-01)",
+          "date": "2024-01-01",
+          "update_count": 0,
+          "classifications": {
+            "adversary-routed": 0,
+            "neutral": 1
+          },
+          "sample_paths": [
+            "6461 \u2192 7539",
+            "9924 \u2192 7539",
+            "1659 \u2192 7539",
+            "18183 \u2192 7539",
+            "9264 \u2192 7539",
+            "38254 \u2192 7539",
+            "7575 \u2192 7539",
+            "18426 \u2192 7539",
+            "6939 \u2192 7539",
+            "18181 \u2192 7539",
+            "17717 \u2192 7539",
+            "11537 \u2192 7539"
+          ]
+        },
+        "peer_cliff": {
+          "description": "Peer visibility cliff (-367 peers in 7d)",
+          "date": "2024-02-05",
+          "update_count": 0,
+          "classifications": {
+            "adversary-routed": 0,
+            "neutral": 1
+          },
+          "sample_paths": [
+            "6461 \u2192 7539",
+            "9924 \u2192 7539",
+            "1659 \u2192 7539",
+            "18183 \u2192 7539",
+            "9264 \u2192 7539",
+            "38254 \u2192 7539",
+            "7575 \u2192 7539",
+            "18426 \u2192 7539",
+            "6939 \u2192 7539",
+            "18181 \u2192 7539",
+            "17717 \u2192 7539",
+            "11537 \u2192 7539"
+          ]
+        },
+        "recent": {
+          "description": "Recent observation (2024-12)",
+          "date": "2024-12-31",
+          "update_count": 0,
+          "classifications": {
+            "adversary-routed": 0,
+            "neutral": 1
+          },
+          "sample_paths": [
+            "6461 \u2192 7539",
+            "9924 \u2192 7539",
+            "1659 \u2192 7539",
+            "18183 \u2192 7539",
+            "9264 \u2192 7539",
+            "38254 \u2192 7539",
+            "7575 \u2192 7539",
+            "18426 \u2192 7539",
+            "6939 \u2192 7539",
+            "18181 \u2192 7539",
+            "17717 \u2192 7539",
+            "11537 \u2192 7539"
+          ]
+        }
+      },
+      "summary": {
+        "kinetic_event_count": 0,
+        "first_event": null,
+        "last_event": null,
+        "max_bgp_updates_in_day": 0,
+        "peer_count_min": 10.0,
+        "peer_count_max": 376.67,
+        "peer_count_drop": 366.7
+      },
+      "mitigations": {
+        "recommended": [
+          "starlink_alt_transport",
+          "transit_diversity",
+          "ixp_neutral_peering",
+          "ris_monitoring",
+          "rpki_roa",
+          "rov_upstream",
+          "manrs_membership"
+        ],
+        "rationales": {
+          "blackout": "peer count drop of 366.7 indicates effective communications blackout",
+          "baseline": "minimum BGP-security hygiene applicable to every operator"
+        }
+      }
+    }
+  ],
+  "chokepoints": {
+    "graph_stats": {
+      "ases": 2,
+      "edges": 6,
+      "paths_observed": 0,
+      "source_peers": 2,
+      "ua_targets": 5
+    },
+    "top_chokepoints": [
+      {
+        "asn": 4134,
+        "centrality": 100.0,
+        "raw_score": 3,
+        "neighbors": 568,
+        "holder": "China Telecom",
+        "country": "",
+        "country_name": "",
+        "classification": "Russian",
+        "sorm_role": "State-controlled, MSS data access",
+        "is_adversarial": true
+      },
+      {
+        "asn": 58453,
+        "centrality": 100.0,
+        "raw_score": 3,
+        "neighbors": 3742,
+        "holder": "China Mobile Intl",
+        "country": "",
+        "country_name": "",
+        "classification": "Russian",
+        "sorm_role": "State-controlled",
+        "is_adversarial": true
+      }
+    ],
+    "adversarial_chokepoints": [
+      {
+        "asn": 4134,
+        "centrality": 100.0,
+        "raw_score": 3,
+        "neighbors": 568,
+        "holder": "China Telecom",
+        "country": "",
+        "country_name": "",
+        "classification": "Russian",
+        "sorm_role": "State-controlled, MSS data access",
+        "is_adversarial": true
+      },
+      {
+        "asn": 58453,
+        "centrality": 100.0,
+        "raw_score": 3,
+        "neighbors": 3742,
+        "holder": "China Mobile Intl",
+        "country": "",
+        "country_name": "",
+        "classification": "Russian",
+        "sorm_role": "State-controlled",
+        "is_adversarial": true
+      }
+    ]
+  },
+  "totals": {
+    "city_count": 5,
+    "total_events": 0,
+    "exposed_cities": 3,
+    "critical_cities": 1,
+    "max_threat": 65,
+    "mean_threat": 35,
+    "total_adversarial_adjacencies": 7
+  },
+  "generated_at": "2026-04-26T03:58:27.834861+00:00"
+}

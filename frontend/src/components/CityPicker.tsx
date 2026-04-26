@@ -20,17 +20,26 @@ export function CityPicker({ cities, selected, onSelect }: Props) {
             0
           );
           const peerDrop = city.summary.peer_count_drop ?? 0;
+          const t = city.threat;
           return (
             <li
               key={name}
               className={selected === name ? "active" : ""}
               onClick={() => onSelect(name)}
             >
-              <div className="city-name">{name}</div>
+              <div className="city-row-top">
+                <div className="city-name">{name}</div>
+                <div className={`threat-badge level-${t.level}`}>
+                  {t.score}
+                </div>
+              </div>
               <div className="city-meta">
                 <span>AS{city.asn}</span>
                 <span>{city.events.length} events</span>
                 <span>{totalUpdates} BGP</span>
+              </div>
+              <div className={`threat-level-text level-${t.level}`}>
+                {t.level.toUpperCase()}
               </div>
               {peerDrop > 5 && (
                 <div className="city-warning">⚠ peer drop {peerDrop.toFixed(1)}</div>

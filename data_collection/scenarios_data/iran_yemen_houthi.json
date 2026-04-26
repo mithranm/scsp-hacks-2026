@@ -1,0 +1,4274 @@
+{
+  "id": "iran_yemen_houthi",
+  "name": "Iran proxy network (Yemen, Iraq)",
+  "region": "Middle East",
+  "active_since": "2014-09-01",
+  "primary_actor": "Iran (IRGC) / Houthi forces / Iraqi PMF",
+  "secondary_actor": "Saudi-led coalition / civilian infrastructure",
+  "summary": "Yemen routes through Iran-aligned transit during periods of Saudi blockade. Iran (TIC AS12880) operates the country's single international gateway with full deep-packet inspection.",
+  "data_source": "live",
+  "date_start": "2023-10-01",
+  "date_end": "2024-12-31",
+  "adversarial_ases": {
+    "12880": {
+      "operator": "TIC Iran",
+      "role": "State gateway, full DPI mandated"
+    },
+    "44244": {
+      "operator": "Mobinnet Iran",
+      "role": "Iranian state-aligned"
+    },
+    "58224": {
+      "operator": "Iran Telecom Co.",
+      "role": "State carrier"
+    },
+    "16735": {
+      "operator": "MCI Iran",
+      "role": "Mobile Communication of Iran"
+    },
+    "48159": {
+      "operator": "ITC Iran (research net)",
+      "role": "State research backbone"
+    },
+    "31549": {
+      "operator": "Iran Pars Online",
+      "role": "State-aligned"
+    },
+    "21277": {
+      "operator": "Iraq EarthLink",
+      "role": "Iraqi state-controlled gateway"
+    }
+  },
+  "cities": [
+    {
+      "city": "Sanaa",
+      "asn": 30873,
+      "lat": 15.3694,
+      "lon": 44.191,
+      "threat": {
+        "score": 9,
+        "level": "nominal",
+        "components": {
+          "blackout": 5.2,
+          "instability": 4.0,
+          "russian_route": 0,
+          "sorm_exposure": 0
+        },
+        "evidence": {
+          "peer_count_drop": 55.2,
+          "peer_min": 326.17,
+          "kinetic_events_local": 8,
+          "max_bgp_updates_in_day": 0,
+          "russian_paths_count": 0,
+          "sorm_ases_observed": [],
+          "neighbours_total": 3,
+          "adversarial_neighbours": []
+        }
+      },
+      "peer_timeline": [
+        {
+          "date": "2023-10-02",
+          "peers": 372.17
+        },
+        {
+          "date": "2023-10-04",
+          "peers": 374.67
+        },
+        {
+          "date": "2023-10-06",
+          "peers": 377.0
+        },
+        {
+          "date": "2023-10-26",
+          "peers": 379.0
+        },
+        {
+          "date": "2023-10-30",
+          "peers": 380.67
+        },
+        {
+          "date": "2023-11-13",
+          "peers": 379.0
+        },
+        {
+          "date": "2023-11-17",
+          "peers": 381.33
+        },
+        {
+          "date": "2023-11-23",
+          "peers": 378.0
+        },
+        {
+          "date": "2023-11-29",
+          "peers": 381.33
+        },
+        {
+          "date": "2023-12-03",
+          "peers": 379.67
+        },
+        {
+          "date": "2023-12-21",
+          "peers": 375.67
+        },
+        {
+          "date": "2023-12-23",
+          "peers": 372.67
+        },
+        {
+          "date": "2023-12-29",
+          "peers": 375.83
+        },
+        {
+          "date": "2024-01-06",
+          "peers": 378.0
+        },
+        {
+          "date": "2024-01-14",
+          "peers": 375.83
+        },
+        {
+          "date": "2024-01-16",
+          "peers": 371.0
+        },
+        {
+          "date": "2024-01-18",
+          "peers": 373.17
+        },
+        {
+          "date": "2024-01-30",
+          "peers": 375.33
+        },
+        {
+          "date": "2024-02-11",
+          "peers": 373.67
+        },
+        {
+          "date": "2024-02-13",
+          "peers": 375.33
+        },
+        {
+          "date": "2024-02-17",
+          "peers": 372.67
+        },
+        {
+          "date": "2024-02-23",
+          "peers": 370.67
+        },
+        {
+          "date": "2024-03-14",
+          "peers": 369.0
+        },
+        {
+          "date": "2024-03-22",
+          "peers": 371.5
+        },
+        {
+          "date": "2024-04-01",
+          "peers": 373.17
+        },
+        {
+          "date": "2024-04-17",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-05-15",
+          "peers": 366.33
+        },
+        {
+          "date": "2024-05-31",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-06-04",
+          "peers": 370.5
+        },
+        {
+          "date": "2024-06-08",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-06-14",
+          "peers": 365.0
+        },
+        {
+          "date": "2024-06-18",
+          "peers": 361.83
+        },
+        {
+          "date": "2024-06-20",
+          "peers": 352.33
+        },
+        {
+          "date": "2024-06-22",
+          "peers": 362.67
+        },
+        {
+          "date": "2024-06-24",
+          "peers": 360.83
+        },
+        {
+          "date": "2024-07-18",
+          "peers": 359.0
+        },
+        {
+          "date": "2024-08-09",
+          "peers": 361.0
+        },
+        {
+          "date": "2024-08-11",
+          "peers": 363.0
+        },
+        {
+          "date": "2024-08-15",
+          "peers": 361.0
+        },
+        {
+          "date": "2024-09-18",
+          "peers": 359.0
+        },
+        {
+          "date": "2024-09-24",
+          "peers": 329.0
+        },
+        {
+          "date": "2024-09-28",
+          "peers": 326.17
+        },
+        {
+          "date": "2024-10-06",
+          "peers": 328.67
+        },
+        {
+          "date": "2024-10-08",
+          "peers": 331.67
+        },
+        {
+          "date": "2024-10-22",
+          "peers": 330.0
+        },
+        {
+          "date": "2024-10-24",
+          "peers": 334.83
+        },
+        {
+          "date": "2024-10-26",
+          "peers": 336.83
+        },
+        {
+          "date": "2024-11-09",
+          "peers": 339.0
+        },
+        {
+          "date": "2024-11-11",
+          "peers": 340.67
+        },
+        {
+          "date": "2024-11-19",
+          "peers": 345.17
+        },
+        {
+          "date": "2024-11-23",
+          "peers": 342.17
+        },
+        {
+          "date": "2024-11-25",
+          "peers": 339.83
+        },
+        {
+          "date": "2024-11-27",
+          "peers": 342.5
+        },
+        {
+          "date": "2024-11-29",
+          "peers": 344.67
+        },
+        {
+          "date": "2024-12-11",
+          "peers": 346.33
+        },
+        {
+          "date": "2024-12-13",
+          "peers": 348.5
+        },
+        {
+          "date": "2024-12-21",
+          "peers": 351.5
+        }
+      ],
+      "events": [
+        {
+          "event_date": "2024-03-18",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Civilians",
+          "fatalities": 2,
+          "notes": "CIMP DAILY ALERT 19 MAR 2024"
+        },
+        {
+          "event_date": "2024-12-01",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Civilians",
+          "fatalities": 3,
+          "notes": "CIMP MONTHLY REPORT DECEMBER 2024"
+        },
+        {
+          "event_date": "2024-07-28",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 1,
+          "notes": "Houthis under fire after upholding death sentence on 3 abducted civilians"
+        },
+        {
+          "event_date": "2024-01-11",
+          "event_type": "Battles",
+          "actor1": "Government of United Kingdom, Government of United States of America",
+          "actor2": "Government of Yemen (North Yemen)",
+          "fatalities": 1,
+          "notes": "What Next after U.S. and UK Strikes on the Houthis?;Roundup: U.S., its allies launch strikes against Houthi targets in Yemen;Five dead, six wounded in Yemen air strikes: Huthi official;Houthi official"
+        },
+        {
+          "event_date": "2024-01-22",
+          "event_type": "Battles",
+          "actor1": "Government of United Kingdom, Government of United States of America",
+          "actor2": "Government of Yemen (North Yemen)",
+          "fatalities": 1,
+          "notes": "US, UK conduct strikes against 8 Houthi targets in Yemen;US, Britain launch new joint strikes on Yemen's Huthis;Xinhua world news summary at 0030 GMT, Jan. 23;BBCM Middle East and North Africa Watchli"
+        },
+        {
+          "event_date": "2024-02-03",
+          "event_type": "Battles",
+          "actor1": "Government of United Kingdom, Government of United States of America",
+          "actor2": "Government of Yemen (North Yemen)",
+          "fatalities": 10,
+          "notes": "2nd LD-Writethru: U.S.-British warplanes hit Yemen's Houthi camps"
+        },
+        {
+          "event_date": "2024-03-22",
+          "event_type": "Battles",
+          "actor1": "Government of United Kingdom, Government of United States of America",
+          "actor2": "Government of Yemen (North Yemen)",
+          "fatalities": 1,
+          "notes": "USYEMBi018"
+        },
+        {
+          "event_date": "2024-12-31",
+          "event_type": "Battles",
+          "actor1": "Government of United Kingdom, Government of United States of America",
+          "actor2": "Government of Yemen (North Yemen)",
+          "fatalities": 0,
+          "notes": "2nd LD Writethru: Fresh U.S.-led airstrikes target Houthi military sites in Yemen's capital"
+        }
+      ],
+      "kinetic_event_count": 8,
+      "sample_prefix": "80.253.184.0/21",
+      "peer_min": 326.17,
+      "peer_max": 381.33,
+      "top_neighbours": [
+        {
+          "asn": 15412,
+          "holder": "FLAG-AS - FLAG TELECOM UK LIMITED",
+          "country": "GB",
+          "v4_peers": 23251,
+          "type": "left",
+          "is_adversary": false
+        },
+        {
+          "asn": 8529,
+          "holder": "OMANTEL-AS - Zain Omantel International FZ-LLC",
+          "country": "AE",
+          "v4_peers": 16785,
+          "type": "left",
+          "is_adversary": false
+        },
+        {
+          "asn": 1299,
+          "holder": "TWELVE99 - Arelion Sweden AB",
+          "country": "SE",
+          "v4_peers": 2519,
+          "type": "left",
+          "is_adversary": false
+        },
+        {
+          "asn": 6939,
+          "holder": "HURRICANE - Hurricane Electric LLC",
+          "country": "US",
+          "v4_peers": 491718,
+          "type": "upstream-of-upstream",
+          "is_adversary": false,
+          "via": 15412
+        },
+        {
+          "asn": 9304,
+          "holder": "HUTCHISON-AS-AP HGC Global Communications Limited",
+          "country": "HK",
+          "v4_peers": 282067,
+          "type": "upstream-of-upstream",
+          "is_adversary": false,
+          "via": 15412
+        },
+        {
+          "asn": 18101,
+          "holder": "RELIANCE-COMMUNICATIONS-IN Reliance Communications Ltd.DAKC MUMBAI",
+          "country": "IN",
+          "v4_peers": 277024,
+          "type": "upstream-of-upstream",
+          "is_adversary": false,
+          "via": 15412
+        },
+        {
+          "asn": 9848,
+          "holder": "SEJONGTELECOM-AS-KR SEJONG NETWORKS",
+          "country": "KR",
+          "v4_peers": 127192,
+          "type": "upstream-of-upstream",
+          "is_adversary": false,
+          "via": 15412
+        },
+        {
+          "asn": 8452,
+          "holder": "TE-AS",
+          "country": "EG",
+          "v4_peers": 124735,
+          "type": "upstream-of-upstream",
+          "is_adversary": false,
+          "via": 15412
+        },
+        {
+          "asn": 4826,
+          "holder": "VOCUS-BACKBONE-AS Vocus Connect International Backbone",
+          "country": "AU",
+          "v4_peers": 97446,
+          "type": "upstream-of-upstream",
+          "is_adversary": false,
+          "via": 15412
+        },
+        {
+          "asn": 15802,
+          "holder": "DU-AS1 - Emirates Integrated Telecommunications Company PJSC",
+          "country": "AE",
+          "v4_peers": 83888,
+          "type": "upstream-of-upstream",
+          "is_adversary": false,
+          "via": 15412
+        }
+      ],
+      "periods": {
+        "scenario_start": {
+          "description": "Conflict baseline (2023-10)",
+          "date": "2023-10-01",
+          "update_count": 0,
+          "classifications": {
+            "adversary-routed": 0,
+            "neutral": 1
+          },
+          "sample_paths": [
+            "15412 \u2192 30873",
+            "8529 \u2192 30873",
+            "1299 \u2192 30873",
+            "6939 \u2192 15412 \u2192 30873",
+            "9304 \u2192 15412 \u2192 30873",
+            "18101 \u2192 15412 \u2192 30873",
+            "9848 \u2192 15412 \u2192 30873",
+            "8452 \u2192 15412 \u2192 30873",
+            "4826 \u2192 15412 \u2192 30873",
+            "15802 \u2192 15412 \u2192 30873"
+          ]
+        },
+        "peak_kinetic": {
+          "description": "Peak kinetic intensity",
+          "date": "2024-03-18",
+          "update_count": 2,
+          "classifications": {
+            "adversary-routed": 0,
+            "neutral": 1
+          },
+          "sample_paths": [
+            "15412 \u2192 30873",
+            "8529 \u2192 30873",
+            "1299 \u2192 30873",
+            "6939 \u2192 15412 \u2192 30873",
+            "9304 \u2192 15412 \u2192 30873",
+            "18101 \u2192 15412 \u2192 30873",
+            "9848 \u2192 15412 \u2192 30873",
+            "8452 \u2192 15412 \u2192 30873",
+            "4826 \u2192 15412 \u2192 30873",
+            "15802 \u2192 15412 \u2192 30873"
+          ]
+        },
+        "peer_cliff": {
+          "description": "Peer visibility cliff (-35 peers in 7d)",
+          "date": "2024-09-28",
+          "update_count": 0,
+          "classifications": {
+            "adversary-routed": 0,
+            "neutral": 1
+          },
+          "sample_paths": [
+            "15412 \u2192 30873",
+            "8529 \u2192 30873",
+            "1299 \u2192 30873",
+            "6939 \u2192 15412 \u2192 30873",
+            "9304 \u2192 15412 \u2192 30873",
+            "18101 \u2192 15412 \u2192 30873",
+            "9848 \u2192 15412 \u2192 30873",
+            "8452 \u2192 15412 \u2192 30873",
+            "4826 \u2192 15412 \u2192 30873",
+            "15802 \u2192 15412 \u2192 30873"
+          ]
+        },
+        "recent": {
+          "description": "Recent observation (2024-12)",
+          "date": "2024-12-31",
+          "update_count": 1,
+          "classifications": {
+            "adversary-routed": 0,
+            "neutral": 1
+          },
+          "sample_paths": [
+            "15412 \u2192 30873",
+            "8529 \u2192 30873",
+            "1299 \u2192 30873",
+            "6939 \u2192 15412 \u2192 30873",
+            "9304 \u2192 15412 \u2192 30873",
+            "18101 \u2192 15412 \u2192 30873",
+            "9848 \u2192 15412 \u2192 30873",
+            "8452 \u2192 15412 \u2192 30873",
+            "4826 \u2192 15412 \u2192 30873",
+            "15802 \u2192 15412 \u2192 30873"
+          ]
+        }
+      },
+      "summary": {
+        "kinetic_event_count": 8,
+        "first_event": "2024-01-11",
+        "last_event": "2024-12-31",
+        "max_bgp_updates_in_day": 0,
+        "peer_count_min": 326.17,
+        "peer_count_max": 381.33,
+        "peer_count_drop": 55.2
+      },
+      "mitigations": {
+        "recommended": [
+          "rpki_roa",
+          "rov_upstream",
+          "manrs_membership",
+          "ris_monitoring"
+        ],
+        "rationales": {
+          "baseline": "minimum BGP-security hygiene applicable to every operator"
+        }
+      }
+    },
+    {
+      "city": "Aden",
+      "asn": 30873,
+      "lat": 12.7855,
+      "lon": 45.0187,
+      "threat": {
+        "score": 6,
+        "level": "nominal",
+        "components": {
+          "blackout": 5.2,
+          "instability": 1.0,
+          "russian_route": 0,
+          "sorm_exposure": 0
+        },
+        "evidence": {
+          "peer_count_drop": 55.2,
+          "peer_min": 326.17,
+          "kinetic_events_local": 2,
+          "max_bgp_updates_in_day": 0,
+          "russian_paths_count": 0,
+          "sorm_ases_observed": [],
+          "neighbours_total": 3,
+          "adversarial_neighbours": []
+        }
+      },
+      "peer_timeline": [
+        {
+          "date": "2023-10-02",
+          "peers": 372.17
+        },
+        {
+          "date": "2023-10-04",
+          "peers": 374.67
+        },
+        {
+          "date": "2023-10-06",
+          "peers": 377.0
+        },
+        {
+          "date": "2023-10-26",
+          "peers": 379.0
+        },
+        {
+          "date": "2023-10-30",
+          "peers": 380.67
+        },
+        {
+          "date": "2023-11-13",
+          "peers": 379.0
+        },
+        {
+          "date": "2023-11-17",
+          "peers": 381.33
+        },
+        {
+          "date": "2023-11-23",
+          "peers": 378.0
+        },
+        {
+          "date": "2023-11-29",
+          "peers": 381.33
+        },
+        {
+          "date": "2023-12-03",
+          "peers": 379.67
+        },
+        {
+          "date": "2023-12-21",
+          "peers": 375.67
+        },
+        {
+          "date": "2023-12-23",
+          "peers": 372.67
+        },
+        {
+          "date": "2023-12-29",
+          "peers": 375.83
+        },
+        {
+          "date": "2024-01-06",
+          "peers": 378.0
+        },
+        {
+          "date": "2024-01-14",
+          "peers": 375.83
+        },
+        {
+          "date": "2024-01-16",
+          "peers": 371.0
+        },
+        {
+          "date": "2024-01-18",
+          "peers": 373.17
+        },
+        {
+          "date": "2024-01-30",
+          "peers": 375.33
+        },
+        {
+          "date": "2024-02-11",
+          "peers": 373.67
+        },
+        {
+          "date": "2024-02-13",
+          "peers": 375.33
+        },
+        {
+          "date": "2024-02-17",
+          "peers": 372.67
+        },
+        {
+          "date": "2024-02-23",
+          "peers": 370.67
+        },
+        {
+          "date": "2024-03-14",
+          "peers": 369.0
+        },
+        {
+          "date": "2024-03-22",
+          "peers": 371.5
+        },
+        {
+          "date": "2024-04-01",
+          "peers": 373.17
+        },
+        {
+          "date": "2024-04-17",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-05-15",
+          "peers": 366.33
+        },
+        {
+          "date": "2024-05-31",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-06-04",
+          "peers": 370.5
+        },
+        {
+          "date": "2024-06-08",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-06-14",
+          "peers": 365.0
+        },
+        {
+          "date": "2024-06-18",
+          "peers": 361.83
+        },
+        {
+          "date": "2024-06-20",
+          "peers": 352.33
+        },
+        {
+          "date": "2024-06-22",
+          "peers": 362.67
+        },
+        {
+          "date": "2024-06-24",
+          "peers": 360.83
+        },
+        {
+          "date": "2024-07-18",
+          "peers": 359.0
+        },
+        {
+          "date": "2024-08-09",
+          "peers": 361.0
+        },
+        {
+          "date": "2024-08-11",
+          "peers": 363.0
+        },
+        {
+          "date": "2024-08-15",
+          "peers": 361.0
+        },
+        {
+          "date": "2024-09-18",
+          "peers": 359.0
+        },
+        {
+          "date": "2024-09-24",
+          "peers": 329.0
+        },
+        {
+          "date": "2024-09-28",
+          "peers": 326.17
+        },
+        {
+          "date": "2024-10-06",
+          "peers": 328.67
+        },
+        {
+          "date": "2024-10-08",
+          "peers": 331.67
+        },
+        {
+          "date": "2024-10-22",
+          "peers": 330.0
+        },
+        {
+          "date": "2024-10-24",
+          "peers": 334.83
+        },
+        {
+          "date": "2024-10-26",
+          "peers": 336.83
+        },
+        {
+          "date": "2024-11-09",
+          "peers": 339.0
+        },
+        {
+          "date": "2024-11-11",
+          "peers": 340.67
+        },
+        {
+          "date": "2024-11-19",
+          "peers": 345.17
+        },
+        {
+          "date": "2024-11-23",
+          "peers": 342.17
+        },
+        {
+          "date": "2024-11-25",
+          "peers": 339.83
+        },
+        {
+          "date": "2024-11-27",
+          "peers": 342.5
+        },
+        {
+          "date": "2024-11-29",
+          "peers": 344.67
+        },
+        {
+          "date": "2024-12-11",
+          "peers": 346.33
+        },
+        {
+          "date": "2024-12-13",
+          "peers": 348.5
+        },
+        {
+          "date": "2024-12-21",
+          "peers": 351.5
+        }
+      ],
+      "events": [
+        {
+          "event_date": "2024-02-12",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 3,
+          "notes": "Landmine explosion kills 3 children in southern Yemen"
+        },
+        {
+          "event_date": "2024-07-04",
+          "event_type": "Non-state",
+          "actor1": "Forces of the Presidential Leadership Council",
+          "actor2": "STC",
+          "fatalities": 1,
+          "notes": "One killed and others wounded in clashes in Aden"
+        }
+      ],
+      "kinetic_event_count": 2,
+      "sample_prefix": "80.253.184.0/21",
+      "peer_min": 326.17,
+      "peer_max": 381.33,
+      "top_neighbours": [
+        {
+          "asn": 15412,
+          "holder": "FLAG-AS - FLAG TELECOM UK LIMITED",
+          "country": "GB",
+          "v4_peers": 23251,
+          "type": "left",
+          "is_adversary": false
+        },
+        {
+          "asn": 8529,
+          "holder": "OMANTEL-AS - Zain Omantel International FZ-LLC",
+          "country": "AE",
+          "v4_peers": 16785,
+          "type": "left",
+          "is_adversary": false
+        },
+        {
+          "asn": 1299,
+          "holder": "TWELVE99 - Arelion Sweden AB",
+          "country": "SE",
+          "v4_peers": 2519,
+          "type": "left",
+          "is_adversary": false
+        },
+        {
+          "asn": 6939,
+          "holder": "HURRICANE - Hurricane Electric LLC",
+          "country": "US",
+          "v4_peers": 491718,
+          "type": "upstream-of-upstream",
+          "is_adversary": false,
+          "via": 15412
+        },
+        {
+          "asn": 9304,
+          "holder": "HUTCHISON-AS-AP HGC Global Communications Limited",
+          "country": "HK",
+          "v4_peers": 282067,
+          "type": "upstream-of-upstream",
+          "is_adversary": false,
+          "via": 15412
+        },
+        {
+          "asn": 18101,
+          "holder": "RELIANCE-COMMUNICATIONS-IN Reliance Communications Ltd.DAKC MUMBAI",
+          "country": "IN",
+          "v4_peers": 277024,
+          "type": "upstream-of-upstream",
+          "is_adversary": false,
+          "via": 15412
+        },
+        {
+          "asn": 9848,
+          "holder": "SEJONGTELECOM-AS-KR SEJONG NETWORKS",
+          "country": "KR",
+          "v4_peers": 127192,
+          "type": "upstream-of-upstream",
+          "is_adversary": false,
+          "via": 15412
+        },
+        {
+          "asn": 8452,
+          "holder": "TE-AS",
+          "country": "EG",
+          "v4_peers": 124735,
+          "type": "upstream-of-upstream",
+          "is_adversary": false,
+          "via": 15412
+        },
+        {
+          "asn": 4826,
+          "holder": "VOCUS-BACKBONE-AS Vocus Connect International Backbone",
+          "country": "AU",
+          "v4_peers": 97446,
+          "type": "upstream-of-upstream",
+          "is_adversary": false,
+          "via": 15412
+        },
+        {
+          "asn": 15802,
+          "holder": "DU-AS1 - Emirates Integrated Telecommunications Company PJSC",
+          "country": "AE",
+          "v4_peers": 83888,
+          "type": "upstream-of-upstream",
+          "is_adversary": false,
+          "via": 15412
+        }
+      ],
+      "periods": {
+        "scenario_start": {
+          "description": "Conflict baseline (2023-10)",
+          "date": "2023-10-01",
+          "update_count": 0,
+          "classifications": {
+            "adversary-routed": 0,
+            "neutral": 1
+          },
+          "sample_paths": [
+            "15412 \u2192 30873",
+            "8529 \u2192 30873",
+            "1299 \u2192 30873",
+            "6939 \u2192 15412 \u2192 30873",
+            "9304 \u2192 15412 \u2192 30873",
+            "18101 \u2192 15412 \u2192 30873",
+            "9848 \u2192 15412 \u2192 30873",
+            "8452 \u2192 15412 \u2192 30873",
+            "4826 \u2192 15412 \u2192 30873",
+            "15802 \u2192 15412 \u2192 30873"
+          ]
+        },
+        "peak_kinetic": {
+          "description": "Peak kinetic intensity",
+          "date": "2024-02-12",
+          "update_count": 1,
+          "classifications": {
+            "adversary-routed": 0,
+            "neutral": 1
+          },
+          "sample_paths": [
+            "15412 \u2192 30873",
+            "8529 \u2192 30873",
+            "1299 \u2192 30873",
+            "6939 \u2192 15412 \u2192 30873",
+            "9304 \u2192 15412 \u2192 30873",
+            "18101 \u2192 15412 \u2192 30873",
+            "9848 \u2192 15412 \u2192 30873",
+            "8452 \u2192 15412 \u2192 30873",
+            "4826 \u2192 15412 \u2192 30873",
+            "15802 \u2192 15412 \u2192 30873"
+          ]
+        },
+        "peer_cliff": {
+          "description": "Peer visibility cliff (-35 peers in 7d)",
+          "date": "2024-09-28",
+          "update_count": 0,
+          "classifications": {
+            "adversary-routed": 0,
+            "neutral": 1
+          },
+          "sample_paths": [
+            "15412 \u2192 30873",
+            "8529 \u2192 30873",
+            "1299 \u2192 30873",
+            "6939 \u2192 15412 \u2192 30873",
+            "9304 \u2192 15412 \u2192 30873",
+            "18101 \u2192 15412 \u2192 30873",
+            "9848 \u2192 15412 \u2192 30873",
+            "8452 \u2192 15412 \u2192 30873",
+            "4826 \u2192 15412 \u2192 30873",
+            "15802 \u2192 15412 \u2192 30873"
+          ]
+        },
+        "recent": {
+          "description": "Recent observation (2024-12)",
+          "date": "2024-12-31",
+          "update_count": 0,
+          "classifications": {
+            "adversary-routed": 0,
+            "neutral": 1
+          },
+          "sample_paths": [
+            "15412 \u2192 30873",
+            "8529 \u2192 30873",
+            "1299 \u2192 30873",
+            "6939 \u2192 15412 \u2192 30873",
+            "9304 \u2192 15412 \u2192 30873",
+            "18101 \u2192 15412 \u2192 30873",
+            "9848 \u2192 15412 \u2192 30873",
+            "8452 \u2192 15412 \u2192 30873",
+            "4826 \u2192 15412 \u2192 30873",
+            "15802 \u2192 15412 \u2192 30873"
+          ]
+        }
+      },
+      "summary": {
+        "kinetic_event_count": 2,
+        "first_event": "2024-02-12",
+        "last_event": "2024-07-04",
+        "max_bgp_updates_in_day": 0,
+        "peer_count_min": 326.17,
+        "peer_count_max": 381.33,
+        "peer_count_drop": 55.2
+      },
+      "mitigations": {
+        "recommended": [
+          "rpki_roa",
+          "rov_upstream",
+          "manrs_membership",
+          "ris_monitoring"
+        ],
+        "rationales": {
+          "baseline": "minimum BGP-security hygiene applicable to every operator"
+        }
+      }
+    },
+    {
+      "city": "Hodeida",
+      "asn": 30873,
+      "lat": 14.7978,
+      "lon": 42.9545,
+      "threat": {
+        "score": 19,
+        "level": "nominal",
+        "components": {
+          "blackout": 5.2,
+          "instability": 14.0,
+          "russian_route": 0,
+          "sorm_exposure": 0
+        },
+        "evidence": {
+          "peer_count_drop": 55.2,
+          "peer_min": 326.17,
+          "kinetic_events_local": 28,
+          "max_bgp_updates_in_day": 0,
+          "russian_paths_count": 0,
+          "sorm_ases_observed": [],
+          "neighbours_total": 3,
+          "adversarial_neighbours": []
+        }
+      },
+      "peer_timeline": [
+        {
+          "date": "2023-10-02",
+          "peers": 372.17
+        },
+        {
+          "date": "2023-10-04",
+          "peers": 374.67
+        },
+        {
+          "date": "2023-10-06",
+          "peers": 377.0
+        },
+        {
+          "date": "2023-10-26",
+          "peers": 379.0
+        },
+        {
+          "date": "2023-10-30",
+          "peers": 380.67
+        },
+        {
+          "date": "2023-11-13",
+          "peers": 379.0
+        },
+        {
+          "date": "2023-11-17",
+          "peers": 381.33
+        },
+        {
+          "date": "2023-11-23",
+          "peers": 378.0
+        },
+        {
+          "date": "2023-11-29",
+          "peers": 381.33
+        },
+        {
+          "date": "2023-12-03",
+          "peers": 379.67
+        },
+        {
+          "date": "2023-12-21",
+          "peers": 375.67
+        },
+        {
+          "date": "2023-12-23",
+          "peers": 372.67
+        },
+        {
+          "date": "2023-12-29",
+          "peers": 375.83
+        },
+        {
+          "date": "2024-01-06",
+          "peers": 378.0
+        },
+        {
+          "date": "2024-01-14",
+          "peers": 375.83
+        },
+        {
+          "date": "2024-01-16",
+          "peers": 371.0
+        },
+        {
+          "date": "2024-01-18",
+          "peers": 373.17
+        },
+        {
+          "date": "2024-01-30",
+          "peers": 375.33
+        },
+        {
+          "date": "2024-02-11",
+          "peers": 373.67
+        },
+        {
+          "date": "2024-02-13",
+          "peers": 375.33
+        },
+        {
+          "date": "2024-02-17",
+          "peers": 372.67
+        },
+        {
+          "date": "2024-02-23",
+          "peers": 370.67
+        },
+        {
+          "date": "2024-03-14",
+          "peers": 369.0
+        },
+        {
+          "date": "2024-03-22",
+          "peers": 371.5
+        },
+        {
+          "date": "2024-04-01",
+          "peers": 373.17
+        },
+        {
+          "date": "2024-04-17",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-05-15",
+          "peers": 366.33
+        },
+        {
+          "date": "2024-05-31",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-06-04",
+          "peers": 370.5
+        },
+        {
+          "date": "2024-06-08",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-06-14",
+          "peers": 365.0
+        },
+        {
+          "date": "2024-06-18",
+          "peers": 361.83
+        },
+        {
+          "date": "2024-06-20",
+          "peers": 352.33
+        },
+        {
+          "date": "2024-06-22",
+          "peers": 362.67
+        },
+        {
+          "date": "2024-06-24",
+          "peers": 360.83
+        },
+        {
+          "date": "2024-07-18",
+          "peers": 359.0
+        },
+        {
+          "date": "2024-08-09",
+          "peers": 361.0
+        },
+        {
+          "date": "2024-08-11",
+          "peers": 363.0
+        },
+        {
+          "date": "2024-08-15",
+          "peers": 361.0
+        },
+        {
+          "date": "2024-09-18",
+          "peers": 359.0
+        },
+        {
+          "date": "2024-09-24",
+          "peers": 329.0
+        },
+        {
+          "date": "2024-09-28",
+          "peers": 326.17
+        },
+        {
+          "date": "2024-10-06",
+          "peers": 328.67
+        },
+        {
+          "date": "2024-10-08",
+          "peers": 331.67
+        },
+        {
+          "date": "2024-10-22",
+          "peers": 330.0
+        },
+        {
+          "date": "2024-10-24",
+          "peers": 334.83
+        },
+        {
+          "date": "2024-10-26",
+          "peers": 336.83
+        },
+        {
+          "date": "2024-11-09",
+          "peers": 339.0
+        },
+        {
+          "date": "2024-11-11",
+          "peers": 340.67
+        },
+        {
+          "date": "2024-11-19",
+          "peers": 345.17
+        },
+        {
+          "date": "2024-11-23",
+          "peers": 342.17
+        },
+        {
+          "date": "2024-11-25",
+          "peers": 339.83
+        },
+        {
+          "date": "2024-11-27",
+          "peers": 342.5
+        },
+        {
+          "date": "2024-11-29",
+          "peers": 344.67
+        },
+        {
+          "date": "2024-12-11",
+          "peers": 346.33
+        },
+        {
+          "date": "2024-12-13",
+          "peers": 348.5
+        },
+        {
+          "date": "2024-12-21",
+          "peers": 351.5
+        }
+      ],
+      "events": [
+        {
+          "event_date": "2024-07-20",
+          "event_type": "Battles",
+          "actor1": "Government of Israel",
+          "actor2": "Hamas",
+          "fatalities": 7,
+          "notes": "Israel says fighter jets hit Huthi military targets in Yemen;Coalition of political parties, forces against aggression condemns Israeli attack on civilian objects in Hodeida;Israel says it struck Yeme"
+        },
+        {
+          "event_date": "2024-09-29",
+          "event_type": "Battles",
+          "actor1": "Government of Israel",
+          "actor2": "Hamas",
+          "fatalities": 6,
+          "notes": "Yemen September 2024;Yemen's Houthis say death toll from Israeli airstrikes on Hudaydah rose to 6;1st LD Writethru: 4 killed, 49 wounded in Israeli airstrikes on Yemen's Hodeidah: Houthi TV;Military a"
+        },
+        {
+          "event_date": "2024-12-19",
+          "event_type": "Battles",
+          "actor1": "Government of Israel",
+          "actor2": "Hamas",
+          "fatalities": 2,
+          "notes": "Yemen December 2024;Houthis say at least nine killed in Israeli air strikes on Yemen;Israel's raids on Houthi sites in Yemen kill 9;9 killed as Israel strikes power plants, port, oil facility in Yemen"
+        },
+        {
+          "event_date": "2023-10-18",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 1,
+          "notes": "CIMP DAILY ALERT 19 OCT 2023"
+        },
+        {
+          "event_date": "2023-10-18",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 1,
+          "notes": "CIMP DAILY ALERT 19 OCT 2023"
+        },
+        {
+          "event_date": "2023-11-29",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 1,
+          "notes": "CIMP DAILY ALERT 30 NOV 2023"
+        },
+        {
+          "event_date": "2023-12-02",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 1,
+          "notes": "CIMP DAILY ALERT 03 DEC 2023"
+        },
+        {
+          "event_date": "2024-01-01",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 8,
+          "notes": "Yemen's Hodeidah records 41 civilian deaths from landmines, ERW in 2024: UN mission"
+        },
+        {
+          "event_date": "2024-01-01",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 7,
+          "notes": "Yemen's Hodeidah records 41 civilian deaths from landmines, ERW in 2024: UN mission"
+        },
+        {
+          "event_date": "2024-01-08",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 2,
+          "notes": "CIMP DAILY ALERT 09 Jan 2024"
+        },
+        {
+          "event_date": "2024-01-17",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 1,
+          "notes": "CIMP DAILY ALERT 18 Jan 2024"
+        },
+        {
+          "event_date": "2024-01-21",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 2,
+          "notes": "CIMP DAILY ALERT 22 Jan 2024; CIMP WEEKLY HIGHLIGHTS 18 - 24 JANUARY 2024"
+        },
+        {
+          "event_date": "2024-01-21",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 1,
+          "notes": "CIMP DAILY ALERT 22 Jan 2024"
+        },
+        {
+          "event_date": "2024-01-22",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 1,
+          "notes": "CIMP DAILY ALERT 23 Jan 2024"
+        },
+        {
+          "event_date": "2024-04-02",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 1,
+          "notes": "CIMP DAILY ALERT 3 APR 2024"
+        },
+        {
+          "event_date": "2024-05-05",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 2,
+          "notes": "CIMP DAILY ALERT 06 MAY 2024"
+        },
+        {
+          "event_date": "2024-05-21",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 1,
+          "notes": "CIMP DAILY ALERT 22 MAY 2024"
+        },
+        {
+          "event_date": "2024-12-26",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 1,
+          "notes": "CIMP WEEKLY HIGHLIGHTS 26 DECEMBER 2024 - 1 JANUARY 2025"
+        },
+        {
+          "event_date": "2024-12-26",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 2,
+          "notes": "CIMP WEEKLY HIGHLIGHTS 26 DECEMBER 2024 - 1 JANUARY 2025"
+        },
+        {
+          "event_date": "2023-12-31",
+          "event_type": "Battles",
+          "actor1": "Government of United Kingdom, Government of United States of America",
+          "actor2": "Government of Yemen (North Yemen)",
+          "fatalities": 17,
+          "notes": "US military says sank three Huthi vessels that attacked container ship in Red Sea;US military says sank 3 Huthi vessels that attacked container ship in Red Sea;US strikes kill 10 Huthi rebels attackin"
+        },
+        {
+          "event_date": "2024-01-11",
+          "event_type": "Battles",
+          "actor1": "Government of United Kingdom, Government of United States of America",
+          "actor2": "Government of Yemen (North Yemen)",
+          "fatalities": 1,
+          "notes": "Five dead, six wounded in Yemen air strikes: Huthi official;Roundup: U.S., its allies launch strikes against Houthi targets in Yemen;Houthi official says five members killed, six injured in US, UK str"
+        },
+        {
+          "event_date": "2024-02-03",
+          "event_type": "Battles",
+          "actor1": "Government of United Kingdom, Government of United States of America",
+          "actor2": "Government of Yemen (North Yemen)",
+          "fatalities": 10,
+          "notes": "2nd LD-Writethru: U.S.-British warplanes hit Yemen's Houthi camps"
+        },
+        {
+          "event_date": "2024-02-08",
+          "event_type": "Battles",
+          "actor1": "Government of United Kingdom, Government of United States of America",
+          "actor2": "Government of Yemen (North Yemen)",
+          "fatalities": 8,
+          "notes": "US conducts new airstrikes targeting Yemen\u2019s Houthi rebels;BBCM Middle East and North Africa Watchlist 8 February;Yemen's Huthis say 17 fighters killed in US strikes;Yemen's Houthis hold funeral for 1"
+        },
+        {
+          "event_date": "2024-03-11",
+          "event_type": "Battles",
+          "actor1": "Government of United Kingdom, Government of United States of America",
+          "actor2": "Government of Yemen (North Yemen)",
+          "fatalities": 3,
+          "notes": "More Deaths, Airstrikes, and Missiles Attacks as Red Sea Battle Magnifies"
+        },
+        {
+          "event_date": "2024-03-11",
+          "event_type": "Battles",
+          "actor1": "Government of United Kingdom, Government of United States of America",
+          "actor2": "Government of Yemen (North Yemen)",
+          "fatalities": 3,
+          "notes": "More Deaths, Airstrikes, and Missiles Attacks as Red Sea Battle Magnifies"
+        },
+        {
+          "event_date": "2024-03-11",
+          "event_type": "Battles",
+          "actor1": "Government of United Kingdom, Government of United States of America",
+          "actor2": "Government of Yemen (North Yemen)",
+          "fatalities": 3,
+          "notes": "More Deaths, Airstrikes, and Missiles Attacks as Red Sea Battle Magnifies"
+        },
+        {
+          "event_date": "2024-03-11",
+          "event_type": "Battles",
+          "actor1": "Government of United Kingdom, Government of United States of America",
+          "actor2": "Government of Yemen (North Yemen)",
+          "fatalities": 2,
+          "notes": "More Deaths, Airstrikes, and Missiles Attacks as Red Sea Battle Magnifies"
+        },
+        {
+          "event_date": "2024-05-30",
+          "event_type": "Battles",
+          "actor1": "Government of United Kingdom, Government of United States of America",
+          "actor2": "Government of Yemen (North Yemen)",
+          "fatalities": 6,
+          "notes": "GOVERNORATE: HUDAYDAH DISTRICT: AL-HAWAK (Hudaydah City) DATE: 31 May 2024;Yemen MAY 2024;AP News in Brief at 11:04 p.m. EDT;US and Britain strike Houthi rebel targets in Yemen after surge in shipping"
+        }
+      ],
+      "kinetic_event_count": 28,
+      "sample_prefix": "80.253.184.0/21",
+      "peer_min": 326.17,
+      "peer_max": 381.33,
+      "top_neighbours": [
+        {
+          "asn": 15412,
+          "holder": "FLAG-AS - FLAG TELECOM UK LIMITED",
+          "country": "GB",
+          "v4_peers": 23251,
+          "type": "left",
+          "is_adversary": false
+        },
+        {
+          "asn": 8529,
+          "holder": "OMANTEL-AS - Zain Omantel International FZ-LLC",
+          "country": "AE",
+          "v4_peers": 16785,
+          "type": "left",
+          "is_adversary": false
+        },
+        {
+          "asn": 1299,
+          "holder": "TWELVE99 - Arelion Sweden AB",
+          "country": "SE",
+          "v4_peers": 2519,
+          "type": "left",
+          "is_adversary": false
+        },
+        {
+          "asn": 6939,
+          "holder": "HURRICANE - Hurricane Electric LLC",
+          "country": "US",
+          "v4_peers": 491718,
+          "type": "upstream-of-upstream",
+          "is_adversary": false,
+          "via": 15412
+        },
+        {
+          "asn": 9304,
+          "holder": "HUTCHISON-AS-AP HGC Global Communications Limited",
+          "country": "HK",
+          "v4_peers": 282067,
+          "type": "upstream-of-upstream",
+          "is_adversary": false,
+          "via": 15412
+        },
+        {
+          "asn": 18101,
+          "holder": "RELIANCE-COMMUNICATIONS-IN Reliance Communications Ltd.DAKC MUMBAI",
+          "country": "IN",
+          "v4_peers": 277024,
+          "type": "upstream-of-upstream",
+          "is_adversary": false,
+          "via": 15412
+        },
+        {
+          "asn": 9848,
+          "holder": "SEJONGTELECOM-AS-KR SEJONG NETWORKS",
+          "country": "KR",
+          "v4_peers": 127192,
+          "type": "upstream-of-upstream",
+          "is_adversary": false,
+          "via": 15412
+        },
+        {
+          "asn": 8452,
+          "holder": "TE-AS",
+          "country": "EG",
+          "v4_peers": 124735,
+          "type": "upstream-of-upstream",
+          "is_adversary": false,
+          "via": 15412
+        },
+        {
+          "asn": 4826,
+          "holder": "VOCUS-BACKBONE-AS Vocus Connect International Backbone",
+          "country": "AU",
+          "v4_peers": 97446,
+          "type": "upstream-of-upstream",
+          "is_adversary": false,
+          "via": 15412
+        },
+        {
+          "asn": 15802,
+          "holder": "DU-AS1 - Emirates Integrated Telecommunications Company PJSC",
+          "country": "AE",
+          "v4_peers": 83888,
+          "type": "upstream-of-upstream",
+          "is_adversary": false,
+          "via": 15412
+        }
+      ],
+      "periods": {
+        "scenario_start": {
+          "description": "Conflict baseline (2023-10)",
+          "date": "2023-10-01",
+          "update_count": 0,
+          "classifications": {
+            "adversary-routed": 0,
+            "neutral": 1
+          },
+          "sample_paths": [
+            "15412 \u2192 30873",
+            "8529 \u2192 30873",
+            "1299 \u2192 30873",
+            "6939 \u2192 15412 \u2192 30873",
+            "9304 \u2192 15412 \u2192 30873",
+            "18101 \u2192 15412 \u2192 30873",
+            "9848 \u2192 15412 \u2192 30873",
+            "8452 \u2192 15412 \u2192 30873",
+            "4826 \u2192 15412 \u2192 30873",
+            "15802 \u2192 15412 \u2192 30873"
+          ]
+        },
+        "peak_kinetic": {
+          "description": "Peak kinetic intensity",
+          "date": "2024-01-17",
+          "update_count": 6,
+          "classifications": {
+            "adversary-routed": 0,
+            "neutral": 1
+          },
+          "sample_paths": [
+            "15412 \u2192 30873",
+            "8529 \u2192 30873",
+            "1299 \u2192 30873",
+            "6939 \u2192 15412 \u2192 30873",
+            "9304 \u2192 15412 \u2192 30873",
+            "18101 \u2192 15412 \u2192 30873",
+            "9848 \u2192 15412 \u2192 30873",
+            "8452 \u2192 15412 \u2192 30873",
+            "4826 \u2192 15412 \u2192 30873",
+            "15802 \u2192 15412 \u2192 30873"
+          ]
+        },
+        "peer_cliff": {
+          "description": "Peer visibility cliff (-35 peers in 7d)",
+          "date": "2024-09-28",
+          "update_count": 1,
+          "classifications": {
+            "adversary-routed": 0,
+            "neutral": 1
+          },
+          "sample_paths": [
+            "15412 \u2192 30873",
+            "8529 \u2192 30873",
+            "1299 \u2192 30873",
+            "6939 \u2192 15412 \u2192 30873",
+            "9304 \u2192 15412 \u2192 30873",
+            "18101 \u2192 15412 \u2192 30873",
+            "9848 \u2192 15412 \u2192 30873",
+            "8452 \u2192 15412 \u2192 30873",
+            "4826 \u2192 15412 \u2192 30873",
+            "15802 \u2192 15412 \u2192 30873"
+          ]
+        },
+        "recent": {
+          "description": "Recent observation (2024-12)",
+          "date": "2024-12-31",
+          "update_count": 3,
+          "classifications": {
+            "adversary-routed": 0,
+            "neutral": 1
+          },
+          "sample_paths": [
+            "15412 \u2192 30873",
+            "8529 \u2192 30873",
+            "1299 \u2192 30873",
+            "6939 \u2192 15412 \u2192 30873",
+            "9304 \u2192 15412 \u2192 30873",
+            "18101 \u2192 15412 \u2192 30873",
+            "9848 \u2192 15412 \u2192 30873",
+            "8452 \u2192 15412 \u2192 30873",
+            "4826 \u2192 15412 \u2192 30873",
+            "15802 \u2192 15412 \u2192 30873"
+          ]
+        }
+      },
+      "summary": {
+        "kinetic_event_count": 28,
+        "first_event": "2023-10-18",
+        "last_event": "2024-12-26",
+        "max_bgp_updates_in_day": 0,
+        "peer_count_min": 326.17,
+        "peer_count_max": 381.33,
+        "peer_count_drop": 55.2
+      },
+      "mitigations": {
+        "recommended": [
+          "rpki_roa",
+          "rov_upstream",
+          "manrs_membership",
+          "ris_monitoring"
+        ],
+        "rationales": {
+          "baseline": "minimum BGP-security hygiene applicable to every operator"
+        }
+      }
+    },
+    {
+      "city": "Taiz",
+      "asn": 30873,
+      "lat": 13.5795,
+      "lon": 44.0209,
+      "threat": {
+        "score": 28,
+        "level": "nominal",
+        "components": {
+          "blackout": 5.2,
+          "instability": 22.5,
+          "russian_route": 0,
+          "sorm_exposure": 0
+        },
+        "evidence": {
+          "peer_count_drop": 55.2,
+          "peer_min": 326.17,
+          "kinetic_events_local": 45,
+          "max_bgp_updates_in_day": 0,
+          "russian_paths_count": 0,
+          "sorm_ases_observed": [],
+          "neighbours_total": 3,
+          "adversarial_neighbours": []
+        }
+      },
+      "peer_timeline": [
+        {
+          "date": "2023-10-02",
+          "peers": 372.17
+        },
+        {
+          "date": "2023-10-04",
+          "peers": 374.67
+        },
+        {
+          "date": "2023-10-06",
+          "peers": 377.0
+        },
+        {
+          "date": "2023-10-26",
+          "peers": 379.0
+        },
+        {
+          "date": "2023-10-30",
+          "peers": 380.67
+        },
+        {
+          "date": "2023-11-13",
+          "peers": 379.0
+        },
+        {
+          "date": "2023-11-17",
+          "peers": 381.33
+        },
+        {
+          "date": "2023-11-23",
+          "peers": 378.0
+        },
+        {
+          "date": "2023-11-29",
+          "peers": 381.33
+        },
+        {
+          "date": "2023-12-03",
+          "peers": 379.67
+        },
+        {
+          "date": "2023-12-21",
+          "peers": 375.67
+        },
+        {
+          "date": "2023-12-23",
+          "peers": 372.67
+        },
+        {
+          "date": "2023-12-29",
+          "peers": 375.83
+        },
+        {
+          "date": "2024-01-06",
+          "peers": 378.0
+        },
+        {
+          "date": "2024-01-14",
+          "peers": 375.83
+        },
+        {
+          "date": "2024-01-16",
+          "peers": 371.0
+        },
+        {
+          "date": "2024-01-18",
+          "peers": 373.17
+        },
+        {
+          "date": "2024-01-30",
+          "peers": 375.33
+        },
+        {
+          "date": "2024-02-11",
+          "peers": 373.67
+        },
+        {
+          "date": "2024-02-13",
+          "peers": 375.33
+        },
+        {
+          "date": "2024-02-17",
+          "peers": 372.67
+        },
+        {
+          "date": "2024-02-23",
+          "peers": 370.67
+        },
+        {
+          "date": "2024-03-14",
+          "peers": 369.0
+        },
+        {
+          "date": "2024-03-22",
+          "peers": 371.5
+        },
+        {
+          "date": "2024-04-01",
+          "peers": 373.17
+        },
+        {
+          "date": "2024-04-17",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-05-15",
+          "peers": 366.33
+        },
+        {
+          "date": "2024-05-31",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-06-04",
+          "peers": 370.5
+        },
+        {
+          "date": "2024-06-08",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-06-14",
+          "peers": 365.0
+        },
+        {
+          "date": "2024-06-18",
+          "peers": 361.83
+        },
+        {
+          "date": "2024-06-20",
+          "peers": 352.33
+        },
+        {
+          "date": "2024-06-22",
+          "peers": 362.67
+        },
+        {
+          "date": "2024-06-24",
+          "peers": 360.83
+        },
+        {
+          "date": "2024-07-18",
+          "peers": 359.0
+        },
+        {
+          "date": "2024-08-09",
+          "peers": 361.0
+        },
+        {
+          "date": "2024-08-11",
+          "peers": 363.0
+        },
+        {
+          "date": "2024-08-15",
+          "peers": 361.0
+        },
+        {
+          "date": "2024-09-18",
+          "peers": 359.0
+        },
+        {
+          "date": "2024-09-24",
+          "peers": 329.0
+        },
+        {
+          "date": "2024-09-28",
+          "peers": 326.17
+        },
+        {
+          "date": "2024-10-06",
+          "peers": 328.67
+        },
+        {
+          "date": "2024-10-08",
+          "peers": 331.67
+        },
+        {
+          "date": "2024-10-22",
+          "peers": 330.0
+        },
+        {
+          "date": "2024-10-24",
+          "peers": 334.83
+        },
+        {
+          "date": "2024-10-26",
+          "peers": 336.83
+        },
+        {
+          "date": "2024-11-09",
+          "peers": 339.0
+        },
+        {
+          "date": "2024-11-11",
+          "peers": 340.67
+        },
+        {
+          "date": "2024-11-19",
+          "peers": 345.17
+        },
+        {
+          "date": "2024-11-23",
+          "peers": 342.17
+        },
+        {
+          "date": "2024-11-25",
+          "peers": 339.83
+        },
+        {
+          "date": "2024-11-27",
+          "peers": 342.5
+        },
+        {
+          "date": "2024-11-29",
+          "peers": 344.67
+        },
+        {
+          "date": "2024-12-11",
+          "peers": 346.33
+        },
+        {
+          "date": "2024-12-13",
+          "peers": 348.5
+        },
+        {
+          "date": "2024-12-21",
+          "peers": 351.5
+        }
+      ],
+      "events": [
+        {
+          "event_date": "2023-10-08",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 1,
+          "notes": "CIMP DAILY ALERT 09 OCT 2023"
+        },
+        {
+          "event_date": "2023-10-10",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 1,
+          "notes": "CIMP DAILY ALERT 11 OCT 2023"
+        },
+        {
+          "event_date": "2023-10-19",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 1,
+          "notes": "CIMP DAILY ALERT 22 OCT 2023"
+        },
+        {
+          "event_date": "2023-10-23",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 1,
+          "notes": "CIMP DAILY ALERT 24 OCT 2023;One killed, 2 children injured in Houthi shelling on Yemen's Taiz"
+        },
+        {
+          "event_date": "2023-11-21",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 1,
+          "notes": "CIMP DAILY ALERT 22 NOV 2023"
+        },
+        {
+          "event_date": "2023-11-29",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 1,
+          "notes": "CIMP DAILY ALERT 30 NOV 2023"
+        },
+        {
+          "event_date": "2023-12-27",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 2,
+          "notes": "Yemen soldiers killed in clashes with Houthis in Taiz"
+        },
+        {
+          "event_date": "2023-12-30",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 2,
+          "notes": "CIMP WEEKLY HIGHLIGHTS 28 DECEMBER 2023 - 3 JANUARY 2024"
+        },
+        {
+          "event_date": "2023-12-30",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 1,
+          "notes": "Shortage of Aid Exacerbates Humanitarian Situation in Yemen"
+        },
+        {
+          "event_date": "2024-01-20",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 2,
+          "notes": "Yemen army says it dealt 'painful blows' to Houthis in Marib, Taiz"
+        },
+        {
+          "event_date": "2024-03-15",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 1,
+          "notes": "CIMP DAILY ALERT 17 MAR 2024"
+        },
+        {
+          "event_date": "2024-03-24",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 1,
+          "notes": "CIMP DAILY ALERT 26 MAR 2024"
+        },
+        {
+          "event_date": "2024-03-24",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 1,
+          "notes": "CIMP DAILY ALERT 26 MAR 2024"
+        },
+        {
+          "event_date": "2024-03-25",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 1,
+          "notes": "CIMP DAILY ALERT 26 MAR 2024"
+        },
+        {
+          "event_date": "2024-03-25",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 1,
+          "notes": "CIMP DAILY ALERT 26 MAR 2024"
+        },
+        {
+          "event_date": "2024-04-01",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 134,
+          "notes": "The Yemen Review Quarterly: April-June 2024"
+        },
+        {
+          "event_date": "2024-04-03",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 21,
+          "notes": "21 killed in armed confrontations in S. Yemen;Huthi attack kills 11 loyalists in southern Yemen: official"
+        },
+        {
+          "event_date": "2024-04-05",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 13,
+          "notes": "Houthi drone attack kills 3 pro-gov't Yemeni soldiers"
+        },
+        {
+          "event_date": "2024-04-12",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 3,
+          "notes": "Houthi drone attack kills 3 pro-gov't Yemeni soldiers"
+        },
+        {
+          "event_date": "2024-04-17",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 1,
+          "notes": "CIMP DAILY ALERT 18 APR 2024"
+        },
+        {
+          "event_date": "2024-04-22",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 1,
+          "notes": "CIMP DAILY ALERT 23 APR 2024"
+        },
+        {
+          "event_date": "2024-04-27",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 5,
+          "notes": "Three women & two girls killed in drone strike belonging to aggression\u2019s mercenaries in Taiz;Yemen drone attack kills women and children;CIMP DAILY ALERT 28 APR 2024"
+        },
+        {
+          "event_date": "2024-05-12",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 2,
+          "notes": "CIMP DAILY ALERT 13 MAY 2024;Clashes in Taiz Kill at Least 8 Houthis"
+        },
+        {
+          "event_date": "2024-05-18",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 1,
+          "notes": "Fighting Escalates in Yemen's Taiz Province"
+        },
+        {
+          "event_date": "2024-05-20",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 9,
+          "notes": "Fighting Escalates in Yemen's Taiz Province"
+        },
+        {
+          "event_date": "2024-06-05",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 7,
+          "notes": "Repelling An Attack By The Houthi Militia On The Karsh Front In Lahj Governorate"
+        },
+        {
+          "event_date": "2024-06-05",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 18,
+          "notes": "Houthi attack kills 6 gov't soldiers in Yemen's Lahj;US dismisses Houthi claims of Eisenhower carrier damage;Yemen clashes kill 18 fighters in fresh flare-up: military officials;Houthi attacks on ship"
+        },
+        {
+          "event_date": "2024-06-27",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 2,
+          "notes": "Houthi Leaders Killed in Clashes with Yemeni Army Forces Southwest of Yemen"
+        },
+        {
+          "event_date": "2024-06-29",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 4,
+          "notes": "Houthi Leaders Killed in Clashes with Yemeni Army Forces Southwest of Yemen"
+        },
+        {
+          "event_date": "2024-07-01",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 50,
+          "notes": "Military and Security - The Yemen Review, Quarterly: July-September 2024"
+        },
+        {
+          "event_date": "2024-07-01",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 12,
+          "notes": "Military and Security - The Yemen Review, Quarterly: July-September 2024"
+        },
+        {
+          "event_date": "2024-07-01",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 6,
+          "notes": "Military and Security - The Yemen Review, Quarterly: July-September 2024"
+        },
+        {
+          "event_date": "2024-07-01",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 5,
+          "notes": "Military and Security - The Yemen Review, Quarterly: July-September 2024"
+        },
+        {
+          "event_date": "2024-07-10",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 2,
+          "notes": "Citizen killed, another injured by aggression mercenaries shelling attack on workers in Sabr Al-Mawadim"
+        },
+        {
+          "event_date": "2024-07-11",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 1,
+          "notes": "Citizen killed, another injured by aggression mercenaries shelling attack on workers in Sabr Al-Mawadim"
+        },
+        {
+          "event_date": "2024-08-07",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 2,
+          "notes": "Yemeni Tribes and U.S. Airstrikes Deplete Houthi Forces in Yemen and Iraq"
+        },
+        {
+          "event_date": "2024-10-01",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 24,
+          "notes": "Military and Security - The Yemen Review, October-December 2024"
+        },
+        {
+          "event_date": "2024-12-12",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 2,
+          "notes": "Houthi infiltration attempts foiled in SW Yemen: gov't forces"
+        },
+        {
+          "event_date": "2024-12-20",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 2,
+          "notes": "Pro-government official says Houthis kill 2 soldiers in SW Yemen"
+        },
+        {
+          "event_date": "2024-12-22",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 4,
+          "notes": "Pro-gov't forces thwart Houthi attacks in Yemen's Taiz, 4 killed"
+        },
+        {
+          "event_date": "2024-12-22",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 6,
+          "notes": "Taiz Axis Spokesman Colonel \"Al-Bahr\" to \"Barran Press\": 182 targeting operations of army sites by the Houthis in Taiz in 10 days"
+        },
+        {
+          "event_date": "2024-12-24",
+          "event_type": "Battles",
+          "actor1": "Government of Yemen (North Yemen)",
+          "actor2": "Forces of the Presidential Leadership Council",
+          "fatalities": 8,
+          "notes": "Pro-gov't forces say 8 Houthis killed in SW Yemen;Fighting rages in Yemen\u2019s Taiz after lull"
+        },
+        {
+          "event_date": "2024-01-22",
+          "event_type": "Battles",
+          "actor1": "Government of United Kingdom, Government of United States of America",
+          "actor2": "Government of Yemen (North Yemen)",
+          "fatalities": 1,
+          "notes": "US, UK conduct strikes against 8 Houthi targets in Yemen;US, Britain launch new joint strikes on Yemen's Huthis;BBCM Middle East and North Africa Watchlist 23 January;Xinhua world news summary at 0030"
+        },
+        {
+          "event_date": "2024-02-24",
+          "event_type": "Battles",
+          "actor1": "Government of United Kingdom, Government of United States of America",
+          "actor2": "Government of Yemen (North Yemen)",
+          "fatalities": 1,
+          "notes": "First Civilian Casualties Reported in U.S.-UK Airstrikes on Yemen;Yemen rebels announce first civilian death in US-UK strikes;1 killed, 6 injured in U.S.-British overnight airstrikes in SW Yemen: Hout"
+        },
+        {
+          "event_date": "2024-09-10",
+          "event_type": "Battles",
+          "actor1": "Government of United Kingdom, Government of United States of America",
+          "actor2": "Government of Yemen (North Yemen)",
+          "fatalities": 2,
+          "notes": "Yemen's Houthis say U.S.-led coalition airstrike hit school in SW province;Two students killed, seven injured in raid of US-UK aggression on school in Taiz;USYEMBi023"
+        }
+      ],
+      "kinetic_event_count": 45,
+      "sample_prefix": "80.253.184.0/21",
+      "peer_min": 326.17,
+      "peer_max": 381.33,
+      "top_neighbours": [
+        {
+          "asn": 15412,
+          "holder": "FLAG-AS - FLAG TELECOM UK LIMITED",
+          "country": "GB",
+          "v4_peers": 23251,
+          "type": "left",
+          "is_adversary": false
+        },
+        {
+          "asn": 8529,
+          "holder": "OMANTEL-AS - Zain Omantel International FZ-LLC",
+          "country": "AE",
+          "v4_peers": 16785,
+          "type": "left",
+          "is_adversary": false
+        },
+        {
+          "asn": 1299,
+          "holder": "TWELVE99 - Arelion Sweden AB",
+          "country": "SE",
+          "v4_peers": 2519,
+          "type": "left",
+          "is_adversary": false
+        },
+        {
+          "asn": 6939,
+          "holder": "HURRICANE - Hurricane Electric LLC",
+          "country": "US",
+          "v4_peers": 491718,
+          "type": "upstream-of-upstream",
+          "is_adversary": false,
+          "via": 15412
+        },
+        {
+          "asn": 9304,
+          "holder": "HUTCHISON-AS-AP HGC Global Communications Limited",
+          "country": "HK",
+          "v4_peers": 282067,
+          "type": "upstream-of-upstream",
+          "is_adversary": false,
+          "via": 15412
+        },
+        {
+          "asn": 18101,
+          "holder": "RELIANCE-COMMUNICATIONS-IN Reliance Communications Ltd.DAKC MUMBAI",
+          "country": "IN",
+          "v4_peers": 277024,
+          "type": "upstream-of-upstream",
+          "is_adversary": false,
+          "via": 15412
+        },
+        {
+          "asn": 9848,
+          "holder": "SEJONGTELECOM-AS-KR SEJONG NETWORKS",
+          "country": "KR",
+          "v4_peers": 127192,
+          "type": "upstream-of-upstream",
+          "is_adversary": false,
+          "via": 15412
+        },
+        {
+          "asn": 8452,
+          "holder": "TE-AS",
+          "country": "EG",
+          "v4_peers": 124735,
+          "type": "upstream-of-upstream",
+          "is_adversary": false,
+          "via": 15412
+        },
+        {
+          "asn": 4826,
+          "holder": "VOCUS-BACKBONE-AS Vocus Connect International Backbone",
+          "country": "AU",
+          "v4_peers": 97446,
+          "type": "upstream-of-upstream",
+          "is_adversary": false,
+          "via": 15412
+        },
+        {
+          "asn": 15802,
+          "holder": "DU-AS1 - Emirates Integrated Telecommunications Company PJSC",
+          "country": "AE",
+          "v4_peers": 83888,
+          "type": "upstream-of-upstream",
+          "is_adversary": false,
+          "via": 15412
+        }
+      ],
+      "periods": {
+        "scenario_start": {
+          "description": "Conflict baseline (2023-10)",
+          "date": "2023-10-01",
+          "update_count": 2,
+          "classifications": {
+            "adversary-routed": 0,
+            "neutral": 1
+          },
+          "sample_paths": [
+            "15412 \u2192 30873",
+            "8529 \u2192 30873",
+            "1299 \u2192 30873",
+            "6939 \u2192 15412 \u2192 30873",
+            "9304 \u2192 15412 \u2192 30873",
+            "18101 \u2192 15412 \u2192 30873",
+            "9848 \u2192 15412 \u2192 30873",
+            "8452 \u2192 15412 \u2192 30873",
+            "4826 \u2192 15412 \u2192 30873",
+            "15802 \u2192 15412 \u2192 30873"
+          ]
+        },
+        "peak_kinetic": {
+          "description": "Peak kinetic intensity",
+          "date": "2024-06-27",
+          "update_count": 8,
+          "classifications": {
+            "adversary-routed": 0,
+            "neutral": 1
+          },
+          "sample_paths": [
+            "15412 \u2192 30873",
+            "8529 \u2192 30873",
+            "1299 \u2192 30873",
+            "6939 \u2192 15412 \u2192 30873",
+            "9304 \u2192 15412 \u2192 30873",
+            "18101 \u2192 15412 \u2192 30873",
+            "9848 \u2192 15412 \u2192 30873",
+            "8452 \u2192 15412 \u2192 30873",
+            "4826 \u2192 15412 \u2192 30873",
+            "15802 \u2192 15412 \u2192 30873"
+          ]
+        },
+        "peer_cliff": {
+          "description": "Peer visibility cliff (-35 peers in 7d)",
+          "date": "2024-09-28",
+          "update_count": 1,
+          "classifications": {
+            "adversary-routed": 0,
+            "neutral": 1
+          },
+          "sample_paths": [
+            "15412 \u2192 30873",
+            "8529 \u2192 30873",
+            "1299 \u2192 30873",
+            "6939 \u2192 15412 \u2192 30873",
+            "9304 \u2192 15412 \u2192 30873",
+            "18101 \u2192 15412 \u2192 30873",
+            "9848 \u2192 15412 \u2192 30873",
+            "8452 \u2192 15412 \u2192 30873",
+            "4826 \u2192 15412 \u2192 30873",
+            "15802 \u2192 15412 \u2192 30873"
+          ]
+        },
+        "recent": {
+          "description": "Recent observation (2024-12)",
+          "date": "2024-12-31",
+          "update_count": 4,
+          "classifications": {
+            "adversary-routed": 0,
+            "neutral": 1
+          },
+          "sample_paths": [
+            "15412 \u2192 30873",
+            "8529 \u2192 30873",
+            "1299 \u2192 30873",
+            "6939 \u2192 15412 \u2192 30873",
+            "9304 \u2192 15412 \u2192 30873",
+            "18101 \u2192 15412 \u2192 30873",
+            "9848 \u2192 15412 \u2192 30873",
+            "8452 \u2192 15412 \u2192 30873",
+            "4826 \u2192 15412 \u2192 30873",
+            "15802 \u2192 15412 \u2192 30873"
+          ]
+        }
+      },
+      "summary": {
+        "kinetic_event_count": 45,
+        "first_event": "2023-10-08",
+        "last_event": "2024-12-24",
+        "max_bgp_updates_in_day": 0,
+        "peer_count_min": 326.17,
+        "peer_count_max": 381.33,
+        "peer_count_drop": 55.2
+      },
+      "mitigations": {
+        "recommended": [
+          "rpki_roa",
+          "rov_upstream",
+          "ris_monitoring",
+          "as_path_filtering",
+          "diplomatic_pressure",
+          "manrs_membership"
+        ],
+        "rationales": {
+          "prefix_hijack": "BGP UPDATE volume of 0 per observation window suggests possible route instability or hijack",
+          "baseline": "minimum BGP-security hygiene applicable to every operator"
+        }
+      }
+    },
+    {
+      "city": "Baghdad",
+      "asn": 21277,
+      "lat": 33.3152,
+      "lon": 44.3661,
+      "threat": {
+        "score": 5,
+        "level": "nominal",
+        "components": {
+          "blackout": 5.2,
+          "instability": 0.0,
+          "russian_route": 0,
+          "sorm_exposure": 0
+        },
+        "evidence": {
+          "peer_count_drop": 56.2,
+          "peer_min": 325.17,
+          "kinetic_events_local": 0,
+          "max_bgp_updates_in_day": 0,
+          "russian_paths_count": 0,
+          "sorm_ases_observed": [],
+          "neighbours_total": 153,
+          "adversarial_neighbours": []
+        }
+      },
+      "peer_timeline": [
+        {
+          "date": "2023-10-02",
+          "peers": 372.17
+        },
+        {
+          "date": "2023-10-02",
+          "peers": 372.17
+        },
+        {
+          "date": "2023-10-04",
+          "peers": 374.67
+        },
+        {
+          "date": "2023-10-04",
+          "peers": 374.67
+        },
+        {
+          "date": "2023-10-06",
+          "peers": 377.0
+        },
+        {
+          "date": "2023-10-06",
+          "peers": 377.0
+        },
+        {
+          "date": "2023-10-26",
+          "peers": 379.0
+        },
+        {
+          "date": "2023-10-28",
+          "peers": 379.0
+        },
+        {
+          "date": "2023-10-30",
+          "peers": 380.67
+        },
+        {
+          "date": "2023-11-01",
+          "peers": 381.17
+        },
+        {
+          "date": "2023-11-03",
+          "peers": 379.5
+        },
+        {
+          "date": "2023-11-13",
+          "peers": 379.0
+        },
+        {
+          "date": "2023-11-17",
+          "peers": 381.33
+        },
+        {
+          "date": "2023-11-23",
+          "peers": 377.0
+        },
+        {
+          "date": "2023-11-23",
+          "peers": 378.0
+        },
+        {
+          "date": "2023-11-29",
+          "peers": 380.33
+        },
+        {
+          "date": "2023-11-29",
+          "peers": 381.33
+        },
+        {
+          "date": "2023-12-03",
+          "peers": 378.67
+        },
+        {
+          "date": "2023-12-03",
+          "peers": 379.67
+        },
+        {
+          "date": "2023-12-21",
+          "peers": 374.67
+        },
+        {
+          "date": "2023-12-21",
+          "peers": 375.67
+        },
+        {
+          "date": "2023-12-23",
+          "peers": 371.67
+        },
+        {
+          "date": "2023-12-23",
+          "peers": 372.67
+        },
+        {
+          "date": "2023-12-29",
+          "peers": 374.83
+        },
+        {
+          "date": "2023-12-29",
+          "peers": 375.83
+        },
+        {
+          "date": "2024-01-06",
+          "peers": 377.0
+        },
+        {
+          "date": "2024-01-06",
+          "peers": 378.0
+        },
+        {
+          "date": "2024-01-14",
+          "peers": 374.83
+        },
+        {
+          "date": "2024-01-14",
+          "peers": 375.83
+        },
+        {
+          "date": "2024-01-16",
+          "peers": 370.0
+        },
+        {
+          "date": "2024-01-16",
+          "peers": 371.0
+        },
+        {
+          "date": "2024-01-18",
+          "peers": 372.17
+        },
+        {
+          "date": "2024-01-18",
+          "peers": 373.17
+        },
+        {
+          "date": "2024-01-30",
+          "peers": 374.33
+        },
+        {
+          "date": "2024-01-30",
+          "peers": 375.33
+        },
+        {
+          "date": "2024-02-11",
+          "peers": 372.67
+        },
+        {
+          "date": "2024-02-11",
+          "peers": 373.67
+        },
+        {
+          "date": "2024-02-13",
+          "peers": 374.33
+        },
+        {
+          "date": "2024-02-13",
+          "peers": 375.33
+        },
+        {
+          "date": "2024-02-17",
+          "peers": 371.67
+        },
+        {
+          "date": "2024-02-17",
+          "peers": 372.67
+        },
+        {
+          "date": "2024-02-23",
+          "peers": 369.67
+        },
+        {
+          "date": "2024-02-23",
+          "peers": 370.67
+        },
+        {
+          "date": "2024-03-16",
+          "peers": 368.0
+        },
+        {
+          "date": "2024-03-16",
+          "peers": 369.0
+        },
+        {
+          "date": "2024-03-22",
+          "peers": 370.5
+        },
+        {
+          "date": "2024-03-22",
+          "peers": 371.5
+        },
+        {
+          "date": "2024-04-01",
+          "peers": 372.17
+        },
+        {
+          "date": "2024-04-01",
+          "peers": 373.17
+        },
+        {
+          "date": "2024-04-17",
+          "peers": 367.5
+        },
+        {
+          "date": "2024-04-17",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-05-15",
+          "peers": 365.67
+        },
+        {
+          "date": "2024-05-15",
+          "peers": 366.67
+        },
+        {
+          "date": "2024-05-25",
+          "peers": 364.0
+        },
+        {
+          "date": "2024-05-25",
+          "peers": 365.0
+        },
+        {
+          "date": "2024-05-29",
+          "peers": 366.5
+        },
+        {
+          "date": "2024-05-29",
+          "peers": 367.5
+        },
+        {
+          "date": "2024-06-04",
+          "peers": 369.5
+        },
+        {
+          "date": "2024-06-04",
+          "peers": 370.5
+        },
+        {
+          "date": "2024-06-08",
+          "peers": 367.5
+        },
+        {
+          "date": "2024-06-08",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-06-14",
+          "peers": 364.0
+        },
+        {
+          "date": "2024-06-14",
+          "peers": 365.0
+        },
+        {
+          "date": "2024-06-18",
+          "peers": 360.83
+        },
+        {
+          "date": "2024-06-18",
+          "peers": 361.83
+        },
+        {
+          "date": "2024-06-20",
+          "peers": 351.33
+        },
+        {
+          "date": "2024-06-20",
+          "peers": 352.33
+        },
+        {
+          "date": "2024-06-22",
+          "peers": 361.67
+        },
+        {
+          "date": "2024-06-22",
+          "peers": 362.67
+        },
+        {
+          "date": "2024-06-24",
+          "peers": 359.83
+        },
+        {
+          "date": "2024-06-24",
+          "peers": 360.83
+        },
+        {
+          "date": "2024-07-18",
+          "peers": 359.0
+        },
+        {
+          "date": "2024-07-22",
+          "peers": 358.17
+        },
+        {
+          "date": "2024-08-09",
+          "peers": 360.0
+        },
+        {
+          "date": "2024-08-09",
+          "peers": 361.0
+        },
+        {
+          "date": "2024-08-11",
+          "peers": 362.0
+        },
+        {
+          "date": "2024-08-11",
+          "peers": 363.0
+        },
+        {
+          "date": "2024-08-15",
+          "peers": 360.0
+        },
+        {
+          "date": "2024-08-15",
+          "peers": 361.0
+        },
+        {
+          "date": "2024-09-18",
+          "peers": 358.0
+        },
+        {
+          "date": "2024-09-18",
+          "peers": 359.0
+        },
+        {
+          "date": "2024-09-24",
+          "peers": 328.0
+        },
+        {
+          "date": "2024-09-24",
+          "peers": 329.0
+        },
+        {
+          "date": "2024-09-28",
+          "peers": 325.17
+        },
+        {
+          "date": "2024-09-28",
+          "peers": 326.17
+        },
+        {
+          "date": "2024-10-06",
+          "peers": 327.67
+        },
+        {
+          "date": "2024-10-06",
+          "peers": 328.67
+        },
+        {
+          "date": "2024-10-08",
+          "peers": 330.67
+        },
+        {
+          "date": "2024-10-08",
+          "peers": 331.67
+        },
+        {
+          "date": "2024-10-22",
+          "peers": 329.0
+        },
+        {
+          "date": "2024-10-22",
+          "peers": 330.0
+        },
+        {
+          "date": "2024-10-24",
+          "peers": 333.83
+        },
+        {
+          "date": "2024-10-24",
+          "peers": 334.83
+        },
+        {
+          "date": "2024-10-26",
+          "peers": 335.83
+        },
+        {
+          "date": "2024-10-26",
+          "peers": 336.83
+        },
+        {
+          "date": "2024-11-09",
+          "peers": 338.0
+        },
+        {
+          "date": "2024-11-09",
+          "peers": 339.0
+        },
+        {
+          "date": "2024-11-11",
+          "peers": 339.67
+        },
+        {
+          "date": "2024-11-11",
+          "peers": 340.67
+        },
+        {
+          "date": "2024-11-19",
+          "peers": 344.17
+        },
+        {
+          "date": "2024-11-19",
+          "peers": 345.17
+        },
+        {
+          "date": "2024-11-23",
+          "peers": 340.33
+        },
+        {
+          "date": "2024-11-23",
+          "peers": 342.17
+        },
+        {
+          "date": "2024-11-25",
+          "peers": 338.17
+        },
+        {
+          "date": "2024-11-25",
+          "peers": 339.83
+        },
+        {
+          "date": "2024-11-27",
+          "peers": 341.5
+        },
+        {
+          "date": "2024-11-27",
+          "peers": 342.5
+        },
+        {
+          "date": "2024-11-29",
+          "peers": 343.67
+        },
+        {
+          "date": "2024-11-29",
+          "peers": 344.67
+        },
+        {
+          "date": "2024-12-11",
+          "peers": 345.33
+        },
+        {
+          "date": "2024-12-11",
+          "peers": 346.33
+        },
+        {
+          "date": "2024-12-13",
+          "peers": 347.5
+        },
+        {
+          "date": "2024-12-13",
+          "peers": 348.5
+        },
+        {
+          "date": "2024-12-21",
+          "peers": 350.5
+        },
+        {
+          "date": "2024-12-21",
+          "peers": 351.5
+        }
+      ],
+      "events": [],
+      "kinetic_event_count": 0,
+      "sample_prefix": "95.170.208.0/24",
+      "peer_min": 325.17,
+      "peer_max": 381.33,
+      "top_neighbours": [
+        {
+          "asn": 174,
+          "holder": "COGENT-174 - Cogent Communications",
+          "country": "US",
+          "v4_peers": 37066,
+          "type": "left",
+          "is_adversary": false
+        },
+        {
+          "asn": 3356,
+          "holder": "LEVEL3 - Level 3 Parent",
+          "country": "US",
+          "v4_peers": 32749,
+          "type": "left",
+          "is_adversary": false
+        },
+        {
+          "asn": 51018,
+          "holder": "SSAH_AS - Shabaka Sfn Al-Haditha for General Trading & Information Technology LTD.",
+          "country": "IQ",
+          "v4_peers": 17470,
+          "type": "right",
+          "is_adversary": false
+        },
+        {
+          "asn": 6453,
+          "holder": "AS6453 - TATA COMMUNICATIONS AMERICA INC",
+          "country": "US",
+          "v4_peers": 16745,
+          "type": "left",
+          "is_adversary": false
+        },
+        {
+          "asn": 206206,
+          "holder": "KNET - Kurdistan Net Company for Computer and Internet Ltd.",
+          "country": "IQ",
+          "v4_peers": 15590,
+          "type": "right",
+          "is_adversary": false
+        },
+        {
+          "asn": 212692,
+          "holder": "SCOPESKY-INT - ScopeSky for communications, internet and technology services LLC",
+          "country": "IQ",
+          "v4_peers": 13707,
+          "type": "right",
+          "is_adversary": false
+        },
+        {
+          "asn": 9002,
+          "holder": "RETN-AS - RETN Limited",
+          "country": "GB",
+          "v4_peers": 13435,
+          "type": "left",
+          "is_adversary": false
+        },
+        {
+          "asn": 197882,
+          "holder": "TARIN - Tarin General Trading and Setting Up Internet Device LTD",
+          "country": "IQ",
+          "v4_peers": 13035,
+          "type": "right",
+          "is_adversary": false
+        },
+        {
+          "asn": 200178,
+          "holder": "TARIK-ALTHURAYA-TRANSIT - Tarik Al-thuraya Company For Communications Service Ltd.",
+          "country": "IQ",
+          "v4_peers": 7135,
+          "type": "right",
+          "is_adversary": false
+        },
+        {
+          "asn": 34984,
+          "holder": "TELLCOM-AS - Superonline Iletisim Hizmetleri A.S.",
+          "country": "TR",
+          "v4_peers": 6684,
+          "type": "left",
+          "is_adversary": false
+        },
+        {
+          "asn": 39216,
+          "holder": "PULK - Pulk Company for General Trading, Communications & Investment, Ltd.",
+          "country": "IQ",
+          "v4_peers": 3599,
+          "type": "right",
+          "is_adversary": false
+        },
+        {
+          "asn": 1299,
+          "holder": "TWELVE99 - Arelion Sweden AB",
+          "country": "SE",
+          "v4_peers": 3219,
+          "type": "left",
+          "is_adversary": false
+        }
+      ],
+      "periods": {
+        "scenario_start": {
+          "description": "Conflict baseline (2023-10)",
+          "date": "2023-10-01",
+          "update_count": 0,
+          "classifications": {
+            "adversary-routed": 0,
+            "neutral": 1
+          },
+          "sample_paths": [
+            "174 \u2192 21277",
+            "3356 \u2192 21277",
+            "51018 \u2192 21277",
+            "6453 \u2192 21277",
+            "206206 \u2192 21277",
+            "212692 \u2192 21277",
+            "9002 \u2192 21277",
+            "197882 \u2192 21277",
+            "200178 \u2192 21277",
+            "34984 \u2192 21277",
+            "39216 \u2192 21277",
+            "1299 \u2192 21277"
+          ]
+        },
+        "peer_cliff": {
+          "description": "Peer visibility cliff (-38 peers in 7d)",
+          "date": "2024-09-28",
+          "update_count": 0,
+          "classifications": {
+            "adversary-routed": 0,
+            "neutral": 1
+          },
+          "sample_paths": [
+            "174 \u2192 21277",
+            "3356 \u2192 21277",
+            "51018 \u2192 21277",
+            "6453 \u2192 21277",
+            "206206 \u2192 21277",
+            "212692 \u2192 21277",
+            "9002 \u2192 21277",
+            "197882 \u2192 21277",
+            "200178 \u2192 21277",
+            "34984 \u2192 21277",
+            "39216 \u2192 21277",
+            "1299 \u2192 21277"
+          ]
+        },
+        "recent": {
+          "description": "Recent observation (2024-12)",
+          "date": "2024-12-31",
+          "update_count": 0,
+          "classifications": {
+            "adversary-routed": 0,
+            "neutral": 1
+          },
+          "sample_paths": [
+            "174 \u2192 21277",
+            "3356 \u2192 21277",
+            "51018 \u2192 21277",
+            "6453 \u2192 21277",
+            "206206 \u2192 21277",
+            "212692 \u2192 21277",
+            "9002 \u2192 21277",
+            "197882 \u2192 21277",
+            "200178 \u2192 21277",
+            "34984 \u2192 21277",
+            "39216 \u2192 21277",
+            "1299 \u2192 21277"
+          ]
+        }
+      },
+      "summary": {
+        "kinetic_event_count": 0,
+        "first_event": null,
+        "last_event": null,
+        "max_bgp_updates_in_day": 0,
+        "peer_count_min": 325.17,
+        "peer_count_max": 381.33,
+        "peer_count_drop": 56.2
+      },
+      "mitigations": {
+        "recommended": [
+          "rpki_roa",
+          "rov_upstream",
+          "manrs_membership",
+          "ris_monitoring"
+        ],
+        "rationales": {
+          "baseline": "minimum BGP-security hygiene applicable to every operator"
+        }
+      }
+    },
+    {
+      "city": "Tehran",
+      "asn": 12880,
+      "lat": 35.6892,
+      "lon": 51.389,
+      "threat": {
+        "score": 14,
+        "level": "nominal",
+        "components": {
+          "blackout": 5.3,
+          "instability": 0.0,
+          "russian_route": 5,
+          "sorm_exposure": 4
+        },
+        "evidence": {
+          "peer_count_drop": 56.3,
+          "peer_min": 324.17,
+          "kinetic_events_local": 0,
+          "max_bgp_updates_in_day": 0,
+          "russian_paths_count": 1,
+          "sorm_ases_observed": [
+            "58224"
+          ],
+          "neighbours_total": 22,
+          "adversarial_neighbours": [
+            {
+              "asn": 58224,
+              "operator": "Iran Telecom Co.",
+              "role": "State carrier",
+              "v4_peers": 2706
+            }
+          ]
+        }
+      },
+      "peer_timeline": [
+        {
+          "date": "2023-10-02",
+          "peers": 371.17
+        },
+        {
+          "date": "2023-10-02",
+          "peers": 371.17
+        },
+        {
+          "date": "2023-10-02",
+          "peers": 371.17
+        },
+        {
+          "date": "2023-10-04",
+          "peers": 373.67
+        },
+        {
+          "date": "2023-10-04",
+          "peers": 373.67
+        },
+        {
+          "date": "2023-10-04",
+          "peers": 373.67
+        },
+        {
+          "date": "2023-10-06",
+          "peers": 376.0
+        },
+        {
+          "date": "2023-10-06",
+          "peers": 376.0
+        },
+        {
+          "date": "2023-10-06",
+          "peers": 376.0
+        },
+        {
+          "date": "2023-10-26",
+          "peers": 378.0
+        },
+        {
+          "date": "2023-10-26",
+          "peers": 378.0
+        },
+        {
+          "date": "2023-10-28",
+          "peers": 378.33
+        },
+        {
+          "date": "2023-10-30",
+          "peers": 379.67
+        },
+        {
+          "date": "2023-10-30",
+          "peers": 379.67
+        },
+        {
+          "date": "2023-11-01",
+          "peers": 380.5
+        },
+        {
+          "date": "2023-11-03",
+          "peers": 378.67
+        },
+        {
+          "date": "2023-11-13",
+          "peers": 378.0
+        },
+        {
+          "date": "2023-11-13",
+          "peers": 378.0
+        },
+        {
+          "date": "2023-11-17",
+          "peers": 380.33
+        },
+        {
+          "date": "2023-11-17",
+          "peers": 380.33
+        },
+        {
+          "date": "2023-11-21",
+          "peers": 378.5
+        },
+        {
+          "date": "2023-11-21",
+          "peers": 378.5
+        },
+        {
+          "date": "2023-11-23",
+          "peers": 376.0
+        },
+        {
+          "date": "2023-11-23",
+          "peers": 376.0
+        },
+        {
+          "date": "2023-11-23",
+          "peers": 376.0
+        },
+        {
+          "date": "2023-11-29",
+          "peers": 380.33
+        },
+        {
+          "date": "2023-11-29",
+          "peers": 380.33
+        },
+        {
+          "date": "2023-11-29",
+          "peers": 379.33
+        },
+        {
+          "date": "2023-12-03",
+          "peers": 378.17
+        },
+        {
+          "date": "2023-12-03",
+          "peers": 378.17
+        },
+        {
+          "date": "2023-12-03",
+          "peers": 377.67
+        },
+        {
+          "date": "2023-12-07",
+          "peers": 376.0
+        },
+        {
+          "date": "2023-12-17",
+          "peers": 378.5
+        },
+        {
+          "date": "2023-12-21",
+          "peers": 374.67
+        },
+        {
+          "date": "2023-12-21",
+          "peers": 374.67
+        },
+        {
+          "date": "2023-12-21",
+          "peers": 373.67
+        },
+        {
+          "date": "2023-12-23",
+          "peers": 371.67
+        },
+        {
+          "date": "2023-12-23",
+          "peers": 371.67
+        },
+        {
+          "date": "2023-12-23",
+          "peers": 370.67
+        },
+        {
+          "date": "2023-12-29",
+          "peers": 374.83
+        },
+        {
+          "date": "2023-12-29",
+          "peers": 374.83
+        },
+        {
+          "date": "2023-12-29",
+          "peers": 373.83
+        },
+        {
+          "date": "2024-01-06",
+          "peers": 377.0
+        },
+        {
+          "date": "2024-01-06",
+          "peers": 377.0
+        },
+        {
+          "date": "2024-01-06",
+          "peers": 376.0
+        },
+        {
+          "date": "2024-01-14",
+          "peers": 374.17
+        },
+        {
+          "date": "2024-01-14",
+          "peers": 374.0
+        },
+        {
+          "date": "2024-01-14",
+          "peers": 373.83
+        },
+        {
+          "date": "2024-01-16",
+          "peers": 369.33
+        },
+        {
+          "date": "2024-01-16",
+          "peers": 369.33
+        },
+        {
+          "date": "2024-01-16",
+          "peers": 369.33
+        },
+        {
+          "date": "2024-01-18",
+          "peers": 371.17
+        },
+        {
+          "date": "2024-01-18",
+          "peers": 371.17
+        },
+        {
+          "date": "2024-01-18",
+          "peers": 371.17
+        },
+        {
+          "date": "2024-01-28",
+          "peers": 373.5
+        },
+        {
+          "date": "2024-01-28",
+          "peers": 373.5
+        },
+        {
+          "date": "2024-01-28",
+          "peers": 373.5
+        },
+        {
+          "date": "2024-02-11",
+          "peers": 371.67
+        },
+        {
+          "date": "2024-02-11",
+          "peers": 371.67
+        },
+        {
+          "date": "2024-02-11",
+          "peers": 371.67
+        },
+        {
+          "date": "2024-02-13",
+          "peers": 373.33
+        },
+        {
+          "date": "2024-02-13",
+          "peers": 373.33
+        },
+        {
+          "date": "2024-02-13",
+          "peers": 373.33
+        },
+        {
+          "date": "2024-02-17",
+          "peers": 370.67
+        },
+        {
+          "date": "2024-02-17",
+          "peers": 370.67
+        },
+        {
+          "date": "2024-02-17",
+          "peers": 370.67
+        },
+        {
+          "date": "2024-02-23",
+          "peers": 368.67
+        },
+        {
+          "date": "2024-02-23",
+          "peers": 368.67
+        },
+        {
+          "date": "2024-02-23",
+          "peers": 368.67
+        },
+        {
+          "date": "2024-02-29",
+          "peers": 370.5
+        },
+        {
+          "date": "2024-02-29",
+          "peers": 370.5
+        },
+        {
+          "date": "2024-02-29",
+          "peers": 370.5
+        },
+        {
+          "date": "2024-03-14",
+          "peers": 368.33
+        },
+        {
+          "date": "2024-03-14",
+          "peers": 368.33
+        },
+        {
+          "date": "2024-03-14",
+          "peers": 368.33
+        },
+        {
+          "date": "2024-03-22",
+          "peers": 370.5
+        },
+        {
+          "date": "2024-03-22",
+          "peers": 370.5
+        },
+        {
+          "date": "2024-03-22",
+          "peers": 370.5
+        },
+        {
+          "date": "2024-04-01",
+          "peers": 372.17
+        },
+        {
+          "date": "2024-04-01",
+          "peers": 372.17
+        },
+        {
+          "date": "2024-04-01",
+          "peers": 372.17
+        },
+        {
+          "date": "2024-04-11",
+          "peers": 370.5
+        },
+        {
+          "date": "2024-04-17",
+          "peers": 366.5
+        },
+        {
+          "date": "2024-04-17",
+          "peers": 366.5
+        },
+        {
+          "date": "2024-04-17",
+          "peers": 366.5
+        },
+        {
+          "date": "2024-05-15",
+          "peers": 363.67
+        },
+        {
+          "date": "2024-05-15",
+          "peers": 363.67
+        },
+        {
+          "date": "2024-05-15",
+          "peers": 363.67
+        },
+        {
+          "date": "2024-05-29",
+          "peers": 365.5
+        },
+        {
+          "date": "2024-05-29",
+          "peers": 365.5
+        },
+        {
+          "date": "2024-05-29",
+          "peers": 365.5
+        },
+        {
+          "date": "2024-06-04",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-06-04",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-06-04",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-06-08",
+          "peers": 366.83
+        },
+        {
+          "date": "2024-06-08",
+          "peers": 366.83
+        },
+        {
+          "date": "2024-06-08",
+          "peers": 366.83
+        },
+        {
+          "date": "2024-06-12",
+          "peers": 365.0
+        },
+        {
+          "date": "2024-06-12",
+          "peers": 365.0
+        },
+        {
+          "date": "2024-06-12",
+          "peers": 365.0
+        },
+        {
+          "date": "2024-06-14",
+          "peers": 362.17
+        },
+        {
+          "date": "2024-06-14",
+          "peers": 362.17
+        },
+        {
+          "date": "2024-06-14",
+          "peers": 362.17
+        },
+        {
+          "date": "2024-06-18",
+          "peers": 359.83
+        },
+        {
+          "date": "2024-06-18",
+          "peers": 359.83
+        },
+        {
+          "date": "2024-06-18",
+          "peers": 359.83
+        },
+        {
+          "date": "2024-06-20",
+          "peers": 350.33
+        },
+        {
+          "date": "2024-06-20",
+          "peers": 350.33
+        },
+        {
+          "date": "2024-06-20",
+          "peers": 350.33
+        },
+        {
+          "date": "2024-06-22",
+          "peers": 360.67
+        },
+        {
+          "date": "2024-06-22",
+          "peers": 360.67
+        },
+        {
+          "date": "2024-06-22",
+          "peers": 360.67
+        },
+        {
+          "date": "2024-06-24",
+          "peers": 358.83
+        },
+        {
+          "date": "2024-06-30",
+          "peers": 358.5
+        },
+        {
+          "date": "2024-06-30",
+          "peers": 358.5
+        },
+        {
+          "date": "2024-07-02",
+          "peers": 360.33
+        },
+        {
+          "date": "2024-07-02",
+          "peers": 360.33
+        },
+        {
+          "date": "2024-07-10",
+          "peers": 361.0
+        },
+        {
+          "date": "2024-07-18",
+          "peers": 359.0
+        },
+        {
+          "date": "2024-07-24",
+          "peers": 358.5
+        },
+        {
+          "date": "2024-07-24",
+          "peers": 358.5
+        },
+        {
+          "date": "2024-08-09",
+          "peers": 361.0
+        },
+        {
+          "date": "2024-08-09",
+          "peers": 361.0
+        },
+        {
+          "date": "2024-08-09",
+          "peers": 361.0
+        },
+        {
+          "date": "2024-08-11",
+          "peers": 363.0
+        },
+        {
+          "date": "2024-08-11",
+          "peers": 363.0
+        },
+        {
+          "date": "2024-08-11",
+          "peers": 363.0
+        },
+        {
+          "date": "2024-08-15",
+          "peers": 361.0
+        },
+        {
+          "date": "2024-08-15",
+          "peers": 361.0
+        },
+        {
+          "date": "2024-08-15",
+          "peers": 361.0
+        },
+        {
+          "date": "2024-08-25",
+          "peers": 359.33
+        },
+        {
+          "date": "2024-08-31",
+          "peers": 361.0
+        },
+        {
+          "date": "2024-09-02",
+          "peers": 359.0
+        },
+        {
+          "date": "2024-09-04",
+          "peers": 360.83
+        },
+        {
+          "date": "2024-09-18",
+          "peers": 359.0
+        },
+        {
+          "date": "2024-09-18",
+          "peers": 359.0
+        },
+        {
+          "date": "2024-09-18",
+          "peers": 357.67
+        },
+        {
+          "date": "2024-09-20",
+          "peers": 359.33
+        },
+        {
+          "date": "2024-09-24",
+          "peers": 328.0
+        },
+        {
+          "date": "2024-09-24",
+          "peers": 328.0
+        },
+        {
+          "date": "2024-09-24",
+          "peers": 328.0
+        },
+        {
+          "date": "2024-09-28",
+          "peers": 324.17
+        },
+        {
+          "date": "2024-09-28",
+          "peers": 324.17
+        },
+        {
+          "date": "2024-09-28",
+          "peers": 324.17
+        },
+        {
+          "date": "2024-10-06",
+          "peers": 326.67
+        },
+        {
+          "date": "2024-10-06",
+          "peers": 326.67
+        },
+        {
+          "date": "2024-10-06",
+          "peers": 326.67
+        },
+        {
+          "date": "2024-10-08",
+          "peers": 329.67
+        },
+        {
+          "date": "2024-10-08",
+          "peers": 329.67
+        },
+        {
+          "date": "2024-10-08",
+          "peers": 329.67
+        },
+        {
+          "date": "2024-10-12",
+          "peers": 331.67
+        },
+        {
+          "date": "2024-10-12",
+          "peers": 331.67
+        },
+        {
+          "date": "2024-10-12",
+          "peers": 331.67
+        },
+        {
+          "date": "2024-10-18",
+          "peers": 330.0
+        },
+        {
+          "date": "2024-10-18",
+          "peers": 330.0
+        },
+        {
+          "date": "2024-10-18",
+          "peers": 330.0
+        },
+        {
+          "date": "2024-10-24",
+          "peers": 333.83
+        },
+        {
+          "date": "2024-10-24",
+          "peers": 333.5
+        },
+        {
+          "date": "2024-10-24",
+          "peers": 333.83
+        },
+        {
+          "date": "2024-10-26",
+          "peers": 335.83
+        },
+        {
+          "date": "2024-10-26",
+          "peers": 335.83
+        },
+        {
+          "date": "2024-10-26",
+          "peers": 335.83
+        },
+        {
+          "date": "2024-11-09",
+          "peers": 338.0
+        },
+        {
+          "date": "2024-11-09",
+          "peers": 338.0
+        },
+        {
+          "date": "2024-11-09",
+          "peers": 338.0
+        },
+        {
+          "date": "2024-11-11",
+          "peers": 339.67
+        },
+        {
+          "date": "2024-11-11",
+          "peers": 339.67
+        },
+        {
+          "date": "2024-11-11",
+          "peers": 339.67
+        },
+        {
+          "date": "2024-11-19",
+          "peers": 344.17
+        },
+        {
+          "date": "2024-11-19",
+          "peers": 344.17
+        },
+        {
+          "date": "2024-11-19",
+          "peers": 344.17
+        },
+        {
+          "date": "2024-11-23",
+          "peers": 341.17
+        },
+        {
+          "date": "2024-11-23",
+          "peers": 341.17
+        },
+        {
+          "date": "2024-11-23",
+          "peers": 341.17
+        },
+        {
+          "date": "2024-11-25",
+          "peers": 338.83
+        },
+        {
+          "date": "2024-11-25",
+          "peers": 338.83
+        },
+        {
+          "date": "2024-11-25",
+          "peers": 338.83
+        },
+        {
+          "date": "2024-11-27",
+          "peers": 341.5
+        },
+        {
+          "date": "2024-11-27",
+          "peers": 341.5
+        },
+        {
+          "date": "2024-11-27",
+          "peers": 341.5
+        },
+        {
+          "date": "2024-11-29",
+          "peers": 343.67
+        },
+        {
+          "date": "2024-11-29",
+          "peers": 343.67
+        },
+        {
+          "date": "2024-11-29",
+          "peers": 343.67
+        },
+        {
+          "date": "2024-12-11",
+          "peers": 345.33
+        },
+        {
+          "date": "2024-12-11",
+          "peers": 345.33
+        },
+        {
+          "date": "2024-12-11",
+          "peers": 345.33
+        },
+        {
+          "date": "2024-12-13",
+          "peers": 347.5
+        },
+        {
+          "date": "2024-12-13",
+          "peers": 347.5
+        },
+        {
+          "date": "2024-12-13",
+          "peers": 347.5
+        },
+        {
+          "date": "2024-12-21",
+          "peers": 350.5
+        },
+        {
+          "date": "2024-12-21",
+          "peers": 350.5
+        },
+        {
+          "date": "2024-12-21",
+          "peers": 350.5
+        }
+      ],
+      "events": [],
+      "kinetic_event_count": 0,
+      "sample_prefix": "2.188.18.0/24",
+      "peer_min": 324.17,
+      "peer_max": 380.5,
+      "top_neighbours": [
+        {
+          "asn": 49666,
+          "holder": "TIC-GW-AS - Telecommunication Infrastructure Company",
+          "country": "IR",
+          "v4_peers": 650785,
+          "type": "left",
+          "is_adversary": false
+        },
+        {
+          "asn": 42337,
+          "holder": "RESPINA-AS - Respina Networks & Beyond PJSC",
+          "country": "IR",
+          "v4_peers": 501586,
+          "type": "right",
+          "is_adversary": false
+        },
+        {
+          "asn": 202251,
+          "holder": "PADIZ-DADERESAN-COMPANY - Padiz-Daderesan-Company",
+          "country": "IR",
+          "v4_peers": 27950,
+          "type": "right",
+          "is_adversary": false
+        },
+        {
+          "asn": 59441,
+          "holder": "HOSTIRAN-NETWORK - NOAVARAN SHABAKEH SABZ MEHREGAN (Ltd.)",
+          "country": "IR",
+          "v4_peers": 26885,
+          "type": "right",
+          "is_adversary": false
+        },
+        {
+          "asn": 200370,
+          "holder": "FPCC-AS - Farzanegan Pars Communications Company PJS",
+          "country": "IR",
+          "v4_peers": 24074,
+          "type": "right",
+          "is_adversary": false
+        },
+        {
+          "asn": 48434,
+          "holder": "TEBYAN - Tebyan-e-Noor Cultural-Artistic Institute",
+          "country": "IR",
+          "v4_peers": 15551,
+          "type": "right",
+          "is_adversary": false
+        },
+        {
+          "asn": 41881,
+          "holder": "FANAVA-AS - Fanava Group",
+          "country": "IR",
+          "v4_peers": 6685,
+          "type": "right",
+          "is_adversary": false
+        },
+        {
+          "asn": 60148,
+          "holder": "ITO-AS - Iran Information Technology Company PJSC",
+          "country": "IR",
+          "v4_peers": 4910,
+          "type": "right",
+          "is_adversary": false
+        },
+        {
+          "asn": 50810,
+          "holder": "MOBINNET-AS - Mobin Net Communication Company (Private Joint Stock)",
+          "country": "IR",
+          "v4_peers": 4035,
+          "type": "right",
+          "is_adversary": false
+        },
+        {
+          "asn": 58224,
+          "holder": "TCI - Iran Telecommunication Company PJS",
+          "country": "IR",
+          "v4_peers": 2706,
+          "type": "right",
+          "is_adversary": true
+        },
+        {
+          "asn": 57292,
+          "holder": "ITRC - ICT Research Institute (Iran Telecommunications Research Center \"ITRC\")",
+          "country": "IR",
+          "v4_peers": 1876,
+          "type": "right",
+          "is_adversary": false
+        },
+        {
+          "asn": 202735,
+          "holder": "CRA - Communication Regulatory Authority",
+          "country": "IR",
+          "v4_peers": 1482,
+          "type": "right",
+          "is_adversary": false
+        }
+      ],
+      "periods": {
+        "scenario_start": {
+          "description": "Conflict baseline (2023-10)",
+          "date": "2023-10-01",
+          "update_count": 0,
+          "classifications": {
+            "adversary-routed": 1,
+            "neutral": 1
+          },
+          "sample_paths": [
+            "58224 \u2192 12880",
+            "49666 \u2192 12880",
+            "42337 \u2192 12880",
+            "202251 \u2192 12880",
+            "59441 \u2192 12880",
+            "200370 \u2192 12880",
+            "48434 \u2192 12880",
+            "41881 \u2192 12880",
+            "60148 \u2192 12880",
+            "50810 \u2192 12880",
+            "57292 \u2192 12880",
+            "202735 \u2192 12880"
+          ]
+        },
+        "peer_cliff": {
+          "description": "Peer visibility cliff (-35 peers in 7d)",
+          "date": "2024-09-28",
+          "update_count": 0,
+          "classifications": {
+            "adversary-routed": 1,
+            "neutral": 1
+          },
+          "sample_paths": [
+            "58224 \u2192 12880",
+            "49666 \u2192 12880",
+            "42337 \u2192 12880",
+            "202251 \u2192 12880",
+            "59441 \u2192 12880",
+            "200370 \u2192 12880",
+            "48434 \u2192 12880",
+            "41881 \u2192 12880",
+            "60148 \u2192 12880",
+            "50810 \u2192 12880",
+            "57292 \u2192 12880",
+            "202735 \u2192 12880"
+          ]
+        },
+        "recent": {
+          "description": "Recent observation (2024-12)",
+          "date": "2024-12-31",
+          "update_count": 0,
+          "classifications": {
+            "adversary-routed": 1,
+            "neutral": 1
+          },
+          "sample_paths": [
+            "58224 \u2192 12880",
+            "49666 \u2192 12880",
+            "42337 \u2192 12880",
+            "202251 \u2192 12880",
+            "59441 \u2192 12880",
+            "200370 \u2192 12880",
+            "48434 \u2192 12880",
+            "41881 \u2192 12880",
+            "60148 \u2192 12880",
+            "50810 \u2192 12880",
+            "57292 \u2192 12880",
+            "202735 \u2192 12880"
+          ]
+        }
+      },
+      "summary": {
+        "kinetic_event_count": 0,
+        "first_event": null,
+        "last_event": null,
+        "max_bgp_updates_in_day": 0,
+        "peer_count_min": 324.17,
+        "peer_count_max": 380.5,
+        "peer_count_drop": 56.3
+      },
+      "mitigations": {
+        "recommended": [
+          "as_path_filtering",
+          "transit_diversity",
+          "ixp_neutral_peering",
+          "mtls_dot_doh",
+          "rpki_path_validation",
+          "rpki_roa",
+          "rov_upstream",
+          "manrs_membership",
+          "ris_monitoring"
+        ],
+        "rationales": {
+          "adversarial_transit": "1 Russian-routed path(s) observed in BGP samples",
+          "sorm_exposure": "SORM-capable ASes (AS58224) on observed path \u2192 unencrypted traffic legally subject to interception",
+          "baseline": "minimum BGP-security hygiene applicable to every operator"
+        }
+      }
+    }
+  ],
+  "chokepoints": {
+    "graph_stats": {
+      "ases": 1,
+      "edges": 1,
+      "paths_observed": 83,
+      "source_peers": 1,
+      "ua_targets": 6
+    },
+    "top_chokepoints": [
+      {
+        "asn": 58224,
+        "centrality": 100.0,
+        "raw_score": 1,
+        "neighbors": 2706,
+        "holder": "Iran Telecom Co.",
+        "country": "",
+        "country_name": "",
+        "classification": "Russian",
+        "sorm_role": "State carrier",
+        "is_adversarial": true
+      }
+    ],
+    "adversarial_chokepoints": [
+      {
+        "asn": 58224,
+        "centrality": 100.0,
+        "raw_score": 1,
+        "neighbors": 2706,
+        "holder": "Iran Telecom Co.",
+        "country": "",
+        "country_name": "",
+        "classification": "Russian",
+        "sorm_role": "State carrier",
+        "is_adversarial": true
+      }
+    ]
+  },
+  "totals": {
+    "city_count": 6,
+    "total_events": 237,
+    "exposed_cities": 0,
+    "critical_cities": 0,
+    "max_threat": 28,
+    "mean_threat": 14,
+    "total_adversarial_adjacencies": 1
+  },
+  "generated_at": "2026-04-26T03:58:27.809619+00:00"
+}

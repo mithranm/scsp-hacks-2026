@@ -1,0 +1,82 @@
+{
+  "russia_ukraine": {
+    "name": "Russia \u2194 Ukraine",
+    "region": "Eastern Europe",
+    "active_since": "2022-02-24",
+    "summary": "Full-scale Russian invasion since Feb 2022. Documented BGP rerouting of occupied Ukrainian territory through Russian state-operated transit subject to SORM legal-intercept.",
+    "totals": {
+      "city_count": 6,
+      "total_events": 3431,
+      "exposed_cities": 4,
+      "critical_cities": 0,
+      "max_threat": 41,
+      "mean_threat": 32,
+      "total_adversarial_adjacencies": 4
+    },
+    "data_source": "live"
+  },
+  "sudan_civil_war": {
+    "name": "Sudan civil war (SAF \u2194 RSF)",
+    "region": "East Africa",
+    "active_since": "2023-04-15",
+    "summary": "Multiple nationwide internet shutdowns since April 2023. Sudatel (AS33788), MTN Sudan (AS36972), and Zain Sudan (AS37197) routing repeatedly withdrawn or rerouted through neighbouring states under fighting.",
+    "totals": {
+      "city_count": 5,
+      "total_events": 1097,
+      "exposed_cities": 5,
+      "critical_cities": 3,
+      "max_threat": 65,
+      "mean_threat": 55,
+      "total_adversarial_adjacencies": 0
+    },
+    "data_source": "live"
+  },
+  "myanmar_civil_war": {
+    "name": "Myanmar civil war",
+    "region": "Southeast Asia",
+    "active_since": "2021-02-01",
+    "summary": "Following the 2021 coup, the junta has repeatedly imposed nationwide internet shutdowns and forces all traffic through state-controlled MPT (AS9988) for surveillance. Mytel (AS135522) is partly owned by the junta-aligned military.",
+    "totals": {
+      "city_count": 4,
+      "total_events": 3181,
+      "exposed_cities": 4,
+      "critical_cities": 0,
+      "max_threat": 46,
+      "mean_threat": 40,
+      "total_adversarial_adjacencies": 0
+    },
+    "data_source": "live"
+  },
+  "iran_yemen_houthi": {
+    "name": "Iran proxy network (Yemen, Iraq)",
+    "region": "Middle East",
+    "active_since": "2014-09-01",
+    "summary": "Yemen routes through Iran-aligned transit during periods of Saudi blockade. Iran (TIC AS12880) operates the country's single international gateway with full deep-packet inspection.",
+    "totals": {
+      "city_count": 6,
+      "total_events": 237,
+      "exposed_cities": 0,
+      "critical_cities": 0,
+      "max_threat": 28,
+      "mean_threat": 14,
+      "total_adversarial_adjacencies": 1
+    },
+    "data_source": "live"
+  },
+  "china_taiwan": {
+    "name": "China \u2194 Taiwan",
+    "region": "East Asia",
+    "active_since": "1949-01-01",
+    "summary": "Taiwan Strait contingency. Major Taiwanese ASes maintain direct adjacency to PRC state-operated transit (China Telecom, Unicom, Mobile) \u2014 providing immediate intercept and route-hijack capability if Beijing chose to weaponize it.",
+    "totals": {
+      "city_count": 5,
+      "total_events": 0,
+      "exposed_cities": 3,
+      "critical_cities": 1,
+      "max_threat": 65,
+      "mean_threat": 35,
+      "total_adversarial_adjacencies": 7
+    },
+    "data_source": "contingency"
+  }
+}

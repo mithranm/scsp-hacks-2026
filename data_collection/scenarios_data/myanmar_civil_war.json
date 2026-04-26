@@ -1,0 +1,5712 @@
+{
+  "id": "myanmar_civil_war",
+  "name": "Myanmar civil war",
+  "region": "Southeast Asia",
+  "active_since": "2021-02-01",
+  "primary_actor": "Tatmadaw (military junta) / People's Defence Force / EAOs",
+  "secondary_actor": "Civilian population",
+  "summary": "Following the 2021 coup, the junta has repeatedly imposed nationwide internet shutdowns and forces all traffic through state-controlled MPT (AS9988) for surveillance. Mytel (AS135522) is partly owned by the junta-aligned military.",
+  "data_source": "live",
+  "date_start": "2023-01-01",
+  "date_end": "2024-12-31",
+  "adversarial_ases": {
+    "9988": {
+      "operator": "MPT Myanmar",
+      "role": "State telecom under military control"
+    },
+    "136255": {
+      "operator": "Myanmar Posts",
+      "role": "Junta-controlled"
+    },
+    "135522": {
+      "operator": "Mytel",
+      "role": "Military-aligned (Tatmadaw stake)"
+    },
+    "132225": {
+      "operator": "Telecom International Myanmar",
+      "role": "Naypyidaw national-government carrier"
+    }
+  },
+  "cities": [
+    {
+      "city": "Yangon",
+      "asn": 9988,
+      "lat": 16.8409,
+      "lon": 96.1735,
+      "threat": {
+        "score": 46,
+        "level": "elevated",
+        "components": {
+          "blackout": 40,
+          "instability": 5.5,
+          "russian_route": 0,
+          "sorm_exposure": 0
+        },
+        "evidence": {
+          "peer_count_drop": 355.3,
+          "peer_min": 26.0,
+          "kinetic_events_local": 11,
+          "max_bgp_updates_in_day": 0,
+          "russian_paths_count": 0,
+          "sorm_ases_observed": [],
+          "neighbours_total": 1,
+          "adversarial_neighbours": []
+        }
+      },
+      "peer_timeline": [
+        {
+          "date": "2023-01-01",
+          "peers": 372.83
+        },
+        {
+          "date": "2023-01-01",
+          "peers": 373.83
+        },
+        {
+          "date": "2023-01-09",
+          "peers": 370.5
+        },
+        {
+          "date": "2023-01-09",
+          "peers": 371.5
+        },
+        {
+          "date": "2023-01-31",
+          "peers": 372.83
+        },
+        {
+          "date": "2023-02-02",
+          "peers": 369.0
+        },
+        {
+          "date": "2023-02-02",
+          "peers": 26.0
+        },
+        {
+          "date": "2023-02-04",
+          "peers": 374.67
+        },
+        {
+          "date": "2023-02-04",
+          "peers": 374.67
+        },
+        {
+          "date": "2023-02-06",
+          "peers": 312.17
+        },
+        {
+          "date": "2023-02-08",
+          "peers": 375.5
+        },
+        {
+          "date": "2023-02-14",
+          "peers": 377.17
+        },
+        {
+          "date": "2023-02-14",
+          "peers": 377.17
+        },
+        {
+          "date": "2023-02-18",
+          "peers": 374.83
+        },
+        {
+          "date": "2023-02-18",
+          "peers": 374.83
+        },
+        {
+          "date": "2023-03-02",
+          "peers": 372.67
+        },
+        {
+          "date": "2023-03-02",
+          "peers": 372.67
+        },
+        {
+          "date": "2023-03-08",
+          "peers": 369.83
+        },
+        {
+          "date": "2023-03-08",
+          "peers": 369.83
+        },
+        {
+          "date": "2023-03-14",
+          "peers": 365.67
+        },
+        {
+          "date": "2023-03-14",
+          "peers": 365.5
+        },
+        {
+          "date": "2023-03-16",
+          "peers": 363.83
+        },
+        {
+          "date": "2023-03-16",
+          "peers": 363.83
+        },
+        {
+          "date": "2023-03-18",
+          "peers": 361.17
+        },
+        {
+          "date": "2023-03-18",
+          "peers": 361.17
+        },
+        {
+          "date": "2023-03-20",
+          "peers": 363.67
+        },
+        {
+          "date": "2023-03-20",
+          "peers": 363.67
+        },
+        {
+          "date": "2023-03-22",
+          "peers": 365.5
+        },
+        {
+          "date": "2023-03-22",
+          "peers": 365.5
+        },
+        {
+          "date": "2023-03-24",
+          "peers": 363.17
+        },
+        {
+          "date": "2023-03-24",
+          "peers": 363.17
+        },
+        {
+          "date": "2023-03-28",
+          "peers": 366.33
+        },
+        {
+          "date": "2023-03-28",
+          "peers": 366.33
+        },
+        {
+          "date": "2023-04-01",
+          "peers": 368.0
+        },
+        {
+          "date": "2023-04-01",
+          "peers": 368.0
+        },
+        {
+          "date": "2023-04-05",
+          "peers": 366.33
+        },
+        {
+          "date": "2023-04-09",
+          "peers": 365.5
+        },
+        {
+          "date": "2023-04-09",
+          "peers": 364.5
+        },
+        {
+          "date": "2023-04-13",
+          "peers": 367.67
+        },
+        {
+          "date": "2023-04-13",
+          "peers": 366.67
+        },
+        {
+          "date": "2023-04-15",
+          "peers": 366.0
+        },
+        {
+          "date": "2023-04-15",
+          "peers": 365.0
+        },
+        {
+          "date": "2023-04-17",
+          "peers": 368.0
+        },
+        {
+          "date": "2023-04-17",
+          "peers": 367.0
+        },
+        {
+          "date": "2023-04-21",
+          "peers": 332.0
+        },
+        {
+          "date": "2023-04-21",
+          "peers": 331.0
+        },
+        {
+          "date": "2023-04-23",
+          "peers": 325.17
+        },
+        {
+          "date": "2023-04-23",
+          "peers": 324.17
+        },
+        {
+          "date": "2023-04-25",
+          "peers": 327.33
+        },
+        {
+          "date": "2023-04-25",
+          "peers": 326.83
+        },
+        {
+          "date": "2023-04-27",
+          "peers": 312.67
+        },
+        {
+          "date": "2023-04-27",
+          "peers": 312.67
+        },
+        {
+          "date": "2023-04-29",
+          "peers": 290.17
+        },
+        {
+          "date": "2023-04-29",
+          "peers": 290.17
+        },
+        {
+          "date": "2023-05-03",
+          "peers": 287.17
+        },
+        {
+          "date": "2023-05-03",
+          "peers": 287.17
+        },
+        {
+          "date": "2023-05-05",
+          "peers": 289.5
+        },
+        {
+          "date": "2023-05-05",
+          "peers": 289.5
+        },
+        {
+          "date": "2023-05-09",
+          "peers": 291.33
+        },
+        {
+          "date": "2023-05-09",
+          "peers": 291.33
+        },
+        {
+          "date": "2023-05-11",
+          "peers": 297.17
+        },
+        {
+          "date": "2023-05-11",
+          "peers": 297.17
+        },
+        {
+          "date": "2023-05-13",
+          "peers": 240.0
+        },
+        {
+          "date": "2023-05-13",
+          "peers": 240.0
+        },
+        {
+          "date": "2023-05-15",
+          "peers": 228.0
+        },
+        {
+          "date": "2023-05-15",
+          "peers": 228.0
+        },
+        {
+          "date": "2023-05-17",
+          "peers": 267.67
+        },
+        {
+          "date": "2023-05-17",
+          "peers": 267.67
+        },
+        {
+          "date": "2023-05-19",
+          "peers": 228.67
+        },
+        {
+          "date": "2023-05-19",
+          "peers": 228.67
+        },
+        {
+          "date": "2023-05-21",
+          "peers": 299.5
+        },
+        {
+          "date": "2023-05-21",
+          "peers": 299.5
+        },
+        {
+          "date": "2023-05-23",
+          "peers": 301.83
+        },
+        {
+          "date": "2023-05-23",
+          "peers": 301.83
+        },
+        {
+          "date": "2023-05-25",
+          "peers": 336.5
+        },
+        {
+          "date": "2023-05-25",
+          "peers": 336.5
+        },
+        {
+          "date": "2023-05-27",
+          "peers": 381.17
+        },
+        {
+          "date": "2023-05-27",
+          "peers": 381.33
+        },
+        {
+          "date": "2023-05-31",
+          "peers": 379.17
+        },
+        {
+          "date": "2023-05-31",
+          "peers": 379.17
+        },
+        {
+          "date": "2023-06-04",
+          "peers": 381.0
+        },
+        {
+          "date": "2023-06-08",
+          "peers": 378.0
+        },
+        {
+          "date": "2023-06-10",
+          "peers": 375.83
+        },
+        {
+          "date": "2023-06-10",
+          "peers": 375.83
+        },
+        {
+          "date": "2023-06-12",
+          "peers": 374.17
+        },
+        {
+          "date": "2023-06-12",
+          "peers": 374.17
+        },
+        {
+          "date": "2023-06-14",
+          "peers": 377.5
+        },
+        {
+          "date": "2023-06-14",
+          "peers": 377.5
+        },
+        {
+          "date": "2023-06-20",
+          "peers": 374.0
+        },
+        {
+          "date": "2023-06-20",
+          "peers": 374.0
+        },
+        {
+          "date": "2023-06-22",
+          "peers": 370.33
+        },
+        {
+          "date": "2023-06-22",
+          "peers": 370.33
+        },
+        {
+          "date": "2023-06-26",
+          "peers": 368.5
+        },
+        {
+          "date": "2023-06-26",
+          "peers": 368.5
+        },
+        {
+          "date": "2023-07-08",
+          "peers": 371.0
+        },
+        {
+          "date": "2023-07-08",
+          "peers": 371.0
+        },
+        {
+          "date": "2023-07-20",
+          "peers": 363.33
+        },
+        {
+          "date": "2023-07-20",
+          "peers": 363.33
+        },
+        {
+          "date": "2023-07-26",
+          "peers": 365.5
+        },
+        {
+          "date": "2023-07-26",
+          "peers": 365.5
+        },
+        {
+          "date": "2023-07-28",
+          "peers": 370.0
+        },
+        {
+          "date": "2023-07-28",
+          "peers": 369.83
+        },
+        {
+          "date": "2023-08-03",
+          "peers": 373.17
+        },
+        {
+          "date": "2023-08-03",
+          "peers": 373.17
+        },
+        {
+          "date": "2023-08-07",
+          "peers": 368.5
+        },
+        {
+          "date": "2023-08-07",
+          "peers": 368.5
+        },
+        {
+          "date": "2023-08-29",
+          "peers": 378.5
+        },
+        {
+          "date": "2023-08-29",
+          "peers": 378.5
+        },
+        {
+          "date": "2023-09-08",
+          "peers": 376.17
+        },
+        {
+          "date": "2023-09-08",
+          "peers": 376.17
+        },
+        {
+          "date": "2023-09-22",
+          "peers": 379.0
+        },
+        {
+          "date": "2023-09-22",
+          "peers": 379.0
+        },
+        {
+          "date": "2023-10-02",
+          "peers": 372.17
+        },
+        {
+          "date": "2023-10-02",
+          "peers": 372.17
+        },
+        {
+          "date": "2023-10-04",
+          "peers": 374.67
+        },
+        {
+          "date": "2023-10-04",
+          "peers": 374.67
+        },
+        {
+          "date": "2023-10-06",
+          "peers": 377.0
+        },
+        {
+          "date": "2023-10-06",
+          "peers": 377.0
+        },
+        {
+          "date": "2023-10-26",
+          "peers": 379.0
+        },
+        {
+          "date": "2023-10-26",
+          "peers": 379.0
+        },
+        {
+          "date": "2023-10-30",
+          "peers": 380.67
+        },
+        {
+          "date": "2023-10-30",
+          "peers": 380.67
+        },
+        {
+          "date": "2023-11-13",
+          "peers": 379.0
+        },
+        {
+          "date": "2023-11-13",
+          "peers": 379.0
+        },
+        {
+          "date": "2023-11-17",
+          "peers": 381.33
+        },
+        {
+          "date": "2023-11-17",
+          "peers": 381.33
+        },
+        {
+          "date": "2023-11-23",
+          "peers": 378.0
+        },
+        {
+          "date": "2023-11-23",
+          "peers": 378.0
+        },
+        {
+          "date": "2023-11-29",
+          "peers": 381.33
+        },
+        {
+          "date": "2023-11-29",
+          "peers": 381.33
+        },
+        {
+          "date": "2023-12-03",
+          "peers": 379.67
+        },
+        {
+          "date": "2023-12-03",
+          "peers": 379.67
+        },
+        {
+          "date": "2023-12-21",
+          "peers": 375.67
+        },
+        {
+          "date": "2023-12-21",
+          "peers": 375.67
+        },
+        {
+          "date": "2023-12-23",
+          "peers": 372.67
+        },
+        {
+          "date": "2023-12-23",
+          "peers": 372.67
+        },
+        {
+          "date": "2023-12-29",
+          "peers": 375.83
+        },
+        {
+          "date": "2023-12-29",
+          "peers": 375.83
+        },
+        {
+          "date": "2024-01-06",
+          "peers": 378.0
+        },
+        {
+          "date": "2024-01-06",
+          "peers": 378.0
+        },
+        {
+          "date": "2024-01-14",
+          "peers": 375.83
+        },
+        {
+          "date": "2024-01-14",
+          "peers": 375.83
+        },
+        {
+          "date": "2024-01-16",
+          "peers": 371.0
+        },
+        {
+          "date": "2024-01-16",
+          "peers": 371.0
+        },
+        {
+          "date": "2024-01-18",
+          "peers": 373.17
+        },
+        {
+          "date": "2024-01-18",
+          "peers": 373.17
+        },
+        {
+          "date": "2024-01-30",
+          "peers": 375.33
+        },
+        {
+          "date": "2024-01-30",
+          "peers": 375.33
+        },
+        {
+          "date": "2024-02-11",
+          "peers": 373.67
+        },
+        {
+          "date": "2024-02-11",
+          "peers": 373.67
+        },
+        {
+          "date": "2024-02-13",
+          "peers": 375.33
+        },
+        {
+          "date": "2024-02-13",
+          "peers": 375.33
+        },
+        {
+          "date": "2024-02-17",
+          "peers": 372.67
+        },
+        {
+          "date": "2024-02-17",
+          "peers": 372.67
+        },
+        {
+          "date": "2024-02-23",
+          "peers": 370.67
+        },
+        {
+          "date": "2024-02-23",
+          "peers": 370.67
+        },
+        {
+          "date": "2024-03-16",
+          "peers": 369.0
+        },
+        {
+          "date": "2024-03-16",
+          "peers": 369.0
+        },
+        {
+          "date": "2024-03-22",
+          "peers": 371.5
+        },
+        {
+          "date": "2024-03-22",
+          "peers": 371.5
+        },
+        {
+          "date": "2024-04-01",
+          "peers": 373.17
+        },
+        {
+          "date": "2024-04-01",
+          "peers": 373.17
+        },
+        {
+          "date": "2024-04-17",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-04-17",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-04-19",
+          "peers": 232.17
+        },
+        {
+          "date": "2024-04-21",
+          "peers": 95.67
+        },
+        {
+          "date": "2024-04-27",
+          "peers": 185.33
+        },
+        {
+          "date": "2024-04-29",
+          "peers": 367.33
+        },
+        {
+          "date": "2024-05-05",
+          "peers": 369.67
+        },
+        {
+          "date": "2024-05-15",
+          "peers": 366.67
+        },
+        {
+          "date": "2024-05-15",
+          "peers": 366.67
+        },
+        {
+          "date": "2024-05-25",
+          "peers": 365.0
+        },
+        {
+          "date": "2024-05-25",
+          "peers": 365.0
+        },
+        {
+          "date": "2024-05-29",
+          "peers": 367.5
+        },
+        {
+          "date": "2024-05-29",
+          "peers": 367.5
+        },
+        {
+          "date": "2024-06-04",
+          "peers": 370.5
+        },
+        {
+          "date": "2024-06-04",
+          "peers": 370.5
+        },
+        {
+          "date": "2024-06-08",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-06-08",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-06-14",
+          "peers": 365.0
+        },
+        {
+          "date": "2024-06-14",
+          "peers": 365.0
+        },
+        {
+          "date": "2024-06-18",
+          "peers": 361.83
+        },
+        {
+          "date": "2024-06-18",
+          "peers": 361.83
+        },
+        {
+          "date": "2024-06-20",
+          "peers": 352.33
+        },
+        {
+          "date": "2024-06-20",
+          "peers": 352.33
+        },
+        {
+          "date": "2024-06-22",
+          "peers": 362.67
+        },
+        {
+          "date": "2024-06-22",
+          "peers": 362.67
+        },
+        {
+          "date": "2024-06-24",
+          "peers": 360.83
+        },
+        {
+          "date": "2024-06-24",
+          "peers": 360.67
+        },
+        {
+          "date": "2024-06-24",
+          "peers": 360.83
+        },
+        {
+          "date": "2024-07-18",
+          "peers": 359.0
+        },
+        {
+          "date": "2024-07-18",
+          "peers": 359.0
+        },
+        {
+          "date": "2024-07-18",
+          "peers": 359.0
+        },
+        {
+          "date": "2024-08-09",
+          "peers": 361.0
+        },
+        {
+          "date": "2024-08-09",
+          "peers": 361.0
+        },
+        {
+          "date": "2024-08-09",
+          "peers": 361.0
+        },
+        {
+          "date": "2024-08-11",
+          "peers": 363.0
+        },
+        {
+          "date": "2024-08-11",
+          "peers": 363.0
+        },
+        {
+          "date": "2024-08-11",
+          "peers": 363.0
+        },
+        {
+          "date": "2024-08-15",
+          "peers": 361.0
+        },
+        {
+          "date": "2024-08-15",
+          "peers": 361.0
+        },
+        {
+          "date": "2024-08-15",
+          "peers": 361.0
+        },
+        {
+          "date": "2024-09-18",
+          "peers": 359.0
+        },
+        {
+          "date": "2024-09-18",
+          "peers": 359.0
+        },
+        {
+          "date": "2024-09-18",
+          "peers": 359.0
+        },
+        {
+          "date": "2024-09-24",
+          "peers": 329.0
+        },
+        {
+          "date": "2024-09-24",
+          "peers": 329.0
+        },
+        {
+          "date": "2024-09-24",
+          "peers": 329.0
+        },
+        {
+          "date": "2024-09-28",
+          "peers": 326.17
+        },
+        {
+          "date": "2024-09-28",
+          "peers": 326.17
+        },
+        {
+          "date": "2024-09-28",
+          "peers": 324.17
+        },
+        {
+          "date": "2024-10-06",
+          "peers": 328.67
+        },
+        {
+          "date": "2024-10-06",
+          "peers": 328.67
+        },
+        {
+          "date": "2024-10-06",
+          "peers": 326.67
+        },
+        {
+          "date": "2024-10-08",
+          "peers": 331.67
+        },
+        {
+          "date": "2024-10-08",
+          "peers": 331.67
+        },
+        {
+          "date": "2024-10-08",
+          "peers": 329.67
+        },
+        {
+          "date": "2024-10-20",
+          "peers": 328.0
+        },
+        {
+          "date": "2024-10-22",
+          "peers": 330.0
+        },
+        {
+          "date": "2024-10-22",
+          "peers": 330.0
+        },
+        {
+          "date": "2024-10-24",
+          "peers": 334.83
+        },
+        {
+          "date": "2024-10-24",
+          "peers": 334.83
+        },
+        {
+          "date": "2024-10-24",
+          "peers": 332.83
+        },
+        {
+          "date": "2024-10-26",
+          "peers": 336.83
+        },
+        {
+          "date": "2024-10-26",
+          "peers": 336.83
+        },
+        {
+          "date": "2024-10-26",
+          "peers": 334.83
+        },
+        {
+          "date": "2024-11-09",
+          "peers": 339.0
+        },
+        {
+          "date": "2024-11-09",
+          "peers": 339.0
+        },
+        {
+          "date": "2024-11-11",
+          "peers": 340.67
+        },
+        {
+          "date": "2024-11-11",
+          "peers": 340.67
+        },
+        {
+          "date": "2024-11-11",
+          "peers": 338.0
+        },
+        {
+          "date": "2024-11-19",
+          "peers": 345.17
+        },
+        {
+          "date": "2024-11-19",
+          "peers": 345.17
+        },
+        {
+          "date": "2024-11-19",
+          "peers": 342.17
+        },
+        {
+          "date": "2024-11-23",
+          "peers": 342.17
+        },
+        {
+          "date": "2024-11-23",
+          "peers": 342.17
+        },
+        {
+          "date": "2024-11-23",
+          "peers": 339.83
+        },
+        {
+          "date": "2024-11-25",
+          "peers": 339.83
+        },
+        {
+          "date": "2024-11-25",
+          "peers": 339.83
+        },
+        {
+          "date": "2024-11-25",
+          "peers": 336.83
+        },
+        {
+          "date": "2024-11-27",
+          "peers": 342.5
+        },
+        {
+          "date": "2024-11-27",
+          "peers": 342.5
+        },
+        {
+          "date": "2024-11-27",
+          "peers": 339.67
+        },
+        {
+          "date": "2024-11-29",
+          "peers": 344.67
+        },
+        {
+          "date": "2024-11-29",
+          "peers": 344.67
+        },
+        {
+          "date": "2024-11-29",
+          "peers": 341.67
+        },
+        {
+          "date": "2024-12-11",
+          "peers": 346.33
+        },
+        {
+          "date": "2024-12-11",
+          "peers": 346.33
+        },
+        {
+          "date": "2024-12-11",
+          "peers": 344.0
+        },
+        {
+          "date": "2024-12-13",
+          "peers": 348.5
+        },
+        {
+          "date": "2024-12-13",
+          "peers": 348.5
+        },
+        {
+          "date": "2024-12-15",
+          "peers": 346.0
+        },
+        {
+          "date": "2024-12-21",
+          "peers": 351.5
+        },
+        {
+          "date": "2024-12-21",
+          "peers": 351.5
+        },
+        {
+          "date": "2024-12-21",
+          "peers": 348.83
+        },
+        {
+          "date": "2024-12-27",
+          "peers": 347.17
+        }
+      ],
+      "events": [
+        {
+          "event_date": "2023-06-05",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 2,
+          "notes": "Mother, sister killed after militiaman accused of Myanmar singer\u2019s murder;Two civilian women killed in apparent retaliation for Lily Naing Kyaw\u2019s assassination"
+        },
+        {
+          "event_date": "2023-02-19",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Spring Revolution Daily News for 21 February 2023"
+        },
+        {
+          "event_date": "2023-03-30",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "At Least 40 Myanmar Junta Troops, Resistance Commander Killed in Four Days of Clashes"
+        },
+        {
+          "event_date": "2023-06-19",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Yangon Airport Security Chief Assassinated;Yangon Airport security chief assassinated"
+        },
+        {
+          "event_date": "2023-07-04",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Over 20 Myanmar Junta Forces Killed in Three Days of Resistance Attacks;Six Coordinated Explosions Rock Myanmar Junta Targets in Yangon"
+        },
+        {
+          "event_date": "2023-07-06",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 2,
+          "notes": "Daily Briefing in Relation to the Military Coup;Myanmar Junta Kills Two Alleged Assassins Who Tried to Escape;Two alleged assassins summarily executed in Myanmar junta custody"
+        },
+        {
+          "event_date": "2023-01-25",
+          "event_type": "Violence against civilians",
+          "actor1": "NUG",
+          "actor2": "Civilians",
+          "fatalities": 2,
+          "notes": "Myanmar Resistance Assassinates Junta 'Informant'"
+        },
+        {
+          "event_date": "2023-01-30",
+          "event_type": "Violence against civilians",
+          "actor1": "NUG",
+          "actor2": "Civilians",
+          "fatalities": 1,
+          "notes": "Myanmar Regime Says Seven Resistance Members Arrested for Yangon Assassinations"
+        },
+        {
+          "event_date": "2023-03-24",
+          "event_type": "Violence against civilians",
+          "actor1": "NUG",
+          "actor2": "Civilians",
+          "fatalities": 1,
+          "notes": "Yangon Guerrillas Kill Myanmar Junta Money Laundering Chief;Lawyer accused of aiding junta generals shot dead near Yangon"
+        },
+        {
+          "event_date": "2023-04-22",
+          "event_type": "Violence against civilians",
+          "actor1": "NUG",
+          "actor2": "Civilians",
+          "fatalities": 1,
+          "notes": "Myanmar military election official killed by guerrilla group in Yangon"
+        },
+        {
+          "event_date": "2023-12-01",
+          "event_type": "Violence against civilians",
+          "actor1": "NUG",
+          "actor2": "Civilians",
+          "fatalities": 1,
+          "notes": "Myanmar\u2019s Junta Faces an Increase in Resistance Attacks in Yangon, Reports Say"
+        }
+      ],
+      "kinetic_event_count": 11,
+      "sample_prefix": "136.228.171.0/24",
+      "peer_min": 26.0,
+      "peer_max": 381.33,
+      "top_neighbours": [
+        {
+          "asn": 45558,
+          "holder": "MPT-MM-AS-AP MYANMA POSTS AND TELECOMMUNICATIONS",
+          "country": "MM",
+          "v4_peers": 20184,
+          "type": "left",
+          "is_adversary": false
+        },
+        {
+          "asn": 174,
+          "holder": "COGENT-174 - Cogent Communications",
+          "country": "US",
+          "v4_peers": 20947,
+          "type": "upstream-of-upstream",
+          "is_adversary": false,
+          "via": 45558
+        },
+        {
+          "asn": 7473,
+          "holder": "SINGTEL-AS-AP Singapore Telecommunications Ltd",
+          "country": "SG",
+          "v4_peers": 15216,
+          "type": "upstream-of-upstream",
+          "is_adversary": false,
+          "via": 45558
+        },
+        {
+          "asn": 4651,
+          "holder": "NTPCL-AS-AP National Telecom Public Company Limited",
+          "country": "TH",
+          "v4_peers": 12544,
+          "type": "upstream-of-upstream",
+          "is_adversary": false,
+          "via": 45558
+        },
+        {
+          "asn": 6762,
+          "holder": "SEABONE-NET - TELECOM ITALIA SPARKLE S.p.A.",
+          "country": "IT",
+          "v4_peers": 8422,
+          "type": "upstream-of-upstream",
+          "is_adversary": false,
+          "via": 45558
+        },
+        {
+          "asn": 136975,
+          "holder": "GNET-AS-AP Global Technology",
+          "country": "MM",
+          "v4_peers": 4952,
+          "type": "upstream-of-upstream",
+          "is_adversary": false,
+          "via": 45558
+        },
+        {
+          "asn": 132100,
+          "holder": "MSN-AS-AP Myanmar Speed Net Co.",
+          "country": "MM",
+          "v4_peers": 3827,
+          "type": "upstream-of-upstream",
+          "is_adversary": false,
+          "via": 45558
+        },
+        {
+          "asn": 135307,
+          "holder": "GTMH-AS-AP Golden TMH Telecom Co. Ltd",
+          "country": "MM",
+          "v4_peers": 2916,
+          "type": "upstream-of-upstream",
+          "is_adversary": false,
+          "via": 45558
+        },
+        {
+          "asn": 136465,
+          "holder": "INFORMATIONTECHNOLOGYCYBERSECURITY-AS-AP Dept. of Information Technology & Cyber Security",
+          "country": "MM",
+          "v4_peers": 2731,
+          "type": "upstream-of-upstream",
+          "is_adversary": false,
+          "via": 45558
+        },
+        {
+          "asn": 134840,
+          "holder": "MCCL-AS-AP Myanmar Country Co.",
+          "country": "MM",
+          "v4_peers": 2608,
+          "type": "upstream-of-upstream",
+          "is_adversary": false,
+          "via": 45558
+        }
+      ],
+      "periods": {
+        "scenario_start": {
+          "description": "Conflict baseline (2023-01)",
+          "date": "2023-01-01",
+          "update_count": 0,
+          "classifications": {
+            "adversary-routed": 0,
+            "neutral": 1
+          },
+          "sample_paths": [
+            "45558 \u2192 9988",
+            "174 \u2192 45558 \u2192 9988",
+            "7473 \u2192 45558 \u2192 9988",
+            "4651 \u2192 45558 \u2192 9988",
+            "6762 \u2192 45558 \u2192 9988",
+            "136975 \u2192 45558 \u2192 9988",
+            "132100 \u2192 45558 \u2192 9988",
+            "135307 \u2192 45558 \u2192 9988",
+            "136465 \u2192 45558 \u2192 9988",
+            "134840 \u2192 45558 \u2192 9988"
+          ]
+        },
+        "peak_kinetic": {
+          "description": "Peak kinetic intensity",
+          "date": "2023-01-25",
+          "update_count": 2,
+          "classifications": {
+            "adversary-routed": 0,
+            "neutral": 1
+          },
+          "sample_paths": [
+            "45558 \u2192 9988",
+            "174 \u2192 45558 \u2192 9988",
+            "7473 \u2192 45558 \u2192 9988",
+            "4651 \u2192 45558 \u2192 9988",
+            "6762 \u2192 45558 \u2192 9988",
+            "136975 \u2192 45558 \u2192 9988",
+            "132100 \u2192 45558 \u2192 9988",
+            "135307 \u2192 45558 \u2192 9988",
+            "136465 \u2192 45558 \u2192 9988",
+            "134840 \u2192 45558 \u2192 9988"
+          ]
+        },
+        "peer_cliff": {
+          "description": "Peer visibility cliff (-276 peers in 7d)",
+          "date": "2024-04-21",
+          "update_count": 0,
+          "classifications": {
+            "adversary-routed": 0,
+            "neutral": 1
+          },
+          "sample_paths": [
+            "45558 \u2192 9988",
+            "174 \u2192 45558 \u2192 9988",
+            "7473 \u2192 45558 \u2192 9988",
+            "4651 \u2192 45558 \u2192 9988",
+            "6762 \u2192 45558 \u2192 9988",
+            "136975 \u2192 45558 \u2192 9988",
+            "132100 \u2192 45558 \u2192 9988",
+            "135307 \u2192 45558 \u2192 9988",
+            "136465 \u2192 45558 \u2192 9988",
+            "134840 \u2192 45558 \u2192 9988"
+          ]
+        },
+        "recent": {
+          "description": "Recent observation (2024-12)",
+          "date": "2024-12-31",
+          "update_count": 0,
+          "classifications": {
+            "adversary-routed": 0,
+            "neutral": 1
+          },
+          "sample_paths": [
+            "45558 \u2192 9988",
+            "174 \u2192 45558 \u2192 9988",
+            "7473 \u2192 45558 \u2192 9988",
+            "4651 \u2192 45558 \u2192 9988",
+            "6762 \u2192 45558 \u2192 9988",
+            "136975 \u2192 45558 \u2192 9988",
+            "132100 \u2192 45558 \u2192 9988",
+            "135307 \u2192 45558 \u2192 9988",
+            "136465 \u2192 45558 \u2192 9988",
+            "134840 \u2192 45558 \u2192 9988"
+          ]
+        }
+      },
+      "summary": {
+        "kinetic_event_count": 11,
+        "first_event": "2023-01-25",
+        "last_event": "2023-12-01",
+        "max_bgp_updates_in_day": 0,
+        "peer_count_min": 26.0,
+        "peer_count_max": 381.33,
+        "peer_count_drop": 355.3
+      },
+      "mitigations": {
+        "recommended": [
+          "starlink_alt_transport",
+          "transit_diversity",
+          "ixp_neutral_peering",
+          "ris_monitoring",
+          "rpki_roa",
+          "rov_upstream",
+          "manrs_membership"
+        ],
+        "rationales": {
+          "blackout": "peer count drop of 355.3 indicates effective communications blackout",
+          "baseline": "minimum BGP-security hygiene applicable to every operator"
+        }
+      }
+    },
+    {
+      "city": "Mandalay",
+      "asn": 135522,
+      "lat": 21.9588,
+      "lon": 96.0891,
+      "threat": {
+        "score": 37,
+        "level": "elevated",
+        "components": {
+          "blackout": 12.0,
+          "instability": 25,
+          "russian_route": 0,
+          "sorm_exposure": 0
+        },
+        "evidence": {
+          "peer_count_drop": 0,
+          "peer_min": 0,
+          "kinetic_events_local": 240,
+          "max_bgp_updates_in_day": 0,
+          "russian_paths_count": 0,
+          "sorm_ases_observed": [],
+          "neighbours_total": 0,
+          "adversarial_neighbours": []
+        }
+      },
+      "peer_timeline": [],
+      "events": [
+        {
+          "event_date": "2023-01-06",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 2,
+          "notes": "Over 60 Myanmar Junta Forces Killed in Three Days of Resistance Attacks;Monk Linked to Myanmar Junta Chief Killed in Sagaing Raid;Buddhist monk and a teacher found dead in Monastery basement"
+        },
+        {
+          "event_date": "2023-01-17",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 1,
+          "notes": "Over 80 Myanmar Junta Forces Killed in Three Days of Clashes With Resistance"
+        },
+        {
+          "event_date": "2023-02-02",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 1,
+          "notes": "Child shot dead in drunken soldiers\u2019 attack on civilian homes"
+        },
+        {
+          "event_date": "2023-02-06",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 1,
+          "notes": "Girl, 7, among three injured by junta shelling in southern Sagaing"
+        },
+        {
+          "event_date": "2023-02-28",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 2,
+          "notes": "Junta troops raze entire village in Myanmar\u2019s Sagaing region;Myanmar Junta Forces Kill Detained Villagers, Torches Homes in Sagaing"
+        },
+        {
+          "event_date": "2023-03-01",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 1,
+          "notes": "Junta troops raze entire village in Myanmar\u2019s Sagaing region;Four civilians killed in Myanmar military raid on Yinmabin Township village;Myanmar army attacks in Yinmabin and Wetlet townships leave vil"
+        },
+        {
+          "event_date": "2023-03-01",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 1,
+          "notes": "Myanmar Junta Rapes and Kills During Sagaing Raid;Myanmar Junta Has Committed 32 Civilian Massacres Since Coup: NUG;Myanmar Regime Task Force Leaves Trail of Beheaded and Mutilated Victims"
+        },
+        {
+          "event_date": "2023-03-02",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 7,
+          "notes": "Myanmar Junta Forces Kill Detained Villagers, Torches Homes in Sagaing"
+        },
+        {
+          "event_date": "2023-03-02",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 14,
+          "notes": "Daily Briefing in Relation to the Military Coup;Myanmar Junta Rapes and Kills During Sagaing Raid;Nearly 70 Myanmar Junta Forces Killed in Three Days of Resistance Attacks;Myanmar Junta Has Committed "
+        },
+        {
+          "event_date": "2023-03-13",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 1,
+          "notes": "Myanmar army troops kill four civilians in raids on villages along Ayeyarwady River"
+        },
+        {
+          "event_date": "2023-03-13",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 1,
+          "notes": "Myanmar army troops kill four civilians in raids on villages along Ayeyarwady River"
+        },
+        {
+          "event_date": "2023-03-13",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 1,
+          "notes": "Myanmar army troops kill four civilians in raids on villages along Ayeyarwady River"
+        },
+        {
+          "event_date": "2023-03-17",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 1,
+          "notes": "Woman, 78, Killed, Hundreds of Homes Torched in Myanmar Junta Raid in Sagaing"
+        },
+        {
+          "event_date": "2023-03-20",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 3,
+          "notes": "Myanmar Junta-Linked Militia Kills Mandalay Men;Myanmar Junta-Linked Militia Kills Mandalay Men"
+        },
+        {
+          "event_date": "2023-04-01",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 1,
+          "notes": "Myanmar Junta-Linked Militia Kills Mandalay Men"
+        },
+        {
+          "event_date": "2023-04-01",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 1,
+          "notes": "Myanmar Junta-Linked Militia Kills Mandalay Men;Pro-junta \u2018Blood Comrades\u2019 resurface in Myanmar with April killings"
+        },
+        {
+          "event_date": "2023-04-04",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 2,
+          "notes": "Thway Tout junta militia kills two men in Mandalay;Pro-junta \u2018Blood Comrades\u2019 resurface in Myanmar with April killings"
+        },
+        {
+          "event_date": "2023-04-22",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 1,
+          "notes": "Myanmar military continues rampage across Sagaing Region;Myanmar military beheads man in Sagaing region village;Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2023-04-24",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 1,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2023-05-01",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 2,
+          "notes": "Myanmar\u2019s military kills 3 civilians after raiding Sagaing region villages"
+        },
+        {
+          "event_date": "2023-05-02",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 1,
+          "notes": "Myanmar\u2019s military kills 3 civilians after raiding Sagaing region villages"
+        },
+        {
+          "event_date": "2023-06-03",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 1,
+          "notes": "Myanmar Junta Soldiers Behead Teenager in Arson Attack on 10 Sagaing Villages;Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2023-06-04",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 1,
+          "notes": "Myanmar Junta Soldiers Behead Teenager in Arson Attack on 10 Sagaing Villages"
+        },
+        {
+          "event_date": "2023-06-13",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 1,
+          "notes": "Video of resistance fighters in Sagaing town triggers days of raids;Daily Briefing in Relation to the Military Coup;Myanmar military burns houses, captures villagers in Sagaing region;Myanmar Junta Su"
+        },
+        {
+          "event_date": "2023-06-17",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 1,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2023-06-22",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 2,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2023-06-24",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 1,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2023-06-24",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 1,
+          "notes": "Teenager, local administrator shot dead in two Mandalay shootings"
+        },
+        {
+          "event_date": "2023-06-25",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 1,
+          "notes": "Over 40 Myanmar Junta Troops Killed in Week of Clashes With Resistance;Sagaing Resistance Fighters Killed in Myanmar Junta Raid;Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2023-06-25",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 2,
+          "notes": "Over 40 Myanmar Junta Troops Killed in Week of Clashes With Resistance;Sagaing Resistance Fighters Killed in Myanmar Junta Raid;Daily Briefing in Relation to the Military Coup;Myanmar military kills 1"
+        },
+        {
+          "event_date": "2023-07-06",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 7,
+          "notes": "Myanmar Junta Troops Slaughter Seven Villagers in Sagaing Region;Myanmar junta forces murder seven civilians in Wetlet village;Myanmar military shoots street vendors in Sagaing region township;Daily B"
+        },
+        {
+          "event_date": "2023-07-12",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 1,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2023-07-13",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 2,
+          "notes": "Two civilians over 60 years old killed by military in Sagaing Region;Two days of junta attacks in Myanmar\u2019s Sagaing region leave 4 dead;Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2023-07-14",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 4,
+          "notes": "Myanmar Junta Seizes 20 Mandalay Villagers;Four Detainees Killed by Myanmar Junta in Mandalay Region"
+        },
+        {
+          "event_date": "2023-07-24",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 2,
+          "notes": "Myanmar Junta Seizes 20 Mandalay Villagers;Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2023-08-11",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 2,
+          "notes": "Daily Briefing in Relation to the Military Coup;Terror Campaign Intensifies in Sagaing Region as Myanmar Junta Fights to Hang On"
+        },
+        {
+          "event_date": "2023-08-17",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 1,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2023-08-20",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 1,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2023-08-21",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 3,
+          "notes": "Five bodies found in junta-occupied village in Sagaing Township"
+        },
+        {
+          "event_date": "2023-08-26",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 4,
+          "notes": "Myanmar Military Column is on a Homicidal Rampage in Southeastern Sagaing;Daily Briefing in Relation to the Military Coup;Myanmar army kills 2 villagers in Sagaing region raid;Myanmar army soldiers ra"
+        },
+        {
+          "event_date": "2023-08-30",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 2,
+          "notes": "Myanmar army kills 2 villagers in Sagaing region raid"
+        },
+        {
+          "event_date": "2023-09-14",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 4,
+          "notes": "Four villagers killed during raids on defence teams in western Sagaing Township;Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2023-10-13",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 2,
+          "notes": "Over 75 Myanmar Junta Forces Killed in Four Days of Clashes With Resistance"
+        },
+        {
+          "event_date": "2023-10-13",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 2,
+          "notes": "Two herdsmen shot dead near pro-junta militia stronghold in Sagaing Region"
+        },
+        {
+          "event_date": "2023-10-18",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 1,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2023-10-19",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 1,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2023-10-25",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 3,
+          "notes": "Myanmar Troops Club Five Civilians to Death in Mandalay Raids"
+        },
+        {
+          "event_date": "2023-11-16",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 12,
+          "notes": "12 men in tea shop massacred by junta troops for no apparent reason;Battlefield update: November 17;Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2023-12-09",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 1,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2023-12-12",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 1,
+          "notes": "Junta kills 3 during raid in central Myanmar while torching a village;Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2024-02-12",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 2,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2024-02-15",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 1,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2024-02-19",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 5,
+          "notes": "Daily Briefing in Relation to the Military Coup;Infants, Pregnant Woman Slain as Myanmar Junta Continues War Against Its People"
+        },
+        {
+          "event_date": "2024-03-08",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 1,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2024-03-30",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 2,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2024-05-04",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 1,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2024-05-10",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 1,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2024-06-19",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 1,
+          "notes": "Myanmar Regime Admits Killing Monk;Myanmar Junta Investigating Veteran Monk\u2019s Deadly Shooting;Daily Briefing in Relation to the Military Coup;Myanmar junta chief issues rare apology for shooting death"
+        },
+        {
+          "event_date": "2024-06-27",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 1,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2024-10-21",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 1,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2024-12-20",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 1,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2023-07-15",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "PSLF",
+          "fatalities": 1,
+          "notes": "Myanmar Junta Loses 76 Soldiers as PDF Kicks Off Special Operation in Mandalay, Shan;Mandalay PDF claims to have caused dozens of junta casualties in recent months"
+        },
+        {
+          "event_date": "2023-11-13",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "PSLF",
+          "fatalities": 1,
+          "notes": "Battlefield update: November 17"
+        },
+        {
+          "event_date": "2023-11-19",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "PSLF",
+          "fatalities": 0,
+          "notes": "Battlefield Update: November 22"
+        },
+        {
+          "event_date": "2023-11-27",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "PSLF",
+          "fatalities": 0,
+          "notes": "Myanmar Junta Base Seized in Mandalay: PDF"
+        },
+        {
+          "event_date": "2024-08-06",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "PSLF",
+          "fatalities": 7,
+          "notes": "Myanmar junta bombs sleeping village killing seven, rebels say"
+        },
+        {
+          "event_date": "2023-01-06",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 2,
+          "notes": "Monk Linked to Myanmar Junta Chief Killed in Sagaing Raid;Buddhist monk and a teacher found dead in Monastery basement"
+        },
+        {
+          "event_date": "2023-01-12",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "At Least 15 Myanmar Junta Forces Killed in Three Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-01-13",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Over 60 Myanmar Junta Forces Killed in Three Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-01-15",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Myanmar Junta Census Collection Sparks Deadly Resistance Attacks"
+        },
+        {
+          "event_date": "2023-01-16",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Nearly 50 Myanmar Junta Forces Killed in Three Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-01-17",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Over 80 Myanmar Junta Forces Killed in Three Days of Clashes With Resistance"
+        },
+        {
+          "event_date": "2023-01-17",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Over 80 Myanmar Junta Forces Killed in Three Days of Clashes With Resistance"
+        },
+        {
+          "event_date": "2023-01-20",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Resistance and Myanmar Junta Deaths Reported in Sagaing Fighting"
+        },
+        {
+          "event_date": "2023-01-24",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Nearly 60 Myanmar Junta Forces Killed in Three Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-01-25",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 6,
+          "notes": "Resistance and Myanmar Junta Deaths Reported in Sagaing Fighting"
+        },
+        {
+          "event_date": "2023-01-30",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Over 40 Myanmar Junta Forces Killed in Three Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-02-01",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Dozens of Myanmar Junta Forces, Officials Killed in Three Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-02-01",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Dozens of Myanmar Junta Forces, Officials Killed in Three Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-02-02",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Dozens of Myanmar Junta Forces, Officials Killed in Three Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-02-02",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Child shot dead in drunken soldiers\u2019 attack on civilian homes"
+        },
+        {
+          "event_date": "2023-02-03",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Over 40 Myanmar Regime Forces Killed in Four Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-02-03",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Over 40 Myanmar Regime Forces Killed in Four Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-02-03",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Junta troops raze entire village in Myanmar\u2019s Sagaing region"
+        },
+        {
+          "event_date": "2023-02-04",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Over 40 Myanmar Regime Forces Killed in Four Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-02-05",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "PDF Fighters Storm Myanmar Junta Base in Myinmu, Killing \u2018at Least 25\u2019"
+        },
+        {
+          "event_date": "2023-02-05",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Over 40 Myanmar Regime Forces Killed in Four Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-02-05",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Almost 70 Myanmar Regime Forces Reported Killed in Three Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-02-05",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Almost 70 Myanmar Regime Forces Reported Killed in Three Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-02-07",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Almost 70 Myanmar Regime Forces Reported Killed in Three Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-02-09",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Myanmar military uses 40 civilians as human shields;Nearly 80 Myanmar Junta Forces Killed in Four Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-02-11",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Nearly 80 Myanmar Junta Forces Killed in Four Days of Resistance Attacks;Spring Revolution Daily News for 12 February 2023\u00c2"
+        },
+        {
+          "event_date": "2023-02-18",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Over 100 Myanmar Junta Forces Killed in Four Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-02-21",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Over 20 Myanmar Junta Forces Killed in Three Days of Resistance Attacks;Spring Revolution Daily News for 23 February 2023"
+        },
+        {
+          "event_date": "2023-02-25",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Over 40 Myanmar Junta Forces Killed in Four Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-02-27",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Spring Revolution Daily News for 1 March 2023"
+        },
+        {
+          "event_date": "2023-02-28",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Dozens of Myanmar Junta Forces Killed in Four Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-03-01",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 2,
+          "notes": "Daily Briefing in Relation to the Military Coup;Myanmar Junta Rapes and Kills During Sagaing Raid;Myanmar Regime Task Force Leaves Trail of Beheaded and Mutilated Victims;Junta hostages found tortured"
+        },
+        {
+          "event_date": "2023-03-03",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "35 Junta Forces Killed in Three Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-03-03",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Myanmar Junta Forces Kill Detained Villagers, Torches Homes in Sagaing"
+        },
+        {
+          "event_date": "2023-03-05",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "35 Junta Forces Killed in Three Days of Resistance Attacks ;Over 40 Myanmar Junta Forces Killed in Three Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-03-08",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "At Least 16 Myanmar Junta Troops Killed in Three Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-03-10",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Over 70 Myanmar Junta Troops Killed in Four Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-03-11",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Over 70 Myanmar Junta Troops Killed in Four Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-03-12",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Nearly 50 Junta Forces Killed in Four Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-03-13",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Myanmar army troops kill four civilians in raids on villages along Ayeyarwady River"
+        },
+        {
+          "event_date": "2023-03-13",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Myanmar army troops kill four civilians in raids on villages along Ayeyarwady River"
+        },
+        {
+          "event_date": "2023-03-23",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Nearly 50 Myanmar Junta Troops Killed in Three Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-03-23",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Nearly 90 Myanmar Junta Forces Killed in Four Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-03-24",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "About 140 Myanmar Junta Forces Killed in Week of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-03-26",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "About 140 Myanmar Junta Forces Killed in Week of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-04-05",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 2,
+          "notes": "Dozens of Myanmar Junta Forces Killed in Shan State Clashes: Mandalay PDF;Two Children Killed By Military Regime Shelling In Nawnghkio Township;Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2023-04-05",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Dozens of Myanmar Junta Forces Killed in Shan State Clashes: Mandalay PDF"
+        },
+        {
+          "event_date": "2023-04-07",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Nearly 90 Myanmar Junta Forces Killed in Four Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-04-11",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Junta troops torch over 100 homes in a Mandalay village"
+        },
+        {
+          "event_date": "2023-04-13",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 8,
+          "notes": "Drone attack kills 8, injures 30 in Sagaing region;Children among 8 killed by drone attack in western Myanmar;Bombings, conflict and arson attacks dampen lacklustre Myanmar water festival;Myanmar regi"
+        },
+        {
+          "event_date": "2023-04-20",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Nearly 60 Myanmar Junta Forces Killed in Four Days of Clashes With Resistance"
+        },
+        {
+          "event_date": "2023-04-21",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Myanmar Regime Troops Torch Large Sagaing Village"
+        },
+        {
+          "event_date": "2023-04-21",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Thwe Thout card found on body of defence team member in Mandalay;Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2023-04-23",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Myanmar military continues rampage across Sagaing Region;Around 50 Myanmar Junta Forces Killed in Three Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-04-25",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Around 50 Myanmar Junta Forces Killed in Three Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-04-30",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Myanmar Resistance Fighter Beheaded in Sagaing;Myanmar junta troops behead, mutilate PDF squadron commander in Sagaing Township;Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2023-04-30",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Myanmar Resistance Fighter Beheaded in Sagaing;Myanmar junta troops behead, mutilate PDF squadron commander in Sagaing Township;Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2023-05-07",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Dozens of Myanmar Junta Forces Killed in Three Days of Clashes With Resistance;Five Myanmar Junta Police Killed in Mandalay Region: Resistance"
+        },
+        {
+          "event_date": "2023-05-07",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Sagaing drone attack kills three police officers"
+        },
+        {
+          "event_date": "2023-05-18",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Dozens of Myanmar Junta Troops, One Resistance Fighter Killed in Three Days of Clashes"
+        },
+        {
+          "event_date": "2023-05-21",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "At Least 20 Myanmar Regime Troops Killed in Three Days of Attacks by Resistance Forces"
+        },
+        {
+          "event_date": "2023-05-21",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "At Least 20 Myanmar Regime Troops Killed in Three Days of Attacks by Resistance Forces"
+        },
+        {
+          "event_date": "2023-05-21",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Nearly 50 Myanmar Junta Forces Killed in Five Days of Resistance Attacks;Myanmar Junta Forces Suffer \u2018Heavy Casualties\u2019 in Battle for Sagaing Village"
+        },
+        {
+          "event_date": "2023-05-21",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Myanmar Junta Forces Suffer \u2018Heavy Casualties\u2019 in Battle for Sagaing Village"
+        },
+        {
+          "event_date": "2023-05-22",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Myanmar Junta Forces Suffer \u2018Heavy Casualties\u2019 in Battle for Sagaing Village;Nearly 50 Myanmar Junta Forces Killed in Five Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-05-29",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Three junta soldiers killed in attack on army truck in Mandalay\u2019s Madaya Township"
+        },
+        {
+          "event_date": "2023-06-01",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 12,
+          "notes": "Myanmar junta seizes more than $200,000 in weapons in Sagaing Township"
+        },
+        {
+          "event_date": "2023-06-11",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 2,
+          "notes": "One woman killed, others injured by accidental explosions in Khin-U Township"
+        },
+        {
+          "event_date": "2023-06-12",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Myanmar Regime Outpost Near Capital Seized, 14 Junta Soldiers Killed in Resistance Attacks"
+        },
+        {
+          "event_date": "2023-06-13",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Myanmar Junta Suffers Heavy Losses: Resistance Commandos;Over 40 Myanmar Junta Forces Killed in Four Days of Resistance Attacks;Video of resistance fighters in Sagaing town triggers days of raids"
+        },
+        {
+          "event_date": "2023-06-15",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Myanmar Junta Suffers Heavy Losses: Resistance Commandos;Over 40 Myanmar Junta Forces Killed in Four Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-06-16",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2023-06-20",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Over 20 Myanmar Junta Forces Killed in Five Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-06-24",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Around 40 Myanmar Junta Forces Killed in Four Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-06-25",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 17,
+          "notes": "Over 40 Myanmar Junta Troops Killed in Week of Clashes With Resistance;Sagaing Resistance Fighters Killed in Myanmar Junta Raid;35 Resistance Fighters Killed by Myanmar Junta in Sagaing in Four Days;M"
+        },
+        {
+          "event_date": "2023-06-28",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 14,
+          "notes": "35 Resistance Fighters Killed by Myanmar Junta in Sagaing in Four Days;Junta commando unit linked to several killings of PDF members in Sagaing"
+        },
+        {
+          "event_date": "2023-06-29",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Around 30 Myanmar Junta Troops Killed in Three Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-06-29",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 2,
+          "notes": "Junta Troops Shoot Women, Child in Predawn Attack on Village in Northern Myanmar;Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2023-07-01",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Around 40 Myanmar Junta Troops Killed in Three Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-07-04",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Over 20 Myanmar Junta Forces Killed in Three Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-07-05",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "At Least Eight Myanmar Junta Forces Killed in Four Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-08-05",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Daily Briefing in Relation to the Military Coup;Myanmar military kills 4 villagers in Sagaing region raid"
+        },
+        {
+          "event_date": "2023-08-09",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Over 50 Myanmar Junta Forces Killed in Three Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-08-11",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 4,
+          "notes": "Junta\u2019s Nighttime Airstrike Kills Civilians Sleeping in Monastery in Myanmar;Daily Briefing in Relation to the Military Coup;Junta airstrike kills 4 civilians in Myanmar\u2019s Sagaing region;Three Sagaing"
+        },
+        {
+          "event_date": "2023-08-11",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 2,
+          "notes": "Terror Campaign Intensifies in Sagaing Region as Myanmar Junta Fights to Hang On;Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2023-08-16",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "At Least 15 Myanmar Junta Forces Killed in Four Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-08-18",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "At Least 15 Myanmar Junta Forces Killed in Four Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-08-19",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 2,
+          "notes": "At Least 15 Myanmar Junta Forces Killed in Four Days of Resistance Attacks;Regime forces kill defence team members, civilians in Sagaing Township"
+        },
+        {
+          "event_date": "2023-08-20",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Over 20 Myanmar Junta Forces Killed in Three Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-08-21",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Regime forces kill defence team members, civilians in Sagaing Township;Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2023-08-21",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 3,
+          "notes": "Regime forces kill defence team members, civilians in Sagaing Township;Myanmar Military Column is on a Homicidal Rampage in Southeastern Sagaing"
+        },
+        {
+          "event_date": "2023-08-23",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 2,
+          "notes": "Five bodies found in junta-occupied village in Sagaing Township"
+        },
+        {
+          "event_date": "2023-08-26",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2023-08-27",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Dozens of Myanmar Junta Forces Killed in Four Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-09-04",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Fifty Myanmar Junta Troops Killed in Four Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-09-05",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Fifty Myanmar Junta Troops Killed in Four Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-09-07",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Sagaing Resistance Groups Attack Myanmar Junta Troops Repairing Train Track"
+        },
+        {
+          "event_date": "2023-09-08",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Myanmar Battalion Plants Land Mines Near School, Monastery in Resistance Village"
+        },
+        {
+          "event_date": "2023-09-09",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Over 20 Myanmar Junta Forces Killed in Four Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-09-10",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Seven junta soldiers killed in drone attacks in Ngazun Township, Mandalay Region;Spring Revolution Daily News for 13 September 2023"
+        },
+        {
+          "event_date": "2023-09-15",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Over 30 Myanmar Junta Forces Killed in Four Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-09-15",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "At least 26 junta soldiers killed in Sagaing Township fighting"
+        },
+        {
+          "event_date": "2023-09-16",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "At least 26 junta soldiers killed in Sagaing Township fighting"
+        },
+        {
+          "event_date": "2023-09-16",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Over 30 Myanmar Junta Forces Killed in Four Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-09-18",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 2,
+          "notes": "At least 26 junta soldiers killed in Sagaing Township fighting"
+        },
+        {
+          "event_date": "2023-09-27",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Over 40 Myanmar Junta Troops Killed in Week of Clashes With Resistance"
+        },
+        {
+          "event_date": "2023-10-05",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Over 40 Myanmar Junta Troops Killed in Five Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-10-10",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Over a Dozen Myanmar Junta Forces Killed in Four Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-10-11",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Over a Dozen Myanmar Junta Forces Killed in Four Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-10-12",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Over 75 Myanmar Junta Forces Killed in Four Days of Clashes With Resistance"
+        },
+        {
+          "event_date": "2023-10-15",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Over 75 Myanmar Junta Forces Killed in Four Days of Clashes With Resistance"
+        },
+        {
+          "event_date": "2023-10-15",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2023-10-16",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Dozens of Myanmar Junta Forces Killed in Four Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-10-17",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Dozens of Myanmar Junta Forces Killed in Four Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-10-24",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2023-11-14",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Junta Continues to Lose Bases as Resistance Operations Expand Across Myanmar"
+        },
+        {
+          "event_date": "2023-11-14",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2023-11-17",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 6,
+          "notes": "Myanmar junta troops arrest and stab 6 men to death;Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2023-11-21",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 2,
+          "notes": "Myanmar Junta Loses More Bases, Dozens of Troops in Three Days of Resistance Attacks;Battlefield Update: November 22"
+        },
+        {
+          "event_date": "2023-11-22",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "About 70 Myanmar Junta Troops Killed in Three Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-11-28",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 6,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2023-11-28",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "No Let Up in Myanmar Junta Losses as Resistance Attacks Continue"
+        },
+        {
+          "event_date": "2023-11-29",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "No Let Up in Myanmar Junta Losses as Resistance Attacks Continue"
+        },
+        {
+          "event_date": "2023-11-29",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2023-12-03",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 2,
+          "notes": "Hundreds flee military arson attacks in Mandalay\u2019s Madaya Township"
+        },
+        {
+          "event_date": "2023-12-12",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 2,
+          "notes": "Junta kills 3 during raid in central Myanmar while torching a village"
+        },
+        {
+          "event_date": "2023-12-13",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 3,
+          "notes": "Shelling kills 3, including a child, in Myanmar\u2019s Mandalay region;Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2023-12-24",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2024-01-08",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Myanmar Junta Loses Nearly 50 Troops, More Bases in Three Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2024-01-09",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2024-01-15",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2024-01-24",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 4,
+          "notes": "Myanmar junta brutally kills four resistance fighters, burns down houses, in Sagaing villages"
+        },
+        {
+          "event_date": "2024-01-28",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2024-02-19",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 3,
+          "notes": "Infants, Pregnant Woman Slain as Myanmar Junta Continues War Against Its People"
+        },
+        {
+          "event_date": "2024-02-25",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2024-03-09",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Myanmar Military Lt-Col Killed as Junta Loses More Bases in Four Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2024-03-20",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 2,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2024-03-23",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Myanmar Military Loses More Bases, Troops in Four Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2024-03-25",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Myanmar Military Loses More Bases, Troops in Four Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2024-04-14",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 4,
+          "notes": "Myanmar Rocket Attack Kills Four, Wounds Military Cadets;4 killed, 12 injured in rocket attacks in Myanmar's Pyin Oo Lwin;Water festival attacks kill 3 during Myanmar coup leader\u2019s holiday"
+        },
+        {
+          "event_date": "2024-04-21",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Myanmar Junta Suffers Further Losses in Three Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2024-04-24",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Spring Revolution Daily News for 25 April 2024"
+        },
+        {
+          "event_date": "2024-04-26",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Spring Revolution Daily News for 30 April 2024"
+        },
+        {
+          "event_date": "2024-05-23",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2024-06-04",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Spring Revolution Daily News for 7 June 2024"
+        },
+        {
+          "event_date": "2024-06-08",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 16,
+          "notes": "Myanmar Air Force Strike on Monastery Kills 13 Including Abbot, Monks;Airstrike targets insurgent meeting in Myanmar, 16 killed;Airstrike targets insurgent meeting in Myanmar, 16 killed"
+        },
+        {
+          "event_date": "2024-06-11",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Spring Revolution Daily News for 13 June 2024"
+        },
+        {
+          "event_date": "2024-06-11",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2024-06-12",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 3,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2024-07-07",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2024-07-07",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2024-07-09",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "In Response to Losses in Upper Mandalay, Myanmar\u2019s Junta Bombs Civilians"
+        },
+        {
+          "event_date": "2024-07-09",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "In Response to Losses in Upper Mandalay, Myanmar\u2019s Junta Bombs Civilians"
+        },
+        {
+          "event_date": "2024-07-16",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Mandalay PDF Claims Victories Over Myanmar Junta"
+        },
+        {
+          "event_date": "2024-07-16",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 3,
+          "notes": "Rebel forces capture camps in central Myanmar township"
+        },
+        {
+          "event_date": "2024-08-01",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 3,
+          "notes": "Myanmar Junta Airstrikes Kill 13 Civilians After Defeat in Mandalay Township"
+        },
+        {
+          "event_date": "2024-08-16",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Myanmar\u2019s Civilian Government Aims to Liberate District in Southern Mandalay"
+        },
+        {
+          "event_date": "2024-09-21",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 6,
+          "notes": "Myanmar Junta Forces Kill Six Mandalay Women and Children in \u2018Scorched Earth\u2019 Retreat;Myanmar junta attacks kill 20 in Mandalay region"
+        },
+        {
+          "event_date": "2024-10-11",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 12,
+          "notes": "Myanmar Junta Troops Advance on Madaya Township;Airstrike kills 12 in Mandalay\u2019s Madaya Township; UN Secretary-General addresses Myanmar crisis;Bombing on IDP place in Madaya killed 12 including monks"
+        },
+        {
+          "event_date": "2024-10-21",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 2,
+          "notes": "2 deaths and at least 4 injured in a military attack with 6 jet fighters and attack helicopters in Madaya"
+        },
+        {
+          "event_date": "2024-10-27",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Myanmar junta\u2019s retaking of police station triggers mass displacement, renewed clashes in Ngazun Township"
+        },
+        {
+          "event_date": "2024-11-08",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "3 military soldiers killed and several injured in Ngan Zun armed clashes"
+        },
+        {
+          "event_date": "2024-11-13",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2024-11-17",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "9 rifles seized and 12 deceased from SAC in Madaya fighting;Myanmar Junta Seize Western Madaya From Resistance Groups"
+        },
+        {
+          "event_date": "2024-12-02",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Mandalay PDF got 1 PoW and found dead bodies of the military soldiers after Madaya fighting"
+        },
+        {
+          "event_date": "2024-12-07",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 5,
+          "notes": "Artillery shells and military raid killed 2 PDF members and 3 civilians near Sagaing Town;Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2024-12-08",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2024-12-11",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 3,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2024-12-22",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Indiscriminate artillery shelling of the military killed 1 civilian in Madaya;Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2024-12-26",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 2,
+          "notes": "2 children died by military artillery shellings in Madaya Township"
+        },
+        {
+          "event_date": "2024-12-30",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 3,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2023-02-17",
+          "event_type": "Violence against civilians",
+          "actor1": "NUG",
+          "actor2": "Civilians",
+          "fatalities": 1,
+          "notes": "Spring Revolution Daily News for 19 February 2023\u00c2"
+        },
+        {
+          "event_date": "2023-03-22",
+          "event_type": "Violence against civilians",
+          "actor1": "NUG",
+          "actor2": "Civilians",
+          "fatalities": 2,
+          "notes": "Nearly 50 Myanmar Junta Troops Killed in Three Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2024-09-17",
+          "event_type": "Violence against civilians",
+          "actor1": "NUG",
+          "actor2": "Civilians",
+          "fatalities": 12,
+          "notes": "Myanmar rebels kill 12 women from pro-military village: report"
+        }
+      ],
+      "kinetic_event_count": 240,
+      "sample_prefix": null,
+      "peer_min": 0,
+      "peer_max": 0,
+      "top_neighbours": [],
+      "periods": {
+        "scenario_start": {
+          "description": "Conflict baseline (2023-01)",
+          "date": "2023-01-01",
+          "update_count": 5,
+          "classifications": {
+            "adversary-routed": 0,
+            "neutral": 1
+          },
+          "sample_paths": [
+            "3356 \u2192 174 \u2192 135522"
+          ]
+        },
+        "peak_kinetic": {
+          "description": "Peak kinetic intensity",
+          "date": "2023-02-04",
+          "update_count": 22,
+          "classifications": {
+            "adversary-routed": 0,
+            "neutral": 1
+          },
+          "sample_paths": [
+            "3356 \u2192 174 \u2192 135522"
+          ]
+        },
+        "recent": {
+          "description": "Recent observation (2024-12)",
+          "date": "2024-12-31",
+          "update_count": 4,
+          "classifications": {
+            "adversary-routed": 0,
+            "neutral": 1
+          },
+          "sample_paths": [
+            "3356 \u2192 174 \u2192 135522"
+          ]
+        }
+      },
+      "summary": {
+        "kinetic_event_count": 240,
+        "first_event": "2023-01-06",
+        "last_event": "2024-12-30",
+        "max_bgp_updates_in_day": 0,
+        "peer_count_min": 0,
+        "peer_count_max": 0,
+        "peer_count_drop": 0
+      },
+      "mitigations": {
+        "recommended": [
+          "rpki_roa",
+          "rov_upstream",
+          "ris_monitoring",
+          "as_path_filtering",
+          "diplomatic_pressure",
+          "manrs_membership"
+        ],
+        "rationales": {
+          "prefix_hijack": "BGP UPDATE volume of 0 per observation window suggests possible route instability or hijack",
+          "baseline": "minimum BGP-security hygiene applicable to every operator"
+        }
+      }
+    },
+    {
+      "city": "Naypyidaw",
+      "asn": 132225,
+      "lat": 19.745,
+      "lon": 96.1297,
+      "threat": {
+        "score": 40,
+        "level": "elevated",
+        "components": {
+          "blackout": 28.6,
+          "instability": 11.5,
+          "russian_route": 0,
+          "sorm_exposure": 0
+        },
+        "evidence": {
+          "peer_count_drop": 257.3,
+          "peer_min": 124.0,
+          "kinetic_events_local": 23,
+          "max_bgp_updates_in_day": 0,
+          "russian_paths_count": 0,
+          "sorm_ases_observed": [],
+          "neighbours_total": 2,
+          "adversarial_neighbours": []
+        }
+      },
+      "peer_timeline": [
+        {
+          "date": "2023-01-01",
+          "peers": 371.83
+        },
+        {
+          "date": "2023-01-01",
+          "peers": 372.83
+        },
+        {
+          "date": "2023-01-01",
+          "peers": 372.83
+        },
+        {
+          "date": "2023-01-09",
+          "peers": 368.5
+        },
+        {
+          "date": "2023-01-09",
+          "peers": 369.5
+        },
+        {
+          "date": "2023-01-09",
+          "peers": 369.5
+        },
+        {
+          "date": "2023-01-11",
+          "peers": 366.5
+        },
+        {
+          "date": "2023-01-11",
+          "peers": 367.5
+        },
+        {
+          "date": "2023-01-11",
+          "peers": 367.5
+        },
+        {
+          "date": "2023-01-13",
+          "peers": 370.17
+        },
+        {
+          "date": "2023-01-13",
+          "peers": 371.17
+        },
+        {
+          "date": "2023-01-13",
+          "peers": 371.17
+        },
+        {
+          "date": "2023-02-04",
+          "peers": 372.67
+        },
+        {
+          "date": "2023-02-04",
+          "peers": 373.67
+        },
+        {
+          "date": "2023-02-04",
+          "peers": 373.67
+        },
+        {
+          "date": "2023-02-14",
+          "peers": 375.17
+        },
+        {
+          "date": "2023-02-14",
+          "peers": 376.17
+        },
+        {
+          "date": "2023-02-14",
+          "peers": 376.17
+        },
+        {
+          "date": "2023-02-18",
+          "peers": 372.83
+        },
+        {
+          "date": "2023-02-18",
+          "peers": 373.83
+        },
+        {
+          "date": "2023-02-18",
+          "peers": 373.83
+        },
+        {
+          "date": "2023-03-02",
+          "peers": 370.67
+        },
+        {
+          "date": "2023-03-02",
+          "peers": 371.67
+        },
+        {
+          "date": "2023-03-02",
+          "peers": 371.67
+        },
+        {
+          "date": "2023-03-08",
+          "peers": 367.83
+        },
+        {
+          "date": "2023-03-08",
+          "peers": 368.83
+        },
+        {
+          "date": "2023-03-08",
+          "peers": 368.83
+        },
+        {
+          "date": "2023-03-14",
+          "peers": 363.67
+        },
+        {
+          "date": "2023-03-14",
+          "peers": 364.67
+        },
+        {
+          "date": "2023-03-14",
+          "peers": 364.67
+        },
+        {
+          "date": "2023-03-16",
+          "peers": 361.83
+        },
+        {
+          "date": "2023-03-16",
+          "peers": 362.83
+        },
+        {
+          "date": "2023-03-16",
+          "peers": 362.83
+        },
+        {
+          "date": "2023-03-18",
+          "peers": 359.17
+        },
+        {
+          "date": "2023-03-18",
+          "peers": 360.17
+        },
+        {
+          "date": "2023-03-18",
+          "peers": 360.17
+        },
+        {
+          "date": "2023-03-20",
+          "peers": 361.67
+        },
+        {
+          "date": "2023-03-20",
+          "peers": 362.67
+        },
+        {
+          "date": "2023-03-20",
+          "peers": 362.67
+        },
+        {
+          "date": "2023-03-22",
+          "peers": 363.5
+        },
+        {
+          "date": "2023-03-22",
+          "peers": 364.5
+        },
+        {
+          "date": "2023-03-22",
+          "peers": 364.5
+        },
+        {
+          "date": "2023-03-24",
+          "peers": 361.17
+        },
+        {
+          "date": "2023-03-24",
+          "peers": 362.17
+        },
+        {
+          "date": "2023-03-24",
+          "peers": 362.17
+        },
+        {
+          "date": "2023-03-28",
+          "peers": 363.5
+        },
+        {
+          "date": "2023-03-28",
+          "peers": 365.33
+        },
+        {
+          "date": "2023-03-28",
+          "peers": 365.33
+        },
+        {
+          "date": "2023-04-01",
+          "peers": 367.0
+        },
+        {
+          "date": "2023-04-01",
+          "peers": 367.0
+        },
+        {
+          "date": "2023-04-09",
+          "peers": 364.5
+        },
+        {
+          "date": "2023-04-09",
+          "peers": 364.5
+        },
+        {
+          "date": "2023-04-13",
+          "peers": 366.67
+        },
+        {
+          "date": "2023-04-13",
+          "peers": 366.67
+        },
+        {
+          "date": "2023-04-15",
+          "peers": 124.0
+        },
+        {
+          "date": "2023-04-15",
+          "peers": 365.0
+        },
+        {
+          "date": "2023-04-15",
+          "peers": 365.0
+        },
+        {
+          "date": "2023-04-17",
+          "peers": 367.0
+        },
+        {
+          "date": "2023-04-17",
+          "peers": 367.0
+        },
+        {
+          "date": "2023-04-19",
+          "peers": 365.17
+        },
+        {
+          "date": "2023-04-21",
+          "peers": 329.83
+        },
+        {
+          "date": "2023-04-21",
+          "peers": 331.83
+        },
+        {
+          "date": "2023-04-21",
+          "peers": 331.83
+        },
+        {
+          "date": "2023-04-23",
+          "peers": 323.17
+        },
+        {
+          "date": "2023-04-23",
+          "peers": 325.17
+        },
+        {
+          "date": "2023-04-23",
+          "peers": 325.17
+        },
+        {
+          "date": "2023-04-25",
+          "peers": 325.33
+        },
+        {
+          "date": "2023-04-25",
+          "peers": 327.33
+        },
+        {
+          "date": "2023-04-25",
+          "peers": 327.33
+        },
+        {
+          "date": "2023-04-27",
+          "peers": 310.67
+        },
+        {
+          "date": "2023-04-27",
+          "peers": 312.67
+        },
+        {
+          "date": "2023-04-27",
+          "peers": 312.67
+        },
+        {
+          "date": "2023-04-29",
+          "peers": 288.17
+        },
+        {
+          "date": "2023-04-29",
+          "peers": 290.17
+        },
+        {
+          "date": "2023-04-29",
+          "peers": 290.17
+        },
+        {
+          "date": "2023-05-03",
+          "peers": 285.17
+        },
+        {
+          "date": "2023-05-03",
+          "peers": 287.17
+        },
+        {
+          "date": "2023-05-03",
+          "peers": 287.17
+        },
+        {
+          "date": "2023-05-05",
+          "peers": 287.5
+        },
+        {
+          "date": "2023-05-05",
+          "peers": 289.5
+        },
+        {
+          "date": "2023-05-05",
+          "peers": 289.5
+        },
+        {
+          "date": "2023-05-09",
+          "peers": 289.33
+        },
+        {
+          "date": "2023-05-09",
+          "peers": 291.33
+        },
+        {
+          "date": "2023-05-09",
+          "peers": 291.33
+        },
+        {
+          "date": "2023-05-11",
+          "peers": 295.17
+        },
+        {
+          "date": "2023-05-11",
+          "peers": 297.17
+        },
+        {
+          "date": "2023-05-11",
+          "peers": 297.17
+        },
+        {
+          "date": "2023-05-13",
+          "peers": 238.0
+        },
+        {
+          "date": "2023-05-13",
+          "peers": 240.0
+        },
+        {
+          "date": "2023-05-13",
+          "peers": 240.0
+        },
+        {
+          "date": "2023-05-15",
+          "peers": 226.0
+        },
+        {
+          "date": "2023-05-15",
+          "peers": 228.0
+        },
+        {
+          "date": "2023-05-15",
+          "peers": 228.0
+        },
+        {
+          "date": "2023-05-17",
+          "peers": 265.33
+        },
+        {
+          "date": "2023-05-17",
+          "peers": 267.17
+        },
+        {
+          "date": "2023-05-17",
+          "peers": 267.17
+        },
+        {
+          "date": "2023-05-19",
+          "peers": 226.67
+        },
+        {
+          "date": "2023-05-19",
+          "peers": 228.67
+        },
+        {
+          "date": "2023-05-19",
+          "peers": 228.67
+        },
+        {
+          "date": "2023-05-21",
+          "peers": 297.5
+        },
+        {
+          "date": "2023-05-21",
+          "peers": 299.5
+        },
+        {
+          "date": "2023-05-21",
+          "peers": 299.5
+        },
+        {
+          "date": "2023-05-23",
+          "peers": 299.83
+        },
+        {
+          "date": "2023-05-23",
+          "peers": 301.83
+        },
+        {
+          "date": "2023-05-23",
+          "peers": 301.83
+        },
+        {
+          "date": "2023-05-25",
+          "peers": 334.5
+        },
+        {
+          "date": "2023-05-25",
+          "peers": 336.5
+        },
+        {
+          "date": "2023-05-25",
+          "peers": 336.5
+        },
+        {
+          "date": "2023-05-27",
+          "peers": 378.33
+        },
+        {
+          "date": "2023-05-27",
+          "peers": 380.33
+        },
+        {
+          "date": "2023-05-27",
+          "peers": 380.33
+        },
+        {
+          "date": "2023-05-31",
+          "peers": 376.17
+        },
+        {
+          "date": "2023-05-31",
+          "peers": 378.17
+        },
+        {
+          "date": "2023-05-31",
+          "peers": 378.17
+        },
+        {
+          "date": "2023-06-04",
+          "peers": 378.0
+        },
+        {
+          "date": "2023-06-04",
+          "peers": 380.0
+        },
+        {
+          "date": "2023-06-04",
+          "peers": 380.0
+        },
+        {
+          "date": "2023-06-08",
+          "peers": 375.0
+        },
+        {
+          "date": "2023-06-08",
+          "peers": 377.0
+        },
+        {
+          "date": "2023-06-08",
+          "peers": 377.0
+        },
+        {
+          "date": "2023-06-10",
+          "peers": 372.83
+        },
+        {
+          "date": "2023-06-10",
+          "peers": 374.83
+        },
+        {
+          "date": "2023-06-10",
+          "peers": 374.83
+        },
+        {
+          "date": "2023-06-12",
+          "peers": 373.17
+        },
+        {
+          "date": "2023-06-12",
+          "peers": 373.17
+        },
+        {
+          "date": "2023-06-14",
+          "peers": 375.5
+        },
+        {
+          "date": "2023-06-14",
+          "peers": 376.5
+        },
+        {
+          "date": "2023-06-14",
+          "peers": 376.5
+        },
+        {
+          "date": "2023-06-20",
+          "peers": 372.0
+        },
+        {
+          "date": "2023-06-20",
+          "peers": 373.0
+        },
+        {
+          "date": "2023-06-20",
+          "peers": 373.0
+        },
+        {
+          "date": "2023-06-22",
+          "peers": 368.33
+        },
+        {
+          "date": "2023-06-22",
+          "peers": 369.33
+        },
+        {
+          "date": "2023-06-22",
+          "peers": 369.33
+        },
+        {
+          "date": "2023-06-26",
+          "peers": 366.5
+        },
+        {
+          "date": "2023-06-26",
+          "peers": 367.5
+        },
+        {
+          "date": "2023-06-26",
+          "peers": 367.5
+        },
+        {
+          "date": "2023-07-08",
+          "peers": 370.0
+        },
+        {
+          "date": "2023-07-08",
+          "peers": 370.0
+        },
+        {
+          "date": "2023-07-10",
+          "peers": 368.33
+        },
+        {
+          "date": "2023-07-20",
+          "peers": 360.33
+        },
+        {
+          "date": "2023-07-20",
+          "peers": 362.33
+        },
+        {
+          "date": "2023-07-20",
+          "peers": 362.33
+        },
+        {
+          "date": "2023-07-26",
+          "peers": 364.5
+        },
+        {
+          "date": "2023-07-26",
+          "peers": 364.5
+        },
+        {
+          "date": "2023-07-28",
+          "peers": 366.0
+        },
+        {
+          "date": "2023-07-28",
+          "peers": 369.0
+        },
+        {
+          "date": "2023-07-28",
+          "peers": 369.0
+        },
+        {
+          "date": "2023-08-03",
+          "peers": 369.17
+        },
+        {
+          "date": "2023-08-03",
+          "peers": 372.17
+        },
+        {
+          "date": "2023-08-03",
+          "peers": 372.17
+        },
+        {
+          "date": "2023-08-07",
+          "peers": 364.83
+        },
+        {
+          "date": "2023-08-07",
+          "peers": 367.5
+        },
+        {
+          "date": "2023-08-07",
+          "peers": 367.5
+        },
+        {
+          "date": "2023-08-29",
+          "peers": 375.5
+        },
+        {
+          "date": "2023-08-29",
+          "peers": 377.5
+        },
+        {
+          "date": "2023-08-29",
+          "peers": 377.5
+        },
+        {
+          "date": "2023-09-08",
+          "peers": 373.17
+        },
+        {
+          "date": "2023-09-08",
+          "peers": 375.17
+        },
+        {
+          "date": "2023-09-08",
+          "peers": 375.17
+        },
+        {
+          "date": "2023-09-22",
+          "peers": 376.5
+        },
+        {
+          "date": "2023-09-22",
+          "peers": 378.5
+        },
+        {
+          "date": "2023-09-22",
+          "peers": 378.5
+        },
+        {
+          "date": "2023-10-02",
+          "peers": 370.17
+        },
+        {
+          "date": "2023-10-02",
+          "peers": 372.17
+        },
+        {
+          "date": "2023-10-02",
+          "peers": 372.17
+        },
+        {
+          "date": "2023-10-04",
+          "peers": 372.67
+        },
+        {
+          "date": "2023-10-04",
+          "peers": 374.67
+        },
+        {
+          "date": "2023-10-04",
+          "peers": 374.67
+        },
+        {
+          "date": "2023-10-06",
+          "peers": 375.0
+        },
+        {
+          "date": "2023-10-06",
+          "peers": 377.0
+        },
+        {
+          "date": "2023-10-06",
+          "peers": 377.0
+        },
+        {
+          "date": "2023-10-26",
+          "peers": 377.0
+        },
+        {
+          "date": "2023-10-26",
+          "peers": 379.0
+        },
+        {
+          "date": "2023-10-26",
+          "peers": 379.0
+        },
+        {
+          "date": "2023-10-30",
+          "peers": 378.67
+        },
+        {
+          "date": "2023-10-30",
+          "peers": 380.67
+        },
+        {
+          "date": "2023-10-30",
+          "peers": 380.67
+        },
+        {
+          "date": "2023-11-13",
+          "peers": 377.0
+        },
+        {
+          "date": "2023-11-13",
+          "peers": 379.0
+        },
+        {
+          "date": "2023-11-13",
+          "peers": 379.0
+        },
+        {
+          "date": "2023-11-17",
+          "peers": 379.33
+        },
+        {
+          "date": "2023-11-17",
+          "peers": 381.33
+        },
+        {
+          "date": "2023-11-17",
+          "peers": 381.33
+        },
+        {
+          "date": "2023-11-23",
+          "peers": 376.0
+        },
+        {
+          "date": "2023-11-23",
+          "peers": 378.0
+        },
+        {
+          "date": "2023-11-23",
+          "peers": 378.0
+        },
+        {
+          "date": "2023-11-29",
+          "peers": 379.33
+        },
+        {
+          "date": "2023-11-29",
+          "peers": 381.33
+        },
+        {
+          "date": "2023-11-29",
+          "peers": 381.33
+        },
+        {
+          "date": "2023-12-03",
+          "peers": 377.67
+        },
+        {
+          "date": "2023-12-03",
+          "peers": 379.67
+        },
+        {
+          "date": "2023-12-03",
+          "peers": 379.67
+        },
+        {
+          "date": "2023-12-21",
+          "peers": 373.67
+        },
+        {
+          "date": "2023-12-21",
+          "peers": 375.67
+        },
+        {
+          "date": "2023-12-21",
+          "peers": 375.67
+        },
+        {
+          "date": "2023-12-23",
+          "peers": 370.67
+        },
+        {
+          "date": "2023-12-23",
+          "peers": 372.67
+        },
+        {
+          "date": "2023-12-23",
+          "peers": 372.67
+        },
+        {
+          "date": "2023-12-29",
+          "peers": 373.83
+        },
+        {
+          "date": "2023-12-29",
+          "peers": 375.83
+        },
+        {
+          "date": "2023-12-29",
+          "peers": 375.83
+        },
+        {
+          "date": "2024-01-06",
+          "peers": 376.0
+        },
+        {
+          "date": "2024-01-06",
+          "peers": 378.0
+        },
+        {
+          "date": "2024-01-06",
+          "peers": 378.0
+        },
+        {
+          "date": "2024-01-14",
+          "peers": 373.83
+        },
+        {
+          "date": "2024-01-14",
+          "peers": 375.83
+        },
+        {
+          "date": "2024-01-14",
+          "peers": 375.83
+        },
+        {
+          "date": "2024-01-16",
+          "peers": 369.0
+        },
+        {
+          "date": "2024-01-16",
+          "peers": 371.0
+        },
+        {
+          "date": "2024-01-16",
+          "peers": 371.0
+        },
+        {
+          "date": "2024-01-18",
+          "peers": 371.17
+        },
+        {
+          "date": "2024-01-18",
+          "peers": 373.17
+        },
+        {
+          "date": "2024-01-18",
+          "peers": 373.17
+        },
+        {
+          "date": "2024-01-30",
+          "peers": 373.33
+        },
+        {
+          "date": "2024-01-30",
+          "peers": 375.33
+        },
+        {
+          "date": "2024-01-30",
+          "peers": 375.33
+        },
+        {
+          "date": "2024-02-11",
+          "peers": 371.67
+        },
+        {
+          "date": "2024-02-11",
+          "peers": 373.67
+        },
+        {
+          "date": "2024-02-11",
+          "peers": 373.67
+        },
+        {
+          "date": "2024-02-13",
+          "peers": 373.33
+        },
+        {
+          "date": "2024-02-13",
+          "peers": 375.33
+        },
+        {
+          "date": "2024-02-13",
+          "peers": 375.33
+        },
+        {
+          "date": "2024-02-17",
+          "peers": 370.67
+        },
+        {
+          "date": "2024-02-17",
+          "peers": 372.67
+        },
+        {
+          "date": "2024-02-17",
+          "peers": 372.67
+        },
+        {
+          "date": "2024-02-23",
+          "peers": 368.67
+        },
+        {
+          "date": "2024-02-23",
+          "peers": 370.67
+        },
+        {
+          "date": "2024-02-23",
+          "peers": 370.67
+        },
+        {
+          "date": "2024-03-16",
+          "peers": 367.0
+        },
+        {
+          "date": "2024-03-16",
+          "peers": 368.33
+        },
+        {
+          "date": "2024-03-16",
+          "peers": 368.33
+        },
+        {
+          "date": "2024-03-22",
+          "peers": 369.5
+        },
+        {
+          "date": "2024-03-30",
+          "peers": 370.0
+        },
+        {
+          "date": "2024-03-30",
+          "peers": 370.0
+        },
+        {
+          "date": "2024-04-01",
+          "peers": 371.17
+        },
+        {
+          "date": "2024-04-09",
+          "peers": 371.83
+        },
+        {
+          "date": "2024-04-09",
+          "peers": 371.83
+        },
+        {
+          "date": "2024-04-17",
+          "peers": 366.5
+        },
+        {
+          "date": "2024-04-17",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-04-17",
+          "peers": 368.5
+        },
+        {
+          "date": "2024-05-15",
+          "peers": 364.67
+        },
+        {
+          "date": "2024-05-15",
+          "peers": 366.67
+        },
+        {
+          "date": "2024-05-15",
+          "peers": 366.67
+        },
+        {
+          "date": "2024-05-25",
+          "peers": 363.0
+        },
+        {
+          "date": "2024-05-25",
+          "peers": 365.0
+        },
+        {
+          "date": "2024-05-25",
+          "peers": 365.0
+        },
+        {
+          "date": "2024-05-29",
+          "peers": 365.83
+        },
+        {
+          "date": "2024-05-29",
+          "peers": 367.5
+        },
+        {
+          "date": "2024-05-29",
+          "peers": 367.5
+        },
+        {
+          "date": "2024-06-04",
+          "peers": 369.17
+        },
+        {
+          "date": "2024-06-06",
+          "peers": 369.33
+        },
+        {
+          "date": "2024-06-06",
+          "peers": 369.33
+        },
+        {
+          "date": "2024-06-08",
+          "peers": 367.5
+        },
+        {
+          "date": "2024-06-12",
+          "peers": 367.33
+        },
+        {
+          "date": "2024-06-12",
+          "peers": 367.33
+        },
+        {
+          "date": "2024-06-14",
+          "peers": 364.0
+        },
+        {
+          "date": "2024-06-14",
+          "peers": 365.0
+        },
+        {
+          "date": "2024-06-14",
+          "peers": 365.0
+        },
+        {
+          "date": "2024-06-18",
+          "peers": 360.83
+        },
+        {
+          "date": "2024-06-18",
+          "peers": 222.0
+        },
+        {
+          "date": "2024-06-18",
+          "peers": 361.83
+        },
+        {
+          "date": "2024-06-18",
+          "peers": 361.83
+        },
+        {
+          "date": "2024-06-20",
+          "peers": 351.33
+        },
+        {
+          "date": "2024-06-20",
+          "peers": 352.33
+        },
+        {
+          "date": "2024-06-20",
+          "peers": 352.33
+        },
+        {
+          "date": "2024-06-22",
+          "peers": 361.67
+        },
+        {
+          "date": "2024-06-22",
+          "peers": 362.67
+        },
+        {
+          "date": "2024-06-22",
+          "peers": 362.67
+        },
+        {
+          "date": "2024-06-24",
+          "peers": 359.83
+        },
+        {
+          "date": "2024-06-24",
+          "peers": 360.83
+        },
+        {
+          "date": "2024-06-24",
+          "peers": 360.83
+        },
+        {
+          "date": "2024-07-08",
+          "peers": 358.17
+        },
+        {
+          "date": "2024-07-08",
+          "peers": 359.17
+        },
+        {
+          "date": "2024-07-08",
+          "peers": 359.17
+        },
+        {
+          "date": "2024-08-05",
+          "peers": 356.33
+        },
+        {
+          "date": "2024-08-05",
+          "peers": 357.33
+        },
+        {
+          "date": "2024-08-05",
+          "peers": 357.33
+        },
+        {
+          "date": "2024-08-09",
+          "peers": 359.0
+        },
+        {
+          "date": "2024-08-09",
+          "peers": 360.0
+        },
+        {
+          "date": "2024-08-09",
+          "peers": 360.0
+        },
+        {
+          "date": "2024-08-11",
+          "peers": 361.0
+        },
+        {
+          "date": "2024-08-11",
+          "peers": 362.0
+        },
+        {
+          "date": "2024-08-11",
+          "peers": 362.0
+        },
+        {
+          "date": "2024-08-15",
+          "peers": 359.0
+        },
+        {
+          "date": "2024-08-15",
+          "peers": 360.0
+        },
+        {
+          "date": "2024-08-15",
+          "peers": 360.0
+        },
+        {
+          "date": "2024-08-31",
+          "peers": 361.0
+        },
+        {
+          "date": "2024-08-31",
+          "peers": 362.0
+        },
+        {
+          "date": "2024-08-31",
+          "peers": 362.0
+        },
+        {
+          "date": "2024-09-02",
+          "peers": 359.0
+        },
+        {
+          "date": "2024-09-02",
+          "peers": 360.0
+        },
+        {
+          "date": "2024-09-02",
+          "peers": 360.0
+        },
+        {
+          "date": "2024-09-04",
+          "peers": 360.67
+        },
+        {
+          "date": "2024-09-04",
+          "peers": 361.67
+        },
+        {
+          "date": "2024-09-04",
+          "peers": 361.67
+        },
+        {
+          "date": "2024-09-18",
+          "peers": 358.0
+        },
+        {
+          "date": "2024-09-18",
+          "peers": 359.0
+        },
+        {
+          "date": "2024-09-18",
+          "peers": 359.0
+        },
+        {
+          "date": "2024-09-24",
+          "peers": 328.0
+        },
+        {
+          "date": "2024-09-24",
+          "peers": 328.33
+        },
+        {
+          "date": "2024-09-24",
+          "peers": 328.33
+        },
+        {
+          "date": "2024-09-28",
+          "peers": 325.17
+        },
+        {
+          "date": "2024-09-28",
+          "peers": 326.17
+        },
+        {
+          "date": "2024-09-28",
+          "peers": 326.17
+        },
+        {
+          "date": "2024-10-06",
+          "peers": 327.67
+        },
+        {
+          "date": "2024-10-06",
+          "peers": 328.67
+        },
+        {
+          "date": "2024-10-06",
+          "peers": 328.67
+        },
+        {
+          "date": "2024-10-08",
+          "peers": 330.5
+        },
+        {
+          "date": "2024-10-08",
+          "peers": 331.5
+        },
+        {
+          "date": "2024-10-08",
+          "peers": 331.5
+        },
+        {
+          "date": "2024-10-24",
+          "peers": 333.83
+        },
+        {
+          "date": "2024-10-24",
+          "peers": 334.83
+        },
+        {
+          "date": "2024-10-24",
+          "peers": 334.83
+        },
+        {
+          "date": "2024-10-26",
+          "peers": 335.83
+        },
+        {
+          "date": "2024-10-26",
+          "peers": 336.83
+        },
+        {
+          "date": "2024-10-26",
+          "peers": 336.83
+        },
+        {
+          "date": "2024-11-09",
+          "peers": 338.0
+        },
+        {
+          "date": "2024-11-09",
+          "peers": 339.0
+        },
+        {
+          "date": "2024-11-09",
+          "peers": 339.0
+        },
+        {
+          "date": "2024-11-11",
+          "peers": 339.67
+        },
+        {
+          "date": "2024-11-11",
+          "peers": 340.67
+        },
+        {
+          "date": "2024-11-11",
+          "peers": 340.67
+        },
+        {
+          "date": "2024-11-19",
+          "peers": 344.17
+        },
+        {
+          "date": "2024-11-19",
+          "peers": 345.17
+        },
+        {
+          "date": "2024-11-19",
+          "peers": 345.17
+        },
+        {
+          "date": "2024-11-23",
+          "peers": 341.17
+        },
+        {
+          "date": "2024-11-23",
+          "peers": 342.17
+        },
+        {
+          "date": "2024-11-23",
+          "peers": 342.17
+        },
+        {
+          "date": "2024-11-25",
+          "peers": 338.83
+        },
+        {
+          "date": "2024-11-25",
+          "peers": 339.83
+        },
+        {
+          "date": "2024-11-25",
+          "peers": 339.83
+        },
+        {
+          "date": "2024-11-27",
+          "peers": 341.5
+        },
+        {
+          "date": "2024-11-27",
+          "peers": 342.5
+        },
+        {
+          "date": "2024-11-27",
+          "peers": 342.5
+        },
+        {
+          "date": "2024-11-29",
+          "peers": 343.67
+        },
+        {
+          "date": "2024-11-29",
+          "peers": 344.67
+        },
+        {
+          "date": "2024-11-29",
+          "peers": 344.67
+        },
+        {
+          "date": "2024-12-09",
+          "peers": 341.83
+        },
+        {
+          "date": "2024-12-09",
+          "peers": 342.83
+        },
+        {
+          "date": "2024-12-09",
+          "peers": 342.83
+        },
+        {
+          "date": "2024-12-11",
+          "peers": 343.83
+        },
+        {
+          "date": "2024-12-11",
+          "peers": 344.83
+        },
+        {
+          "date": "2024-12-11",
+          "peers": 344.83
+        },
+        {
+          "date": "2024-12-13",
+          "peers": 345.5
+        },
+        {
+          "date": "2024-12-13",
+          "peers": 346.5
+        },
+        {
+          "date": "2024-12-13",
+          "peers": 346.5
+        },
+        {
+          "date": "2024-12-21",
+          "peers": 348.5
+        },
+        {
+          "date": "2024-12-21",
+          "peers": 349.5
+        },
+        {
+          "date": "2024-12-21",
+          "peers": 349.5
+        }
+      ],
+      "events": [
+        {
+          "event_date": "2023-06-12",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "KNU",
+          "fatalities": 1,
+          "notes": "Myanmar Regime Outpost Near Capital Seized, 14 Junta Soldiers Killed in Resistance Attacks;Junta camp destroyed and soldiers killed in Naypyidaw Union Territory;Junta sites hit with explosions in Yang"
+        },
+        {
+          "event_date": "2023-08-10",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "KNU",
+          "fatalities": 3,
+          "notes": "Several Resistance Attacks Reported Near Myanmar Regime\u2019s Nerve Center"
+        },
+        {
+          "event_date": "2024-04-19",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 4,
+          "notes": "4 civilians including a child and a girl were killed and at least 5 detained by the military in east of Swa town;Junta attacks in Myanmar\u2019s Bago region kill 8, displace 6,000"
+        },
+        {
+          "event_date": "2024-04-20",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 1,
+          "notes": "4 civilians including a child and a girl were killed and at least 5 detained by the military in east of Swa town;Junta attacks in Myanmar\u2019s Bago region kill 8, displace 6,000"
+        },
+        {
+          "event_date": "2024-04-21",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 3,
+          "notes": "4 civilians including a child and a girl were killed and at least 5 detained by the military in east of Swa town;Junta attacks in Myanmar\u2019s Bago region kill 8, displace 6,000"
+        },
+        {
+          "event_date": "2024-10-24",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 1,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2023-01-16",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Over 80 Myanmar Junta Forces Killed in Three Days of Clashes With Resistance"
+        },
+        {
+          "event_date": "2023-02-06",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Almost 70 Myanmar Regime Forces Reported Killed in Three Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-02-16",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Over 100 Myanmar Junta Forces Killed in Four Days of Resistance Attacks;At Least 30 Myanmar Junta Troops Killed in Clashes in Yedashe"
+        },
+        {
+          "event_date": "2023-05-03",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Naypyitaw junta police outpost attacked"
+        },
+        {
+          "event_date": "2023-06-03",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Over a Dozen Myanmar Junta Forces Killed in Three Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-06-06",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Nearly 40 Myanmar Junta Troops Killed in Three Days of Resistance attacks"
+        },
+        {
+          "event_date": "2023-07-03",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Over 20 Myanmar Junta Forces Killed in Three Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-07-10",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Myanmar Junta Forces Sustain Casualties in Four Days of Clashes With Resistance"
+        },
+        {
+          "event_date": "2023-07-17",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Over 100 Myanmar Junta Forces Killed in Four Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-11-11",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2023-11-17",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 3,
+          "notes": "Myanmar Junta Loses Bases, Scores of Troops in Four Days of Resistance Attacks;Thousands flee as Myanmar junta intensifies attacks on villages south of Naypyitaw"
+        },
+        {
+          "event_date": "2024-01-10",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2024-02-21",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 3,
+          "notes": "Daily Briefing in Relation to the Military Coup;Infants, Pregnant Woman Slain as Myanmar Junta Continues War Against Its People"
+        },
+        {
+          "event_date": "2024-02-21",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Daily Briefing in Relation to the Military Coup;Infants, Pregnant Woman Slain as Myanmar Junta Continues War Against Its People"
+        },
+        {
+          "event_date": "2024-03-16",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Myanmar Junta Loses Another Town, More Bases in Three Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2024-04-13",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 4,
+          "notes": "Revolutionary forces claimed Yedashe clashes resulted in at least 30 casualties from the military"
+        },
+        {
+          "event_date": "2024-10-13",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 3,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        }
+      ],
+      "kinetic_event_count": 23,
+      "sample_prefix": "110.166.124.0/22",
+      "peer_min": 124.0,
+      "peer_max": 381.33,
+      "top_neighbours": [
+        {
+          "asn": 4134,
+          "holder": "CHINANET-BACKBONE No.31",
+          "country": "CN",
+          "v4_peers": 8167,
+          "type": "left",
+          "is_adversary": false
+        },
+        {
+          "asn": 4809,
+          "holder": "CHINATELECOM-CORE-WAN-CN2 China Telecom Next Generation Carrier Network",
+          "country": "CN",
+          "v4_peers": 676,
+          "type": "left",
+          "is_adversary": false
+        },
+        {
+          "asn": 1299,
+          "holder": "TWELVE99 - Arelion Sweden AB",
+          "country": "SE",
+          "v4_peers": 1167216,
+          "type": "upstream-of-upstream",
+          "is_adversary": false,
+          "via": 4134
+        },
+        {
+          "asn": 4811,
+          "holder": "CHINANET-SHANGHAI-MAN China Telecom Group",
+          "country": "CN",
+          "v4_peers": 891677,
+          "type": "upstream-of-upstream",
+          "is_adversary": false,
+          "via": 4134
+        },
+        {
+          "asn": 140292,
+          "holder": "CHINATELECOM-JIANGSU-SUZHOU-5G-NETWORK CHINATELECOM Jiangsu province Suzhou 5G network",
+          "country": "CN",
+          "v4_peers": 846625,
+          "type": "upstream-of-upstream",
+          "is_adversary": false,
+          "via": 4134
+        },
+        {
+          "asn": 2914,
+          "holder": "NTT-DATA-2914 - NTT America",
+          "country": "US",
+          "v4_peers": 734088,
+          "type": "upstream-of-upstream",
+          "is_adversary": false,
+          "via": 4134
+        },
+        {
+          "asn": 174,
+          "holder": "COGENT-174 - Cogent Communications",
+          "country": "US",
+          "v4_peers": 657956,
+          "type": "upstream-of-upstream",
+          "is_adversary": false,
+          "via": 4134
+        },
+        {
+          "asn": 3356,
+          "holder": "LEVEL3 - Level 3 Parent",
+          "country": "US",
+          "v4_peers": 517817,
+          "type": "upstream-of-upstream",
+          "is_adversary": false,
+          "via": 4134
+        },
+        {
+          "asn": 4847,
+          "holder": "CNIX-AP China Networks Inter-Exchange",
+          "country": "CN",
+          "v4_peers": 466012,
+          "type": "upstream-of-upstream",
+          "is_adversary": false,
+          "via": 4134
+        },
+        {
+          "asn": 23724,
+          "holder": "CHINANET-IDC-BJ-AP IDC",
+          "country": "CN",
+          "v4_peers": 415309,
+          "type": "upstream-of-upstream",
+          "is_adversary": false,
+          "via": 4134
+        }
+      ],
+      "periods": {
+        "scenario_start": {
+          "description": "Conflict baseline (2023-01)",
+          "date": "2023-01-01",
+          "update_count": 0,
+          "classifications": {
+            "adversary-routed": 0,
+            "neutral": 1
+          },
+          "sample_paths": [
+            "4134 \u2192 132225",
+            "4809 \u2192 132225",
+            "1299 \u2192 4134 \u2192 132225",
+            "4811 \u2192 4134 \u2192 132225",
+            "140292 \u2192 4134 \u2192 132225",
+            "2914 \u2192 4134 \u2192 132225",
+            "174 \u2192 4134 \u2192 132225",
+            "3356 \u2192 4134 \u2192 132225",
+            "4847 \u2192 4134 \u2192 132225",
+            "23724 \u2192 4134 \u2192 132225"
+          ]
+        },
+        "peak_kinetic": {
+          "description": "Peak kinetic intensity",
+          "date": "2024-04-19",
+          "update_count": 4,
+          "classifications": {
+            "adversary-routed": 0,
+            "neutral": 1
+          },
+          "sample_paths": [
+            "4134 \u2192 132225",
+            "4809 \u2192 132225",
+            "1299 \u2192 4134 \u2192 132225",
+            "4811 \u2192 4134 \u2192 132225",
+            "140292 \u2192 4134 \u2192 132225",
+            "2914 \u2192 4134 \u2192 132225",
+            "174 \u2192 4134 \u2192 132225",
+            "3356 \u2192 4134 \u2192 132225",
+            "4847 \u2192 4134 \u2192 132225",
+            "23724 \u2192 4134 \u2192 132225"
+          ]
+        },
+        "peer_cliff": {
+          "description": "Peer visibility cliff (-241 peers in 7d)",
+          "date": "2023-04-15",
+          "update_count": 0,
+          "classifications": {
+            "adversary-routed": 0,
+            "neutral": 1
+          },
+          "sample_paths": [
+            "4134 \u2192 132225",
+            "4809 \u2192 132225",
+            "1299 \u2192 4134 \u2192 132225",
+            "4811 \u2192 4134 \u2192 132225",
+            "140292 \u2192 4134 \u2192 132225",
+            "2914 \u2192 4134 \u2192 132225",
+            "174 \u2192 4134 \u2192 132225",
+            "3356 \u2192 4134 \u2192 132225",
+            "4847 \u2192 4134 \u2192 132225",
+            "23724 \u2192 4134 \u2192 132225"
+          ]
+        },
+        "recent": {
+          "description": "Recent observation (2024-12)",
+          "date": "2024-12-31",
+          "update_count": 0,
+          "classifications": {
+            "adversary-routed": 0,
+            "neutral": 1
+          },
+          "sample_paths": [
+            "4134 \u2192 132225",
+            "4809 \u2192 132225",
+            "1299 \u2192 4134 \u2192 132225",
+            "4811 \u2192 4134 \u2192 132225",
+            "140292 \u2192 4134 \u2192 132225",
+            "2914 \u2192 4134 \u2192 132225",
+            "174 \u2192 4134 \u2192 132225",
+            "3356 \u2192 4134 \u2192 132225",
+            "4847 \u2192 4134 \u2192 132225",
+            "23724 \u2192 4134 \u2192 132225"
+          ]
+        }
+      },
+      "summary": {
+        "kinetic_event_count": 23,
+        "first_event": "2023-01-16",
+        "last_event": "2024-10-24",
+        "max_bgp_updates_in_day": 0,
+        "peer_count_min": 124.0,
+        "peer_count_max": 381.33,
+        "peer_count_drop": 257.3
+      },
+      "mitigations": {
+        "recommended": [
+          "starlink_alt_transport",
+          "transit_diversity",
+          "ixp_neutral_peering",
+          "ris_monitoring",
+          "rpki_roa",
+          "rov_upstream",
+          "manrs_membership"
+        ],
+        "rationales": {
+          "blackout": "peer count drop of 257.3 indicates effective communications blackout",
+          "baseline": "minimum BGP-security hygiene applicable to every operator"
+        }
+      }
+    },
+    {
+      "city": "Mawlamyine",
+      "asn": 135507,
+      "lat": 16.4913,
+      "lon": 97.6285,
+      "threat": {
+        "score": 36,
+        "level": "elevated",
+        "components": {
+          "blackout": 12.0,
+          "instability": 24.0,
+          "russian_route": 0,
+          "sorm_exposure": 0
+        },
+        "evidence": {
+          "peer_count_drop": 0,
+          "peer_min": 0,
+          "kinetic_events_local": 48,
+          "max_bgp_updates_in_day": 0,
+          "russian_paths_count": 0,
+          "sorm_ases_observed": [],
+          "neighbours_total": 0,
+          "adversarial_neighbours": []
+        }
+      },
+      "peer_timeline": [],
+      "events": [
+        {
+          "event_date": "2023-01-02",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "KNU",
+          "fatalities": 6,
+          "notes": "Over 100 Myanmar Junta Forces Killed in Six Days of Resistance Attacks;Resistance Fighters Capture Myanmar Junta Border Bases in Karen State;Over 20 Myanmar Junta Forces Killed in Three Days of Resist"
+        },
+        {
+          "event_date": "2023-01-04",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "KNU",
+          "fatalities": 7,
+          "notes": "Three Days of Clashes Leave Six Myanmar Junta Forces, Dozen Resistance Fighters Dead;Battle between Karen rebels and junta troops intensifies in Myanmar\u2019s Kayin State;Myanmar Junta Battalion Commander"
+        },
+        {
+          "event_date": "2023-01-13",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "KNU",
+          "fatalities": 6,
+          "notes": "Myanmar Regime Troops Kill Six Civilians in Karen State Raid"
+        },
+        {
+          "event_date": "2023-01-13",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "KNU",
+          "fatalities": 0,
+          "notes": "Myanmar Regime Troops Kill Six Civilians in Karen State Raid"
+        },
+        {
+          "event_date": "2023-01-23",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "KNU",
+          "fatalities": 0,
+          "notes": "Resistance Group Burns Myanmar Junta Offices on Thai Border;Nearly 60 Myanmar Junta Forces Killed in Three Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-03-15",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "KNU",
+          "fatalities": 0,
+          "notes": "Over 120 Myanmar Junta Troops Killed in Five Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-03-22",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "KNU",
+          "fatalities": 1,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2023-03-22",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "KNU",
+          "fatalities": 1,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2023-03-25",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "KNU",
+          "fatalities": 3,
+          "notes": "Thousands flee as junta forces seize control of Karen State town;Nearly 30 Myanmar Junta Forces, Five Resistance Fighters Killed in Last Four Days of Fighting;Myanmar Regime Forces Clash With Resistan"
+        },
+        {
+          "event_date": "2023-03-25",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "KNU",
+          "fatalities": 2,
+          "notes": "Myanmar Regime Forces Clash With Resistance in Karen State;Two civilians killed by junta forces amid clashes in Karen State"
+        },
+        {
+          "event_date": "2023-05-30",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "KNU",
+          "fatalities": 1,
+          "notes": "Daily Briefing in Relation to the Military Coup;Civilian killed by junta artillery in Kawkareik Township"
+        },
+        {
+          "event_date": "2023-06-01",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "KNU",
+          "fatalities": 2,
+          "notes": "Resistance Forces Attack Regime Checkpoints and Offices in Karen State"
+        },
+        {
+          "event_date": "2023-06-02",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "KNU",
+          "fatalities": 4,
+          "notes": "Resistance Forces Attack Regime Checkpoints and Offices in Karen State;Daily Briefing in Relation to the Military Coup;Myanmar\u2019s military carries out airstrikes on Karen State town in retaliation for "
+        },
+        {
+          "event_date": "2023-06-11",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "KNU",
+          "fatalities": 1,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2023-06-19",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "KNU",
+          "fatalities": 0,
+          "notes": "Over 20 Myanmar Junta Forces Killed in Five Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-07-02",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "KNU",
+          "fatalities": 1,
+          "notes": "Junta artillery kills two, injures two in Karen State"
+        },
+        {
+          "event_date": "2023-07-07",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "KNU",
+          "fatalities": 1,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2023-07-11",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "KNU",
+          "fatalities": 0,
+          "notes": "Coordinated Attacks Deal Heavy Blow to Myanmar Junta Troops in Karen State"
+        },
+        {
+          "event_date": "2023-07-27",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "KNU",
+          "fatalities": 1,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2023-07-31",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "KNU",
+          "fatalities": 1,
+          "notes": "One dead, 10 injured in explosion at junta bridge checkpoint in Karen State capital;Explosion kills 1, injures 12 in Myanmar\u2019s Kayin state;Scores of Myanmar Junta Forces Killed in Week of Resistance A"
+        },
+        {
+          "event_date": "2023-08-15",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "KNU",
+          "fatalities": 0,
+          "notes": "Over 20 Myanmar Junta Forces Killed in Four Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-08-28",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "KNU",
+          "fatalities": 0,
+          "notes": "Fifty Myanmar Junta Troops Killed in Four Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-09-17",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "KNU",
+          "fatalities": 1,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2023-10-03",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "KNU",
+          "fatalities": 1,
+          "notes": "Retired army captain assassinated in Thaton Township"
+        },
+        {
+          "event_date": "2023-11-02",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "KNU",
+          "fatalities": 0,
+          "notes": "KNU ramps up military operations in Myanmar\u2019s south"
+        },
+        {
+          "event_date": "2023-11-10",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "KNU",
+          "fatalities": 2,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2023-11-12",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "KNU",
+          "fatalities": 2,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2023-11-13",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "KNU",
+          "fatalities": 0,
+          "notes": "Myanmar battlefield updates: November 15"
+        },
+        {
+          "event_date": "2023-11-16",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "KNU",
+          "fatalities": 0,
+          "notes": "Junta Continues to Lose Bases as Resistance Operations Expand Across Myanmar"
+        },
+        {
+          "event_date": "2023-11-27",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "KNU",
+          "fatalities": 1,
+          "notes": "Around 40 Myanmar Junta Forces Killed in Four Days of Resistance Attacks;Myanmar Junta Forces Flee Deadly Resistance Attack in Mon State"
+        },
+        {
+          "event_date": "2023-12-07",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "KNU",
+          "fatalities": 1,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2024-02-16",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "KNU",
+          "fatalities": 1,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2024-03-15",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "KNU",
+          "fatalities": 0,
+          "notes": "A camp and a hill of the Military Council in KNU Brigade 6 were cleared"
+        },
+        {
+          "event_date": "2024-03-27",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "KNU",
+          "fatalities": 1,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2024-07-19",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "KNU",
+          "fatalities": 20,
+          "notes": "Junta attacks in southeast Myanmar increase as 20 villagers killed in monastery airstrike"
+        },
+        {
+          "event_date": "2024-10-12",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "KNU",
+          "fatalities": 2,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2024-10-30",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "KNU",
+          "fatalities": 1,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2023-04-03",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 1,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2024-03-30",
+          "event_type": "Violence against civilians",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "Civilians",
+          "fatalities": 1,
+          "notes": "Daily Briefing in Relation to the Military Coup"
+        },
+        {
+          "event_date": "2023-01-12",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 3,
+          "notes": "Myanmar Junta Census Collection Sparks Deadly Resistance Attacks"
+        },
+        {
+          "event_date": "2023-02-01",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Dozens of Myanmar Junta Forces, Officials Killed in Three Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-02-04",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Over 40 Myanmar Regime Forces Killed in Four Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-02-15",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "At Least Eight Myanmar Junta Forces Killed in Four Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-03-11",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Over 70 Myanmar Junta Troops Killed in Four Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-03-14",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Nearly 50 Junta Forces Killed in Four Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-07-02",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Daily Briefing in Relation to the Military Coup;Around 40 Myanmar Junta Troops Killed in Three Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-07-02",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 1,
+          "notes": "Around 40 Myanmar Junta Troops Killed in Three Days of Resistance Attacks"
+        },
+        {
+          "event_date": "2023-07-06",
+          "event_type": "Battles",
+          "actor1": "Government of Myanmar (Burma)",
+          "actor2": "NUG",
+          "fatalities": 0,
+          "notes": "Coordinated Attacks Deal Heavy Blow to Myanmar Junta Troops in Karen State;Nearly 20 Myanmar Regime Forces Killed in Four Days of Resistance Attacks"
+        }
+      ],
+      "kinetic_event_count": 48,
+      "sample_prefix": null,
+      "peer_min": 0,
+      "peer_max": 0,
+      "top_neighbours": [],
+      "periods": {
+        "scenario_start": {
+          "description": "Conflict baseline (2023-01)",
+          "date": "2023-01-01",
+          "update_count": 5,
+          "classifications": {
+            "adversary-routed": 0,
+            "neutral": 1
+          },
+          "sample_paths": [
+            "3356 \u2192 174 \u2192 135507"
+          ]
+        },
+        "peak_kinetic": {
+          "description": "Peak kinetic intensity",
+          "date": "2023-07-06",
+          "update_count": 6,
+          "classifications": {
+            "adversary-routed": 0,
+            "neutral": 1
+          },
+          "sample_paths": [
+            "3356 \u2192 174 \u2192 135507"
+          ]
+        },
+        "recent": {
+          "description": "Recent observation (2024-12)",
+          "date": "2024-12-31",
+          "update_count": 0,
+          "classifications": {
+            "adversary-routed": 0,
+            "neutral": 1
+          },
+          "sample_paths": [
+            "3356 \u2192 174 \u2192 135507"
+          ]
+        }
+      },
+      "summary": {
+        "kinetic_event_count": 48,
+        "first_event": "2023-01-02",
+        "last_event": "2024-10-30",
+        "max_bgp_updates_in_day": 0,
+        "peer_count_min": 0,
+        "peer_count_max": 0,
+        "peer_count_drop": 0
+      },
+      "mitigations": {
+        "recommended": [
+          "rpki_roa",
+          "rov_upstream",
+          "ris_monitoring",
+          "as_path_filtering",
+          "diplomatic_pressure",
+          "manrs_membership"
+        ],
+        "rationales": {
+          "prefix_hijack": "BGP UPDATE volume of 0 per observation window suggests possible route instability or hijack",
+          "baseline": "minimum BGP-security hygiene applicable to every operator"
+        }
+      }
+    }
+  ],
+  "chokepoints": {
+    "graph_stats": {
+      "ases": 0,
+      "edges": 0,
+      "paths_observed": 0,
+      "source_peers": 0,
+      "ua_targets": 4
+    },
+    "top_chokepoints": [],
+    "adversarial_chokepoints": []
+  },
+  "totals": {
+    "city_count": 4,
+    "total_events": 3181,
+    "exposed_cities": 4,
+    "critical_cities": 0,
+    "max_threat": 46,
+    "mean_threat": 40,
+    "total_adversarial_adjacencies": 0
+  },
+  "generated_at": "2026-04-26T03:58:13.757849+00:00"
+}

@@ -21,16 +21,20 @@ export function daysBetween(a: string, b: string): number {
   return Math.round((toDate(b).getTime() - toDate(a).getTime()) / 86400000);
 }
 
-export function timelineDayCount(): number {
-  return daysBetween(TIMELINE_START, TIMELINE_END);
+export function timelineDayCount(start = TIMELINE_START, end = TIMELINE_END): number {
+  return daysBetween(start, end);
 }
 
-export function dayIndexToDate(idx: number): string {
-  return addDays(TIMELINE_START, idx);
+export function dayIndexToDate(idx: number, start = TIMELINE_START): string {
+  return addDays(start, idx);
 }
 
-export function dateToDayIndex(date: string): number {
-  return Math.max(0, Math.min(timelineDayCount(), daysBetween(TIMELINE_START, date)));
+export function dateToDayIndex(
+  date: string,
+  start = TIMELINE_START,
+  end = TIMELINE_END,
+): number {
+  return Math.max(0, Math.min(timelineDayCount(start, end), daysBetween(start, date)));
 }
 
 /** Find the nearest BGP sample period for a given date. */

@@ -50,6 +50,10 @@ os.makedirs(OUT_DIR, exist_ok=True)
 
 # Target cities — must align with BGP data targets
 TARGET_CITIES = [
+    "Kyiv",
+    "Odessa",
+    "Dnipro",
+    "Mykolaiv",
     "Kherson",
     "Mariupol",
     "Kharkiv",
@@ -58,9 +62,9 @@ TARGET_CITIES = [
     "Luhansk",
 ]
 
-# Window aligned to our BGP collection (Oct 2021 baseline through Apr 2022 siege)
+# Full conflict window — Oct 2021 baseline through end of 2024 (live ACLED API supports it)
 DATE_START = "2021-10-01"
-DATE_END   = "2022-06-30"
+DATE_END   = "2024-12-31"
 
 
 # ---------------------------------------------------------------------------
@@ -412,6 +416,10 @@ def filter_to_target_cities(events):
     """
     # Aliases — keep all-lowercase
     aliases = {
+        "Kyiv":       ["kyiv", "kiev", "kyyiv"],
+        "Odessa":     ["odesa", "odessa"],
+        "Dnipro":     ["dnipro", "dnipropetrovsk", "dnepr"],
+        "Mykolaiv":   ["mykolaiv", "nikolaev", "mykolayiv"],
         "Kherson":    ["kherson"],
         "Mariupol":   ["mariupol", "mariupol'"],
         "Kharkiv":    ["kharkiv", "kharkov"],
@@ -490,22 +498,24 @@ def main():
 
     events = []
 
-    if os.path.exists(UCDP_CSV):
-        print(f"[mode] UCDP GED CSV ({UCDP_CSV})")
-        events = load_ucdp_events()
-    elif api_email and api_password:
+    if api_email and api_password:
         print(f"[mode] ACLED OAuth API (email={api_email})")
         raw = fetch_acled_api(api_email, api_password)
         normalized = [normalize_acled_record(r) for r in raw]
         events = filter_to_target_cities(normalized)
         print(f"[filter] {len(events)}/{len(normalized)} events match target cities")
-        if not events:
-            print("[warn] no events matched after filter — falling back to curated set")
+        if not events and os.path.exists(UCDP_CSV):
+            print("[warn] ACLED returned 0 — falling back to UCDP CSV")
+            events = load_ucdp_events()
+        elif not events:
+            print("[warn] ACLED returned 0 — falling back to curated set")
             events = [normalize_curated_record(r) for r in CURATED_EVENTS]
+    elif os.path.exists(UCDP_CSV):
+        print(f"[mode] UCDP GED CSV ({UCDP_CSV})")
+        events = load_ucdp_events()
     else:
         print("[mode] Curated fallback")
-        print("       For real data: drop UCDP GED CSV at acled_data/ucdp_ukraine.csv,")
-        print("       or set ACLED_EMAIL + ACLED_PASSWORD if your ACLED account has API access.\n")
+        print("       For real data: set ACLED_EMAIL + ACLED_PASSWORD or drop UCDP CSV.\n")
         events = [normalize_curated_record(r) for r in CURATED_EVENTS]
 
     # Sort by date

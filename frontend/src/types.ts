@@ -39,6 +39,25 @@ export interface PeerTimelinePoint {
   peers: number;
 }
 
+export interface ThreatScore {
+  score: number;
+  level: "nominal" | "elevated" | "severe" | "critical";
+  components: {
+    blackout: number;
+    instability: number;
+    russian_route: number;
+    sorm_exposure: number;
+  };
+  evidence: {
+    peer_count_drop: number;
+    max_bgp_updates_in_day: number;
+    russian_paths_count: number;
+    sorm_ases_observed: string[];
+    adversarial_neighbours?: AdversarialNeighbour[];
+    neighbours_total?: number;
+  };
+}
+
 export interface City {
   name: string;
   asn: number;
@@ -48,6 +67,7 @@ export interface City {
   periods: Record<string, BGPPeriodData>;
   peer_timeline: PeerTimelinePoint[];
   summary: CitySummary;
+  threat: ThreatScore;
 }
 
 export interface ASN {
@@ -81,6 +101,119 @@ export interface CorrelationRow {
   sample_as_paths: string;
 }
 
+export interface Chokepoint {
+  asn: number;
+  centrality: number;
+  raw_score: number;
+  neighbors: number;
+  holder: string;
+  country: string;
+  country_name: string;
+  classification: string;
+  sorm_role: string;
+  is_adversarial: boolean;
+}
+
+export interface ChokepointAnalysis {
+  graph_stats: {
+    ases: number;
+    edges: number;
+    paths_observed: number;
+    source_peers: number;
+    ua_targets: number;
+  };
+  top_chokepoints: Chokepoint[];
+  adversarial_chokepoints: Chokepoint[];
+}
+
+export interface ScenarioCity {
+  city: string;
+  name?: string;
+  asn: number;
+  lat: number;
+  lon: number;
+  prc_count?: number;
+  prc_neighbours?: { asn: number; role: string }[];
+  exposure_score: number;
+  exposure_level: "nominal" | "elevated" | "severe" | "critical";
+  neighbours_total: number;
+  sample_prefix?: string | null;
+  mean_peer_count?: number | null;
+}
+
+export interface Scenario {
+  scenario_name: string;
+  scenario_question: string;
+  method: string;
+  adversarial_ases: Record<string, string>;
+  cities: ScenarioCity[];
+  totals: {
+    total_prc_adjacencies: number;
+    exposed_targets: number;
+    max_exposure: number;
+    mean_exposure: number;
+  };
+}
+
+/**
+ * GlobalScenario — unified schema from build_global_scenarios.py.
+ * Each scenario can power a complete cyber-terrain assessment for a conflict.
+ */
+export interface AdversarialNeighbour {
+  asn: number;
+  operator: string;
+  role: string;
+  v4_peers: number;
+}
+
+export interface GlobalScenarioCity {
+  city: string;
+  asn: number;
+  lat: number;
+  lon: number;
+  threat: ThreatScore;
+  peer_timeline: PeerTimelinePoint[];
+  events: ACLEDEvent[];
+  kinetic_event_count: number;
+  sample_prefix?: string | null;
+  peer_min: number;
+  peer_max: number;
+  mitigations: {
+    recommended: string[];
+    rationales: Record<string, string>;
+  };
+  // Every scenario now has periods (synthesized for non-Ukraine, MRT-derived for Ukraine)
+  periods?: Record<string, BGPPeriodData>;
+  summary?: CitySummary;
+  name?: string;     // alias for `city` so legacy components work
+}
+
+export interface GlobalScenario {
+  id: string;
+  name: string;
+  region: string;
+  active_since: string;
+  primary_actor: string;
+  secondary_actor: string;
+  summary: string;
+  data_source: "live" | "contingency";
+  date_start: string;
+  date_end: string;
+  adversarial_ases: Record<string, { operator: string; role: string }>;
+  cities: GlobalScenarioCity[];
+  totals: {
+    city_count: number;
+    total_events: number;
+    exposed_cities: number;
+    critical_cities: number;
+    max_threat: number;
+    mean_threat: number;
+    total_adversarial_adjacencies: number;
+  };
+  chokepoints?: ChokepointAnalysis;
+  generated_at: string;
+}
+
 export interface Bundle {
   generated_at: string;
   cities: Record<string, City>;
@@ -88,6 +221,10 @@ export interface Bundle {
   periods: PeriodMeta[];
   sorm_ases: Record<string, string>;
   correlation: CorrelationRow[];
+  chokepoints?: ChokepointAnalysis;
+  scenarios?: { taiwan_china?: Scenario };
+  global_scenarios?: Record<string, GlobalScenario>;
+  default_scenario?: string;
   briefs?: Record<string, Record<string, string>>;
   briefs_generated_at?: string;
   briefs_mode?: "llm" | "template";

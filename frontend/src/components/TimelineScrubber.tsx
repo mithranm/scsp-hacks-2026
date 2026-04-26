@@ -2,6 +2,7 @@ import { useMemo } from "react";
 import type { PeriodMeta, City, ASN } from "../types";
 import {
   TIMELINE_START,
+  TIMELINE_END,
   dateToDayIndex,
   dayIndexToDate,
   timelineDayCount,
@@ -15,54 +16,61 @@ interface Props {
   city: City;
   asns: Record<string, ASN>;
   sormAses: Record<string, string>;
+  /** Scenario date bounds — falls back to Ukraine 2021-09 → 2022-06 */
+  windowStart?: string;
+  windowEnd?: string;
+  /** Scenario-specific adversary AS list & display label */
+  adversarySet?: Set<string>;
+  adversaryLabel?: string;
 }
-
-const ADVERSARIAL = new Set(["Russian", "SORM", "Belarusian"]);
 
 interface ThreatMarker {
   date: string;
   pct: number;
-  type: "russian-path" | "high-volume";
+  type: "adversary-path" | "high-volume";
   label: string;
 }
 
-// Compact display labels so adjacent ticks have room
+// Compact display labels so adjacent ticks have room. Handles known Ukraine
+// labels and generic synthesized period labels from build_global_scenarios.py.
 function shortenPeriodLabel(desc: string): string {
   return desc
-    .replace(/^Pre-invasion baseline$/, "Baseline")
-    .replace(/^Invasion start$/,        "Invasion")
-    .replace(/^Kherson occupation$/,    "Kherson falls")
-    .replace(/^Mariupol siege peak$/,   "Mariupol siege");
+    .replace(/^Pre-invasion baseline$/,             "Baseline")
+    .replace(/^Invasion start$/,                    "Invasion")
+    .replace(/^Kherson occupation$/,                "Kherson falls")
+    .replace(/^Mariupol siege peak$/,               "Mariupol siege")
+    .replace(/^Conflict baseline.*$/,               "Baseline")
+    .replace(/^Peak kinetic intensity$/,            "Peak kinetic")
+    .replace(/^Peer visibility cliff.*$/,           "Peer cliff")
+    .replace(/^Recent observation.*$/,              "Recent");
 }
 
 export function TimelineScrubber({
   periods, date, onDateChange, city, asns, sormAses,
+  windowStart = TIMELINE_START, windowEnd = TIMELINE_END,
+  adversarySet, adversaryLabel = "Adversary",
 }: Props) {
-  const totalDays = timelineDayCount();
-  const dayIdx = dateToDayIndex(date);
+  const totalDays = timelineDayCount(windowStart, windowEnd);
+  const dayIdx    = dateToDayIndex(date, windowStart, windowEnd);
+  const advSet    = adversarySet ?? new Set<string>();
 
   // Compute BGP threat markers for the current city.
-  // - russian-path: any sample path in this period traverses an adversarial AS
+  // - adversary-path: any sample path in this period traverses an adversarial AS
   // - high-volume:  update_count > 100 (routing instability spike)
   const threatMarkers: ThreatMarker[] = useMemo(() => {
     const out: ThreatMarker[] = [];
     for (const p of periods) {
-      const data = city.periods[p.label];
+      const data = (city as any).periods?.[p.label];
       if (!data) continue;
-      const pct = (dateToDayIndex(p.date) / totalDays) * 100;
+      const pct = (dateToDayIndex(p.date, windowStart, windowEnd) / totalDays) * 100;
 
-      // Detect adversarial AS in any sample path
+      // Detect SCENARIO-specific adversarial AS in any sample path
       const advHops = new Set<string>();
-      for (const path of data.sample_paths) {
+      for (const path of data.sample_paths ?? []) {
         for (const hop of path.split(" → ")) {
           const a = hop.trim();
           if (!/^\d+$/.test(a)) continue;
-          if (sormAses[a]) {
-            advHops.add(a);
-          } else {
-            const asn = asns[a];
-            if (asn && ADVERSARIAL.has(asn.classification)) advHops.add(a);
-          }
+          if (advSet.has(a) || sormAses[a]) advHops.add(a);
         }
       }
       if (advHops.size > 0) {
@@ -78,8 +86,8 @@ export function TimelineScrubber({
         out.push({
           date: p.date,
           pct,
-          type: "russian-path",
-          label: `${p.description} — Russian-routed path: ${hopLabels}`,
+          type: "adversary-path",
+          label: `${p.description} — ${adversaryLabel}-routed path: ${hopLabels}`,
         });
       }
 
@@ -88,17 +96,17 @@ export function TimelineScrubber({
           date: p.date,
           pct,
           type: "high-volume",
-          label: `${p.description} — ${data.update_count} BGP UPDATEs in 1h (instability spike)`,
+          label: `${p.description} — ${data.update_count} updates / events in window (high activity)`,
         });
       }
     }
     return out;
-  }, [periods, city, asns, sormAses, totalDays]);
+  }, [periods, city, asns, sormAses, totalDays, advSet, adversaryLabel, windowStart, windowEnd]);
 
   // Peer-count sparkline path — visualizes "when the city went dark"
   const sparklinePath = useMemo(() => {
     const series = city.peer_timeline
-      .filter((p) => p.date >= TIMELINE_START)
+      .filter((p) => p.date >= windowStart && p.date <= windowEnd)
       .slice()
       .sort((a, b) => a.date.localeCompare(b.date));
     if (series.length === 0) return "";
@@ -107,7 +115,7 @@ export function TimelineScrubber({
     const w = 1000;
     const h = 36;
     const pts = series.map((p) => {
-      const x = (dateToDayIndex(p.date) / totalDays) * w;
+      const x = (dateToDayIndex(p.date, windowStart, windowEnd) / totalDays) * w;
       const y = h - (p.peers / maxPeers) * h;
       return [x, y] as const;
     });
@@ -115,13 +123,15 @@ export function TimelineScrubber({
       "M" +
       pts.map(([x, y]) => `${x.toFixed(1)},${y.toFixed(1)}`).join(" L")
     );
-  }, [city, totalDays]);
+  }, [city, totalDays, windowStart, windowEnd]);
 
   // Event markers — vertical pips along the timeline
-  const eventMarkers = city.events.map((e) => ({
-    pct: (dateToDayIndex(e.event_date) / totalDays) * 100,
-    label: `${e.event_date} · ${e.sub_event}`,
-  }));
+  const eventMarkers = city.events
+    .filter((e) => (e as any).event_date >= windowStart && (e as any).event_date <= windowEnd)
+    .map((e) => ({
+      pct: (dateToDayIndex((e as any).event_date, windowStart, windowEnd) / totalDays) * 100,
+      label: `${(e as any).event_date} · ${(e as any).sub_event ?? (e as any).event_type}`,
+    }));
 
   // Period markers — large clickable ticks. Sorted by position so the
   // zebra stagger always alternates left-to-right.
@@ -130,7 +140,7 @@ export function TimelineScrubber({
       label: p.label,
       description: p.description,
       shortLabel: shortenPeriodLabel(p.description),
-      pct: (dateToDayIndex(p.date) / totalDays) * 100,
+      pct: (dateToDayIndex(p.date, windowStart, windowEnd) / totalDays) * 100,
       date: p.date,
     }))
     .sort((a, b) => a.pct - b.pct);
@@ -172,7 +182,7 @@ export function TimelineScrubber({
               title={m.label}
               onClick={() =>
                 onDateChange(
-                  dayIndexToDate(Math.round((m.pct / 100) * totalDays)),
+                  dayIndexToDate(Math.round((m.pct / 100) * totalDays), windowStart),
                 )
               }
             />
@@ -189,7 +199,7 @@ export function TimelineScrubber({
               title={m.label}
               onClick={() => onDateChange(m.date)}
             >
-              {m.type === "russian-path" ? "▼" : "◆"}
+              {m.type === "adversary-path" ? "▼" : "◆"}
             </button>
           ))}
         </div>
@@ -217,7 +227,7 @@ export function TimelineScrubber({
           min={0}
           max={totalDays}
           value={dayIdx}
-          onChange={(e) => onDateChange(dayIndexToDate(Number(e.target.value)))}
+          onChange={(e) => onDateChange(dayIndexToDate(Number(e.target.value), windowStart))}
         />
       </div>
 
@@ -225,8 +235,8 @@ export function TimelineScrubber({
         <span className="legend-pip" /> kinetic event
         <span className="legend-spark" /> peer visibility
         <span className="legend-tick" /> BGP sample
-        <span className="legend-threat russian-path">▼</span> Russian-routed path
-        <span className="legend-threat high-volume">◆</span> instability spike
+        <span className="legend-threat adversary-path">▼</span> {adversaryLabel}-routed path
+        <span className="legend-threat high-volume">◆</span> high-activity period
       </div>
     </div>
   );
