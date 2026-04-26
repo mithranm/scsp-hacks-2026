@@ -304,36 +304,6 @@ npm run build
 
 ---
 
-## Demo flow (5-minute presentation)
-
-1. **Open**. Landing view is the **🌐 Global Overview** — world map, 27
-   cities plotted, right panel shows totals (X critical, Y severe, peak
-   threat = ZZ). One screen tells judges the scope.
-2. **Click 🇷🇺🇺🇦 Russia ↔ Ukraine tab.** Map flies to Eastern Europe.
-   Pick **Mariupol** in the city picker — threat score **62 (severe)**
-   surfaces immediately.
-3. **Drag the timeline scrubber** from Feb 2022 to Apr 2022. Watch:
-   - The peer-visibility sparkline behind the slider drop off a cliff
-   - The city marker flip to red `· DARK`
-   - A pulsing red ring appear when the scrubber crosses ACLED kinetic
-     events
-4. **Click the Kharkiv tab on the timeline** — observe the orange
-   **adversary-routed path** chevron at Apr 15 2022 (real MRT data showing
-   AS9002 RETN in the transit chain).
-5. **Scroll the right panel** to the **Network Resilience** section —
-   AS3356 Lumen and AS174 Cogent at 100/96 centrality, with the
-   adversarial chokepoint AS9002 flagged.
-6. **Scroll further** to **BGP Attack Mitigations** — show the recommended
-   measures (RPKI ROA, AS_PATH filtering, transit diversity, mTLS) tied to
-   the specific threat profile observed for Mariupol.
-7. **Click 🇨🇳🇹🇼 China ↔ Taiwan tab** — same UI shape, different threat
-   actor. Map flies to East Asia. Taipei AS3462 sits at score 65 with
-   3 direct PRC-state-operator adjacencies. Methodology generalizes.
-8. **Hit the ⬇ Brief (.md) export button** — analyst-ready Markdown
-   downloads. Demonstrates productisation.
-
----
-
 ## Acknowledgements & data sources
 
 - **RIPE NCC** — RIS MRT archives, RIPE Stat API
