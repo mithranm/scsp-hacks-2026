@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-26T14:51:46.045617+00:00",
+  "generated_at": "2026-04-26T19:22:48.830859+00:00",
   "cities": {
     "Kherson": {
       "name": "Kherson",
@@ -38034,6 +38034,9 @@
               "as_path_filtering",
               "mtls_dot_doh",
               "rpki_path_validation",
+              "genai_vpn_tunneling",
+              "genai_traffic_padding",
+              "genai_on_premise",
               "rpki_roa",
               "rov_upstream",
               "manrs_membership"
@@ -38042,10 +38045,26 @@
               "blackout": "peer count drop of 356.5 indicates effective communications blackout",
               "adversarial_transit": "3 Russian-routed path(s) observed in BGP samples",
               "sorm_exposure": "SORM-capable ASes (AS4134, AS58453, AS58453) on observed path \u2192 unencrypted traffic legally subject to interception",
+              "genai_exposure": "traffic traverses adversary infrastructure with DPI capability \u2014 GenAI application traffic (ChatGPT, Gemini, etc.) can be fingerprinted with ~89% accuracy, enabling selective blocking or surveillance",
               "baseline": "minimum BGP-security hygiene applicable to every operator"
             }
           },
-          "name": "Taipei"
+          "name": "Taipei",
+          "genai_exposure": {
+            "score": 70,
+            "level": "critical",
+            "routing_exposure": 0.8,
+            "adversary_dpi": true,
+            "dpi_system": "Great Firewall / MSS",
+            "dpi_capability_score": 98,
+            "fingerprint_accuracy": 0.894,
+            "threat_vectors": [
+              "AI traffic identification via DPI",
+              "Selective GenAI service blocking",
+              "AI query content surveillance",
+              "AI-assisted planning detection"
+            ]
+          }
         },
         {
           "city": "Kaohsiung",
@@ -38432,7 +38451,19 @@
               "baseline": "minimum BGP-security hygiene applicable to every operator"
             }
           },
-          "name": "Kaohsiung"
+          "name": "Kaohsiung",
+          "genai_exposure": {
+            "score": 0,
+            "level": "nominal",
+            "routing_exposure": 0.0,
+            "adversary_dpi": true,
+            "dpi_system": "Great Firewall / MSS",
+            "dpi_capability_score": 98,
+            "fingerprint_accuracy": 0.894,
+            "threat_vectors": [
+              "AI traffic identification via DPI"
+            ]
+          }
         },
         {
           "city": "Taichung",
@@ -40119,6 +40150,9 @@
               "ixp_neutral_peering",
               "mtls_dot_doh",
               "rpki_path_validation",
+              "genai_vpn_tunneling",
+              "genai_traffic_padding",
+              "genai_on_premise",
               "rpki_roa",
               "rov_upstream",
               "manrs_membership",
@@ -40127,10 +40161,25 @@
             "rationales": {
               "adversarial_transit": "2 Russian-routed path(s) observed in BGP samples",
               "sorm_exposure": "SORM-capable ASes (AS4134, AS58453) on observed path \u2192 unencrypted traffic legally subject to interception",
+              "genai_exposure": "traffic traverses adversary infrastructure with DPI capability \u2014 GenAI application traffic (ChatGPT, Gemini, etc.) can be fingerprinted with ~89% accuracy, enabling selective blocking or surveillance",
               "baseline": "minimum BGP-security hygiene applicable to every operator"
             }
           },
-          "name": "Taichung"
+          "name": "Taichung",
+          "genai_exposure": {
+            "score": 53,
+            "level": "severe",
+            "routing_exposure": 0.6,
+            "adversary_dpi": true,
+            "dpi_system": "Great Firewall / MSS",
+            "dpi_capability_score": 98,
+            "fingerprint_accuracy": 0.894,
+            "threat_vectors": [
+              "AI traffic identification via DPI",
+              "AI query content surveillance",
+              "AI-assisted planning detection"
+            ]
+          }
         },
         {
           "city": "Hsinchu",
@@ -41069,6 +41118,9 @@
               "ixp_neutral_peering",
               "mtls_dot_doh",
               "rpki_path_validation",
+              "genai_vpn_tunneling",
+              "genai_traffic_padding",
+              "genai_on_premise",
               "rpki_roa",
               "rov_upstream",
               "manrs_membership",
@@ -41077,10 +41129,25 @@
             "rationales": {
               "adversarial_transit": "2 Russian-routed path(s) observed in BGP samples",
               "sorm_exposure": "SORM-capable ASes (AS4134, AS58453) on observed path \u2192 unencrypted traffic legally subject to interception",
+              "genai_exposure": "traffic traverses adversary infrastructure with DPI capability \u2014 GenAI application traffic (ChatGPT, Gemini, etc.) can be fingerprinted with ~89% accuracy, enabling selective blocking or surveillance",
               "baseline": "minimum BGP-security hygiene applicable to every operator"
             }
           },
-          "name": "Hsinchu"
+          "name": "Hsinchu",
+          "genai_exposure": {
+            "score": 53,
+            "level": "severe",
+            "routing_exposure": 0.6,
+            "adversary_dpi": true,
+            "dpi_system": "Great Firewall / MSS",
+            "dpi_capability_score": 98,
+            "fingerprint_accuracy": 0.894,
+            "threat_vectors": [
+              "AI traffic identification via DPI",
+              "AI query content surveillance",
+              "AI-assisted planning detection"
+            ]
+          }
         },
         {
           "city": "New Taipei",
@@ -41547,7 +41614,19 @@
               "baseline": "minimum BGP-security hygiene applicable to every operator"
             }
           },
-          "name": "New Taipei"
+          "name": "New Taipei",
+          "genai_exposure": {
+            "score": 0,
+            "level": "nominal",
+            "routing_exposure": 0.0,
+            "adversary_dpi": true,
+            "dpi_system": "Great Firewall / MSS",
+            "dpi_capability_score": 98,
+            "fingerprint_accuracy": 0.894,
+            "threat_vectors": [
+              "AI traffic identification via DPI"
+            ]
+          }
         }
       ],
       "chokepoints": {
@@ -42184,7 +42263,19 @@
               "baseline": "minimum BGP-security hygiene applicable to every operator"
             }
           },
-          "name": "Sanaa"
+          "name": "Sanaa",
+          "genai_exposure": {
+            "score": 0,
+            "level": "nominal",
+            "routing_exposure": 0.0,
+            "adversary_dpi": true,
+            "dpi_system": "TCI/DPI filtering",
+            "dpi_capability_score": 85,
+            "fingerprint_accuracy": 0.894,
+            "threat_vectors": [
+              "AI traffic identification via DPI"
+            ]
+          }
         },
         {
           "city": "Aden",
@@ -42658,7 +42749,19 @@
               "baseline": "minimum BGP-security hygiene applicable to every operator"
             }
           },
-          "name": "Aden"
+          "name": "Aden",
+          "genai_exposure": {
+            "score": 0,
+            "level": "nominal",
+            "routing_exposure": 0.0,
+            "adversary_dpi": true,
+            "dpi_system": "TCI/DPI filtering",
+            "dpi_capability_score": 85,
+            "fingerprint_accuracy": 0.894,
+            "threat_vectors": [
+              "AI traffic identification via DPI"
+            ]
+          }
         },
         {
           "city": "Hodeida",
@@ -43340,7 +43443,19 @@
               "baseline": "minimum BGP-security hygiene applicable to every operator"
             }
           },
-          "name": "Hodeida"
+          "name": "Hodeida",
+          "genai_exposure": {
+            "score": 0,
+            "level": "nominal",
+            "routing_exposure": 0.0,
+            "adversary_dpi": true,
+            "dpi_system": "TCI/DPI filtering",
+            "dpi_capability_score": 85,
+            "fingerprint_accuracy": 0.894,
+            "threat_vectors": [
+              "AI traffic identification via DPI"
+            ]
+          }
         },
         {
           "city": "Taiz",
@@ -44161,7 +44276,19 @@
               "baseline": "minimum BGP-security hygiene applicable to every operator"
             }
           },
-          "name": "Taiz"
+          "name": "Taiz",
+          "genai_exposure": {
+            "score": 0,
+            "level": "nominal",
+            "routing_exposure": 0.0,
+            "adversary_dpi": true,
+            "dpi_system": "TCI/DPI filtering",
+            "dpi_capability_score": 85,
+            "fingerprint_accuracy": 0.894,
+            "threat_vectors": [
+              "AI traffic identification via DPI"
+            ]
+          }
         },
         {
           "city": "Baghdad",
@@ -44844,7 +44971,19 @@
               "baseline": "minimum BGP-security hygiene applicable to every operator"
             }
           },
-          "name": "Baghdad"
+          "name": "Baghdad",
+          "genai_exposure": {
+            "score": 0,
+            "level": "nominal",
+            "routing_exposure": 0.0,
+            "adversary_dpi": true,
+            "dpi_system": "TCI/DPI filtering",
+            "dpi_capability_score": 85,
+            "fingerprint_accuracy": 0.894,
+            "threat_vectors": [
+              "AI traffic identification via DPI"
+            ]
+          }
         },
         {
           "city": "Tehran",
@@ -45840,6 +45979,9 @@
               "ixp_neutral_peering",
               "mtls_dot_doh",
               "rpki_path_validation",
+              "genai_vpn_tunneling",
+              "genai_traffic_padding",
+              "genai_on_premise",
               "rpki_roa",
               "rov_upstream",
               "manrs_membership",
@@ -45848,10 +45990,25 @@
             "rationales": {
               "adversarial_transit": "1 Russian-routed path(s) observed in BGP samples",
               "sorm_exposure": "SORM-capable ASes (AS58224) on observed path \u2192 unencrypted traffic legally subject to interception",
+              "genai_exposure": "traffic traverses adversary infrastructure with DPI capability \u2014 GenAI application traffic (ChatGPT, Gemini, etc.) can be fingerprinted with ~89% accuracy, enabling selective blocking or surveillance",
               "baseline": "minimum BGP-security hygiene applicable to every operator"
             }
           },
-          "name": "Tehran"
+          "name": "Tehran",
+          "genai_exposure": {
+            "score": 23,
+            "level": "elevated",
+            "routing_exposure": 0.3,
+            "adversary_dpi": true,
+            "dpi_system": "TCI/DPI filtering",
+            "dpi_capability_score": 85,
+            "fingerprint_accuracy": 0.894,
+            "threat_vectors": [
+              "AI traffic identification via DPI",
+              "AI query content surveillance",
+              "AI-assisted planning detection"
+            ]
+          }
         }
       ],
       "chokepoints": {
@@ -47278,7 +47435,19 @@
               "baseline": "minimum BGP-security hygiene applicable to every operator"
             }
           },
-          "name": "Yangon"
+          "name": "Yangon",
+          "genai_exposure": {
+            "score": 0,
+            "level": "nominal",
+            "routing_exposure": 0.0,
+            "adversary_dpi": true,
+            "dpi_system": "Junta telecom control",
+            "dpi_capability_score": 60,
+            "fingerprint_accuracy": 0.894,
+            "threat_vectors": [
+              "AI traffic identification via DPI"
+            ]
+          }
         },
         {
           "city": "Mandalay",
@@ -49294,7 +49463,19 @@
               "baseline": "minimum BGP-security hygiene applicable to every operator"
             }
           },
-          "name": "Mandalay"
+          "name": "Mandalay",
+          "genai_exposure": {
+            "score": 0,
+            "level": "nominal",
+            "routing_exposure": 0.0,
+            "adversary_dpi": true,
+            "dpi_system": "Junta telecom control",
+            "dpi_capability_score": 60,
+            "fingerprint_accuracy": 0.894,
+            "threat_vectors": [
+              "AI traffic identification via DPI"
+            ]
+          }
         },
         {
           "city": "Naypyidaw",
@@ -51113,7 +51294,19 @@
               "baseline": "minimum BGP-security hygiene applicable to every operator"
             }
           },
-          "name": "Naypyidaw"
+          "name": "Naypyidaw",
+          "genai_exposure": {
+            "score": 0,
+            "level": "nominal",
+            "routing_exposure": 0.0,
+            "adversary_dpi": true,
+            "dpi_system": "Junta telecom control",
+            "dpi_capability_score": 60,
+            "fingerprint_accuracy": 0.894,
+            "threat_vectors": [
+              "AI traffic identification via DPI"
+            ]
+          }
         },
         {
           "city": "Mawlamyine",
@@ -51593,7 +51786,19 @@
               "baseline": "minimum BGP-security hygiene applicable to every operator"
             }
           },
-          "name": "Mawlamyine"
+          "name": "Mawlamyine",
+          "genai_exposure": {
+            "score": 0,
+            "level": "nominal",
+            "routing_exposure": 0.0,
+            "adversary_dpi": true,
+            "dpi_system": "Junta telecom control",
+            "dpi_capability_score": 60,
+            "fingerprint_accuracy": 0.894,
+            "threat_vectors": [
+              "AI traffic identification via DPI"
+            ]
+          }
         }
       ],
       "chokepoints": {
@@ -56491,6 +56696,9 @@
               "ixp_neutral_peering",
               "mtls_dot_doh",
               "rpki_path_validation",
+              "genai_vpn_tunneling",
+              "genai_traffic_padding",
+              "genai_on_premise",
               "rpki_roa",
               "rov_upstream",
               "manrs_membership",
@@ -56498,10 +56706,24 @@
             ],
             "rationales": {
               "adversarial_transit": "1 Russian-routed path(s) observed in BGP samples",
+              "genai_exposure": "traffic traverses adversary infrastructure with DPI capability \u2014 GenAI application traffic (ChatGPT, Gemini, etc.) can be fingerprinted with ~89% accuracy, enabling selective blocking or surveillance",
               "baseline": "minimum BGP-security hygiene applicable to every operator"
             }
           },
-          "name": "Kherson"
+          "name": "Kherson",
+          "genai_exposure": {
+            "score": 8,
+            "level": "nominal",
+            "routing_exposure": 0.1,
+            "adversary_dpi": true,
+            "dpi_system": "SORM/SORM-2",
+            "dpi_capability_score": 95,
+            "fingerprint_accuracy": 0.894,
+            "threat_vectors": [
+              "AI traffic identification via DPI",
+              "AI-assisted planning detection"
+            ]
+          }
         },
         {
           "city": "Mariupol",
@@ -61022,7 +61244,19 @@
               "baseline": "minimum BGP-security hygiene applicable to every operator"
             }
           },
-          "name": "Mariupol"
+          "name": "Mariupol",
+          "genai_exposure": {
+            "score": 0,
+            "level": "nominal",
+            "routing_exposure": 0.0,
+            "adversary_dpi": true,
+            "dpi_system": "SORM/SORM-2",
+            "dpi_capability_score": 95,
+            "fingerprint_accuracy": 0.894,
+            "threat_vectors": [
+              "AI traffic identification via DPI"
+            ]
+          }
         },
         {
           "city": "Kharkiv",
@@ -65968,15 +66202,33 @@
               "rov_upstream",
               "ris_monitoring",
               "diplomatic_pressure",
+              "genai_vpn_tunneling",
+              "genai_traffic_padding",
+              "genai_on_premise",
               "manrs_membership"
             ],
             "rationales": {
               "adversarial_transit": "4 Russian-routed path(s) observed in BGP samples",
               "prefix_hijack": "BGP UPDATE volume of 171 per observation window suggests possible route instability or hijack",
+              "genai_exposure": "traffic traverses adversary infrastructure with DPI capability \u2014 GenAI application traffic (ChatGPT, Gemini, etc.) can be fingerprinted with ~89% accuracy, enabling selective blocking or surveillance",
               "baseline": "minimum BGP-security hygiene applicable to every operator"
             }
           },
-          "name": "Kharkiv"
+          "name": "Kharkiv",
+          "genai_exposure": {
+            "score": 34,
+            "level": "elevated",
+            "routing_exposure": 0.4,
+            "adversary_dpi": true,
+            "dpi_system": "SORM/SORM-2",
+            "dpi_capability_score": 95,
+            "fingerprint_accuracy": 0.894,
+            "threat_vectors": [
+              "AI traffic identification via DPI",
+              "Selective GenAI service blocking",
+              "AI-assisted planning detection"
+            ]
+          }
         },
         {
           "city": "Zaporizhia",
@@ -70870,7 +71122,19 @@
               "baseline": "minimum BGP-security hygiene applicable to every operator"
             }
           },
-          "name": "Zaporizhia"
+          "name": "Zaporizhia",
+          "genai_exposure": {
+            "score": 0,
+            "level": "nominal",
+            "routing_exposure": 0.0,
+            "adversary_dpi": true,
+            "dpi_system": "SORM/SORM-2",
+            "dpi_capability_score": 95,
+            "fingerprint_accuracy": 0.894,
+            "threat_vectors": [
+              "AI traffic identification via DPI"
+            ]
+          }
         },
         {
           "city": "Donetsk",
@@ -75618,7 +75882,19 @@
               "baseline": "minimum BGP-security hygiene applicable to every operator"
             }
           },
-          "name": "Donetsk"
+          "name": "Donetsk",
+          "genai_exposure": {
+            "score": 0,
+            "level": "nominal",
+            "routing_exposure": 0.0,
+            "adversary_dpi": true,
+            "dpi_system": "SORM/SORM-2",
+            "dpi_capability_score": 95,
+            "fingerprint_accuracy": 0.894,
+            "threat_vectors": [
+              "AI traffic identification via DPI"
+            ]
+          }
         },
         {
           "city": "Luhansk",
@@ -80607,7 +80883,19 @@
               "baseline": "minimum BGP-security hygiene applicable to every operator"
             }
           },
-          "name": "Luhansk"
+          "name": "Luhansk",
+          "genai_exposure": {
+            "score": 0,
+            "level": "nominal",
+            "routing_exposure": 0.0,
+            "adversary_dpi": true,
+            "dpi_system": "SORM/SORM-2",
+            "dpi_capability_score": 95,
+            "fingerprint_accuracy": 0.894,
+            "threat_vectors": [
+              "AI traffic identification via DPI"
+            ]
+          }
         }
       ],
       "chokepoints": {
@@ -83856,7 +84144,17 @@
               "baseline": "minimum BGP-security hygiene applicable to every operator"
             }
           },
-          "name": "Khartoum"
+          "name": "Khartoum",
+          "genai_exposure": {
+            "score": 0,
+            "level": "nominal",
+            "routing_exposure": 0.0,
+            "adversary_dpi": false,
+            "dpi_system": "Fragmented",
+            "dpi_capability_score": 25,
+            "fingerprint_accuracy": 0.894,
+            "threat_vectors": []
+          }
         },
         {
           "city": "Omdurman",
@@ -88090,7 +88388,17 @@
               "baseline": "minimum BGP-security hygiene applicable to every operator"
             }
           },
-          "name": "Omdurman"
+          "name": "Omdurman",
+          "genai_exposure": {
+            "score": 0,
+            "level": "nominal",
+            "routing_exposure": 0.0,
+            "adversary_dpi": false,
+            "dpi_system": "Fragmented",
+            "dpi_capability_score": 25,
+            "fingerprint_accuracy": 0.894,
+            "threat_vectors": []
+          }
         },
         {
           "city": "Port Sudan",
@@ -90455,7 +90763,17 @@
               "baseline": "minimum BGP-security hygiene applicable to every operator"
             }
           },
-          "name": "Port Sudan"
+          "name": "Port Sudan",
+          "genai_exposure": {
+            "score": 0,
+            "level": "nominal",
+            "routing_exposure": 0.0,
+            "adversary_dpi": false,
+            "dpi_system": "Fragmented",
+            "dpi_capability_score": 25,
+            "fingerprint_accuracy": 0.894,
+            "threat_vectors": []
+          }
         },
         {
           "city": "El Fasher",
@@ -92512,7 +92830,17 @@
               "baseline": "minimum BGP-security hygiene applicable to every operator"
             }
           },
-          "name": "El Fasher"
+          "name": "El Fasher",
+          "genai_exposure": {
+            "score": 0,
+            "level": "nominal",
+            "routing_exposure": 0.0,
+            "adversary_dpi": false,
+            "dpi_system": "Fragmented",
+            "dpi_capability_score": 25,
+            "fingerprint_accuracy": 0.894,
+            "threat_vectors": []
+          }
         },
         {
           "city": "Nyala",
@@ -95350,7 +95678,17 @@
               "baseline": "minimum BGP-security hygiene applicable to every operator"
             }
           },
-          "name": "Nyala"
+          "name": "Nyala",
+          "genai_exposure": {
+            "score": 0,
+            "level": "nominal",
+            "routing_exposure": 0.0,
+            "adversary_dpi": false,
+            "dpi_system": "Fragmented",
+            "dpi_capability_score": 25,
+            "fingerprint_accuracy": 0.894,
+            "threat_vectors": []
+          }
         }
       ],
       "chokepoints": {
@@ -95377,6 +95715,49 @@
     }
   },
   "default_scenario": "russia_ukraine",
+  "genai_fingerprinting": {
+    "model_name": "Ensemble (CNN-LSTM + Gradient Boosting stacking)",
+    "accuracy": 0.894,
+    "f1": 0.893,
+    "accuracy_std": 0.028,
+    "folds": 5,
+    "dataset_size": 179,
+    "features_count": 233,
+    "detectable_platforms": [
+      "ChatGPT",
+      "Gemini",
+      "Grok",
+      "Perplexity"
+    ],
+    "modalities": [
+      "text",
+      "audio",
+      "video"
+    ],
+    "top_features": [
+      {
+        "name": "burst_mean_size",
+        "description": "Average packets per burst"
+      },
+      {
+        "name": "iat_p95",
+        "description": "95th percentile inter-arrival time"
+      },
+      {
+        "name": "unique_dst_ips",
+        "description": "Distinct servers contacted"
+      },
+      {
+        "name": "unique_connections",
+        "description": "Flow count diversity"
+      },
+      {
+        "name": "bwd_iat_p95",
+        "description": "Server-side IAT 95th percentile"
+      }
+    ],
+    "description": "Machine learning system that detects GenAI application traffic from network packet captures. When traffic traverses adversary-controlled infrastructure with DPI capability, this fingerprinting proves AI tool usage is identifiable and targetable \u2014 not just theoretically intercepted."
+  },
   "scenarios": {
     "taiwan_china": {
       "scenario_name": "Taiwan \u2194 China",

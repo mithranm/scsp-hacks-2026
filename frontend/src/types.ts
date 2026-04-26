@@ -182,6 +182,7 @@ export interface GlobalScenarioCity {
     recommended: string[];
     rationales: Record<string, string>;
   };
+  genai_exposure?: GenAIExposure;
   // Every scenario now has periods (synthesized for non-Ukraine, MRT-derived for Ukraine)
   periods?: Record<string, BGPPeriodData>;
   summary?: CitySummary;
@@ -214,6 +215,31 @@ export interface GlobalScenario {
   generated_at: string;
 }
 
+export interface GenAIExposure {
+  score: number;
+  level: "nominal" | "elevated" | "severe" | "critical";
+  routing_exposure: number;
+  adversary_dpi: boolean;
+  dpi_system: string;
+  dpi_capability_score: number;
+  fingerprint_accuracy: number;
+  threat_vectors: string[];
+}
+
+export interface GenAIFingerprinting {
+  model_name: string;
+  accuracy: number;
+  f1: number;
+  accuracy_std: number;
+  folds: number;
+  dataset_size: number;
+  features_count: number;
+  detectable_platforms: string[];
+  modalities: string[];
+  top_features: { name: string; description: string }[];
+  description: string;
+}
+
 export interface Bundle {
   generated_at: string;
   cities: Record<string, City>;
@@ -228,6 +254,7 @@ export interface Bundle {
   briefs?: Record<string, Record<string, string>>;
   briefs_generated_at?: string;
   briefs_mode?: "llm" | "template";
+  genai_fingerprinting?: GenAIFingerprinting;
   stats: {
     city_count: number;
     asn_count: number;

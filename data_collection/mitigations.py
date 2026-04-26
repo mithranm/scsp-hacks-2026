@@ -176,6 +176,52 @@ MITIGATIONS = {
         ),
         "references": ["RIPE NCC sanctions guidance"],
     },
+    # ── GenAI Traffic Protection ──────────────────────────────────────
+    "genai_traffic_padding": {
+        "title":       "Traffic padding / shaping to defeat GenAI fingerprinting",
+        "tier":        "responsive",
+        "complexity":  "medium",
+        "timeframe":   "days–weeks",
+        "stakeholder": "end-user + service operator",
+        "description": (
+            "GenAI applications (ChatGPT, Gemini, Grok, Perplexity) produce distinctive "
+            "network signatures — regular inter-arrival times, consistent burst sizes, and "
+            "characteristic request-response patterns — that DPI can classify with ~89% "
+            "accuracy. Traffic padding injects dummy packets to disrupt burst analysis and "
+            "IAT regularity, reducing classifier confidence below actionable thresholds."
+        ),
+        "references": ["NDSS 2023 traffic-analysis padding", "IEEE S&P encrypted-traffic classification"],
+    },
+    "genai_vpn_tunneling": {
+        "title":       "VPN / encrypted tunnel for AI service traffic",
+        "tier":        "responsive",
+        "complexity":  "low",
+        "timeframe":   "hours–days",
+        "stakeholder": "end-user",
+        "description": (
+            "Route all GenAI API and application traffic through a VPN tunnel terminating "
+            "outside adversary-controlled transit. This hides the destination IP (defeating "
+            "IP-based blocking) and wraps the traffic in a uniform encrypted envelope, "
+            "degrading flow-level fingerprinting features like unique destination IPs and "
+            "connection counts. WireGuard or IPsec preferred for low-overhead tunneling."
+        ),
+        "references": ["WireGuard protocol", "RFC 7296 (IKEv2)"],
+    },
+    "genai_on_premise": {
+        "title":       "On-premise / air-gapped AI deployment",
+        "tier":        "preventive",
+        "complexity":  "high",
+        "timeframe":   "weeks–months",
+        "stakeholder": "military + government IT",
+        "description": (
+            "Deploy open-weight LLMs (Llama, Mistral, Qwen) on local or classified-network "
+            "hardware to eliminate cloud AI traffic entirely. Removes the fingerprinting "
+            "attack surface: no GenAI packets traverse any external network. Critical for "
+            "intelligence analysis and operational planning where AI-assisted workflows "
+            "must not be observable by adversary signals intelligence."
+        ),
+        "references": ["DoD CDAO AI adoption guidance", "NIST AI 600-1"],
+    },
 }
 
 
@@ -200,6 +246,11 @@ TRIGGERS = {
     "sorm_exposure": [
         "mtls_dot_doh", "as_path_filtering", "transit_diversity",
         "ixp_neutral_peering",
+    ],
+    # Threat: GenAI traffic exposed to adversary fingerprinting / blocking
+    "genai_exposure": [
+        "genai_vpn_tunneling", "genai_traffic_padding", "mtls_dot_doh",
+        "genai_on_premise",
     ],
     # Generic baseline — every operator should have these regardless of threat
     "baseline": [
@@ -247,6 +298,15 @@ def recommend_for_city(city_record):
         rationales["prefix_hijack"] = (
             f"BGP UPDATE volume of {evidence.get('max_bgp_updates_in_day', 0)} per "
             f"observation window suggests possible route instability or hijack"
+        )
+
+    # GenAI exposure: trigger when adversarial routing or intercept capability exists
+    if components.get("russian_route", 0) > 0 or components.get("sorm_exposure", 0) > 0:
+        selected.extend(TRIGGERS["genai_exposure"])
+        rationales["genai_exposure"] = (
+            "traffic traverses adversary infrastructure with DPI capability — "
+            "GenAI application traffic (ChatGPT, Gemini, etc.) can be fingerprinted "
+            "with ~89% accuracy, enabling selective blocking or surveillance"
         )
 
     # Always layer in baseline

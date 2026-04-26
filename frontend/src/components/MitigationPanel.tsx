@@ -110,6 +110,33 @@ const PLAYBOOK: Record<string, {
     description: "When an adversarial state forcibly reassigns prefix blocks (as happened with Crimea AS50010 in 2014), the legitimate operator and host nation can petition the RIR (RIPE NCC, APNIC) to reverse the transfer. Slow and political, but has succeeded in limited cases. Most effective combined with sanctions.",
     references:  ["RIPE NCC sanctions guidance"],
   },
+  genai_traffic_padding: {
+    title:       "Traffic padding / shaping to defeat GenAI fingerprinting",
+    tier:        "responsive",
+    complexity:  "medium",
+    timeframe:   "days\u2013weeks",
+    stakeholder: "end-user + service operator",
+    description: "GenAI applications (ChatGPT, Gemini, Grok, Perplexity) produce distinctive network signatures \u2014 regular inter-arrival times, consistent burst sizes, and characteristic request-response patterns \u2014 that DPI can classify with ~89% accuracy. Traffic padding injects dummy packets to disrupt burst analysis and IAT regularity, reducing classifier confidence below actionable thresholds.",
+    references:  ["NDSS 2023 traffic-analysis padding", "IEEE S&P encrypted-traffic classification"],
+  },
+  genai_vpn_tunneling: {
+    title:       "VPN / encrypted tunnel for AI service traffic",
+    tier:        "responsive",
+    complexity:  "low",
+    timeframe:   "hours\u2013days",
+    stakeholder: "end-user",
+    description: "Route all GenAI API and application traffic through a VPN tunnel terminating outside adversary-controlled transit. This hides the destination IP (defeating IP-based blocking) and wraps traffic in a uniform encrypted envelope, degrading flow-level fingerprinting features like unique destination IPs and connection counts. WireGuard or IPsec preferred.",
+    references:  ["WireGuard protocol", "RFC 7296 (IKEv2)"],
+  },
+  genai_on_premise: {
+    title:       "On-premise / air-gapped AI deployment",
+    tier:        "preventive",
+    complexity:  "high",
+    timeframe:   "weeks\u2013months",
+    stakeholder: "military + government IT",
+    description: "Deploy open-weight LLMs (Llama, Mistral, Qwen) on local or classified-network hardware to eliminate cloud AI traffic entirely. Removes the fingerprinting attack surface: no GenAI packets traverse any external network. Critical for intelligence analysis and operational planning where AI-assisted workflows must not be observable by adversary SIGINT.",
+    references:  ["DoD CDAO AI adoption guidance", "NIST AI 600-1"],
+  },
 };
 
 const TIER_COLOR: Record<string, string> = {
