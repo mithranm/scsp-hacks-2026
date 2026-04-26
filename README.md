@@ -20,6 +20,22 @@
 | **Team members** | Mithran Mohanraj · Mohamed Shaik · Vinay Jagan · Vemula Shresta |
 | **Project name** | Cyber Terrain Mapper |
 | **Repository** | https://github.com/mithranm/scsp-hacks-2026 |
+| **Live demo** | **https://3dd1-2600-1700-a0-32f0-611f-2df6-5f3e-f7ba.ngrok-free.app/** |
+
+---
+
+## 🚀 Try it live
+
+**Open the live application:**
+**https://3dd1-2600-1700-a0-32f0-611f-2df6-5f3e-f7ba.ngrok-free.app/**
+
+No install required — the URL above serves the running Cyber Terrain
+Mapper directly. Click any conflict tab (Russia↔Ukraine, China↔Taiwan,
+Myanmar, Sudan, Iran↔Yemen) to load its city threat scores, satellite
+map, AS path overlays, and BGP-defense recommendations.
+
+> If the link is unreachable, the ngrok tunnel may have rotated. Run
+> the project locally instead — see the *How to run it* section below.
 
 ---
 
