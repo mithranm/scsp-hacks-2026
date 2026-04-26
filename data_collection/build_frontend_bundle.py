@@ -79,6 +79,96 @@ SORM_ASES = {
 
 ADVERSARIAL_CLASSIFICATIONS = {"Russian", "SORM", "Belarusian"}
 
+# ── GenAI Fingerprinting model performance (from ensemble training results) ──
+GENAI_FINGERPRINTING = {
+    "model_name": "Ensemble (CNN-LSTM + Gradient Boosting stacking)",
+    "accuracy": 0.894,
+    "f1": 0.893,
+    "accuracy_std": 0.028,
+    "folds": 5,
+    "dataset_size": 179,
+    "features_count": 233,
+    "detectable_platforms": ["ChatGPT", "Gemini", "Grok", "Perplexity"],
+    "modalities": ["text", "audio", "video"],
+    "top_features": [
+        {"name": "burst_mean_size",  "description": "Average packets per burst"},
+        {"name": "iat_p95",          "description": "95th percentile inter-arrival time"},
+        {"name": "unique_dst_ips",   "description": "Distinct servers contacted"},
+        {"name": "unique_connections","description": "Flow count diversity"},
+        {"name": "bwd_iat_p95",      "description": "Server-side IAT 95th percentile"},
+    ],
+    "description": (
+        "Machine learning system that detects GenAI application traffic from network "
+        "packet captures. When traffic traverses adversary-controlled infrastructure "
+        "with DPI capability, this fingerprinting proves AI tool usage is identifiable "
+        "and targetable — not just theoretically intercepted."
+    ),
+}
+
+# Per-scenario adversary DPI/intercept capability assessment
+ADVERSARY_DPI_CAPABILITY = {
+    "russia_ukraine":    {"has_dpi": True,  "system": "SORM/SORM-2", "capability_score": 95,
+                          "notes": "Legally mandated DPI on all Russian carriers; FSB real-time access"},
+    "china_taiwan":      {"has_dpi": True,  "system": "Great Firewall / MSS",  "capability_score": 98,
+                          "notes": "Most advanced national DPI; already blocks GenAI platforms"},
+    "myanmar_civil_war": {"has_dpi": True,  "system": "Junta telecom control", "capability_score": 60,
+                          "notes": "Limited but growing DPI via Chinese-supplied equipment"},
+    "sudan_civil_war":   {"has_dpi": False, "system": "Fragmented", "capability_score": 25,
+                          "notes": "Limited infrastructure; DPI capability degraded by conflict"},
+    "iran_yemen_houthi": {"has_dpi": True,  "system": "TCI/DPI filtering",    "capability_score": 85,
+                          "notes": "Iran operates national-level DPI; extends to proxy networks"},
+}
+
+
+def compute_genai_exposure(city_threat, scenario_id):
+    """
+    Compute GenAI traffic exposure risk for a city based on:
+    1. Does traffic route through adversary? (adversarial_route component)
+    2. Does adversary have DPI capability? (per-scenario)
+    3. Can DPI fingerprint GenAI? (proven at 89.4% accuracy)
+    """
+    components = city_threat.get("components", {})
+    adv_route = components.get("russian_route", 0)
+    intercept = components.get("sorm_exposure", 0)
+
+    dpi = ADVERSARY_DPI_CAPABILITY.get(scenario_id, {})
+    dpi_score = dpi.get("capability_score", 0) / 100.0
+
+    # Exposure = routing_exposure * dpi_capability * fingerprint_accuracy
+    routing_exposure = min(1.0, (adv_route / 25.0 + intercept / 10.0) / 2.0)
+    raw = routing_exposure * dpi_score * GENAI_FINGERPRINTING["accuracy"] * 100
+
+    score = round(min(100, raw))
+    if score >= 70:
+        level = "critical"
+    elif score >= 45:
+        level = "severe"
+    elif score >= 20:
+        level = "elevated"
+    else:
+        level = "nominal"
+
+    threat_vectors = []
+    if dpi.get("has_dpi"):
+        threat_vectors.append("AI traffic identification via DPI")
+    if adv_route > 10:
+        threat_vectors.append("Selective GenAI service blocking")
+    if intercept > 0:
+        threat_vectors.append("AI query content surveillance")
+    if adv_route > 0:
+        threat_vectors.append("AI-assisted planning detection")
+
+    return {
+        "score": score,
+        "level": level,
+        "routing_exposure": round(routing_exposure, 2),
+        "adversary_dpi": dpi.get("has_dpi", False),
+        "dpi_system": dpi.get("system", "Unknown"),
+        "dpi_capability_score": dpi.get("capability_score", 0),
+        "fingerprint_accuracy": GENAI_FINGERPRINTING["accuracy"],
+        "threat_vectors": threat_vectors,
+    }
+
 
 def compute_threat_score(city_data, asn_geo, sorm_aset):
     """
@@ -434,6 +524,7 @@ def build_bundle():
 
     # Normalize every scenario city so it has the same fields as legacy City type.
     # This lets the same React components render any scenario.
+    from mitigations import recommend_for_city
     for sid, sc in global_scenarios.items():
         for c in sc.get("cities", []):
             c["name"] = c.get("city")           # CityPicker uses .name
@@ -442,6 +533,12 @@ def build_bundle():
             c.setdefault("peer_timeline", [])
             c.setdefault("events",        [])
             c.setdefault("summary",       {})
+            # Compute GenAI exposure per city
+            c["genai_exposure"] = compute_genai_exposure(
+                c.get("threat", {}), sid
+            )
+            # Recompute mitigations to pick up latest playbook (incl. GenAI defenses)
+            c["mitigations"] = recommend_for_city(c)
 
     # Merge existing detailed Ukraine BGP/threat data into the russia_ukraine scenario
     if "russia_ukraine" in global_scenarios:
@@ -469,6 +566,11 @@ def build_bundle():
         ru["totals"]["critical_cities"] = sum(1 for c in ru["cities"]
                                               if c["threat"]["score"] >= 60)
         ru["chokepoints"] = chokepoints  # Ukraine's BGP-graph centrality lives here
+        # Recompute GenAI exposure now that rich MRT-based threat data is in place
+        for sc_city in ru["cities"]:
+            sc_city["genai_exposure"] = compute_genai_exposure(
+                sc_city.get("threat", {}), "russia_ukraine"
+            )
 
     bundle = {
         "generated_at":       datetime.datetime.now(datetime.timezone.utc).isoformat(),
@@ -480,6 +582,7 @@ def build_bundle():
         "chokepoints":        chokepoints,
         "global_scenarios":   global_scenarios,   # NEW — every scenario
         "default_scenario":   "russia_ukraine",
+        "genai_fingerprinting": GENAI_FINGERPRINTING,
         "scenarios": {
             "taiwan_china":   scenario_tw,        # legacy single-scenario panel
         },

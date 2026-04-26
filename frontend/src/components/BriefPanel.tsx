@@ -2,6 +2,7 @@ import type { Bundle, City, GlobalScenario, GlobalScenarioCity } from "../types"
 import { daysBetween, formatHumanDate } from "../lib/dates";
 import { ChokepointPanel } from "./ChokepointPanel";
 import { ExportButton } from "./ExportButton";
+import { GenAIExposurePanel } from "./GenAIExposurePanel";
 import { MitigationPanel } from "./MitigationPanel";
 
 function advRouteLabel(id?: string): string {
@@ -230,6 +231,12 @@ export function BriefPanel({ city, period, date, bundle, scenario }: Props) {
           </p>
         </section>
       )}
+
+      {/* GenAI fingerprinting exposure — adversary's ability to detect AI traffic */}
+      <GenAIExposurePanel
+        exposure={scenarioCity?.genai_exposure}
+        fingerprinting={bundle.genai_fingerprinting}
+      />
 
       {/* Chokepoint panel — uses scenario's chokepoints when available */}
       <ChokepointPanel data={scenario?.chokepoints ?? bundle.chokepoints} />
