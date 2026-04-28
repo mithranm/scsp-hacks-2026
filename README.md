@@ -17,7 +17,7 @@
 |---|---|
 | **Team name** | Cortex |
 | **Track** | Wargaming |
-| **Team members** | Mithran Mohanraj · Mohamed Shaik · Vinay Jagan · Vemula Shresta |
+| **Team members** | Mithran Mohanraj · Mohamed Shaik · Vinay Jagan · Shresta Vemula |
 | **Project name** | Cyber Terrain Mapper |
 | **Repository** | https://github.com/mithranm/scsp-hacks-2026 |
 | **Live demo** | **https://3dd1-2600-1700-a0-32f0-611f-2df6-5f3e-f7ba.ngrok-free.app/** |
