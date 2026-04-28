@@ -408,4 +408,4 @@ SCSP Hackathon 2026 Wargaming Track.
 - Mithran Mohanraj
 - Mohamed Shaik
 - Vinay Jagan
-- Vemula Shresta
+- Shresta Vemula
